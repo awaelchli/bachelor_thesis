@@ -1,0 +1,26 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{pgfplots}
+
+\tikzset{align at bottom/.style={baseline=(current bounding box.south)}}
+
+\begin{document} 
+	\begin{tikzpicture}[scale = 0.27]
+	
+		\draw[->] (-5, 0) -- (5, 0) node[right] {$s$};
+		\draw[<-] (-5, -5) -- (-5, 5) node[above] {$z$};
+	
+		\begin{scope}
+			\clip (-5, -5) rectangle (5, 5);
+			\draw[scale = 1, smooth, domain = -10 : 10, variable = \x, black, dashed] plot ({\x}, {3});
+			\draw[scale = 1, smooth, domain = -10 : 10, variable = \x, black, dashed] plot ({\x}, {-2});
+		\end{scope}
+		
+		\node[left] at (-5, 3) {$Z_\textrm{min}$};
+		\node[left] at (-5, -2) {$Z_\textrm{max}$};
+		
+		\draw[very thick, blue] (0, 3) -- (2, 3);
+		\draw[very thick, red] (-3, -2) -- (0, -2);
+		
+	\end{tikzpicture}
+\end{document}

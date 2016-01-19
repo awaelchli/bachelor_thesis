@@ -1,0 +1,161 @@
+
+%---------------------------------------------------------------
+%                           iamdip.sty
+%--------------------------------------------------------------
+%  BESCHREIBUNG
+%    LaTex Style File fuer Titelblatt eine Diplomsarbeit
+%    nach Richtlinien ab 1994 (neu 1995)
+%
+%  AUTHOR
+%    Modifikationen von Vorversionen von Igor Metz, J.G. Schneider
+%    und Stephan Gildea -> Karl Guggisberg
+%  
+%  HISTORY
+%    12.1.94
+%    23.11.95 von Rene Gonin f"ur neuen Dekan angepasst und von 
+%             iamliz.sty in iamdip.sty umgetauft.
+%
+%  VERWENDUNG
+%  
+%    Der Style kann wie folgt in einem LaTeX Dokument verwendet
+%    werden:
+%     \documentstyle[..,iamdip,...]{dreport}
+%                         
+%      \author{...}    % Name des Authors
+%      \title{...}     % Titel
+%      \betreuer{...}  % nur ein Name ! (Professor)
+%      \ort{...}
+%      \datum{...}
+%      
+%       \begin{document}
+%         \maketitle         % Titelseite erzeugen
+%          \begin{abstract}  % optionaler Abstract
+%              ....z
+%          \end{abstract}
+%          ....
+%       \end{document}
+%------------------------------------------------------------------
+%      Author: 	Igor Metz <metz@iam.unibe.ch>
+%     Created:	Thu Dec 10 10:57:08 1987
+%    Filename:	iamprojekt.sty
+% slightly modified for 'Lizentiatsarbeiten': J.-G. Schneider
+
+% F"ur Lizentiatsarbeiten am Institut f"ur Informatik und angew. Mathematik
+% der Universit"at Bern.
+% Aufbauend auf einem Muster f"ur die Projektdokumentation.
+
+% Diese Style Option wurde aufbauend auf die mitthesis Style Option erstellt.
+% Die Option ist mit dem report, resp. dreport style zu verwenden. Auf alle
+% F"alle muss aber german.sty mitverwendet werden!
+% Verwendung: \documentstyle[...,german,iamprojekt,..]{dreport}
+
+% Folgende Definitionen m"ussen gemacht werden (Beispiel):
+% \author{Fred Feuerstein}
+% \title{Der Einfluss der Steinzeit auf das Supercomputing}
+% \liznummer{IAM-LIZ-8201}
+% \betreuer{Franz Schnell}{Dr.}  f"ur jeden Betreuer !!
+% \arbeitsbeginn{1. Jan. 1982}
+% \arbeitsende{31. Dez. 1999}
+
+% Folgender Text ist aus mitthesis.sty:
+% Copyright (c) 1987 by Stephen Gildea
+% Permission to copy all or part of this work is granted, provided
+% that the copies are not made or distributed for resale, and that
+% the copyright notice and this notice are retained.
+% 
+% THIS WORK IS PROVIDED ON AN "AS IS" BASIS.  THE AUTHOR PROVIDES NO
+% WARRANTY WHATSOEVER, EITHER EXPRESS OR IMPLIED, REGARDING THE WORK,
+% INCLUDING WARRANTIES WITH RESPECT TO ITS MERCHANTABILITY OR FITNESS
+% FOR ANY PARTICULAR PURPOSE.
+
+
+%% Define all the pieces that go on the title page and the abstract.
+
+% \title and \author already exist (LaTeX !)
+%%\def\liznummer#1{\gdef\@liznummer{#1}}
+%%\def\arbeitsbeginn#1{\gdef\@arbeitsbeginn{#1}}
+%%\def\arbeitsende#1{\gdef\@arbeitsende{#1}}
+\def\datum#1{\gdef\@datum{#1}}
+\def\ort#1{\gdef\@ort{#1}}
+\def\betreuer#1{\gdef\@betreuer{#1}}
+%%\def\author#1{\gdef\@author{#1}}
+% da mehr als nur ein Betreuer existieren kann, bauen wir hier entsprechende
+% boxes f"ur die Titelseite auf.
+%%\newbox\@betreuer
+
+%\def\betreuer#1#2{\setbox\@betreuer\vbox
+%  {\unvbox\@betreuer \vskip \baselineskip%10pt plus 1 %fil minus 1fil
+%%   \def\baselinestretch{1}\large \centerline{#2\ #1}}}
+
+%% Aufbau der Titelseite
+
+\def\maketitle{\begin{titlepage}
+\large
+%% \centerline{\framebox[44mm]{\tt\@liznummer}}
+\vspace{30mm}
+{\def\baselinestretch{1.2}\Large\bf \@title \par}
+\vspace{40mm}
+\begin{center}
+  {\bf Bachelorarbeit}\\
+\vspace{3mm} 
+  der Philosophisch-naturwissenschaftlichen Fakult\"at \\
+  der Universit\"at Bern \\
+\vspace{1cm}
+  vorgelegt von\\
+\vspace{1cm}
+  \@author
+\end{center}
+\par
+\begin{center}
+ \@datum
+\end{center}
+\par
+\begin{center}
+Leiter der Arbeit:\\ 
+\@betreuer\\
+  \IAM\\
+\end{center}
+%%Beginn der Arbeit: \@arbeitsbeginn\\
+%\@ort,\ \@datum
+\end{titlepage}}
+
+% this environment should probably be called abstract,
+% but we want people to also be able to get at the more
+% basic abstact environment
+% Modifiziert, damit german und dreport korrekt zusammenarbeiten.
+\def\abstractpage{
+  \newpage\thispagestyle{empty}
+  \begin{center}{\large{\bf \@title} \\[2\baselineskip]
+  \@author \\[\baselineskip]}
+  \def\baselinestretch{1}\@normalsize
+  \end{center}
+  \vspace{20mm}
+  \begin{center}
+    \subsection*{\abstractname}
+  \end{center}
+  \small
+  \def\baselinestretch{1}\@normalsize
+  \c@page\z@ % setzt die Seitennummer auf Null
+}
+
+\def\endabstractpage{%
+  \par\newpage
+}
+
+% You can use the titlepage environment to do it all yourself if you
+% don't want to use \maketitle.  If the titlepage environment, the
+% paragraph skip is infinitely stretchable, so if you leave a blank line
+% between lines that you want space between, the space will stretch so
+% that the title page fills up the entire page.
+\def\titlepage{\newpage\centering
+  \thispagestyle{empty}
+  \parindent 0pt \parskip 10pt plus 1fil minus 1fil
+  \def\baselinestretch{1}\@normalsize\vbox to \vsize\bgroup\vbox to 9in\bgroup}
+% The \kern0pt pushes any depth into the height.  Thanks to Richard Stone.
+\def\endtitlepage{\par\kern 0pt\egroup\vss\egroup\newpage}
+
+\def\IAM{Institut f\"ur Informatik und angewandte Mathematik}
+\def\UNIBE{Universit\"at Bern}
+
+
+

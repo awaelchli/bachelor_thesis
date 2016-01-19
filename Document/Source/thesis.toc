@@ -1,0 +1,26 @@
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Stereoscopic Displays}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}3D Displays}{2}{section.1.2}
+\contentsline {section}{\numberline {1.3}Light Fields}{2}{section.1.3}
+\contentsline {section}{\numberline {1.4}Related Work}{2}{section.1.4}
+\contentsline {chapter}{\numberline {2}Capturing a Light Field}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}The Plenoptic Function and the Light Field}{3}{section.2.1}
+\contentsline {section}{\numberline {2.2}Light Field Acquisition}{4}{section.2.2}
+\contentsline {section}{\numberline {2.3}Visualization}{6}{section.2.3}
+\contentsline {section}{\numberline {2.4}The Plenoptic Camera}{7}{section.2.4}
+\contentsline {chapter}{\numberline {3}Light Field Tomography}{8}{chapter.3}
+\contentsline {section}{\numberline {3.1}A Model for Light Attenuation}{8}{section.3.1}
+\contentsline {section}{\numberline {3.2}Discrete Attenuation Layers}{10}{section.3.2}
+\contentsline {section}{\numberline {3.3}Ray Casting}{10}{section.3.3}
+\contentsline {section}{\numberline {3.4}Iterative Reconstruction}{12}{section.3.4}
+\contentsline {chapter}{\numberline {4}Spectral Analysis}{13}{chapter.4}
+\contentsline {section}{\numberline {4.1}Definitions}{13}{section.4.1}
+\contentsline {section}{\numberline {4.2}Spectral Support of Light Fields}{14}{section.4.2}
+\contentsline {section}{\numberline {4.3}Spectral Support of Multiplicative Displays}{14}{section.4.3}
+\contentsline {section}{\numberline {4.4}The Fourier Slice Theorem}{14}{section.4.4}
+\contentsline {chapter}{\numberline {5}Implementation and Results}{16}{chapter.5}
+\contentsline {chapter}{\numberline {A}Appendix}{17}{appendix.A}
+\contentsline {section}{\numberline {A.1}Backlight Fabrication}{17}{section.A.1}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Tables}{19}{figure.A.1}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Figures}{19}{appendix*.25}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{20}{appendix*.26}

@@ -1,0 +1,117 @@
+\documentclass[a4paper]{report}
+
+\usepackage{natbib}
+\bibpunct{[}{]}{,}{a}{}{;}
+\usepackage{fancyheadings}
+\usepackage{iamdip}
+
+% Math packages
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+
+% Display urls and clickable hyperlinks
+\usepackage{url}
+\usepackage{hyperref}
+
+% Packages for graphics and plots
+\usepackage[pdftex]{graphicx}
+\usepackage{subfigure}
+\usepackage{listings}
+\usepackage{pdfpages}
+\usepackage{asymptote}
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usepackage{pgfplots}
+\usetikzlibrary{intersections}
+\usepackage{standalone}
+
+% Quotation
+\usepackage{dirtytalk}
+
+% Helper package for TODOs.
+\usepackage{todonotes}
+
+% Row and column spacings for tables
+\setlength{\tabcolsep}{8pt}
+\renewcommand{\arraystretch}{1.2}
+
+
+\headrulewidth 0.5pt \addtolength{\headheight}{5pt}
+
+\lhead[\fancyplain{}{\rm\thepage}]{\fancyplain{}{\rightmark}}
+\rhead[\fancyplain{}{\leftmark}]{\fancyplain{}{\rm\thepage}}
+\cfoot{}
+
+\graphicspath{{../Figures/}}
+
+\begin{document}
+
+\pagestyle{fancyplain} \thispagestyle{empty}
+
+\title{Attenuation-based Light Field Displays}
+\author{Adrian W\"alchli}
+\betreuer{Prof. Dr. Matthias Zwicker}
+\ort{Bern}
+\datum{2015}
+
+\pagenumbering{roman} \setcounter{page}{1}
+\maketitle
+
+% Abstract
+\newpage
+\include{Chapters/abstract}
+\newpage{\pagestyle{empty} \cleardoublepage}
+
+% Acknowledgements
+\include{Chapters/acknowledgements}
+\newpage{\pagestyle{empty} \cleardoublepage}
+
+% Begin page numbering
+\pagenumbering{roman} \setcounter{page}{1}
+
+% Table of contents
+\tableofcontents
+\newpage{\pagestyle{empty} \cleardoublepage}
+
+% Main Document
+\pagenumbering{arabic} \setcounter{page}{1}
+\pagestyle{fancy}
+
+\include{Chapters/chapter1}
+\newpage{\pagestyle{empty} \cleardoublepage}
+
+\include{Chapters/chapter2}
+\newpage{\pagestyle{empty} \cleardoublepage}
+
+\include{Chapters/chapter3}
+\newpage{\pagestyle{empty} \cleardoublepage}
+
+\include{Chapters/chapter4}
+\newpage{\pagestyle{empty} \cleardoublepage}
+
+\include{Chapters/chapter5}
+\newpage{\pagestyle{empty} \cleardoublepage}
+
+\begin{appendix}
+	\include{Chapters/appendix}
+	\newpage{\pagestyle{empty} \cleardoublepage}
+\end{appendix}
+
+\addcontentsline{toc}{chapter}{\numberline{}List of Tables}
+\listoftables
+
+\addcontentsline{toc}{chapter}{\numberline{}List of Figures}
+\listoffigures
+
+\addcontentsline{toc}{chapter}{\numberline{}Bibliography}
+\bibliographystyle{abbrvnat}
+\nocite{*}
+\bibliography{thesis}
+
+% This is required since 2012!!
+\includepdf{Erklaerung.pdf}
+
+\end{document}

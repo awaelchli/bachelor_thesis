@@ -1,0 +1,73 @@
+\chapter{Appendix}
+\label{chp:appendix}
+
+\section{Backlight Fabrication}
+\todo{Add dimensions of the display and frame}
+
+For an optimal viewing experience, a uniform backlight is needed to place behind the glass plates which hold the printed transparencies.
+LEDs are the optimal choice for a simple white backlight: They are small sized, power saving, affordable and don't produce a lot of heat when turned on.
+The ones used for this build are average, consumer grade quality LEDs bought on Amazon.
+A detailed specification of the product is given in table~\ref{tbl:LED_specs}.
+
+A five meter long and 10 mm wide LED strip is cut into pieces of 15 cm length, each having nine LEDs.
+These smaller strips are placed next to each other and glued onto a wooden plate forming the base for the backlight.
+Corresponding ends of the strips are reconnected by soldering small pieces of wire onto the contacts of the strips.
+For an easier soldering process and to reduce the risk of an electrical short, the strips are alternately offset by a small amount as shown in figure~\ref{fig:look_inside_backlight_2}.
+A connector for the power supply is mounted on one end of the strip.
+Wooden stand-offs glued to the base hold the diffuser plate 17 mm above the LEDs.
+The diffuser is simply a white, milky acrylic plate from a hardware store, cut to the right size.
+Finally, the build is concluded with a wooden frame covering the LEDs and wires and holding the glass plates in place.
+The frame is painted with a color varnish to protect the wood from scratches and to beautify the product.
+
+A total of three backlights were produced for this project.
+All three displays are powered by a 12V/6A DC power supply.
+The set also includes a remote control to turn the displays on and off or to adjust the brightness level.
+
+\todo{Figures: All three displays + look inside, showing LED and soldering job.}
+\begin{table}[htb]
+	\centering
+	\begin{tabular}{| l | l |}
+		\hline
+		LED Chip					& SMD 5050 \\
+		\hline
+		Electric current			& 12V DC \\
+		\hline
+		Color 						& Cold white \\
+		\hline 
+		Color temperature 			& 6000 Kelvin \\ 
+		\hline  
+		Luminous flux 				& 4500 Lumen \\ 
+		\hline
+		Emission angle				& 120$^\circ$ \\
+		\hline 
+		Power consumption			& 60 Watt \\
+		\hline
+		Average lifespan			& 50000 hours \\
+		\hline
+	\end{tabular} 
+	\caption[LED specification]
+	{Specification of LEDs used for the backlight.}
+	\label{tbl:LED_specs}
+\end{table}
+
+\begin{figure}[tb]
+	\subfigure[]{
+		\includegraphics[scale = 0.3]{placeholder}
+		\label{fig:all_three_backlights}
+	}
+	\hfill
+	\subfigure[]{
+		\includegraphics[scale = 0.3]{placeholder}
+		\label{fig:look_inside_backlight_1}
+	}
+	\hfill
+	\subfigure[]{
+		\includegraphics[scale = 0.3]{placeholder}
+		\label{fig:look_inside_backlight_2}
+	}
+	\caption[Handcrafted backlights for the attenuation displays]
+			{(a) Three fully assembled displays with backlight.
+			 (b) Close up of the inside with the outer frame removed.
+				 Top to bottom: Glass plates holding attenuation layers, diffusion plate, LED grid.
+			 (c) Close up of the LED grid with the diffuser removed.}
+\end{figure}

@@ -1,0 +1,27 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{pgfplots}
+
+\begin{document}
+	\begin{tikzpicture}[baseline]
+		\begin{axis}[	scale only axis,
+						height = 2.8cm,
+						ylabel near ticks,
+						xlabel near ticks, 
+						ticks = none, 
+						enlargelimits = true, 
+						axis on top, 
+						axis equal image,
+						axis lines = left,
+						xlabel = {$x$},
+						ylabel = {$y$} 
+					]
+	
+			\addplot graphics [xmin = 125, xmax = 875, ymin = 0, ymax = 615] {epi_1x500x1000x1000/rectified/overview};
+		
+			\addplot[mark = none, red] coordinates {(0, 615 - 497) (1000, 615 - 497)};
+			\addplot[mark = none, red] coordinates {(0, 615 - 236) (1000, 615 - 236)};
+			
+		\end{axis}
+	\end{tikzpicture}	
+\end{document}
