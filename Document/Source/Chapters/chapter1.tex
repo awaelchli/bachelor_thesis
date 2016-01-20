@@ -1,13 +1,33 @@
 \chapter{Introduction}
 \label{chp:introduction}
 
-\todo{Possible figures to insert: Lytro camera, Stanford camera array, Tensor Display etc.}
-
 Over the last few years, devices capable of displaying 3D content have shown to become increasingly popular.
 Most of the moviegoers have long accustomed to the variety of movies releasing in 3D every year, and with affordable 3D television screens on the market, movies with the extra dimension can be enjoyed in the living room.
-Current graphics processors are powerful enough to bring the 3D experience to the video game consumer, allowing for a higher immersion into the virtual world.
+It is obvious that for the viewer, the most important part of the display is the content shown by it.
+Current graphics processors together with state-of-the-art rendering algorithms bring the 3D experience to the video game consumer, allowing for a higher immersion into the virtual world.
+But there is also the desire to view real-world photos or videos on such a display, elevating the need for 3D capturing devices.
+
+\section{Light Fields}
+
+Light fields are the foundation for image based rendering, a technique to present different perspectives of a scene without the need to store geometry data, texture or lighting information.
 
 There are two main categories of such displays, stereoscopic- and true 3D displays.
+
+\begin{figure}[tb]
+	\subfigure[Image courtesy D-Kuru/Wikimedia Commons]{
+		\includegraphics[height = 4cm]{../Figures/lytro/Lytro_Light_Field_Camera-front_background_removed}
+		\label{fig:lytro_camera}
+	}
+	\hfill
+	\subfigure[]{
+		\includegraphics[height = 4cm]{../Figures/camera_array/stanford_camera_array_2}
+		\label{fig:stanford_camera_array}
+	}
+	\caption[Light field aquisition devices]
+			{(a) Hand-held plenoptic camera from Lytro.
+			 (b) The Stanford multi-camera array, holding 128 video camera.}
+\end{figure}
+\todo{Ask for permission to use image showing the stanford camera array.}
 
 \section{Stereoscopic Displays}
 
@@ -35,7 +55,7 @@ Finally, compressive light field displays, also called tensor displays, consist 
 
 The work in this thesis is based on a much simpler version of these light field displays, called \emph{Layered 3D}, which was first realized by~\cite{WetzsteinTomo}.
 The display is able to present a static, full 4D light field without the need of special glasses.
-It consists of masks, printed on transparencies, which attenuate light from a backlight in a multiplicative manner, the same concept tensor displays are based on.
+It consists of masks, printed on transparencies, which attenuate light from a backlight in a multiplicative manner.
 
 \begin{figure}
 	\centering
@@ -54,9 +74,10 @@ It consists of masks, printed on transparencies, which attenuate light from a ba
 			 (b) Side view: Ten pieces of 2 mm thick glass plates hold the five layers of transparencies, with a 4 mm separation between them.}
 \end{figure}
 
-\section{Light Fields}
-
-
-
-
 \section{Related Work}
+
+This thesis was inspired by and builds upon the work of \cite{WetzsteinTomo}.
+In their paper, they present a model for a inexpensive 3D display built from light attenuating, multiplicative masks.
+The simulated reconstructions they achieve are very convincing, although they only worked with synthetic light fields from oblique projections.
+With a conclusive spectral analysis, they show that multi-layer displays have increased depth of field and improved spatial resolution in comparison to other automultiscopic displays such as parallax barriers or integral imaging.
+The idea for this thesis is to extend the work of \citeauthor{WetzsteinTomo} to support camera light fields (e.g. captured with a Lytro camera) in addition.
