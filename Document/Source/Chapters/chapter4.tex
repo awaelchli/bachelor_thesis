@@ -13,25 +13,25 @@ The spectral support, i.e. the range of frequencies the display is able to produ
 \section{Definitions}
 \label{sec:Definitions}
 
-The \textbf{Fourier transform} $\hat{f}$ of an integrable function $f \colon \mathbb{R}^n \to \mathbb{C}$ is defined as 
+The \textbf{Fourier transform} $\widehat{f}$ of an integrable function $f \colon \mathbb{R}^n \to \mathbb{C}$ is defined as 
 \begin{equation}
-	\hat{f}(\xi) = \mathcal{F}(f)(\xi) \coloneqq \int_{\mathbb{R}^n} f(x) e^{-2 \pi \mathrm{i} x \cdot \xi} \, \mathrm{d}x
+	\widehat{f}(\xi) = \mathcal{F}(f)(\xi) \coloneqq \int_{\mathbb{R}^n} f(x) e^{-2 \pi \mathrm{i} x \cdot \xi} \, \mathrm{d}x
 \end{equation}
 for any $\xi \in \mathbb{R}^n$. 
-According to the Fourier integral theorem, if both $f$ and $\hat{f}$ are absolutely integrable and $f$ is continuous, then the inverse transform 
+According to the Fourier integral theorem, if both $f$ and $\widehat{f}$ are absolutely integrable and $f$ is continuous, then the inverse transform 
 \begin{equation}
-	f(x) = \mathcal{F}^{-1}(\hat{f})(x) \coloneqq \int_{\mathbb{R}^n} \hat{f}(\xi) e^{2 \pi \mathrm{i} x \cdot \xi} \, \mathrm{d}\xi
+	f(x) = \mathcal{F}^{-1}(\widehat{f} \, )(x) \coloneqq \int_{\mathbb{R}^n} \widehat{f}(\xi) e^{2 \pi \mathrm{i} x \cdot \xi} \, \mathrm{d}\xi
 \end{equation}
 is well-defined.
-The domain of $f$ is called the \textbf{spatial domain} and the domain of $\hat{f}$ is referred to as the \textbf{frequency domain}.
+The domain of $f$ is called the \textbf{spatial domain} and the domain of $\widehat{f}$ is referred to as the \textbf{frequency domain}.
 An important property of the Fourier transform is that a convolution in the spatial domain becomes a multiplication in the frequency domain, or in other words, 
 \begin{equation}\label{eq:convolution_theorem_1}
-	\widehat{(f \ast g)}(\xi) = \hat{f}(\xi) \cdot \hat{g}(\xi)
+	\widehat{(f \ast g)}(\xi) = \widehat{f}(\xi) \cdot \widehat{g}(\xi)
 \end{equation}
 for integrable functions $f, g \colon \mathbb{R}^n \to \mathbb{C}$.
 On the other hand, a multiplication in the spatial domain becomes a convolution in the frequency domain after applying the Fourier transform, that is
 \begin{equation}\label{eq:convolution_theorem_2}
-	\widehat{(f \cdot g)}(\xi) = (\hat{f} \ast \hat{g})(\xi).
+	\widehat{(f \cdot g)}(\xi) = (\widehat{f} \ast \widehat{g})(\xi).
 \end{equation}
 
 \section{Spectral Support of Light Fields}
@@ -97,11 +97,20 @@ As equation~\ref{eq:convolution_theorem_1} shows, multiplying $\mathcal{S}(\xi_u
 \section{Spectral Support of Multiplicative Displays}
 \label{sec:Spectral_Support_for_Display}
 
-With light field displays, it is of course desirable to achieve the same spectral coverage for the emitted light field as for the original one.
+With light field displays, it is of course desirable to achieve the same spectral coverage for the emitted light field as for the original.
 Again, the analysis starts with the assumption of a continuous light field and an attenuator with $N$ continuously varying layers.
+Each layer by itself creates a light field, and since the layer is at constant depth, the frequency response is non-zero along a line as demonstrated before.
+Let $L_1, \dots , L_N$ denote the constant depth light fields per layer and let's assume all are parameterized with respect to the same $(u, v)$- and \mbox{$(s, t)$-plane}.
+The light field produced by all layers together is $L = L_0 \cdot L_1 \cdots L_N$, where $L_0$ is the uniform illumination from the backlight.
+This directly follows from equation~\ref{eq:transmittance_layers}.
+With the multiplication theorem from equation~\ref{eq:convolution_theorem_2}, the Fourier transform of $L$ can be expressed as
+\begin{equation}
+	\widehat{L}(\xi) = (\widehat{L_0} \ast \widehat{L_1} \ast \cdots \ast \widehat{L_N}) (\xi), 
+\end{equation}
+where $\xi = (\xi_u, \xi_v, \xi_s, \xi_t)$, or $\xi = (\xi_u, \xi_s)$ for the two dimensional case.
 
-Now, consider a single attenuation layer. 
-The light field emitted by this layer has constant depth and thus, the lines in the EPI all have the same slope.
+
+%The light field emitted by this layer has constant depth and thus, the lines in the EPI all have the same slope.
 
 \section{The Fourier Slice Theorem}
 \todo{Explain usage of the theorem in this work}

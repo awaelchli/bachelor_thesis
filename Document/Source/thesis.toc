@@ -17,7 +17,7 @@
 \contentsline {section}{\numberline {4.1}Definitions}{14}{section.4.1}
 \contentsline {section}{\numberline {4.2}Spectral Support of Light Fields}{15}{section.4.2}
 \contentsline {section}{\numberline {4.3}Spectral Support of Multiplicative Displays}{15}{section.4.3}
-\contentsline {section}{\numberline {4.4}The Fourier Slice Theorem}{15}{section.4.4}
+\contentsline {section}{\numberline {4.4}The Fourier Slice Theorem}{16}{section.4.4}
 \contentsline {chapter}{\numberline {5}Implementation and Assessment}{17}{chapter.5}
 \contentsline {chapter}{\numberline {A}Appendix}{18}{appendix.A}
 \contentsline {section}{\numberline {A.1}Backlight Fabrication}{18}{section.A.1}

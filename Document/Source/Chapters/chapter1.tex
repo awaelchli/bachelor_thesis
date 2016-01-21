@@ -8,18 +8,22 @@ Current graphics processors together with state-of-the-art rendering algorithms 
 But there is also the desire to view real-world photos or videos on such a display, elevating the need for 3D capturing devices.
 
 \section{Light Fields}
-
+\todo{Mention lumigraph?}
 Light fields are the foundation for image based rendering, a technique to present different perspectives of a scene without the need to store geometry data, texture or lighting information.
 The light field is a simplified version of the more general plenoptic function, first characterized by~\cite{AdelsonBergen}.
 It can be thought of a snapshot of the light in the entire scene, a database storing the radiance for every possible ray in the scene.
-\todo{explain how light fields are captured (lytro, stanford) and refer to the figure.}
+This data can be captured by a grid of cameras such as the one depicted in figure~\ref{fig:stanford_camera_array}.
+In fact, a light field is formed inside every conventional camera, but the per-ray radiance information is lost when the light striking the sensor is accumulated over all angles. 
+A camera that does not discard the additional radiance information is called a plenoptic camera or light field camera, shown in figure~\ref{fig:lytro_camera}.
+As described by~\cite{LightFieldPhotographyHandHeldPlenopticCamera}, an application for plenoptic camera is digital refocusing, the process of refocusing an image after it was taken.
 Chapter~\ref{chp:light_field_capturing} gives an overview of the properties of light fields and how they are used in this work.
+
 The ideal 3D display should be able to display any light field, meaning it should emit light rays with radiance equal to value in the database.
 It turns out it is not so easy to build these displays. 
 On the one hand are physical challenges, such as the direction of light in different angles or the correct depiction of color, contrast and brightness.
 On the other side comes a lot of data from the light field that needs to be processed, desirably in real-time and full resolution.
 Despite these challenges, many types of displays have been developed, although not necessarily based around light field technology, all having different trade-offs and limitations.
-There are two main categories stereoscopic- and true 3D displays.
+There are two main categories, stereoscopic- and true 3D displays.
 
 \begin{figure}[tb]
 	\subfigure[Image courtesy D-Kuru/Wikimedia Commons]{
@@ -88,4 +92,4 @@ This thesis was inspired by and builds upon the work of \cite{WetzsteinTomo}.
 In their paper, they present a model for an inexpensive 3D display built from light attenuating, multiplicative masks.
 The simulated reconstructions they achieve are very convincing, although they only worked with synthetic light fields from oblique projections.
 With a conclusive spectral analysis, they show that multi-layer displays have increased depth of field and improved spatial resolution in comparison to other automultiscopic displays such as parallax barriers or integral imaging.
-The idea for this thesis is to extend the work of \citeauthor{WetzsteinTomo} to support camera light fields (e.g. captured with a Lytro camera) in addition.
+The idea for this thesis is to extend the work of \citeauthor{WetzsteinTomo} to support camera light fields (e.g. captured with a plenoptic camera or camera array) in addition.
