@@ -10,8 +10,16 @@ But there is also the desire to view real-world photos or videos on such a displ
 \section{Light Fields}
 
 Light fields are the foundation for image based rendering, a technique to present different perspectives of a scene without the need to store geometry data, texture or lighting information.
-
-There are two main categories of such displays, stereoscopic- and true 3D displays.
+The light field is a simplified version of the more general plenoptic function, first characterized by~\cite{AdelsonBergen}.
+It can be thought of a snapshot of the light in the entire scene, a database storing the radiance for every possible ray in the scene.
+\todo{explain how light fields are captured (lytro, stanford) and refer to the figure.}
+Chapter~\ref{chp:light_field_capturing} gives an overview of the properties of light fields and how they are used in this work.
+The ideal 3D display should be able to display any light field, meaning it should emit light rays with radiance equal to value in the database.
+It turns out it is not so easy to build these displays. 
+On the one hand are physical challenges, such as the direction of light in different angles or the correct depiction of color, contrast and brightness.
+On the other side comes a lot of data from the light field that needs to be processed, desirably in real-time and full resolution.
+Despite these challenges, many types of displays have been developed, although not necessarily based around light field technology, all having different trade-offs and limitations.
+There are two main categories stereoscopic- and true 3D displays.
 
 \begin{figure}[tb]
 	\subfigure[Image courtesy D-Kuru/Wikimedia Commons]{
@@ -48,7 +56,7 @@ The technology is based on a lenticular lens or parallax barriers, which require
 Real 3D displays ideally show the full 3D information to the observer.
 In contrast to stereoscopic displays, the person is able to move in front of the screen and view the content from a desired perspective.
 Present technologies include volumetric displays, holography, integral imaging and compressive light field displays.
-Volumetric displays reproduce a physical volume emitting the light of virtual objects inside, allowing for a full 360 degree viewing angle.%without the need of special glasses.
+Volumetric displays reproduce a physical volume emitting the light of virtual objects inside, allowing for a full 360 degree viewing angle.
 Holographic displays are based on conventional LCD panels equipped with a diffraction layer making it possible to project images in different directions in space.
 Integral imaging devices achieve the same result with a microlens array in front of the screen similar to lenticular lenses.
 Finally, compressive light field displays, also called tensor displays, consist of multiple LCD panels forming a stack of time multiplexed, light attenuating layers.
@@ -77,7 +85,7 @@ It consists of masks, printed on transparencies, which attenuate light from a ba
 \section{Related Work}
 
 This thesis was inspired by and builds upon the work of \cite{WetzsteinTomo}.
-In their paper, they present a model for a inexpensive 3D display built from light attenuating, multiplicative masks.
+In their paper, they present a model for an inexpensive 3D display built from light attenuating, multiplicative masks.
 The simulated reconstructions they achieve are very convincing, although they only worked with synthetic light fields from oblique projections.
 With a conclusive spectral analysis, they show that multi-layer displays have increased depth of field and improved spatial resolution in comparison to other automultiscopic displays such as parallax barriers or integral imaging.
 The idea for this thesis is to extend the work of \citeauthor{WetzsteinTomo} to support camera light fields (e.g. captured with a Lytro camera) in addition.
