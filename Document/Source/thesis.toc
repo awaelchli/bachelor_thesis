@@ -18,9 +18,9 @@
 \contentsline {section}{\numberline {4.2}Spectral Support of Light Fields}{15}{section.4.2}
 \contentsline {section}{\numberline {4.3}Spectral Support of Layered 3D Displays}{15}{section.4.3}
 \contentsline {section}{\numberline {4.4}The Fourier Slice Theorem}{16}{section.4.4}
-\contentsline {chapter}{\numberline {5}Implementation and Assessment}{17}{chapter.5}
-\contentsline {chapter}{\numberline {A}Appendix}{18}{appendix.A}
-\contentsline {section}{\numberline {A.1}Backlight Fabrication}{18}{section.A.1}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Tables}{20}{figure.A.1}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Figures}{20}{appendix*.26}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{21}{appendix*.27}
+\contentsline {chapter}{\numberline {5}Implementation and Assessment}{18}{chapter.5}
+\contentsline {chapter}{\numberline {A}Appendix}{19}{appendix.A}
+\contentsline {section}{\numberline {A.1}Backlight Fabrication}{19}{section.A.1}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Tables}{21}{figure.A.1}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Figures}{21}{appendix*.26}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{22}{appendix*.27}
