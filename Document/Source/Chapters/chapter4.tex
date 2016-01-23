@@ -92,6 +92,7 @@ As equation~\ref{eq:convolution_theorem_1} shows, multiplying $\mathcal{S}(\xi_u
 				 The red and blue line mark the bounds for the spectral support.
 			 (d) Discrete Fourier transform of the EPI. 
 				 Absolute values (magnitude response) are represented with colors on a logarithmic scale.}
+	\label{fig:spectral_analysis_for_light_field}
 \end{figure}
 
 \section{Spectral Support of Layered 3D Displays}
@@ -104,15 +105,23 @@ Let $L_1, \dots , L_N$ denote the constant depth light fields per layer and let'
 The light field produced by all layers together is $L^\prime = L_0 \cdot L_1 \cdots L_N$, where $L_0$ is the uniform illumination from the backlight.
 This directly follows from equation~\ref{eq:transmittance_layers}.
 With the multiplication theorem from equation~\ref{eq:convolution_theorem_2}, the Fourier transform of $L^\prime$ can be expressed as
-\begin{equation}
+\begin{equation}\label{eq:convolution_of_layers}
 	\widehat{L^\prime}(\xi) = (\widehat{L_0} \ast \widehat{L_1} \ast \cdots \ast \widehat{L_N}) (\xi), 
 \end{equation}
 where $\xi = (\xi_u, \xi_v, \xi_s, \xi_t)$, or $\xi = (\xi_u, \xi_s)$ for the two dimensional case.
+For the case of discretely sampled layers, the frequency support of the individual layer will be limited by its spatial cutoff frequency, that is the highest frequency it can produce with a given pixel size $p$.
+A signal with a period smaller than two pixels can not be reproduced by the layer and thus, the spatial cutoff frequency is defined as $\xi_0 = \frac{1}{2p}$ cycles/m.
+The sketch in figure~\ref{fig:3_layers} illustrates this for the case of three layers that are bandlimited by $\pm \xi_0$.
 
 \begin{figure}[tb]
 	\subfigure[]{
-		\input{../Figures/spectral_support/spectral_support_3_layer.tex}
-		\label{fig:spectral_support_3_layers}
+		\input{../Figures/spectral_support/3_layers.tex}
+		\label{fig:3_layers}
+	}
+	\hfill
+	\subfigure[]{
+		\input{../Figures/spectral_support/3_layers_convolution.tex}
+		\label{fig:3_layes_convolution}
 	}
 	\hfill
 	\subfigure[]{
@@ -124,7 +133,14 @@ where $\xi = (\xi_u, \xi_v, \xi_s, \xi_t)$, or $\xi = (\xi_u, \xi_s)$ for the tw
 		\includegraphics[height = 3cm]{../Figures/spectral_support/convolution_6_layers}
 		\label{fig:spectral_support_6_layers_white_noise}
 	}
-	\caption{text}
+	\caption[Spectral support of layered 3D displays]
+			{Spectral support of layered 3D displays. 
+			 (a) Spectral support of individual layers (red) from a display with three layers, superimposed in the same frequency domain.
+				 The dashed lines mark the spatial cutoff frequency $\xi_0$.
+			 (b) Combined spectral support of all three layers (gray), obtained by the convolution. 
+				 The light field from figure~\ref{fig:spectral_analysis_for_light_field} can be displayed with frequencies within the region of support.
+			 (c) Magnitude response of the convolution scaled logarithmically.
+			 (d) ...}
 \end{figure}
 
 %The light field emitted by this layer has constant depth and thus, the lines in the EPI all have the same slope.
