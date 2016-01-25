@@ -110,8 +110,12 @@ With the multiplication theorem from equation~\ref{eq:convolution_theorem_2}, th
 \end{equation}
 where $\xi = (\xi_u, \xi_v, \xi_s, \xi_t)$, or $\xi = (\xi_u, \xi_s)$ for the two dimensional case.
 For the case of discretely sampled layers, the frequency support of the individual layer will be limited by its spatial cutoff frequency, that is the highest frequency it can produce with a given pixel size $p$.
-A signal with a period smaller than two pixels can not be reproduced by the layer and thus, the spatial cutoff frequency is defined as $\xi_0 = \frac{1}{2p}$ cycles/m.
+A signal with a period smaller than two pixels can not be reproduced by the layer's pixel grid and thus, the spatial cutoff frequency is defined as $\xi_0 = \frac{1}{2p}$ cycles/m.
 The sketch in figure~\ref{fig:3_layers} illustrates this for the case of three layers that are bandlimited by $\pm \xi_0$.
+The three lines convolved produce a diamond shaped region of support as shown in figure~\ref{fig:3_layes_convolution}, which is the effective spectral support of the display.
+This means that a light field with high frequencies outside the spectral support of the display will not be correctly displayed, or in other words, the display acts as a low-pass filter.
+
+The \textbf{depth of field} of a automultiscopic display, as described by~\cite{Antialiasingfor3DDisplays}
 
 \begin{figure}[tb]
 	\subfigure[]{
