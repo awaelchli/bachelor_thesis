@@ -1,44 +1,18 @@
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Light field aquisition devices}}{2}{figure.1.1}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Image courtesy D-Kuru/Wikimedia Commons}}}{2}{figure.1.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{2}{figure.1.1}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Attenuation layers between glass plates}}{3}{figure.1.2}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{3}{figure.1.2}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{3}{figure.1.2}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Light field aquisition devices}}{2}{figure.caption.4}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Attenuation layers between glass plates}}{3}{figure.caption.6}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Parametrization of the light field with two planes}}{5}{figure.2.1}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Parameterization for light fields from oblique projections}}{6}{figure.2.2}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{6}{figure.2.2}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{6}{figure.2.2}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Parameterization for light fields from perspective projections}}{7}{figure.2.3}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{7}{figure.2.3}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{7}{figure.2.3}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Visualization of the light field with epipolar plane images}}{8}{figure.2.4}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{8}{figure.2.4}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{8}{figure.2.4}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{8}{figure.2.4}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{8}{figure.2.4}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{8}{figure.2.4}
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{8}{figure.2.4}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Parametrization of the light field with two planes}}{5}{figure.caption.8}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Parameterization for light fields from oblique projections}}{6}{figure.caption.11}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Parameterization for light fields from perspective projections}}{7}{figure.caption.14}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Visualization of the light field with epipolar plane images}}{8}{figure.caption.16}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces The Radon transform}}{10}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Computation of the ray-layer intersections from oblique and perspective projections}}{12}{figure.3.2}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{12}{figure.3.2}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{12}{figure.3.2}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces The Radon transform}}{10}{figure.caption.21}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Computation of the ray-layer intersections from oblique and perspective projections}}{12}{figure.caption.22}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Spectral analysis for light fields with bounded depth range}}{16}{figure.4.1}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{16}{figure.4.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{16}{figure.4.1}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{16}{figure.4.1}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{16}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Spectral support of layered 3D displays}}{17}{figure.4.2}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{17}{figure.4.2}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{17}{figure.4.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{17}{figure.4.2}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{17}{figure.4.2}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Spectral analysis for light fields with bounded depth range}}{15}{figure.caption.31}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Spectral analysis for layered 3D displays}}{17}{figure.caption.32}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces text\relax }}{18}{figure.caption.33}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Handcrafted backlights for the attenuation displays}}{20}{figure.A.1}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{20}{figure.A.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{20}{figure.A.1}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{20}{figure.A.1}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Handcrafted backlights for the attenuation displays}}{21}{figure.caption.38}

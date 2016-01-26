@@ -74,17 +74,8 @@ Despite the simplicity of this projection type, it is not feasible to build came
 \todo{Refer to figure with synthetic scenes (dice).}
 
 \begin{figure}[tb]
-	\subfigure[]{
-		\centering
-		\input{../Figures/oblique-projection}
-		\label{fig:ObliqueProjection}
-	}
-	\hfill
-	\subfigure[]{
-		\centering
-		\input{../Figures/oblique-projection-reparameterization}
-		\label{fig:ObliqueProjectionReparameterization}
-	}
+	\subcaptionbox{\label{fig:ObliqueProjection}}{\input{../Figures/oblique-projection}}\hfill%
+	\subcaptionbox{\label{fig:ObliqueProjectionReparameterization}}{\input{../Figures/oblique-projection-reparameterization}}
 	\caption[Parameterization for light fields from oblique projections]
 			{(a) Light field acquisition using oblique projection. 
 			 (b) Re-parameterization of the two-plane representation to angular coordinates.}
@@ -143,17 +134,8 @@ Usually, the coordinate system is chosen such that $Z_{uv} = 0$.
 In the discrete case, the displacement $\Delta s$ or $\Delta t$ is also called the \textbf{disparity} and is often measured in pixel units.
 
 \begin{figure}[tb]
-	\subfigure[]{
-		\centering
-		\input{../Figures/perspective-projection-shift}
-		\label{fig:ShiftedPerspectiveProjection}
-	}
-	\hfill
-	\subfigure[]{
-		\centering
-		\input{../Figures/perspective-projection-sheared}
-		\label{fig:RectifiedPerspectiveProjection}
-	}
+	\subcaptionbox{\label{fig:ShiftedPerspectiveProjection}}{\input{../Figures/perspective-projection-shift}}\hfill%
+	\subcaptionbox{\label{fig:RectifiedPerspectiveProjection}}{\input{../Figures/perspective-projection-sheared}}
 	\caption[Parameterization for light fields from perspective projections]
 			{Perspective projections of a scene. 
 			 (a) Projections with three pinhole cameras. 
@@ -184,44 +166,16 @@ Note that the depth range in the light field can immediately be determined by id
 Also, for a perfectly Lambertian scene, each line in the EPI has a uniform color.
 
 \begin{figure}[tb]
-	\subfigure[]{
-		\centering
-		\input{../Figures/epi_dice_overview}
-		\label{fig:epi_1x500x1000x1000_overview}
-	}
-	\hfill
-	\subfigure[]{
-		\centering
-		\input{../Figures/epi_dice_1.tex}
-		\label{fig:epi_1x500x1000x1000_scanline1}
-	}
-	\hfill
-	\subfigure[]{
-		\centering
-		\input{../Figures/epi_dice_2.tex}
-		\label{fig:epi_1x500x1000x1000_scanline2}
-	}
+	\subcaptionbox{\label{fig:epi_1x500x1000x1000_overview}}{\input{../Figures/epi_dice_overview}}\hfill%
+	\subcaptionbox{\label{fig:epi_1x500x1000x1000_scanline1}}{\input{../Figures/epi_dice_1.tex}}\hfill%
+	\subcaptionbox{\label{fig:epi_1x500x1000x1000_scanline2}}{\input{../Figures/epi_dice_2.tex}}
 	\\
-	\subfigure[]{
-		\centering
-		\input{../Figures/epi_dice_overview_rectified.tex}
-		\label{fig:epi_1x500x1000x1000_overview_rectified}
-	}
-	\hfill
-	\subfigure[]{
-		\centering
-		\input{../Figures/epi_dice_1_rectified.tex}
-		\label{fig:epi_1x500x1000x1000_scanline1_rectified}
-	}
-	\hfill
-	\subfigure[]{
-		\centering
-		\input{../Figures/epi_dice_2_rectified.tex}
-		\label{fig:epi_1x500x1000x1000_scanline2_rectified}
-	}
+	\subcaptionbox{\label{fig:epi_1x500x1000x1000_overview_rectified}}{\input{../Figures/epi_dice_overview_rectified.tex}}\hfill%
+	\subcaptionbox{\label{fig:epi_1x500x1000x1000_scanline1_rectified}}{\input{../Figures/epi_dice_1_rectified.tex}}\hfill%
+	\subcaptionbox{\label{fig:epi_1x500x1000x1000_scanline2_rectified}}{\input{../Figures/epi_dice_2_rectified.tex}}\hfill%
 	\caption[Visualization of the light field with epipolar plane images]
 			{(a) Raw 3D light field rendered from 500 positions along a horizontal baseline.
-				 Two scanlines are extracted from every image. 
+			 Two scanlines are extracted from every image. 
 			 (b) The feature paths of the blue and green dice have a steeper slope than those of the red die.
 			 (c) Feature paths of the yellow die have an even steeper slope, indicating greater depth.
 			 (d) The light field is rectified according to figure~\ref{fig:RectifiedPerspectiveProjection} such that the disparities of the red die are approximately zero.

@@ -144,18 +144,8 @@ It is also assumed that the image plane $s$ of the virtual cameras is bisecting 
 $Z_s = \frac{Z_{\text{max}} - Z_{\text{min}}}{2}$.
 
 \begin{figure}[htb]
-	\centering
-	\subfigure[]{
-		\centering
-		\input{../Figures/ray_casting_oblique_projection}
-		\label{fig:ray_casting_oblique_projection}
-	}
-	\hfill
-	\subfigure[]{
-		\centering
-		\input{../Figures/ray_casting_perspective_projection}
-		\label{fig:ray_casting_perspective_projection}
-	}
+	\subcaptionbox{\label{fig:ray_casting_oblique_projection}}{\input{../Figures/ray_casting_oblique_projection}}\hfill%
+	\subcaptionbox{\label{fig:ray_casting_perspective_projection}}{\input{../Figures/ray_casting_perspective_projection}}
 	\caption[Computation of the ray-layer intersections from oblique and perspective projections]
 			{Computation of the ray-layer intersections from oblique (a) and perspective (b) projections.
 			 Two attenuation layers are drawn (top and bottom) with the virtual image plane in the center.
