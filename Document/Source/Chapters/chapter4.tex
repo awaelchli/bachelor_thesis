@@ -42,21 +42,35 @@ The two objects at the boundaries are shown in figure~\ref{fig:two_objects}, wit
 The consequent 2D light field $L(u, s)$ (or EPI) is depicted in figure~\ref{fig:epi_two_objects}.
 From equation~\ref{eq:disparity_for_two_plane_parameterization} it follows that objects appear in the EPI with a slope $\frac{\textrm{d}u}{\textrm{d}s} = \frac{z - Z_u}{z - Z_s}$.
 Substituting $z$ with $Z_\text{min}$ and $Z_\text{max}$ gives the slopes for the red and blue objects at the boundary, defining the range of slopes in the EPI for objects between the two.
-\todo{Come up with a good way to arrange subfigures}
+
 \begin{figure}[tb]
-	\subcaptionbox{\label{fig:two_objects}}{\input{../Figures/spectral_support/two_objects.tex}}\hfill%
-	\subcaptionbox{\label{fig:epi_two_objects}}{\input{../Figures/spectral_support/epi_two_objects.tex}}\hfill%
-	\subcaptionbox{\label{fig:epi_fourier_transform_1}}{\input{../Figures/spectral_support/epi_fourier_transform.tex}}
-	\\
-	\centering
-	\subcaptionbox{\label{fig:epi_fourier_transform_2}}{\includegraphics[height = 3cm]{../Figures/spectral_support/fft_red_and_blue.png}}
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\input{../Figures/spectral_support/two_objects.tex}
+		\caption{}
+		\label{fig:two_objects}
+		\vspace{0.5cm}
+		\input{../Figures/spectral_support/epi_fourier_transform.tex}
+		\caption{}
+		\label{fig:epi_fourier_transform_1}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\input{../Figures/spectral_support/epi_two_objects.tex}
+		\caption{}
+		\label{fig:epi_two_objects}
+		\vspace{0.5cm}
+		\includegraphics[height = 3cm]{../Figures/spectral_support/fft_red_and_blue.png}
+		\caption{}
+		\label{fig:epi_fourier_transform_2}
+	\end{subfigure}
 	\caption[Spectral analysis for light fields with bounded depth range]
-	{(a) Two objects (red and blue) placed at the bounds of the depth range. 
-		(b) The EPI representing the 2D light field of the scene.
-		(c) Fourier transform of the EPI. 
-		The red and blue line mark the bounds for the spectral support.
-		(d) Discrete Fourier transform of the EPI. 
-		Absolute values (magnitude response) are represented with colors on a logarithmic scale.}
+			{(a) Two objects (red and blue) placed at the bounds of the depth range. 
+			 (b) The EPI representing the 2D light field of the scene.
+			 (c) Fourier transform of the EPI. 
+			 The red and blue line mark the bounds for the spectral support.
+			 (d) Discrete Fourier transform of the EPI. 
+			 Absolute values (magnitude response) are presented with colors on a logarithmic scale.}
 	\label{fig:spectral_analysis_for_light_field}
 \end{figure}
 
@@ -114,12 +128,12 @@ A signal with a period smaller than two pixels can not be reproduced by the laye
 		\label{fig:cut-off-frequency_N_layers}
 	\end{subfigure}%
 	\caption[Spectral analysis for layered 3D displays]
-	{Spectral analysis for layered 3D displays. 
-		(a) Spectral support of individual layers (red) from a display with three layers, superimposed in the same frequency domain.
-		The dashed lines mark the spatial cutoff frequency $\xi_0$.
-		(b) Combined spectral support of all three layers (gray), obtained by the convolution. 
-		The light field from figure~\ref{fig:spectral_analysis_for_light_field} can be displayed with frequencies within the region of support.
-		(c) ...}
+			{Spectral analysis for layered 3D displays. 
+			 (a) Spectral support of individual layers (red) from a display with three layers, superimposed in the same frequency domain.
+			 The dashed lines mark the spatial cutoff frequency $\xi_0$.
+			 (b) Combined spectral support of all three layers (gray), obtained by the convolution. 
+			 The light field from figure~\ref{fig:spectral_analysis_for_light_field} can be displayed with frequencies within the region of support.
+			 (c) Upper bound on the depth of field for layered 3D displays with different a number of layers.}
 \end{figure}
 The sketch in figure~\ref{fig:3_layers} illustrates this for the case of three layers that are bandlimited by $\pm \xi_0$.
 The three lines convolved produce a diamond shaped region of support as shown in figure~\ref{fig:3_layes_convolution}, which is the effective spectral support of the display.
@@ -132,11 +146,13 @@ It turns out to be quite hard to analytically derive an exact expression for the
 \begin{equation}
 	\lvert \xi_a \rvert \leq N \xi_0 \sqrt{ \frac{(N + 1) h^2}{(N + 1) h^2 + 12(N - 1)(z_a - Z_s)} }
 \end{equation}
+The right side of the equation is plotted in figure~\ref{fig:cut-off-frequency_N_layers} for different positions $z_a$ of the virtual plane.
+It shows that the spatial cut-off frequency drops rapidly when moving the virtual plane away from the display.
 
 \begin{figure}[tb]
-	%\subcaptionbox{\label{fig:spectral_support_2_layers}}{\includegraphics[height = 3cm]{../Figures/spectral_support/convolution_2_layers}}\hfill%
-	\subcaptionbox{\label{fig:spectral_support_3_layers}}{\includegraphics[height = 3cm]{../Figures/spectral_support/convolution_3_layers}}\hfill%
-	\subcaptionbox{\label{fig:spectral_support_5_layers}}{\includegraphics[height = 3cm]{../Figures/spectral_support/convolution_5_layers}}\hfill%
+	\subcaptionbox{\label{fig:spectral_support_2_layers}}{\includegraphics[height = 3.5cm]{../Figures/spectral_support/convolution_2_layers}}\hfill%
+	\subcaptionbox{\label{fig:spectral_support_3_layers}}{\includegraphics[height = 3.5cm]{../Figures/spectral_support/convolution_3_layers}}\hfill%
+	\subcaptionbox{\label{fig:spectral_support_5_layers}}{\includegraphics[height = 3.5cm]{../Figures/spectral_support/convolution_5_layers}}\hfill%
 	\caption{text}
 \end{figure}
 

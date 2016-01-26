@@ -21,6 +21,6 @@
 \contentsline {chapter}{\numberline {5}Implementation and Assessment}{19}{chapter.5}
 \contentsline {chapter}{\numberline {A}Appendix}{20}{appendix.A}
 \contentsline {section}{\numberline {A.1}Backlight Fabrication}{20}{section.A.1}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Tables}{22}{figure.caption.38}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Figures}{22}{appendix*.39}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{23}{appendix*.40}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Tables}{22}{figure.caption.37}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Figures}{22}{appendix*.38}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{23}{appendix*.39}

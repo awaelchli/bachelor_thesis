@@ -57,17 +57,17 @@ This means that the angular resolution is simply the number of cameras, and the 
 The angular extent from $\theta_\text{min}$ to $\theta_\text{max}$ is called the \textbf{field of view} (FOV) of the light field and should not be confused with the field of view of a conventional camera.
 For a uniform angular sampling with resolution $N_\theta \times N_\phi$, the angles $\theta_i$ and $\phi_j$ are
 \begin{equation}
-		\theta_i = \theta_\text{min} + (i - 1) \frac{\text{FOV}_\theta}{N_\theta - 1}, 
-		\qquad 
-		\phi_j 	 = \phi_\text{min} + (j - 1) \frac{\text{FOV}_\phi}{N_\phi - 1},
+	\theta_i = \theta_\text{min} + (i - 1) \frac{\text{FOV}_\theta}{N_\theta - 1}, 
+	\qquad 
+	\phi_j 	 = \phi_\text{min} + (j - 1) \frac{\text{FOV}_\phi}{N_\phi - 1},
 \end{equation}
 where $i = 1, 2, \dots, N_\theta$ and $j = 1, 2, \dots, N_\phi$.
 
 Given a light field $L(u, v, s, t)$ and the distance $d$ between the two planes, a re-parameterization $L^{\prime}(\theta, \phi, s, t)$ can be obtained according to figure~\ref{fig:ObliqueProjectionReparameterization} by the transformation
 \begin{equation}
-		\theta = \arctan\left(\frac{u - s}{d}\right), 
-		\qquad \qquad
-		\phi = \arctan\left(\frac{v - t}{d}\right).
+	\theta = \arctan\left(\frac{u - s}{d}\right), 
+	\qquad \qquad
+	\phi = \arctan\left(\frac{v - t}{d}\right).
 \end{equation}
 Note that uniform sampling in angular dimension does not yield a uniform grid in the $(u, v)$-plane.
 Despite the simplicity of this projection type, it is not feasible to build cameras of this type and so, oblique projection is left to be used exclusively by computers for rendering synthetic scenes.
@@ -116,7 +116,6 @@ A different way to understand this coordinate change is to imagine the $(u, v)$-
 Changing the distance between the two planes is now equivalent to changing the focal length of this one camera.
 The effect on the light field inside is similar to refocusing, except that in a conventional camera, the image on the sensor is formed by a weighted integral over $u$ and $v$ such that the angular information vanishes.
 Objects at focal distance from the camera would appear sharp and objects away from the focal point would become blurred.
-
 \todo{Refer to section about the plenoptic camera}
 
 From stereo vision, it is known that the displacement of the projections in the image planes of two cameras is only dependent on the focal length $f$, the baseline $\Delta u$ and the distance $z$, and the relation is given by $\Delta x = f \Delta u / z$.
@@ -145,7 +144,6 @@ In the discrete case, the displacement $\Delta s$ or $\Delta t$ is also called t
 \section{Visualization}
 \label{sec:Visualization}
 \todo{Mention other types of visualization? 2D grid of images, etc.}
-
 The epipolar-plane image (EPI) allows for a very intuitive visualization of depth from a 4D light field.
 It was first defined by~\cite{EPI} as follows.
 Consider a point $P$ in 3D space and a pair of cameras with the optical axis pointing in the same direcion.
