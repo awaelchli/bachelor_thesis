@@ -7,6 +7,11 @@
 \begin{document}
 	\begin{tikzpicture}[scale = 0.27]
 	
+		\begin{scope}
+			\clip (-5, -5) rectangle (5, 5);
+			%\node[anchor = center, inner sep = 0, opacity = 0.4] at (0, 0) {\includegraphics[width = 5cm]{../Figures/spectral_support/fft_red_and_blue.png}};
+		\end{scope}
+		
 		\draw[->] (-5, 0) -- (5, 0);
 		\draw[->] (0, -5) -- (0, 5);
 		\node[right] at (5, 0) {$\xi_s$};
