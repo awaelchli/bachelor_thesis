@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.1.20)  27 JAN 2016 01:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.1.20)  27 JAN 2016 01:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1199,7 +1199,7 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 ) [16]
-<../Figures/spectral_support/convolution_2_layers.png, id=404, 2008.50375pt x 2
+<../Figures/spectral_support/convolution_2_layers.png, id=408, 2008.50375pt x 2
 008.50375pt>
 File: ../Figures/spectral_support/convolution_2_layers.png Graphic file (type p
 ng)
@@ -1208,7 +1208,7 @@ Package pdftex.def Info: ../Figures/spectral_support/convolution_2_layers.png u
 sed on input line 154.
 (pdftex.def)             Requested size: 99.57294pt x 99.58464pt.
 
-<../Figures/spectral_support/convolution_3_layers.png, id=405, 3012.25375pt x 3
+<../Figures/spectral_support/convolution_3_layers.png, id=409, 3012.25375pt x 3
 012.25375pt>
 File: ../Figures/spectral_support/convolution_3_layers.png Graphic file (type p
 ng)
@@ -1217,7 +1217,7 @@ Package pdftex.def Info: ../Figures/spectral_support/convolution_3_layers.png u
 sed on input line 155.
 (pdftex.def)             Requested size: 99.55635pt x 99.58464pt.
 
-<../Figures/spectral_support/convolution_5_layers.png, id=406, 5019.75375pt x 5
+<../Figures/spectral_support/convolution_5_layers.png, id=410, 5019.75375pt x 5
 019.75375pt>
 File: ../Figures/spectral_support/convolution_5_layers.png Graphic file (type p
 ng)
@@ -1278,7 +1278,7 @@ Package pdftex.def Info: ../Figures/placeholder.jpg used on input line 56.
 
 ] [24
 
-]) <Erklaerung.pdf, id=467, 597.23125pt x 845.1575pt>
+]) <Erklaerung.pdf, id=471, 597.23125pt x 845.1575pt>
 File: Erklaerung.pdf Graphic file (type pdf)
 
 <use Erklaerung.pdf>
@@ -1289,7 +1289,7 @@ File: Erklaerung.pdf Graphic file (type pdf)
 Package pdftex.def Info: Erklaerung.pdf used on input line 118.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 
-<Erklaerung.pdf, id=470, page=1, 597.23125pt x 845.1575pt>
+<Erklaerung.pdf, id=474, page=1, 597.23125pt x 845.1575pt>
 File: Erklaerung.pdf Graphic file (type pdf)
 
 <use Erklaerung.pdf, page 1>
@@ -1351,10 +1351,10 @@ blic/amsfonts/cm/cmsy5.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmsy7.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 i10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.
 pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on thesis.pdf (30 pages, 12981206 bytes).
+Output written on thesis.pdf (30 pages, 12981282 bytes).
 PDF statistics:
- 594 PDF objects out of 1000 (max. 8388607)
- 512 compressed objects within 6 object streams
+ 598 PDF objects out of 1000 (max. 8388607)
+ 514 compressed objects within 6 object streams
  144 named destinations out of 1000 (max. 500000)
  306 words of extra memory for PDF output out of 10000 (max. 10000000)
 
