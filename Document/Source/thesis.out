@@ -19,8 +19,12 @@
 \BOOKMARK [1][-]{section.4.3}{Spectral Support of Layered 3D Displays}{chapter.4}% 19
 \BOOKMARK [1][-]{section.4.4}{The Fourier Slice Theorem}{chapter.4}% 20
 \BOOKMARK [0][-]{chapter.5}{Implementation and Assessment}{}% 21
-\BOOKMARK [0][-]{appendix.A}{Appendix}{}% 22
-\BOOKMARK [1][-]{section.A.1}{Backlight Fabrication}{appendix.A}% 23
-\BOOKMARK [0][-]{figure.caption.37}{List of Tables}{}% 24
-\BOOKMARK [0][-]{appendix*.38}{List of Figures}{}% 25
-\BOOKMARK [0][-]{appendix*.39}{Bibliography}{}% 26
+\BOOKMARK [1][-]{section.5.1}{Oversampling}{chapter.5}% 22
+\BOOKMARK [1][-]{section.5.2}{Baseline Scaling and Back Projection}{chapter.5}% 23
+\BOOKMARK [1][-]{section.5.3}{Attenuator Tiling and Blending}{chapter.5}% 24
+\BOOKMARK [1][-]{section.5.4}{Benefits and Limitations}{chapter.5}% 25
+\BOOKMARK [0][-]{appendix.A}{Appendix}{}% 26
+\BOOKMARK [1][-]{section.A.1}{Backlight Fabrication}{appendix.A}% 27
+\BOOKMARK [0][-]{figure.caption.38}{List of Tables}{}% 28
+\BOOKMARK [0][-]{appendix*.39}{List of Figures}{}% 29
+\BOOKMARK [0][-]{appendix*.40}{Bibliography}{}% 30

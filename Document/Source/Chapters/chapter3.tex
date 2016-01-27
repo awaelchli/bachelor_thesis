@@ -10,43 +10,41 @@
 The light field display is modeled by a volumetric attenuator $\mu(x, y, z)$ that attenuates the light traveling through its material.
 According to the Beer-Lambert law, the intensity of a light ray $\mathcal{R} \subset \mathbb{R}^3$ passing through the material decreases exponentially over distance:
 \begin{equation}\label{eq:beer_lambert_law}
-I = I_0 e^{-\int_\mathcal{R} \mu(r) \, \mathrm{d}r }.
+	I = I_0 e^{-\int_\mathcal{R} \mu(r) \, \mathrm{d}r }.
 \end{equation}
 The incident intensity $I_0$ is the intensity of the ray before it enters the attenuator.
 Equation~\ref{eq:beer_lambert_law} can be rewritten into 
 \begin{equation}\label{eq:log_beer_lambert_law}
-\bar{I} \coloneqq \log \left( \frac{I}{I_0} \right) = -\int_\mathcal{R} \mu(r) \, \mathrm{d}r.
+	\bar{I} \coloneqq \log \left( \frac{I}{I_0} \right) = -\int_\mathcal{R} \mu(r) \, \mathrm{d}r.
 \end{equation} 
 Now, let the attenuator $\mu(x, y, z)$ be a cubic slab of height $d$ in Z-direction and let $L(u, v, s, t)$ be the two-plane parameterization of the light field such that the $(s, t)$-plane coincides with the $(x, y)$-plane of the attenuator and the $(u, v)$-plane is at distance $d$.
 The set of points describing the ray defined by the coordinates $(u, v, s, t)$ is
 \begin{equation}
-\mathcal{R} = \left\{ \lambda a + b 
-\mathrel{\bigg|} a = 
-\begin{pmatrix}
-u - s \\ 
-v - t \\ 
-d
-\end{pmatrix}, 
-b = 
-\begin{pmatrix}
-s \\ 
-t \\ 
-0
-\end{pmatrix},
-\lambda \in \mathbb{R} 
-\right\}.
+	\mathcal{R} = \left\{ \lambda a + b \mathrel{\bigg|} a = 
+	\begin{pmatrix}
+		u - s \\ 
+		v - t \\ 
+		d
+	\end{pmatrix}, 
+	b = 
+	\begin{pmatrix}
+		s \\ 
+		t \\ 
+		0
+	\end{pmatrix},
+	\lambda \in \mathbb{R} \right\}.
 \end{equation}
 A point $p = (x, y, z)^T$ is part of the ray $\mathcal{R}$ if and only if
-\begin{align}
-& \exists \lambda \in \mathbb{R} : p = \lambda a + b & & \iff & & a \times (p - b) = 0, 
-\end{align} 
+\begin{equation}
+	\exists \lambda \in \mathbb{R} : p = \lambda a + b 
+	\qquad \iff \qquad 
+	a \times (p - b) = 0, 
+\end{equation} 
 where $\times$ denotes the cross product.
 Now, $I$ can be replaced with the light field $L$ and the right hand side of equation~\ref{eq:log_beer_lambert_law} can be written as an integral over~$\mathbb{R}^3$:
 \begin{equation}\label{eq:log_lightfield_and_radon_transform}
-\bar{L}(u, v, s, t) = 	%\int \limits_{-\infty}^{\infty} \int \limits_{-\infty}^{\infty} \int \limits_{-\infty}^{\infty}
--\int_{\mathbb{R}^3}
-\mu(p) \delta ( a \times (p - b) ) \, 
-\mathrm{d}p.
+	\bar{L}(u, v, s, t) = 	%\int \limits_{-\infty}^{\infty} \int \limits_{-\infty}^{\infty} \int \limits_{-\infty}^{\infty}
+	-\int_{\mathbb{R}^3} \mu(p) \delta ( a \times (p - b) ) \, \mathrm{d}p.
 \end{equation}
 Here, $\delta$ denotes the Dirac delta function on $\mathbb{R}^3$ and $\mu$ is zero outside the boundaries of the slab. 
 This means that the integrand is only non-zero for points on the ray with coordinates $(u, v, s, t)$.
@@ -56,11 +54,12 @@ The goal is to produce such an attenuation display that emits a given target lig
 
 In computed tomography, the \textbf{Radon transform} of a real valued and compactly supported, continuous function $f(x, y)$ on $\mathbb{R}^2$ is defined as
 \begin{equation}
-p(\rho, \theta) = 	\int \limits_{-\infty}^{\infty} 
-\int \limits_{-\infty}^{\infty}
-f(x, y) \delta (x \cos \theta - y \sin \theta - \rho) \, 
-\mathrm{d}x \,
-\mathrm{d}y,
+	p(\rho, \theta) = 	
+	\int \limits_{-\infty}^{\infty} 
+		\int \limits_{-\infty}^{\infty}
+			f(x, y) \delta (x \cos \theta - y \sin \theta - \rho) \, 
+		\mathrm{d}x \,
+	\mathrm{d}y,
 \end{equation}
 where $(\rho, \theta) \in \mathbb{R} \times \left(- \frac{\pi}{2}, \frac{\pi}{2}\right)$ defines a ray as shown in figure~\ref{fig:radon_transform_2D_sketch}.
 Because the Radon transform is essentially a line integral, it can be generalized to three or more dimensions.
@@ -73,18 +72,19 @@ Because the Radon transform is essentially a line integral, it can be generalize
 \end{figure}
 Adapting the notation from the two-plane parameterization, the Radon transform of the attenuation map $\mu$ along ray $\mathcal{R}$ becomes
 \begin{equation}
-p(u, v, s, t) = 	\int \limits_{-\infty}^{\infty} 
-\int \limits_{-\infty}^{\infty}
-\int \limits_{-\infty}^{\infty}
-\mu(x, y, z) \delta \left(a \times \left((x, y, z)^T - b\right) \right) \, 
-\mathrm{d}x \,
-\mathrm{d}y \,
-\mathrm{d}z, 
+	p(u, v, s, t) = 
+	\int \limits_{-\infty}^{\infty} 
+		\int \limits_{-\infty}^{\infty}
+			\int \limits_{-\infty}^{\infty}
+				\mu(x, y, z) \delta \left(a \times \left((x, y, z)^T - b\right) \right) \, 
+			\mathrm{d}x \,
+		\mathrm{d}y \,
+	\mathrm{d}z, 
 \end{equation}
 which is equivalent to equation~\ref{eq:log_lightfield_and_radon_transform}.
 This shows that
 \begin{equation}\label{eq:log_light_field_negative_radon}
-\bar{L}(u, v, s, t) = -p(u, v, s, t), 
+	\bar{L}(u, v, s, t) = -p(u, v, s, t), 
 \end{equation}
 or with the words of~\cite{WetzsteinTomo}: \say{The logarithm of the emitted light field is equivalent to the negative Radon transform of the attenuation map.}
 
@@ -106,7 +106,7 @@ One can obtain a linear system of equations by taking the logarithm in~\ref{eq:t
 	\bar{L}_m 	=	\sum_{n = 1}^{N}
 					\log \left( t^{(n)} (h(m, n)) \right) 
 				= 	-\sum_{n = 1}^{N} a^{(n)} (h(m, n)) 
-				= -P_m \alpha.
+				= 	-P_m \alpha.
 \end{equation}
 Here, $a^{(n)} \coloneqq -\log t^{(n)}$ denotes the \textbf{absorbance} of layer $n$. 
 This relation between transmittance and absorbance also directly follows from the Beer-Lambert law.
@@ -200,7 +200,7 @@ In computed tomography, a variety of iterative solvers have been developed to so
 Among the different methods is the Simultaneous Algebraic Reconstruction Technique (\mbox{SART}) first proposed by \cite{SART}.
 The update rule of \mbox{SART} for iteration $k = 0, 1, 2, \dots$ is
 \begin{equation}\label{eq:SART_update_rule}
-\alpha^{(k + 1)} = \alpha^{(k)} + \lambda C P^T R \left( \bar{L} - P \alpha^{(k)} \right), 	
+	\alpha^{(k + 1)} = \alpha^{(k)} + \lambda C P^T R \left( \bar{L} - P \alpha^{(k)} \right), 	
 \end{equation}
 where $\lambda$ is a relaxation factor.
 $R$ and $C$ denote the diagonal matrices with entries $R_{ii} = \frac{1}{r_i}$ and $C_{ii} = \frac{1}{c_i}$, where $r_i$ and $c_i$ are the sum of the elements in the \mbox{$i$-th} row and column of $P$ respectively.

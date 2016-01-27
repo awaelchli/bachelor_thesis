@@ -135,6 +135,7 @@ A signal with a period smaller than two pixels can not be reproduced by the laye
 			 The light field from figure~\ref{fig:spectral_analysis_for_light_field} can be displayed with frequencies within the region of support.
 			 (c) Approximate upper bound on the depth of field for layered 3D displays with different a number of layers (\cite{WetzsteinTomo}).
 			 The displays extent is depicted by the dashed lines.}
+	\label{fig:spectral_analysis_of_display}
 \end{figure}
 The sketch in figure~\ref{fig:3_layers} illustrates this for the case of three layers that are bandlimited by $\pm \xi_0$.
 The three lines convolved produce a diamond shaped region of support as shown in figure~\ref{fig:3_layes_convolution}, which is the effective spectral support of the display.
@@ -144,18 +145,22 @@ The \textbf{depth of field} of an automultiscopic display, as explained by~\cite
 Thus, the boundary of the spectral support describes an upper bound on the depth of field for any automultiscopic display, including layered displays.
 It turns out to be quite hard to analytically derive an exact expression for the upper bound.
 \cite{WetzsteinTomo} present a statistical approach and give an approximation for the upper bound on the depth of field $\lvert \xi_a \rvert$ for a plane $a$ placed at depth $z_a$ from a \mbox{$N$-layer} display with a thickness $h = z_N - z_1$:
-\begin{equation}
-	\lvert \xi_a \rvert \leq N \xi_0 \sqrt{ \frac{(N + 1) h^2}{(N + 1) h^2 + 12(N - 1)(z_a - Z_s)} }
+\begin{equation}\label{eq:approx_upper_bound_spatial_cut_off}
+	\lvert \xi_a \rvert \leq N \xi_0 \sqrt{ \frac{(N + 1) h^2}{(N + 1) h^2 + 12(N - 1)(z_a - Z_s)^2} }
 \end{equation}
 The right side of the equation is plotted in figure~\ref{fig:cut-off-frequency_N_layers} for different positions $z_a$ of the virtual plane.
-It shows that the spatial cut-off frequency drops rapidly when moving the virtual plane away from the display.
-
 \begin{figure}[tb]
 	\subcaptionbox{\label{fig:spectral_support_2_layers}}{\includegraphics[height = 3.5cm]{../Figures/spectral_support/convolution_2_layers}}\hfill%
 	\subcaptionbox{\label{fig:spectral_support_3_layers}}{\includegraphics[height = 3.5cm]{../Figures/spectral_support/convolution_3_layers}}\hfill%
 	\subcaptionbox{\label{fig:spectral_support_5_layers}}{\includegraphics[height = 3.5cm]{../Figures/spectral_support/convolution_5_layers}}\hfill%
 	\caption{text}
 \end{figure}
+It shows that the spatial cut-off frequency drops rapidly when moving the virtual plane away from the display.
+In fact, the drop-off is inversely proportional to $z_a$ as equation~\ref{eq:approx_upper_bound_spatial_cut_off} shows.
+As figure~\ref{fig:3_layes_convolution} suggests, the display is theoretically able to produce spatial frequency that exceeds the layers cut-off $\xi_0$, even for content outside the display enclosure.
+The highest spatial frequency is achieved in the middle of the display, on the \mbox{$(s, t)$-plane}.
+This theoretical 
+
 
 %Magnitude response of the convolution scaled logarithmically.
 
