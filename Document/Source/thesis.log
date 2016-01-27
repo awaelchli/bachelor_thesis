@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.1.20)  27 JAN 2016 00:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.1.20)  27 JAN 2016 01:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1205,7 +1205,7 @@ File: ../Figures/spectral_support/convolution_2_layers.png Graphic file (type p
 ng)
  <use ../Figures/spectral_support/convolution_2_layers.png>
 Package pdftex.def Info: ../Figures/spectral_support/convolution_2_layers.png u
-sed on input line 153.
+sed on input line 154.
 (pdftex.def)             Requested size: 99.57294pt x 99.58464pt.
 
 <../Figures/spectral_support/convolution_3_layers.png, id=405, 3012.25375pt x 3
@@ -1214,7 +1214,7 @@ File: ../Figures/spectral_support/convolution_3_layers.png Graphic file (type p
 ng)
  <use ../Figures/spectral_support/convolution_3_layers.png>
 Package pdftex.def Info: ../Figures/spectral_support/convolution_3_layers.png u
-sed on input line 154.
+sed on input line 155.
 (pdftex.def)             Requested size: 99.55635pt x 99.58464pt.
 
 <../Figures/spectral_support/convolution_5_layers.png, id=406, 5019.75375pt x 5
@@ -1223,7 +1223,7 @@ File: ../Figures/spectral_support/convolution_5_layers.png Graphic file (type p
 ng)
  <use ../Figures/spectral_support/convolution_5_layers.png>
 Package pdftex.def Info: ../Figures/spectral_support/convolution_5_layers.png u
-sed on input line 155.
+sed on input line 156.
 (pdftex.def)             Requested size: 99.57373pt x 99.58464pt.
 )
 [17] [18 <../Figures/spectral_support/convolution_2_layers.png (PNG copy)> <../
@@ -1328,10 +1328,10 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 120.
  ) 
 Here is how much of TeX's memory you used:
- 33012 strings out of 494289
- 760464 string characters out of 6162254
- 1031573 words of memory out of 5000000
- 35502 multiletter control sequences out of 15000+600000
+ 33014 strings out of 494289
+ 760498 string characters out of 6162254
+ 1031677 words of memory out of 5000000
+ 35504 multiletter control sequences out of 15000+600000
  8714 words of font info for 33 fonts, out of 8000000 for 9000
  372 hyphenation exceptions out of 8191
  83i,22n,383p,734b,2481s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1351,7 +1351,7 @@ blic/amsfonts/cm/cmsy5.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmsy7.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 i10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.
 pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on thesis.pdf (30 pages, 12981126 bytes).
+Output written on thesis.pdf (30 pages, 12981206 bytes).
 PDF statistics:
  594 PDF objects out of 1000 (max. 8388607)
  512 compressed objects within 6 object streams
