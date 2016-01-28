@@ -1,6 +1,12 @@
 \chapter{Implementation and Assessment}
 \label{chp:Implementation_and_Assessment}
 
+All algorithms discussed in this work are realized in \mbox{MATLAB}, a 
+
+\section{Requirements}
+
+For the implementation and physical realization, some 
+
 \section{Oversampling}
 
 \section{Baseline Scaling and Back Projection}
@@ -13,11 +19,22 @@ In addition, the propagation matrix stores information about every pixel in the 
 The proposed approach divides the attenuation layers into tiles. 
 Figure~\ref{fig:tiling_layout} shows how the tiles are laid out.
 \begin{figure}[tb]
-	\input{../Figures/tiling/tiling_layout.tex}
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\input{../Figures/tiling/tiling_layout.tex}
+		\caption{}
+		\label{fig:tiling_layout}
+	\end{subfigure}%
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\input{../Figures/tiling/tiling_masks_sum.tex}
+		\caption{}
+		\label{fig:sum_of_quadratic_blending_masks}
+	\end{subfigure}%
 	\caption[Tiling layout]
-	{Layout of the tiles that cover the attenuation layers.
-		The pixel grid of size $R_x \times R_y$ is covered by tiles of $r_x \times r_y$ pixels with an overlap of $o_x$ in horizontal and $o_y$ in vertical direction.}
-	\label{fig:tiling_layout}
+			{(a) Layout of the tiles that cover the attenuation layers.
+				 The pixel grid of size $R_x \times R_y$ is covered by tiles of $r_x \times r_y$ pixels with an overlap of $o_x$ in horizontal and $o_y$ in vertical direction.
+			 (b) The sum of the per-tile quadratic blending masks used for the normalization.}
 \end{figure} 
 The inputs for the tiling algorithm are the resolution of the tiles $r = (r_x, r_y)$ and the overlap in horizontal and vertical direction, $o = (o_x, o_y)$. 
 The tiles are then laid out in a grid beginning in the top left corner of the layer. 
@@ -34,10 +51,54 @@ The optimization is then performed for every tile separately, resulting in a sma
 In the end, the optimized tiles are put together to form the complete attenuation layers. 
 
 In general, the borders of the attenuator contain less ray-propagation information and thus provide a higher degree of freedom for the optimization. 
-This introduces artifacts that are clearly visible in the reassembled layers as shown in figure~\ref{fig:comparison_tile_overlap_vs_no_overlap}. 
+This introduces artifacts that are clearly visible in the reassembled layers as shown in figure~\ref{fig:comparison_tile_overlap_vs_no_overlap}.
+\begin{figure}[tb]
+	\centering
+	\begin{subfigure}{0.23\textwidth}
+		\includegraphics[width = \textwidth]{../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/1.png}
+		
+		\vspace{0.15cm}
+		
+		\includegraphics[width = \textwidth]{../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/1.png}
+		\caption{Layer 1}
+	\end{subfigure}\hspace{0.15cm}%
+	\begin{subfigure}{0.23\textwidth}
+		\includegraphics[width = \textwidth]{../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/2.png}
+		
+		\vspace{0.15cm}
+		
+		\includegraphics[width = \textwidth]{../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/2.png}
+		\caption{Layer 2}
+	\end{subfigure}\hspace{0.15cm}%
+	\begin{subfigure}{0.23\textwidth}
+		\includegraphics[width = \textwidth]{../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/3.png}
+		
+		\vspace{0.15cm}
+		
+		\includegraphics[width = \textwidth]{../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/3.png}
+		\caption{Layer 3}
+	\end{subfigure}\hspace{0.15cm}%
+	\begin{subfigure}{0.23\textwidth}
+		\includegraphics[width = \textwidth]{../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/blendingMaskSum.png}
+		
+		\vspace{0.15cm}
+		
+		\includegraphics[width = \textwidth]{../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/blendingMaskSum.png}
+		\caption{Blending masks}
+	\end{subfigure}%
+	\caption[Impact of tile overlap on attenuation layers]
+			{Impact of tile overlap on attenuation layers.
+			 Top: Tiles have no overlap and grid artifacts are visible.
+			 Bottom: With a 50\% overlap, the artifacts are no longer noticeable, but more tiles are needed.}
+	\label{fig:comparison_tile_overlap_vs_no_overlap}
+\end{figure} 
 To solve this issue, the tiles have to overlap. 
 In this case, when reassembling the layers from the tiles, the overlaps need to be blended with a mask:
-After the optimization, each tile gets multiplied with a mask shown in figure~\ref{fig:quadratic_blending_mask}. 
+After the optimization, each tile gets multiplied with a quadratic blending mask.
 The finished layers are then obtained by summing the tiles and dividing by the sum of the blending masks shown in figure~\ref{fig:sum_of_quadratic_blending_masks}.
 
+\todo{choice of quadratic masks?}
+
 \section{Benefits and Limitations}
+
+\todo{Optimization only for positive transmittance}
