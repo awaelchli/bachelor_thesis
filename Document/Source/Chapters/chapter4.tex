@@ -111,7 +111,7 @@ where $\xi = (\xi_u, \xi_v, \xi_s, \xi_t)$, or $\xi = (\xi_u, \xi_s)$ for the tw
 For the case of discretely sampled layers, the frequency support of the individual layer will be limited by its spatial cutoff frequency, that is the highest frequency it can produce with a given pixel size $p$.
 A signal with a period smaller than two pixels can not be reproduced by the layer's pixel grid and thus, the spatial cutoff frequency is defined as $\xi_0 = \frac{1}{2p}$ cycles/m.
 \begin{figure}[tb]
-	\begin{subfigure}[b]{.3\textwidth}
+	\begin{subfigure}[b]{.32\textwidth}
 		\centering
 		\input{../Figures/spectral_support/3_layers.tex}
 		\caption{}
@@ -121,7 +121,7 @@ A signal with a period smaller than two pixels can not be reproduced by the laye
 		\label{fig:3_layes_convolution}
 	\end{subfigure}%
 	\hfill
-	\begin{subfigure}[b]{.7\textwidth}
+	\begin{subfigure}[b]{.68\textwidth}
 		\centering
 		\input{../Figures/spectral_support/cut-off-frequency_N_layers.tex}
 		\caption{}
@@ -152,17 +152,17 @@ The right side of the equation is plotted in figure~\ref{fig:cut-off-frequency_N
 \begin{figure}[tb]
 	\subcaptionbox{\label{fig:spectral_support_2_layers}}{\includegraphics[height = 3.5cm]{../Figures/spectral_support/convolution_2_layers}}\hfill%
 	\subcaptionbox{\label{fig:spectral_support_3_layers}}{\includegraphics[height = 3.5cm]{../Figures/spectral_support/convolution_3_layers}}\hfill%
-	\subcaptionbox{\label{fig:spectral_support_5_layers}}{\includegraphics[height = 3.5cm]{../Figures/spectral_support/convolution_5_layers}}\hfill%
-	\caption{text}
+	\subcaptionbox{\label{fig:spectral_support_5_layers}}{\includegraphics[height = 3.5cm]{../Figures/spectral_support/convolution_5_layers}}
+	\caption[Spectral support of layered 3D displays]
+			{Spectral support of layered 3D displays. 
+			 The magnitude response is plotted on a logarithmic scale for a two (a), three (b) and five layer (c) display.}
 \end{figure}
 It shows that the spatial cut-off frequency drops rapidly when moving the virtual plane away from the display.
 In fact, the drop-off is inversely proportional to $z_a$ as equation~\ref{eq:approx_upper_bound_spatial_cut_off} shows.
 As figure~\ref{fig:3_layes_convolution} suggests, the display is theoretically able to produce spatial frequency that exceeds the layers cut-off $\xi_0$, even for content outside the display enclosure.
 The highest spatial frequency is achieved in the middle of the display, on the \mbox{$(s, t)$-plane}.
+
 This theoretical 
-
-
-%Magnitude response of the convolution scaled logarithmically.
 
 \section{The Fourier Slice Theorem}
 \todo{Explain usage of the theorem in this work}
