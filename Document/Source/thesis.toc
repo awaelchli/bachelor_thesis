@@ -17,7 +17,7 @@
 \contentsline {section}{\numberline {4.1}Definitions}{14}{section.4.1}
 \contentsline {section}{\numberline {4.2}Spectral Support of Light Fields}{15}{section.4.2}
 \contentsline {section}{\numberline {4.3}Spectral Support of Layered 3D Displays}{16}{section.4.3}
-\contentsline {section}{\numberline {4.4}The Fourier Slice Theorem}{17}{section.4.4}
+\contentsline {section}{\numberline {4.4}The Fourier Slice Theorem}{18}{section.4.4}
 \contentsline {chapter}{\numberline {5}Implementation and Assessment}{19}{chapter.5}
 \contentsline {section}{\numberline {5.1}Requirements}{19}{section.5.1}
 \contentsline {section}{\numberline {5.2}Oversampling}{19}{section.5.2}
@@ -26,6 +26,6 @@
 \contentsline {section}{\numberline {5.5}Benefits and Limitations}{20}{section.5.5}
 \contentsline {chapter}{\numberline {A}Appendix}{22}{appendix.A}
 \contentsline {section}{\numberline {A.1}Backlight Fabrication}{22}{section.A.1}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Tables}{24}{figure.caption.41}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Figures}{24}{appendix*.42}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{25}{appendix*.43}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Tables}{24}{figure.caption.42}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Figures}{24}{appendix*.43}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{25}{appendix*.44}

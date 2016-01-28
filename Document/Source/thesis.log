@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.1.20)  28 JAN 2016 18:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.1.20)  28 JAN 2016 23:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1177,15 +1177,16 @@ LaTeX Warning: Marginpar on page 14 moved.
 ] (../Figures/spectral_support/two_objects.tex)
 (../Figures/spectral_support/epi_fourier_transform.tex)
 (../Figures/spectral_support/epi_two_objects.tex)
+(../Figures/spectral_support/fourier_transform_red_and_blue.tex
 <../Figures/spectral_support/fft_red_and_blue.png, id=392, 1003.75pt x 1003.75p
 t>
 File: ../Figures/spectral_support/fft_red_and_blue.png Graphic file (type png)
  <use ../Figures/spectral_support/fft_red_and_blue.png>
 Package pdftex.def Info: ../Figures/spectral_support/fft_red_and_blue.png used 
-on input line 63.
-(pdftex.def)             Requested size: 85.35591pt x 85.35826pt.
-
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 47--73
+on input line 13.
+(pdftex.def)             Requested size: 142.26378pt x 142.25475pt.
+)
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 47--74
 []$[]$ $[]$ 
  []
 
@@ -1199,43 +1200,46 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 )
-<../Figures/spectral_support/convolution_2_layers.png, id=423, 3012.25375pt x 3
+<../Figures/spectral_support/convolution_2_layers.png, id=424, 3012.25375pt x 3
 012.25375pt>
 File: ../Figures/spectral_support/convolution_2_layers.png Graphic file (type p
 ng)
  <use ../Figures/spectral_support/convolution_2_layers.png>
 Package pdftex.def Info: ../Figures/spectral_support/convolution_2_layers.png u
-sed on input line 153.
+sed on input line 156.
 (pdftex.def)             Requested size: 99.55635pt x 99.58464pt.
 
-<../Figures/spectral_support/convolution_3_layers.png, id=424, 3012.25375pt x 3
+<../Figures/spectral_support/convolution_3_layers.png, id=425, 3012.25375pt x 3
 012.25375pt>
 File: ../Figures/spectral_support/convolution_3_layers.png Graphic file (type p
 ng)
  <use ../Figures/spectral_support/convolution_3_layers.png>
 Package pdftex.def Info: ../Figures/spectral_support/convolution_3_layers.png u
-sed on input line 154.
+sed on input line 157.
 (pdftex.def)             Requested size: 99.55635pt x 99.58464pt.
 
-<../Figures/spectral_support/convolution_5_layers.png, id=425, 3012.25375pt x 3
+<../Figures/spectral_support/convolution_5_layers.png, id=426, 3012.25375pt x 3
 012.25375pt>
 File: ../Figures/spectral_support/convolution_5_layers.png Graphic file (type p
 ng)
  <use ../Figures/spectral_support/convolution_5_layers.png>
 Package pdftex.def Info: ../Figures/spectral_support/convolution_5_layers.png u
-sed on input line 155.
+sed on input line 158.
 (pdftex.def)             Requested size: 99.55635pt x 99.58464pt.
 
-[16]) [17] [18 <../Figures/spectral_support/convolution_2_layers.png (PNG copy)
-> <../Figures/spectral_support/convolution_3_layers.png (PNG copy)> <../Figures
-/spectral_support/convolution_5_layers.png (PNG copy)>]
+[16] [17]
+
+LaTeX Warning: Marginpar on page 18 moved.
+
+) [18 <../Figures/spectral_support/convolution_2_layers.png (PNG copy)> <../Fig
+ures/spectral_support/convolution_3_layers.png (PNG copy)> <../Figures/spectral
+_support/convolution_5_layers.png (PNG copy)>]
 \openout2 = `Chapters/chapter5.aux'.
 
-
-(./Chapters/chapter5.tex
+ (./Chapters/chapter5.tex
 Chapter 5.
 (../Figures/tiling/tiling_layout.tex) (../Figures/tiling/tiling_masks_sum.tex
-<../Figures/tiling/blending_masks_sum_3x3.png, id=450, 376.40625pt x 376.40625p
+<../Figures/tiling/blending_masks_sum_3x3.png, id=458, 376.40625pt x 376.40625p
 t>
 File: ../Figures/tiling/blending_masks_sum_3x3.png Graphic file (type png)
  <use ../Figures/tiling/blending_masks_sum_3x3.png>
@@ -1243,7 +1247,7 @@ Package pdftex.def Info: ../Figures/tiling/blending_masks_sum_3x3.png used on i
 nput line 16.
 (pdftex.def)             Requested size: 106.69783pt x 106.6968pt.
 )
-<../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/1.png, id=452, 51
+<../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/1.png, id=460, 51
 3.92pt x 513.92pt>
 File: ../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/1.png Graphi
 c file (type png)
@@ -1253,7 +1257,7 @@ Package pdftex.def Info: ../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_
 layers/1.png used on input line 58.
 (pdftex.def)             Requested size: 79.34853pt x 79.3431pt.
 
-<../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/1.png, id=453, 51
+<../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/1.png, id=461, 51
 3.92pt x 513.92pt>
 File: ../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/1.png Graphi
 c file (type png)
@@ -1263,7 +1267,7 @@ Package pdftex.def Info: ../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_
 layers/1.png used on input line 62.
 (pdftex.def)             Requested size: 79.34853pt x 79.3431pt.
 
-<../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/2.png, id=454, 51
+<../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/2.png, id=462, 51
 3.92pt x 513.92pt>
 File: ../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/2.png Graphi
 c file (type png)
@@ -1273,7 +1277,7 @@ Package pdftex.def Info: ../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_
 layers/2.png used on input line 66.
 (pdftex.def)             Requested size: 79.34853pt x 79.3431pt.
 
-<../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/2.png, id=455, 51
+<../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/2.png, id=463, 51
 3.92pt x 513.92pt>
 File: ../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/2.png Graphi
 c file (type png)
@@ -1283,7 +1287,7 @@ Package pdftex.def Info: ../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_
 layers/2.png used on input line 70.
 (pdftex.def)             Requested size: 79.34853pt x 79.3431pt.
 
-<../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/3.png, id=456, 51
+<../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/3.png, id=464, 51
 3.92pt x 513.92pt>
 File: ../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/3.png Graphi
 c file (type png)
@@ -1293,7 +1297,7 @@ Package pdftex.def Info: ../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_
 layers/3.png used on input line 74.
 (pdftex.def)             Requested size: 79.34853pt x 79.3431pt.
 
-<../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/3.png, id=457, 51
+<../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/3.png, id=465, 51
 3.92pt x 513.92pt>
 File: ../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/3.png Graphi
 c file (type png)
@@ -1304,7 +1308,7 @@ layers/3.png used on input line 78.
 (pdftex.def)             Requested size: 79.34853pt x 79.3431pt.
 
 <../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/blendingMaskSum.p
-ng, id=458, 513.92pt x 513.92pt>
+ng, id=466, 513.92pt x 513.92pt>
 File: ../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/blendingMask
 Sum.png Graphic file (type png)
 
@@ -1315,7 +1319,7 @@ layers/blendingMaskSum.png used on input line 82.
 (pdftex.def)             Requested size: 79.34853pt x 79.3431pt.
 
 <../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/blendingMaskSum.p
-ng, id=459, 513.92pt x 513.92pt>
+ng, id=467, 513.92pt x 513.92pt>
 File: ../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/blendingMask
 Sum.png Graphic file (type png)
 
@@ -1398,7 +1402,7 @@ Package pdftex.def Info: ../Figures/placeholder.jpg used on input line 56.
 
 ] [26
 
-]) <Erklaerung.pdf, id=526, 597.23125pt x 845.1575pt>
+]) <Erklaerung.pdf, id=534, 597.23125pt x 845.1575pt>
 File: Erklaerung.pdf Graphic file (type pdf)
 
 <use Erklaerung.pdf>
@@ -1409,7 +1413,7 @@ File: Erklaerung.pdf Graphic file (type pdf)
 Package pdftex.def Info: Erklaerung.pdf used on input line 118.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 
-<Erklaerung.pdf, id=529, page=1, 597.23125pt x 845.1575pt>
+<Erklaerung.pdf, id=537, page=1, 597.23125pt x 845.1575pt>
 File: Erklaerung.pdf Graphic file (type pdf)
 
 <use Erklaerung.pdf, page 1>
@@ -1444,14 +1448,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 120.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 120.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 120.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 6878DB7BE57AB350105B6A711B983FB3;2004.
+(rerunfilecheck)             Checksum: 3ECF6E9302E56E055223787C15FC577D;2004.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 120.
  ) 
 Here is how much of TeX's memory you used:
- 33125 strings out of 494289
- 764724 string characters out of 6162254
- 1034564 words of memory out of 5000000
- 35589 multiletter control sequences out of 15000+600000
+ 33145 strings out of 494289
+ 765274 string characters out of 6162254
+ 1114641 words of memory out of 5000000
+ 35604 multiletter control sequences out of 15000+600000
  8714 words of font info for 33 fonts, out of 8000000 for 9000
  372 hyphenation exceptions out of 8191
  83i,22n,383p,734b,2481s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1471,10 +1475,10 @@ blic/amsfonts/cm/cmsy5.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmsy7.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 i10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.
 pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on thesis.pdf (32 pages, 14814281 bytes).
+Output written on thesis.pdf (32 pages, 14820612 bytes).
 PDF statistics:
- 656 PDF objects out of 1000 (max. 8388607)
- 561 compressed objects within 6 object streams
- 156 named destinations out of 1000 (max. 500000)
+ 665 PDF objects out of 1000 (max. 8388607)
+ 570 compressed objects within 6 object streams
+ 158 named destinations out of 1000 (max. 500000)
  391 words of extra memory for PDF output out of 10000 (max. 10000000)
 

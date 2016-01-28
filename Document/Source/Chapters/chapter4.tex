@@ -60,7 +60,8 @@ Substituting $z$ with $Z_\text{min}$ and $Z_\text{max}$ gives the slopes for the
 		\caption{}
 		\label{fig:epi_two_objects}
 		\vspace{0.5cm}
-		\includegraphics[height = 3cm]{../Figures/spectral_support/fft_red_and_blue.png}
+%		\includegraphics[height = 3cm]{../Figures/spectral_support/fft_red_and_blue.png}
+		\input{../Figures/spectral_support/fourier_transform_red_and_blue.tex}
 		\caption{}
 		\label{fig:epi_fourier_transform_2}
 	\end{subfigure}
@@ -134,6 +135,7 @@ A signal with a period smaller than two pixels can not be reproduced by the laye
 			 (b) Combined spectral support of all three layers (gray), obtained by the convolution. 
 				 The light field from figure~\ref{fig:spectral_analysis_for_light_field} can be displayed with frequencies within the region of support.
 			 (c) Approximate upper bound on the depth of field for layered 3D displays with different a number of layers (\cite{WetzsteinTomo}).
+				 The \emph{expected} upper bound is shown as dashed lines for two and six layers.
 				 The displays extent is depicted by the dashed lines.}
 	\label{fig:spectral_analysis_of_display}
 \end{figure}
@@ -148,6 +150,7 @@ It turns out to be quite hard to analytically derive an exact expression for the
 \begin{equation}\label{eq:approx_upper_bound_spatial_cut_off}
 	\lvert \xi_a \rvert \leq N \xi_0 \sqrt{ \frac{(N + 1) h^2}{(N + 1) h^2 + 12(N - 1)(z_a - Z_s)^2} }
 \end{equation}
+This approximation is based on the observation that the region of support approaches the shape of an ellipse when increasing the number of layers as seen in figure~\ref{fig:magnitude_response_2_3_5_layers}.
 The right side of the equation is plotted in figure~\ref{fig:cut-off-frequency_N_layers} for different positions $z_a$ of the virtual plane.
 \begin{figure}[tb]
 	\subcaptionbox{\label{fig:spectral_support_2_layers}}{\includegraphics[height = 3.5cm]{../Figures/spectral_support/convolution_2_layers}}\hfill%
@@ -156,13 +159,23 @@ The right side of the equation is plotted in figure~\ref{fig:cut-off-frequency_N
 	\caption[Spectral support of layered 3D displays]
 			{Spectral support of layered 3D displays. 
 			 The magnitude response is plotted on a logarithmic scale for a two (a), three (b) and five layer (c) display.}
+	\label{fig:magnitude_response_2_3_5_layers}
 \end{figure}
 It shows that the spatial cut-off frequency drops rapidly when moving the virtual plane away from the display.
 In fact, the drop-off is inversely proportional to $z_a$ as equation~\ref{eq:approx_upper_bound_spatial_cut_off} shows.
 As figure~\ref{fig:3_layes_convolution} suggests, the display is theoretically able to produce spatial frequency that exceeds the layers cut-off $\xi_0$, even for content outside the display enclosure.
-The highest spatial frequency is achieved in the middle of the display, on the \mbox{$(s, t)$-plane}.
+The highest spatial frequency is achieved in the middle of the display ($z_a = Z_s$), bounded by $N \xi_0$ cycles/cm as it can be deducted from equation~\ref{eq:approx_upper_bound_spatial_cut_off}.
 
-This theoretical 
+Although this theoretical upper bound points out the limits on achievable depth of field, it is only a good reference for the ideal display and a high number of layers.
+In practice, the upper bound can not be achieved in most cases due a number of reasons, including: 
+Simplifications in the attenuation model, approximate solutions to equation~\ref{eq:minimize_norm} or the restriction to positive transmission values.
+\cite{WetzsteinTomo} also give a more conservative expression that more closely qualifies the behavior under the mentioned restrictions.
+\begin{equation}\label{eq:expected_upper_bound_spatial_cut_off}
+	\lvert \xi_a \rvert \leq \xi_0 \sqrt{ \frac{2(2N - 1) h^2}{(N + 1) h^2 + 12(N - 1)(z_a - Z_s)^2} }.
+\end{equation}
+This is the expected upper bound on the depth of field, which is drawn as a dashed line in figure~\ref{fig:cut-off-frequency_N_layers} for a two- and six layer display.
+In particular, it shows that adding more layers to the display does not necessarily increase the potential for higher depth of field.
+\todo{Text: The addition of more layers has other benefits as discussed in chapter/section ...}
 
 \section{The Fourier Slice Theorem}
 \todo{Explain usage of the theorem in this work}
