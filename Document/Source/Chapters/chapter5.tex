@@ -1,11 +1,21 @@
 \chapter{Implementation and Assessment}
 \label{chp:Implementation_and_Assessment}
 
-All algorithms discussed in this work are realized in \mbox{MATLAB}, a 
+All algorithms discussed in this work are realized in \mbox{MATLAB}, a programming language specialized on matrix manipulations.
+It is especially useful for high-dimensional matrix operations, such as the ones for this work.
+
+The following text explains the implementation of the theoretical models and concepts discussed in the previous chapters.
 
 \section{Requirements}
 
 For the implementation and physical realization, some 
+
+The input light field for the optimization algorithm is expected to be a five dimensional array $L$ with entries $L_{ijklc}$, where pairs $(i, j)$ and $(k, l)$ correspond to the angular- and spatial coordinates, and $c$ indexes the color channel. 
+It is also assumed that the light field is rectified such that indices $i, j$ conform to global coordinates on the $(s, t)$-plane as explained in section~\ref{sec:light_field_aquisition}.
+In addition, the baseline as well as the distance between the two planes are a required input for the system.
+
+The attenuator is defined by the number of layers, resolution, size and thickness.
+Each layer has the same dimensions and resolution and is modeled to be infinitely thin.
 
 \section{Oversampling}
 
