@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.1.20)  3 FEB 2016 18:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.1.20)  3 FEB 2016 20:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -977,7 +977,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.33 ...ma {\hfil }Bibliography}{26}{appendix*.45}
+l.33 ...ma {\hfil }Bibliography}{26}{appendix*.46}
                                                    [1
 
 
@@ -1395,23 +1395,30 @@ um.png>
 Package pdftex.def Info: ../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_
 layers/blendingMaskSum.png used on input line 136.
 (pdftex.def)             Requested size: 79.34853pt x 79.3431pt.
-
-Overfull \hbox (8.66682pt too wide) in paragraph at lines 156--156
+ (../Figures/optimization_performance/iterations_vs_rmse.tex
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+)
+(../Figures/optimization_performance/iterations_vs_time.tex
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+)
+Overfull \hbox (8.66682pt too wide) in paragraph at lines 172--172
 [][][][]\OT1/cmr/m/n/10 Optimization 
  []
 
 
-Overfull \hbox (8.66682pt too wide) in paragraph at lines 156--156
+Overfull \hbox (8.66682pt too wide) in paragraph at lines 172--172
 [][][][]\OT1/cmr/m/n/10 Optimization 
  []
 
 
-Overfull \hbox (8.66682pt too wide) in paragraph at lines 156--156
+Overfull \hbox (8.66682pt too wide) in paragraph at lines 172--172
 [][][][]\OT1/cmr/m/n/10 Optimization 
  []
 
 
-Overfull \hbox (8.66682pt too wide) in paragraph at lines 156--156
+Overfull \hbox (8.66682pt too wide) in paragraph at lines 172--172
 [][][][]\OT1/cmr/m/n/10 Optimization 
  []
 
@@ -1464,7 +1471,7 @@ Package pdftex.def Info: ../Figures/placeholder.jpg used on input line 56.
 
 ] [27
 
-]) <Erklaerung.pdf, id=559, 597.23125pt x 845.1575pt>
+]) <Erklaerung.pdf, id=561, 597.23125pt x 845.1575pt>
 File: Erklaerung.pdf Graphic file (type pdf)
 
 <use Erklaerung.pdf>
@@ -1475,7 +1482,7 @@ File: Erklaerung.pdf Graphic file (type pdf)
 Package pdftex.def Info: Erklaerung.pdf used on input line 118.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 
-<Erklaerung.pdf, id=562, page=1, 597.23125pt x 845.1575pt>
+<Erklaerung.pdf, id=564, page=1, 597.23125pt x 845.1575pt>
 File: Erklaerung.pdf Graphic file (type pdf)
 
 <use Erklaerung.pdf, page 1>
@@ -1510,17 +1517,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 120.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 120.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 120.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: C341DBD3BB4D8DE8827196D1026DAA94;2136.
+(rerunfilecheck)             Checksum: 498C1DD0AEE36B727954224A417AE392;2136.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 120.
  ) 
 Here is how much of TeX's memory you used:
- 33225 strings out of 494289
- 767380 string characters out of 6162254
- 1115818 words of memory out of 5000000
- 35670 multiletter control sequences out of 15000+600000
+ 33290 strings out of 494289
+ 768910 string characters out of 6162254
+ 1123956 words of memory out of 5000000
+ 35727 multiletter control sequences out of 15000+600000
  8714 words of font info for 33 fonts, out of 8000000 for 9000
  372 hyphenation exceptions out of 8191
- 83i,22n,383p,734b,2481s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 83i,22n,383p,734b,2485s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
 live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2015
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2015/texmf-di
@@ -1537,10 +1544,10 @@ blic/amsfonts/cm/cmsy5.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmsy7.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 i10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.
 pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on thesis.pdf (34 pages, 15531699 bytes).
+Output written on thesis.pdf (34 pages, 15535048 bytes).
 PDF statistics:
- 689 PDF objects out of 1000 (max. 8388607)
- 590 compressed objects within 6 object streams
- 162 named destinations out of 1000 (max. 500000)
+ 692 PDF objects out of 1000 (max. 8388607)
+ 593 compressed objects within 6 object streams
+ 163 named destinations out of 1000 (max. 500000)
  417 words of extra memory for PDF output out of 10000 (max. 10000000)
 
