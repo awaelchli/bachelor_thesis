@@ -28,20 +28,25 @@
 		\coordinate (SW) at (current bounding box.south west);
 		\clip (SW) rectangle (NE);
 		
-		% Rays and intersections
-		\draw[->, one end extended = 10cm, lightgray] (8, -8) -- (16, 8);
-		\draw[->, one end extended = 10cm, lightgray] (6, -8) -- (14, 8);
-		\draw[->, one end extended = 10cm, lightgray] (4, -8) -- (12, 8);
-		\draw[->, one end extended = 10cm, lightgray] (2, -8) -- (10, 8);
-		\draw[->, one end extended = 10cm, lightgray] (0, -8) -- (8, 8);
+		\begin{scope}
+%			\coordinate (R) at (-14, 14);
+%			\clip (-14, 0 |- SW) rectangle (14, 0 |- NE);
 		
-		\draw[->, one end extended = 10cm, lightgray] (-4, -8) -- (4, 8);
-		\draw[->, one end extended = 10cm, lightgray] (-6, -8) -- (2, 8);
-		\draw[->, one end extended = 10cm, lightgray] (-8, -8) -- (0, 8);
-		\draw[->, one end extended = 10cm, lightgray] (-10, -8) -- (-2, 8);
-		\draw[->, one end extended = 10cm, lightgray] (-12, -8) -- (-4, 8);
-		\draw[->, one end extended = 10cm, lightgray] (-14, -8) -- (-6, 8);
-		\draw[->, one end extended = 10cm, lightgray] (-14, -4) -- (-8, 8);
+			% Rays and intersections
+			\draw[->, one end extended = 10cm, lightgray] (8, -8) -- (16, 8);
+			\draw[->, one end extended = 10cm, lightgray] (6, -8) -- (14, 8);
+			\draw[->, one end extended = 10cm, lightgray] (4, -8) -- (12, 8);
+			\draw[->, one end extended = 10cm, lightgray] (2, -8) -- (10, 8);
+			\draw[->, one end extended = 10cm, lightgray] (0, -8) -- (8, 8);
+			
+			\draw[->, one end extended = 10cm, lightgray] (-4, -8) -- (4, 8);
+			\draw[->, one end extended = 10cm, lightgray] (-6, -8) -- (2, 8);
+			\draw[->, one end extended = 10cm, lightgray] (-8, -8) -- (0, 8);
+			\draw[->, one end extended = 10cm, lightgray] (-10, -8) -- (-2, 8);
+			\draw[->, one end extended = 10cm, lightgray] (-12, -8) -- (-4, 8);
+			\draw[->, one end extended = 10cm, lightgray] (-14, -8) -- (-6, 8);
+			\draw[->, one end extended = 10cm, lightgray] (-14, -4) -- (-8, 8);
+		\end{scope}
 		
 		\draw[ultra thick] (-12, -6) -- (12, -6);
 		\draw[ultra thick] (-12, 6) -- (12, 6);
