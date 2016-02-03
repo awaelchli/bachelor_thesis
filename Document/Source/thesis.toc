@@ -20,12 +20,14 @@
 \contentsline {section}{\numberline {4.4}The Fourier Slice Theorem}{18}{section.4.4}
 \contentsline {chapter}{\numberline {5}Implementation and Assessment}{19}{chapter.5}
 \contentsline {section}{\numberline {5.1}Requirements}{19}{section.5.1}
-\contentsline {section}{\numberline {5.2}Oversampling}{19}{section.5.2}
-\contentsline {section}{\numberline {5.3}Baseline Scaling and Back Projection}{19}{section.5.3}
-\contentsline {section}{\numberline {5.4}Attenuator Tiling and Blending}{19}{section.5.4}
-\contentsline {section}{\numberline {5.5}Benefits and Limitations}{20}{section.5.5}
-\contentsline {chapter}{\numberline {A}Appendix}{22}{appendix.A}
-\contentsline {section}{\numberline {A.1}Backlight Fabrication}{22}{section.A.1}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Tables}{24}{figure.caption.42}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Figures}{24}{appendix*.43}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{25}{appendix*.44}
+\contentsline {section}{\numberline {5.2}The Basic Procedure}{19}{section.5.2}
+\contentsline {section}{\numberline {5.3}Oversampling}{20}{section.5.3}
+\contentsline {section}{\numberline {5.4}Baseline Scaling and Back Projection}{20}{section.5.4}
+\contentsline {section}{\numberline {5.5}Attenuator Tiling and Blending}{20}{section.5.5}
+\contentsline {section}{\numberline {5.6}Performance of SART}{21}{section.5.6}
+\contentsline {section}{\numberline {5.7}Benefits and Limitations}{21}{section.5.7}
+\contentsline {chapter}{\numberline {A}Appendix}{23}{appendix.A}
+\contentsline {section}{\numberline {A.1}Backlight Fabrication}{23}{section.A.1}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Tables}{25}{figure.caption.43}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Figures}{25}{appendix*.44}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{26}{appendix*.45}

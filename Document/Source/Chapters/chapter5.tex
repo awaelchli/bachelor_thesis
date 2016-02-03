@@ -3,23 +3,59 @@
 
 All algorithms discussed in this work are realized in \mbox{MATLAB}, a programming language specialized on matrix manipulations.
 It is especially useful for high-dimensional matrix operations, such as the ones for this work.
-
 The following text explains the implementation of the theoretical models and concepts discussed in the previous chapters.
+For the implementation, the goal was to make the pipeline as flexible as possible to support all kinds of light fields in different formats.
 
 \section{Requirements}
 
-For the implementation and physical realization, some 
-
+For the implementation and physical realization, some assumptions and requirements have to be formulated.
 The input light field for the optimization algorithm is expected to be a five dimensional array $L$ with entries $L_{ijklc}$, where pairs $(i, j)$ and $(k, l)$ correspond to the angular- and spatial coordinates, and $c$ indexes the color channel. 
+The data is normalized such that $L_{ijklc} \in \left[0, 1\right]$.
 It is also assumed that the light field is rectified such that indices $i, j$ conform to global coordinates on the $(s, t)$-plane as explained in section~\ref{sec:light_field_aquisition}.
 In addition, the baseline as well as the distance between the two planes are a required input for the system.
 
 The attenuator is defined by the number of layers, resolution, size and thickness.
 Each layer has the same dimensions and resolution and is modeled to be infinitely thin.
+Also, the backlight is modeled as a constant white light field, $L_0 \equiv 1$.
+
+\section{The Basic Procedure}
+
+As described in section~\ref{sec:ray_casting}, the two virtual planes that parameterize the light field are placed relative to the attenuator and by ray casting, the entries of the propagation matrix $P$ are computed.
+Next, the constrained optimization problem given in equation~\ref{eq:minimize_norm} is solved independently for each color channel using an iterative solver of choice, e.g. \mbox{SART}.
+The outcome of each optimization is a vector $\alpha_c$ containing the attenuation values in the interval $\left[ 0, \infty \right)$ where $c = 1, 2, 3$ (red, green, blue) denotes the color channel.
+The transmittance values are then obtained by element-wise exponentiation, $t = \exp(-\alpha)$, which holds values between zero and one.
+Finally, the linearly indexed vector $t$ is reshaped so that the layers can be extracted as three-dimensional matrices and printed on transparencies.
+
+In order to evaluate the attenuation masks, one has to compare the emitted light field $L^\ast = \exp(- P \alpha)$ with the original, $L$.
+For instance, one could sum up the color channels in $L$ and $L^\ast$ and evaluate the squared 2-norm of the difference.
+However, this resulting number is not very meaningful because it also varies with the size of the light field, i.e. the angular and spatial resolution.
+Thus, it is better to use a normalized figure such as the mean squared error \mbox{(MSE)} or the root-mean-square error \mbox{(RMSE)} defined as
+\begin{equation*}
+	\text{MSE} \coloneqq \frac{1}{n} \sum_{i = 1}^{n} (X - X^\ast)^2 = \frac{1}{n} \lVert X - X^\ast \rVert^2
+	\quad \text{and} \quad
+	\text{RMSE} \coloneqq \sqrt{\text{MSE}}
+\end{equation*}
+for vectors $X, X^\ast \in \mathbb{R}^n$.
 
 \section{Oversampling}
 
 \section{Baseline Scaling and Back Projection}
+
+Often it is the case that the light field of interest has a depth range that does not match the depth of field of the display because of its fixed thickness.
+As a consequence, objects outside the depth of field appear blurry.
+
+\begin{figure}[tb]
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[height = 3cm]{../Figures/depth_compression/baseline_unscaled/Reconstruction_of_view_(9,9).png}
+		\caption{}
+		\label{fig:reconstruction_baseline_unscaled}
+	\end{subfigure}%
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[height = 3cm]{../Figures/depth_compression/baseline_scaled_shifted/Reconstruction_of_view_(9,9).png}
+		\caption{}
+		\label{fig:reconstruction_baseline_scaled_shifted}
+	\end{subfigure}
+\end{figure}
 
 \section{Attenuator Tiling and Blending}
 
@@ -108,6 +144,8 @@ After the optimization, each tile gets multiplied with a quadratic blending mask
 The finished layers are then obtained by summing the tiles and dividing by the sum of the blending masks shown in figure~\ref{fig:sum_of_quadratic_blending_masks}.
 
 \todo{choice of quadratic masks?}
+
+\section{Performance of SART}
 
 \section{Benefits and Limitations}
 
