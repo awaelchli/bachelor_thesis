@@ -27,8 +27,9 @@ The transmittance values are then obtained by element-wise exponentiation, $t = 
 Finally, the linearly indexed vector $t$ is reshaped so that the layers can be extracted as three-dimensional matrices and printed on transparencies.
 
 In order to evaluate the attenuation masks, one has to compare the emitted light field $L^\ast = \exp(- P \alpha)$ with the original, $L$.
-For instance, one could sum up the color channels in $L$ and $L^\ast$ and evaluate the squared 2-norm of the difference.
+For instance, one could evaluate the squared 2-norm of the difference $L - L^\ast$ in each color channel.
 However, this resulting number is not very meaningful because it also varies with the size of the light field, i.e. the angular and spatial resolution.
+This makes it harder to compare the display quality between different light fields.
 Thus, it is better to use a normalized figure such as the mean squared error \mbox{(MSE)} or the root-mean-square error \mbox{(RMSE)} defined as
 \begin{equation*}
 	\text{MSE} \coloneqq \frac{1}{n} \sum_{i = 1}^{n} (X - X^\ast)^2 = \frac{1}{n} \lVert X - X^\ast \rVert^2
@@ -36,6 +37,7 @@ Thus, it is better to use a normalized figure such as the mean squared error \mb
 	\text{RMSE} \coloneqq \sqrt{\text{MSE}}
 \end{equation*}
 for vectors $X, X^\ast \in \mathbb{R}^n$.
+To deal with the color channels, the \mbox{MSE} is computed for each color component and then averaged.
 
 \section{Oversampling}
 
@@ -43,7 +45,7 @@ for vectors $X, X^\ast \in \mathbb{R}^n$.
 
 Often it is the case that the light field of interest has a depth range that does not match the depth of field of the display because of its fixed thickness.
 As a consequence, objects outside the depth of field appear blurry.
-
+This effect is demonstrated in figure~\ref{fig:baseline_scaling} for two different baseline scales.
 \begin{figure}[tb]
 	\begin{subfigure}{0.5\textwidth}
 		\centering
@@ -57,9 +59,13 @@ As a consequence, objects outside the depth of field appear blurry.
 		\caption{}
 		\label{fig:reconstruction_baseline_scaled_shifted}
 	\end{subfigure}
-	\caption{text}
+	\caption[Baseline scaling]
+			{Depth compression by means of baseline scaling.
+			 Shown is the reconstructed central angular view without proper baseline scaling (a) and with scaling (b).
+			 The light field used is from the Stanford light field archive, \mbox{\url{http://lightfield.stanford.edu}}.}
 	\label{fig:baseline_scaling}
 \end{figure}
+The reconstruction shows that cards in the front and back are blurred because the are virtually further away from the display, while the objects in the center are sharper.
 
 \section{Attenuator Tiling and Blending}
 
@@ -155,16 +161,26 @@ The finished layers are then obtained by summing the tiles and dividing by the s
 	\begin{subfigure}{0.5\textwidth}
 		\centering
 		\input{../Figures/optimization_performance/iterations_vs_rmse.tex}
-		\caption{}
+		\caption{Tarot cards}
 		\label{fig:sart_lsqlin_iterations_vs_rmse}
 	\end{subfigure}%
 	\begin{subfigure}{0.5\textwidth}
 		\centering
 		\input{../Figures/optimization_performance/iterations_vs_time.tex}
-		\caption{}
+		\caption{Tarot cards}
 		\label{fig:sart_lsqlin_iterations_vs_time}
-	\end{subfigure}
+	\end{subfigure}%
+	
+	\vspace{0.15cm}
+	
+	\begin{subfigure}{\textwidth}
+		\centering
+		\input{../Figures/optimization_performance/layers_vs_psnr.tex}
+		\caption{SART}
+		\label{fig:sart_lsqlin_layers_vs_psnr}
+	\end{subfigure}%
 	\caption{text}
+	
 \end{figure}
 
 \section{Benefits and Limitations}
