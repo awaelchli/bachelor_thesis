@@ -4,37 +4,37 @@
 \begin{document}
 	\begin{tikzpicture}
 		
-		\begin{axis}[	legend pos = north east, 
+		\begin{axis}[	legend pos = north west, 
 						legend cell align = left,
-						ymin = 25,
-						ymax = 75,
+						ymin = -20,
+						ymax = 550,
 						xtick = {1, 5, 10, 20},
-						ytick = {30, 40, 50, 60, 70},
-						ylabel = {RMSE},
+						ytick = {0, 100, 200, 300, 400, 500},
+						ylabel = {Time (seconds)},
 						xlabel = {Iterations},
 						ylabel near ticks,
-						grid = major,
+						grid,
 						axis on top = true,
 						width = 6 cm]
 		
 			\addplot coordinates {
-				(1, 53.517116)
-				(2, 46.6983)
-				(3, 43.7923)
-				(4, 41.8413)
-				(5, 40.3709)
-				(10, 36.2524)
-				(20, 33.2420)
+				(1, 7.0933)
+				(2, 9.2096)
+				(3, 9.9564)
+				(4, 11.4550)
+				(5, 13.9412)
+				(10, 18.6697)
+				(20, 29.1313)
 			};
 			\addlegendentry{SART};
 			
 			\addplot coordinates {
-				(2, 70.477447)
-				(3, 45.188843)
-				(4, 32.001308)
-				(5, 31.934515)
-				(10, 32.764468)
-				(20, 32.766828)
+				(2, 26.9930)
+				(3, 55.2522)
+				(4, 89.0784)
+				(5, 126.5243)
+				(10, 367.7888)
+				(20, 507.2163)
 			};
 			\addlegendentry{LSQLIN};
 			
