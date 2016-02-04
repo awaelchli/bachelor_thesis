@@ -28,6 +28,6 @@
 \contentsline {section}{\numberline {5.7}Benefits and Limitations}{22}{section.5.7}
 \contentsline {chapter}{\numberline {A}Appendix}{24}{appendix.A}
 \contentsline {section}{\numberline {A.1}Backlight Fabrication}{24}{section.A.1}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Tables}{26}{figure.caption.44}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Figures}{26}{appendix*.45}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{27}{appendix*.46}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Tables}{26}{figure.caption.47}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Figures}{26}{appendix*.48}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{27}{appendix*.49}

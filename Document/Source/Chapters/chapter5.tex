@@ -7,6 +7,7 @@ The following text explains the implementation of the theoretical models and con
 For the implementation, the goal was to make the pipeline as flexible as possible to support all kinds of light fields in different formats.
 
 \section{Requirements}
+\label{sec:requirements}
 
 For the implementation and physical realization, some assumptions and requirements have to be formulated.
 The input light field for the optimization algorithm is expected to be a five dimensional array $L$ with entries $L_{ijklc}$, where pairs $(i, j)$ and $(k, l)$ correspond to the angular- and spatial coordinates, and $c$ indexes the color channel. 
@@ -19,6 +20,7 @@ Each layer has the same dimensions and resolution and is modeled to be infinitel
 Also, the backlight is modeled as a constant white light field, $L_0 \equiv 1$.
 
 \section{The Basic Procedure}
+\label{sec:basic_procedure}
 
 As described in section~\ref{sec:ray_casting}, the two virtual planes that parameterize the light field are placed relative to the attenuator and by ray casting, the entries of the propagation matrix $P$ are computed.
 Next, the constrained optimization problem given in equation~\ref{eq:minimize_norm} is solved independently for each color channel using an iterative solver of choice, e.g. \mbox{SART}.
@@ -40,8 +42,10 @@ for vectors $X, X^\ast \in \mathbb{R}^n$.
 To deal with the color channels, the \mbox{MSE} is computed for each color component and then averaged.
 
 \section{Oversampling}
+\label{sec:oversampling}
 
 \section{Baseline Scaling and Back Projection}
+\label{sec:baseline_scaling}
 
 Often it is the case that the light field of interest has a depth range that does not match the depth of field of the display because of its fixed thickness.
 As a consequence, objects outside the depth of field appear blurry.
@@ -66,8 +70,10 @@ This effect is demonstrated in figure~\ref{fig:baseline_scaling} for two differe
 	\label{fig:baseline_scaling}
 \end{figure}
 The reconstruction shows that cards in the front and back are blurred because the are virtually further away from the display, while the objects in the center are sharper.
+\todo{Explain back-projection.}
 
 \section{Attenuator Tiling and Blending}
+\label{sec:tiling_and_blending}
 
 High resolution light fields can take up a significant amount of space in memory. 
 For example, a light field taken with a Full HD camera from $17 \times 17$ angles would take up $1920 \cdot 1080 \cdot 17^2 \cdot 3 \cdot 8 / (1024^3) = 13.3947$ Gigabyte of memory. 
@@ -156,33 +162,44 @@ The finished layers are then obtained by summing the tiles and dividing by the s
 \todo{choice of quadratic masks?}
 
 \section{Performance of SART}
+\label{sec:performance_of_SART}
+
+\todo{fix gridlines in figure!}
 
 \begin{figure}[tb]
 	\begin{subfigure}{0.5\textwidth}
 		\centering
 		\input{../Figures/optimization_performance/iterations_vs_rmse.tex}
-		\caption{Tarot cards}
+		\caption{}
 		\label{fig:sart_lsqlin_iterations_vs_rmse}
 	\end{subfigure}%
 	\begin{subfigure}{0.5\textwidth}
 		\centering
 		\input{../Figures/optimization_performance/iterations_vs_time.tex}
-		\caption{Tarot cards}
+		\caption{}
 		\label{fig:sart_lsqlin_iterations_vs_time}
 	\end{subfigure}%
-	
-	\vspace{0.15cm}
-	
+	\caption[Performance assessment of the optimization]
+			{Performance assessment of the optimization.
+			 The two iterative methods \mbox{SART} and \mbox{MATLAB's} linear least squares solver \emph{lsqlin} are compared in terms of \mbox{RMSE} (a) and runtime (b).
+			 The input light field is the same as in figure~\ref{fig:baseline_scaling} and five attenuation layers were used.}
+	\label{fig:sart_vs_lsqlin}
+\end{figure}
+
+\begin{figure}[tb]
 	\begin{subfigure}{\textwidth}
 		\centering
 		\input{../Figures/optimization_performance/layers_vs_psnr.tex}
 		\caption{SART}
-		\label{fig:sart_lsqlin_layers_vs_psnr}
+		\label{fig:sart_layers_vs_psnr}
 	\end{subfigure}%
-	\caption{text}
-	
+	\caption[Impact of layer count on \mbox{PSNR}]
+			{Impact of layer count on the \mbox{PSNR}.
+			 Performance comparison of the attenuation display for two different scenes from the Stanford light field archive.
+			 The \mbox{PSNR} is evaluated against the number of layers.}
 \end{figure}
 
 \section{Benefits and Limitations}
+\label{sec:benefits_limitations}
 
 \todo{Optimization only for positive transmittance}
