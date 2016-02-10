@@ -25,9 +25,10 @@
 \contentsline {section}{\numberline {5.4}Baseline Scaling and Back Projection}{20}{section.5.4}
 \contentsline {section}{\numberline {5.5}Attenuator Tiling and Blending}{21}{section.5.5}
 \contentsline {section}{\numberline {5.6}Performance of SART}{22}{section.5.6}
-\contentsline {section}{\numberline {5.7}Benefits and Limitations}{22}{section.5.7}
-\contentsline {chapter}{\numberline {A}Appendix}{24}{appendix.A}
-\contentsline {section}{\numberline {A.1}Backlight Fabrication}{24}{section.A.1}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Tables}{26}{figure.caption.47}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Figures}{26}{appendix*.48}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{27}{appendix*.49}
+\contentsline {section}{\numberline {5.7}Graphical User Interface}{22}{section.5.7}
+\contentsline {section}{\numberline {5.8}Benefits and Limitations}{23}{section.5.8}
+\contentsline {chapter}{\numberline {A}Appendix}{25}{appendix.A}
+\contentsline {section}{\numberline {A.1}Backlight Fabrication}{25}{section.A.1}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Tables}{27}{figure.caption.48}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Figures}{27}{appendix*.49}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{28}{appendix*.50}

@@ -199,6 +199,29 @@ The finished layers are then obtained by summing the tiles and dividing by the s
 			 The \mbox{PSNR} is evaluated against the number of layers.}
 \end{figure}
 
+\section{Graphical User Interface}
+\label{sec:GUI}
+
+All functionalities of the pipeline are made available through a graphical user interface \mbox{(GUI)} for ease of use.
+The main window is shown in figure~\ref{fig:gui_overview} for a particular use case.
+\begin{figure}[tb]
+	\includegraphics[width = \linewidth]{../Figures/gui/overview.png}
+	\caption[Graphical user interface]
+	{Graphical user interface for the \emph{Layered 3D} software developed with MATLAB.}
+	\label{fig:gui_overview}
+\end{figure}
+A typical workflow involves three main steps, which correspond to the three columns in the window.
+In the first step, the user imports a light field from either a folder of images or a \mbox{Lytro} container file.
+The user can specify the projection type, camera- and image plane parameters as well as spatial- and angular downsampling in case memory is scarce.
+After a successful import, the individual angular views are displayed in the preview window below.
+The seconds step involves the configuration of the attenuator where the user enters the desired display thickness, size and resolution.
+Before running the optimization, the user has the option to back-project the light field in case he/she want to ensure that the light fields depth range is aligned with the display.
+In the last step, after optimization has completed, the user can preview the results (attenuation layers, reconstructed views or error images) in the window below or save them to disk.
+Finally, a \mbox{PDF} file with the attenuation masks can be generated, ready to print on transparencies.
+
+The software together with the GUI is available as an executable\footnote{The software available at \url{https://github.com/awaelchli/bachelor_project}.} 
+and does not require a \mbox{MATLAB} installation in order to run.
+
 \section{Benefits and Limitations}
 \label{sec:benefits_limitations}
 
