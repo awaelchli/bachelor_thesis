@@ -40,6 +40,17 @@ Thus, it is better to use a normalized figure such as the mean squared error \mb
 \end{equation*}
 for vectors $X, X^\ast \in \mathbb{R}^n$.
 To deal with the color channels, the \mbox{MSE} is computed for each color component and then averaged.
+Another important quality measure in signal processing is the peak signal-to-noise ratio \mbox{(PSNR)} defined as
+\begin{equation*}
+	\text{PSNR} \coloneqq 10 \log_{10} \left(\frac{X_\text{max}^2}{\text{MSE}}\right),
+\end{equation*}
+where $X_\text{max}$ is the maximum value the image/color channel can hold, e.g. for 8-bit color channel representation this value would be 255.
+It measures the loss of power in a reconstructed signal, with an additional adjustment for the human perception of error.
+The use of this measure is motivated by the fact that \mbox{Layered 3D} is also about signal reconstruction, and the goal is to compare the original signal (light field) with the reconstructed one. 
+Generally, a higher \mbox{PSNR} indicates greater image fidelity and conversely, a highly corrupted signal produces low \mbox{PSNR}.
+
+The following sections present a variety of ideas and improvements that were implemented on top of the standard procedure explained above.
+Next to that, the results are evaluated using the introduced error measures.
 
 \section{Oversampling}
 \label{sec:oversampling}
@@ -66,7 +77,7 @@ This effect is demonstrated in figure~\ref{fig:baseline_scaling} for two differe
 	\caption[Baseline scaling]
 			{Depth compression by means of baseline scaling.
 			 Shown is the reconstructed central angular view without proper baseline scaling (a) and with scaling (b).
-			 The light field used is from the Stanford light field archive, \mbox{\url{http://lightfield.stanford.edu}}.}
+			 The light field used here is from the Stanford light field archive, \mbox{\url{http://lightfield.stanford.edu}}.}
 	\label{fig:baseline_scaling}
 \end{figure}
 The reconstruction shows that cards in the front and back are blurred because the are virtually further away from the display, while the objects in the center are sharper.
@@ -76,7 +87,7 @@ The reconstruction shows that cards in the front and back are blurred because th
 \label{sec:tiling_and_blending}
 
 High resolution light fields can take up a significant amount of space in memory. 
-For example, a light field taken with a Full HD camera from $17 \times 17$ angles would take up $1920 \cdot 1080 \cdot 17^2 \cdot 3 \cdot 8 / (1024^3) = 13.3947$ Gigabyte of memory. 
+For example, a light field taken with a Full HD camera from $17 \times 17$ angles would take up $1920 \cdot 1080 \cdot 17^2 \cdot 3 \cdot 8 / (1024^3) = 13.3947$ Gigabyte of memory, assuming \mbox{8-bit} color channels. 
 In addition, the propagation matrix stores information about every pixel in the light field and thus, can take up Gigabytes of space depending on the resolution of the attenuation layers. 
 The proposed approach divides the attenuation layers into tiles. 
 Figure~\ref{fig:tiling_layout} shows how the tiles are laid out.
@@ -108,11 +119,12 @@ The number of tiles needed to cover the plane can be calculated by
 	\qquad
 	N_y = \left \lceil \dfrac{R_y - o_y}{r_y - o_y} \right \rceil.
 \end{equation}
-The combination of the same tile from each layer forms a new attenuator of smaller size and lower resolution. 
-The optimization is then performed for every tile separately, resulting in a smaller propagation matrix per tile. 
+The combination of the same tile from each layer forms a subsection of the original layer stack and so, essentially a new attenuator of smaller size and lower resolution.
+The optimization is then performed on every of the subsections with a smaller propagation matrix per tile (fewer columns). 
+As a consequence, less memory is used to store attenuation layers and propagation data in each step.
 In the end, the optimized tiles are put together to form the complete attenuation layers. 
 
-In general, the borders of the attenuator contain less ray-propagation information and thus provide a higher degree of freedom for the optimization. 
+In general, the borders of the attenuator contain less ray-propagation information and thus provide fewer constraints for the optimization. 
 This introduces artifacts that are clearly visible in the reassembled layers as shown in figure~\ref{fig:comparison_tile_overlap_vs_no_overlap}.
 \begin{figure}[tb]
 	\centering
@@ -158,11 +170,25 @@ To solve this issue, the tiles have to overlap.
 In this case, when reassembling the layers from the tiles, the overlaps need to be blended with a mask:
 After the optimization, each tile gets multiplied with a quadratic blending mask.
 The finished layers are then obtained by summing the tiles and dividing by the sum of the blending masks shown in figure~\ref{fig:sum_of_quadratic_blending_masks}.
-
-\todo{choice of quadratic masks?}
+For the results shown in this work, a quadratic blending mask (weights increase quadratically towards the middle of the tile) was used.
 
 \section{Performance of SART}
 \label{sec:performance_of_SART}
+
+For solving the least squares problem in~\ref{eq:minimize_norm}, two iterative solvers are compared in terms of reconstruction error and runtime.
+With the function \emph{lsqlin}, \mbox{MATLAB} provides algorithms to solve constrained linear least squares problems. 
+The concrete algorithm it uses to solve~\ref{eq:minimize_norm} is named Trust-Region-Reflective Least Squares.
+To summarize the official documentation, the algorithm performs the following steps.
+
+The function to minimize is $f(\alpha) = \lVert P \alpha + \bar{L} \rVert^2$.
+Let $\alpha_{i - 1}$ be the result of the previous iteration.
+The goal for the current iteration is to find $\alpha_i$ in the neighborhood of $\alpha_{i - 1}$ for which $f$ improves:
+\begin{enumerate}
+	\item 	Approximate $f$ in the neighborhood $N$ (the trust region) with a simpler function $q$.
+	\item 	Compute a step $s$ by minimizing $q(s)$ in that region.
+	\item 	If $f(\alpha_{i - 1} + s) < f(\alpha_{i - 1})$, set $\alpha_i \coloneqq \alpha_{i - 1} + s$ and the iteration is completed.
+			Otherwise, shrink the region $N$ and repeat from 2.
+\end{enumerate}
 
 \todo{fix gridlines in figure!}
 
@@ -226,3 +252,8 @@ and does not require a \mbox{MATLAB} installation in order to run.
 \label{sec:benefits_limitations}
 
 \todo{Optimization only for positive transmittance}
+
+\section{Future Work and Improvements}
+\label{sec:future_work}
+
+GPU implementation for sart / projection matrix construction, 
