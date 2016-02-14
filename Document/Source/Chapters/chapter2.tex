@@ -84,18 +84,20 @@ Despite the simplicity of this projection type, it is not feasible to build came
 \subsection*{Perspective Projection}
 % Parameterization, two main types: global or relative
 % Reparameterization: Orthographic <-> Perspective
-
-Another way to capture the light field is with a grid of optical systems, e.g. cameras.
-Typically, the $(u, v)$-plane is sampled on a grid $G_{uv} = \left \{ \left( u_i, v_j \right) \mid i = 1,\dots, n, j = 1, \dots, m\right \}$ on the $(u, v)$-plane with a resolution $n \times m$.
-The extent in horizontal (vertical) direction is called the horizontal (vertical) \textbf{baseline}.
-Although it is strictly speaking not correct, the resolution of the $(u, v)$-plane is often referred to as the angular resolution. 
-The angles of the rays in a light field captured by perspective projections are determined by the focal length, the sensor size and the sensor resolution of the camera.
-For a camera light field, typically it is expected that
-\begin{itemize}
-	\item All cameras are placed at grid positions in $G_{uv}$ on the same plane, called the $(u, v)$-plane, 
-	\item The optical axes of the cameras are orthogonal to the $(u, v)$-plane, 
-	\item All cameras have the same intrinsic parameters (e.g. focal length).
-\end{itemize}
+\begin{sloppypar}
+	Another way to capture the light field is with a grid of optical systems, e.g. cameras.
+	Typically, the $(u, v)$-plane is sampled on a grid $G_{uv} = \left \{ \left( u_i, v_j \right) \mid i = 1,\dots, n, j = 1, \dots, m\right \}$ on the $(u, v)$-plane with a resolution $n \times m$.
+	The extent in horizontal (vertical) direction is called the horizontal (vertical) \textbf{baseline}.
+	Although it is strictly speaking not correct, the resolution of the $(u, v)$-plane is often referred to as the angular resolution. 
+	The angles of the rays in a light field captured by perspective projections are determined by the focal length, the sensor size and the sensor resolution of the camera.
+	For a camera light field, typically it is expected that
+	\begin{itemize}
+		\item All cameras are placed at grid positions in $G_{uv}$ on the same plane, called the $(u, v)$-plane, 
+		\item The optical axes of the cameras are orthogonal to the $(u, v)$-plane, 
+		\item All cameras have the same intrinsic parameters (e.g. focal length).
+	\end{itemize}
+\end{sloppypar}
+\noindent
 In this case, the focal planes of all cameras coincide with a common focal plane, the $(s, t)$-plane.
 Figure~\ref{fig:ShiftedPerspectiveProjection} shows this scenario for three cameras in two dimensions.
 Given images $I_{uv}(x, y)$ with respect to a coordinate system centered at the camera position $(u, v)$, the coordinates on the $(s, t)$-plane are $s = u + x$, and $t = v + y$.

@@ -187,15 +187,17 @@ As before, the new pixel index $k^\prime = k + \Delta k$ is computed from the sh
 and the assignment $P_{m k^\prime}^{(n)} = 1$ is made.
 
 \section{Iterative Reconstruction}
+\label{sec:iterative_reconstruction}
 \todo{Show plot of residual norm in each iteration}
-\todo{Compare to linear least squares method from MATLAB}
 \todo{Mention choice of relaxation parameter lambda = 1}
 The optimization problem in equation~\ref{eq:minimize_norm} is essentially a fitting problem.
 Theoretically, it can be solved in a least squares sense using the normal equation $P^T P \alpha = P^T \bar{L}$ and by inverting the matrix $P^T P$.
 For high resolution light fields, the matrix $P$ becomes extremely large and it is unfeasible to compute the inverse of $P^T P$.
-
 In general, the approach to solve these kind of problems is to use iterative methods.
 The choice of the method depends on the type of problem and the structure of the design matrix.
+In the following, the two iterative solvers used in this work are presented and later compared in section~\ref{sec:performance_of_SART} in terms of reconstruction quality.
+
+\subsection*{Simultaneous Algebraic Reconstruction Technique}
 In computed tomography, a variety of iterative solvers have been developed to solve the exact same problem. 
 Among the different methods is the Simultaneous Algebraic Reconstruction Technique (\mbox{SART}) first proposed by \cite{SART}.
 The update rule of \mbox{SART} for iteration $k = 0, 1, 2, \dots$ is
@@ -204,7 +206,24 @@ The update rule of \mbox{SART} for iteration $k = 0, 1, 2, \dots$ is
 \end{equation}
 where $\lambda$ is a relaxation factor.
 $R$ and $C$ denote the diagonal matrices with entries $R_{ii} = \frac{1}{r_i}$ and $C_{ii} = \frac{1}{c_i}$, where $r_i$ and $c_i$ are the sum of the elements in the \mbox{$i$-th} row and column of $P$ respectively.
+To take care of the constraint $0 \leq \alpha < \infty$, the values $\alpha^{(k)}$ are simply clamped to this range in each iteration.
 The parts in~\ref{eq:SART_update_rule} involving $P$ and $P^T$ are also referred to as the \textbf{forward}- and \textbf{back-projection} respectively.
-
 The convergence of \mbox{SART} has been studied by \cite{ConvergenceSART2}.
 They have proven that it converges to a weighted least squares solution.
+
+\subsection*{Trust-Region-Reflective Least Squares}
+With the function \emph{lsqlin}, \mbox{MATLAB} provides algorithms to solve constrained linear least squares problems. 
+The concrete algorithm it uses to solve~\ref{eq:minimize_norm} is named Trust-Region-Reflective Least Squares.
+To summarize the official documentation, the algorithm performs the following steps.
+
+The function to minimize is $f(\alpha) = \lVert P \alpha + \bar{L} \rVert^2$.
+Let $\alpha^{(k - 1)}$ be the result of the previous iteration.
+The goal for the current iteration is to find $\alpha^{(k)}$ in the neighborhood of $\alpha^{(k - 1)}$ for which $f$ improves:
+\begin{enumerate}
+	\item 	Approximate $f$ in the neighborhood $N$ (the trust region) with a simpler function $q$.
+	\item 	Compute a step $s$ by minimizing $q(s)$ in that region.
+	\item 	If $f(\alpha^{(k - 1)} + s) < f(\alpha^{(k - 1)})$, set $\alpha^{(k)} \coloneqq \alpha^{(k - 1)} + s$ and the iteration is completed.
+	Otherwise, shrink the region $N$ and repeat from 2.
+\end{enumerate}
+The incorporation of constraints is a bit more complicated, but the underlying idea is the same.
+In the standard case, $q$ is defined by the first two terms of the Taylor approximation.

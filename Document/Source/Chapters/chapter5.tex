@@ -59,8 +59,7 @@ Next to that, the results are evaluated using the introduced error measures.
 \label{sec:baseline_scaling}
 
 Often it is the case that the light field of interest has a depth range that does not match the depth of field of the display because of its fixed thickness.
-As a consequence, objects outside the depth of field appear blurry.
-This effect is demonstrated in figure~\ref{fig:baseline_scaling} for two different baseline scales.
+As a consequence, objects outside the depth of field appear blurry as demonstrated in figure~\ref{fig:reconstruction_baseline_unscaled}
 \begin{figure}[tb]
 	\begin{subfigure}{0.5\textwidth}
 		\centering
@@ -80,7 +79,10 @@ This effect is demonstrated in figure~\ref{fig:baseline_scaling} for two differe
 			 The light field used here is from the Stanford light field archive, \mbox{\url{http://lightfield.stanford.edu}}.}
 	\label{fig:baseline_scaling}
 \end{figure}
-The reconstruction shows that cards in the front and back are blurred because the are virtually further away from the display, while the objects in the center are sharper.
+The reconstruction shows that cards in the front and back are blurred because they are virtually further away from the display, while the objects in the center are sharper.
+This problem can be solved by virtually scaling the baseline while keeping all other distances the same.
+The effect is that depth is compressed and thus objects appear to be squeezed in Z-direction.
+
 \todo{Explain back-projection.}
 
 \section{Attenuator Tiling and Blending}
@@ -175,23 +177,8 @@ For the results shown in this work, a quadratic blending mask (weights increase 
 \section{Performance of SART}
 \label{sec:performance_of_SART}
 
-For solving the least squares problem in~\ref{eq:minimize_norm}, two iterative solvers are compared in terms of reconstruction error and runtime.
-With the function \emph{lsqlin}, \mbox{MATLAB} provides algorithms to solve constrained linear least squares problems. 
-The concrete algorithm it uses to solve~\ref{eq:minimize_norm} is named Trust-Region-Reflective Least Squares.
-To summarize the official documentation, the algorithm performs the following steps.
-
-The function to minimize is $f(\alpha) = \lVert P \alpha + \bar{L} \rVert^2$.
-Let $\alpha_{i - 1}$ be the result of the previous iteration.
-The goal for the current iteration is to find $\alpha_i$ in the neighborhood of $\alpha_{i - 1}$ for which $f$ improves:
-\begin{enumerate}
-	\item 	Approximate $f$ in the neighborhood $N$ (the trust region) with a simpler function $q$.
-	\item 	Compute a step $s$ by minimizing $q(s)$ in that region.
-	\item 	If $f(\alpha_{i - 1} + s) < f(\alpha_{i - 1})$, set $\alpha_i \coloneqq \alpha_{i - 1} + s$ and the iteration is completed.
-			Otherwise, shrink the region $N$ and repeat from 2.
-\end{enumerate}
-
+The two iterative solvers described in section~\ref{sec:iterative_reconstruction} are compared in figure~\ref{fig:sart_vs_lsqlin} in terms of reconstruction error and runtime.
 \todo{fix gridlines in figure!}
-
 \begin{figure}[tb]
 	\begin{subfigure}{0.5\textwidth}
 		\centering
@@ -233,7 +220,7 @@ The main window is shown in figure~\ref{fig:gui_overview} for a particular use c
 \begin{figure}[tb]
 	\includegraphics[width = \linewidth]{../Figures/gui/overview.png}
 	\caption[Graphical user interface]
-	{Graphical user interface for the \emph{Layered 3D} software developed with MATLAB.}
+			{Graphical user interface for the \emph{Layered 3D} software developed with MATLAB.}
 	\label{fig:gui_overview}
 \end{figure}
 A typical workflow involves three main steps, which correspond to the three columns in the window.
@@ -251,7 +238,9 @@ and does not require a \mbox{MATLAB} installation in order to run.
 \section{Benefits and Limitations}
 \label{sec:benefits_limitations}
 
-\todo{Optimization only for positive transmittance}
+Contrast sensitivity
+
+Optimization only for positive transmittance
 
 \section{Future Work and Improvements}
 \label{sec:future_work}
