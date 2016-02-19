@@ -101,4 +101,13 @@ This thesis was inspired by and builds upon the work of \cite{WetzsteinTomo}.
 In their paper, they present a model for an inexpensive 3D display built from light attenuating, multiplicative masks.
 The simulated reconstructions they achieve are very convincing, although they only worked with synthetic light fields from oblique projections.
 With a conclusive spectral analysis, they show that multi-layer displays have increased depth of field and improved spatial resolution in comparison to other automultiscopic displays such as parallax barriers or integral imaging.
-The idea for this thesis was to extend their work to support camera light fields (e.g. captured with a plenoptic camera or camera array) in addition.
+The idea for this thesis was to extend their work in addition to support camera light fields, e.g. captured with a plenoptic camera or camera array.
+
+Multi-layer displays are not only suited for 3D presentation.
+\cite{FocusCuesMultiPlaneDisplays} use multi-plane displays to present focus cues instead of parallax.
+With their model for image formation inside the human eye, they describe the defocus effects produced in the eye when accommodating at different distances.
+They compute optimal presentation layers that create a focal stack for the viewer, which handles occlusion boundaries and specularity correctly.
+The proposed algorithm requires a series of images focused at different distances rather than a full 4D light field and thus requires less memory for computation.
+Contrary to this work, the display planes are additive and the optimization is performed via the frequency domain.
+
+\cite{EyeglassesFreeDisplay}

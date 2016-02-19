@@ -3,33 +3,33 @@
 \contentsline {section}{\numberline {1.2}Stereoscopic Displays}{2}{section.1.2}
 \contentsline {section}{\numberline {1.3}3D Displays}{2}{section.1.3}
 \contentsline {section}{\numberline {1.4}Related Work}{3}{section.1.4}
-\contentsline {chapter}{\numberline {2}Capturing a Light Field}{4}{chapter.2}
-\contentsline {section}{\numberline {2.1}The Plenoptic Function and the Light Field}{4}{section.2.1}
-\contentsline {section}{\numberline {2.2}Light Field Acquisition}{5}{section.2.2}
-\contentsline {section}{\numberline {2.3}Visualization}{7}{section.2.3}
-\contentsline {section}{\numberline {2.4}The Plenoptic Camera}{8}{section.2.4}
-\contentsline {chapter}{\numberline {3}Light Field Tomography}{9}{chapter.3}
-\contentsline {section}{\numberline {3.1}A Model for Light Attenuation}{9}{section.3.1}
-\contentsline {section}{\numberline {3.2}Discrete Attenuation Layers}{11}{section.3.2}
-\contentsline {section}{\numberline {3.3}Ray Casting}{11}{section.3.3}
-\contentsline {section}{\numberline {3.4}Iterative Reconstruction}{13}{section.3.4}
-\contentsline {chapter}{\numberline {4}Spectral Analysis}{15}{chapter.4}
-\contentsline {section}{\numberline {4.1}Definitions}{15}{section.4.1}
-\contentsline {section}{\numberline {4.2}Spectral Support of Light Fields}{16}{section.4.2}
-\contentsline {section}{\numberline {4.3}Spectral Support of Layered 3D Displays}{17}{section.4.3}
-\contentsline {section}{\numberline {4.4}The Fourier Slice Theorem}{19}{section.4.4}
-\contentsline {chapter}{\numberline {5}Implementation and Assessment}{20}{chapter.5}
-\contentsline {section}{\numberline {5.1}Requirements}{20}{section.5.1}
-\contentsline {section}{\numberline {5.2}The Basic Procedure}{20}{section.5.2}
-\contentsline {section}{\numberline {5.3}Oversampling}{21}{section.5.3}
-\contentsline {section}{\numberline {5.4}Baseline Scaling and Back Projection}{21}{section.5.4}
-\contentsline {section}{\numberline {5.5}Attenuator Tiling and Blending}{22}{section.5.5}
-\contentsline {section}{\numberline {5.6}Performance of SART}{23}{section.5.6}
-\contentsline {section}{\numberline {5.7}Graphical User Interface}{23}{section.5.7}
-\contentsline {section}{\numberline {5.8}Benefits and Limitations}{24}{section.5.8}
-\contentsline {section}{\numberline {5.9}Future Work and Improvements}{24}{section.5.9}
-\contentsline {chapter}{\numberline {A}Appendix}{27}{appendix.A}
-\contentsline {section}{\numberline {A.1}Backlight Fabrication}{27}{section.A.1}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Tables}{29}{figure.caption.49}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Figures}{29}{appendix*.50}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{30}{appendix*.51}
+\contentsline {chapter}{\numberline {2}Capturing a Light Field}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}The Plenoptic Function and the Light Field}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Light Field Acquisition}{6}{section.2.2}
+\contentsline {section}{\numberline {2.3}Visualization}{8}{section.2.3}
+\contentsline {section}{\numberline {2.4}The Plenoptic Camera}{9}{section.2.4}
+\contentsline {chapter}{\numberline {3}Light Field Tomography}{10}{chapter.3}
+\contentsline {section}{\numberline {3.1}A Model for Light Attenuation}{10}{section.3.1}
+\contentsline {section}{\numberline {3.2}Discrete Attenuation Layers}{12}{section.3.2}
+\contentsline {section}{\numberline {3.3}Ray Casting}{12}{section.3.3}
+\contentsline {section}{\numberline {3.4}Iterative Reconstruction}{14}{section.3.4}
+\contentsline {chapter}{\numberline {4}Spectral Analysis}{16}{chapter.4}
+\contentsline {section}{\numberline {4.1}Definitions}{16}{section.4.1}
+\contentsline {section}{\numberline {4.2}Spectral Support of Light Fields}{17}{section.4.2}
+\contentsline {section}{\numberline {4.3}Spectral Support of Layered 3D Displays}{18}{section.4.3}
+\contentsline {section}{\numberline {4.4}The Fourier Slice Theorem}{20}{section.4.4}
+\contentsline {chapter}{\numberline {5}Implementation and Assessment}{21}{chapter.5}
+\contentsline {section}{\numberline {5.1}Requirements}{21}{section.5.1}
+\contentsline {section}{\numberline {5.2}The Basic Procedure}{21}{section.5.2}
+\contentsline {section}{\numberline {5.3}Oversampling}{22}{section.5.3}
+\contentsline {section}{\numberline {5.4}Baseline Scaling and Back Projection}{22}{section.5.4}
+\contentsline {section}{\numberline {5.5}Attenuator Tiling and Blending}{23}{section.5.5}
+\contentsline {section}{\numberline {5.6}Performance of SART}{24}{section.5.6}
+\contentsline {section}{\numberline {5.7}Graphical User Interface}{24}{section.5.7}
+\contentsline {section}{\numberline {5.8}Benefits and Limitations}{25}{section.5.8}
+\contentsline {section}{\numberline {5.9}Future Work and Improvements}{25}{section.5.9}
+\contentsline {chapter}{\numberline {A}Appendix}{28}{appendix.A}
+\contentsline {section}{\numberline {A.1}Backlight Fabrication}{28}{section.A.1}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Tables}{30}{figure.caption.48}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Figures}{30}{appendix*.49}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{31}{appendix*.50}
