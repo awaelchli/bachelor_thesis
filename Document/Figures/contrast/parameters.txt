@@ -1,0 +1,9 @@
+csf light field, 9x9 views
+oblique projection
+fov: 10 degrees
+image plane size: 80 x 80
+layer size: 90 x 90
+layer resolution: 480 x 640
+attenuator thickness: 16
+algorithm: SART
+iterations: 20
