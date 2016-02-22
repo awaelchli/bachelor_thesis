@@ -21,15 +21,16 @@
 \BOOKMARK [0][-]{chapter.5}{Implementation and Assessment}{}% 21
 \BOOKMARK [1][-]{section.5.1}{Requirements}{chapter.5}% 22
 \BOOKMARK [1][-]{section.5.2}{The Basic Procedure}{chapter.5}% 23
-\BOOKMARK [1][-]{section.5.3}{Oversampling}{chapter.5}% 24
-\BOOKMARK [1][-]{section.5.4}{Baseline Scaling and Back Projection}{chapter.5}% 25
-\BOOKMARK [1][-]{section.5.5}{Attenuator Tiling and Blending}{chapter.5}% 26
-\BOOKMARK [1][-]{section.5.6}{Performance of SART}{chapter.5}% 27
-\BOOKMARK [1][-]{section.5.7}{Graphical User Interface}{chapter.5}% 28
-\BOOKMARK [1][-]{section.5.8}{Benefits and Limitations}{chapter.5}% 29
-\BOOKMARK [1][-]{section.5.9}{Future Work and Improvements}{chapter.5}% 30
-\BOOKMARK [0][-]{appendix.A}{Appendix}{}% 31
-\BOOKMARK [1][-]{section.A.1}{Backlight Fabrication}{appendix.A}% 32
-\BOOKMARK [0][-]{figure.caption.48}{List of Tables}{}% 33
-\BOOKMARK [0][-]{appendix*.49}{List of Figures}{}% 34
-\BOOKMARK [0][-]{appendix*.50}{Bibliography}{}% 35
+\BOOKMARK [1][-]{section.5.3}{Interpolation}{chapter.5}% 24
+\BOOKMARK [1][-]{section.5.4}{Oversampling}{chapter.5}% 25
+\BOOKMARK [1][-]{section.5.5}{Baseline Scaling and Back Projection}{chapter.5}% 26
+\BOOKMARK [1][-]{section.5.6}{Attenuator Tiling and Blending}{chapter.5}% 27
+\BOOKMARK [1][-]{section.5.7}{Performance of SART}{chapter.5}% 28
+\BOOKMARK [1][-]{section.5.8}{Graphical User Interface}{chapter.5}% 29
+\BOOKMARK [1][-]{section.5.9}{Benefits and Limitations}{chapter.5}% 30
+\BOOKMARK [1][-]{section.5.10}{Future Work and Improvements}{chapter.5}% 31
+\BOOKMARK [0][-]{appendix.A}{Appendix}{}% 32
+\BOOKMARK [1][-]{section.A.1}{Backlight Fabrication}{appendix.A}% 33
+\BOOKMARK [0][-]{figure.caption.48}{List of Tables}{}% 34
+\BOOKMARK [0][-]{appendix*.49}{List of Figures}{}% 35
+\BOOKMARK [0][-]{appendix*.50}{Bibliography}{}% 36

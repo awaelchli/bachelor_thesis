@@ -52,8 +52,38 @@ Generally, a higher \mbox{PSNR} indicates greater image fidelity and conversely,
 The following sections present a variety of ideas and improvements that were implemented on top of the standard procedure explained above.
 Next to that, the results are evaluated using the introduced error measures.
 
+\section{Interpolation}
+\label{sec:interpolation}
+
+In addition to nearest neighbor interpolation indicated in equation~\ref{eq:pixel_shift_perspective_projection}, bilinear interpolation is incorporated into the pipeline in order to reduce artifacts.
+For every ray, the value of the intersection point on the attenuation layer is represented as a linearly weighted sum of four neighboring pixels corresponding to the rounded indices.
+Accordingly, instead of storing $N$ binary weights, each row of the propagation matrix now holds $4 N$ values.
+Essentially, this just means that each ray in the log-light field is a linear combination of $4 N$ absobance values.
+Due to the exponential propagation model, the interpolation in the log-domain translates to a multiplication of the transmittance simply by the exponatial law,
+\begin{equation*}	
+	\exp( \gamma \alpha_i + (1 - \gamma) \alpha_j ) = \exp( \gamma \alpha_i ) \exp( (1 - \gamma) \alpha_j ) = t_i^{\gamma} t_j^{1 - \gamma},
+\end{equation*}
+with $\gamma$ being the linear interpolation weight, $i$ and $j$ identifying the neighboring pixels which are the query points for the interpolation.
+
+Alternatively, interpolation could be applied to the transmittance instead of the absorbance, but this requires a different optimization strategy.
+Because of the non-linearity of the logarithm, the optimization problem can not simply be transformed into a linear equation.
+
+Unfortunately, the attempt of interpolation does not exhibit a significant increase in reconstruction quality.
+For low resolution attenuation layers, the 
+
+In general, it is not entirely clear which interpolation strategy one should choose for such a problem.
+The choice depends on a variety of physical factors as well as implementation specific restrictions.
+For example, an inkjet printer produces slightly different attenuation masks than a laser printer.
+One could estimate the point spread function (PSF) of the printer by observing the distribution of a single ink drop on the surface.
+The interpolation weights should then be chosen according to the PSF.
+This approach would take into account the very physical aspects of printing.
+However, an accurate validation of this idea would introduce a lot of challenges because it requires accurate calibration and fabrication in order to compare the input light field with the displayed light field:
+The measuring process would require two iterations, one with PSF interpolation and one without.
+The attenuation layers need to be precisely aligned and placed in front of the capturing device (camera array, plenoptic camera etc.) such that the emited light rays directly correspond to the original light rays.
+
 \section{Oversampling}
 \label{sec:oversampling}
+
 
 \section{Baseline Scaling and Back Projection}
 \label{sec:baseline_scaling}
@@ -218,7 +248,7 @@ The two iterative solvers described in section~\ref{sec:iterative_reconstruction
 All functionalities of the pipeline are made available through a graphical user interface \mbox{(GUI)} for ease of use.
 The main window is shown in figure~\ref{fig:gui_overview} for a particular use case.
 \begin{figure}[tb]
-	\includegraphics[width = \linewidth]{../Figures/gui/overview.png}
+	\includegraphics[width = \linewidth]{../Figures/gui/overview}
 	\caption[Graphical user interface]
 			{Graphical user interface for the \emph{Layered 3D} software developed with MATLAB.}
 	\label{fig:gui_overview}
@@ -239,7 +269,8 @@ and does not require a \mbox{MATLAB} installation in order to run.
 \label{sec:benefits_limitations}
 
 Contrast sensitivity
-
+Manual layer alignment
+Printing restrictions and difficulties
 Optimization only for positive transmittance
 
 \section{Future Work and Improvements}

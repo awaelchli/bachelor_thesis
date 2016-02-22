@@ -181,7 +181,7 @@ Setting $\gamma = \frac{Z_s - Z_u}{z_n - Z_u}$ for layer $n$, the formula for th
 	h(m, n) = \gamma (s(k) - u(i)) + u(i).
 \end{equation}
 As before, the new pixel index $k^\prime = k + \Delta k$ is computed from the shift in the number of pixels
-\begin{equation}
+\begin{equation}\label{eq:pixel_shift_perspective_projection}
 	\Delta k = \left[ \frac{h(m, n) - s(k)}{\Delta s} \right], 
 \end{equation}
 and the assignment $P_{m k^\prime}^{(n)} = 1$ is made.
@@ -214,7 +214,8 @@ They have proven that it converges to a weighted least squares solution.
 \subsection*{Trust-Region-Reflective Least Squares}
 With the function \emph{lsqlin}, \mbox{MATLAB} provides algorithms to solve constrained linear least squares problems. 
 The concrete algorithm it uses to solve~\ref{eq:minimize_norm} is named Trust-Region-Reflective Least Squares.
-To summarize the official documentation, the algorithm performs the following steps.
+To summarize the official documentation\footnote{The official documentation can be found here: \url{http://goo.gl/XfhhaR}}, 
+the algorithm performs the following steps.
 
 The function to minimize is $f(\alpha) = \lVert P \alpha + \bar{L} \rVert^2$.
 Let $\alpha^{(k - 1)}$ be the result of the previous iteration.

@@ -21,13 +21,14 @@
 \contentsline {chapter}{\numberline {5}Implementation and Assessment}{21}{chapter.5}
 \contentsline {section}{\numberline {5.1}Requirements}{21}{section.5.1}
 \contentsline {section}{\numberline {5.2}The Basic Procedure}{21}{section.5.2}
-\contentsline {section}{\numberline {5.3}Oversampling}{22}{section.5.3}
-\contentsline {section}{\numberline {5.4}Baseline Scaling and Back Projection}{22}{section.5.4}
-\contentsline {section}{\numberline {5.5}Attenuator Tiling and Blending}{23}{section.5.5}
-\contentsline {section}{\numberline {5.6}Performance of SART}{24}{section.5.6}
-\contentsline {section}{\numberline {5.7}Graphical User Interface}{24}{section.5.7}
-\contentsline {section}{\numberline {5.8}Benefits and Limitations}{25}{section.5.8}
-\contentsline {section}{\numberline {5.9}Future Work and Improvements}{25}{section.5.9}
+\contentsline {section}{\numberline {5.3}Interpolation}{22}{section.5.3}
+\contentsline {section}{\numberline {5.4}Oversampling}{23}{section.5.4}
+\contentsline {section}{\numberline {5.5}Baseline Scaling and Back Projection}{23}{section.5.5}
+\contentsline {section}{\numberline {5.6}Attenuator Tiling and Blending}{24}{section.5.6}
+\contentsline {section}{\numberline {5.7}Performance of SART}{25}{section.5.7}
+\contentsline {section}{\numberline {5.8}Graphical User Interface}{25}{section.5.8}
+\contentsline {section}{\numberline {5.9}Benefits and Limitations}{26}{section.5.9}
+\contentsline {section}{\numberline {5.10}Future Work and Improvements}{26}{section.5.10}
 \contentsline {chapter}{\numberline {A}Appendix}{28}{appendix.A}
 \contentsline {section}{\numberline {A.1}Backlight Fabrication}{28}{section.A.1}
 \contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Tables}{30}{figure.caption.48}

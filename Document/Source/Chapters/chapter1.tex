@@ -18,7 +18,7 @@ A camera that does not discard the additional radiance information is called a p
 As described by~\cite{LightFieldPhotographyHandHeldPlenopticCamera}, an application for the plenoptic camera is digital refocusing, the process of refocusing an image after it was taken.
 Chapter~\ref{chp:light_field_capturing} gives an overview of the properties of light fields and how they are used in this work.
 
-The ideal 3D display should be able to display any light field, meaning it should emit light rays with radiance equal to value in the database.
+The ideal 3D display should be able to display any light field, meaning it should emit light rays with radiance equal to the value in the database.
 It turns out it is not so easy to build these displays. 
 On the one hand are physical challenges, such as the direction of light in different angles or the correct depiction of color, contrast and brightness.
 On the other side comes a lot of data from the light field that needs to be processed, desirably in real-time and full resolution.
@@ -110,4 +110,6 @@ They compute optimal presentation layers that create a focal stack for the viewe
 The proposed algorithm requires a series of images focused at different distances rather than a full 4D light field and thus requires less memory for computation.
 Contrary to this work, the display planes are additive and the optimization is performed via the frequency domain.
 
-\cite{EyeglassesFreeDisplay}
+A different application for light field displays is vision correction.
+As shown by \cite{EyeglassesFreeDisplay}, light field displays can be used to pre-distort imagery in order to compensate for visual aberrations in the observers eye and to obviate the need for eyeglasses or contact lenses.
+Although their physical prototype is based on parallax barriers, the concept applies for all light field displays and therefore it could also be adapted for layered 3D displays.
