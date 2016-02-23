@@ -6,14 +6,14 @@
 \section{The Plenoptic Function and the Light Field}
 
 The plenoptic function, as introduced by~\cite{AdelsonBergen}, is a 7D function that describes the intensity of light for every frequency, along every light ray in space, at any time. 
-It is defined as
+Formally, it is defined as
 \begin{align*}
 	P \colon \mathbb{R}^3 \times \left[0, 2 \pi \right) \times \left[ 0, \pi \right] \times \mathbb{R}^2 & \to \mathbb{R}^+ \\
 	\left(x, y, z, \theta, \phi, t, \lambda \right) & \mapsto P\left(x, y, z, \theta, \phi, t, \lambda \right), 
 \end{align*}
 where the parameters $\left(x, y, z\right)$ are the coordinates of a point in 3D space and the angles $\left(\theta, \phi \right)$ describe the direction of an incoming light ray at time $t$. 
 The light's intensity is given for every wavelength $\lambda$ and thus, the plenoptic function not only captures the visible frequency spectrum but all electromagnetic waves. 
-A commonly used measure for light is the radiance, which is obtained from P by integrating over all wavelengths: 
+A commonly used measure for light is the radiance (power per area perpendicular to travel direction and per solid angle), which is obtained from $P$ by integrating over all wavelengths: 
 $R\left(x, y, z, \theta, \phi, t\right) = \int_{\mathbb{R}} \! P\left(x, y, z, \theta, \phi, t, \lambda \right) \, \mathrm{d} \lambda$.
 
 In practice, it is impossible to acquire all the data needed to model the 7D plenoptic function and hence it is reasonable to consider only a subset of the parameters. 
