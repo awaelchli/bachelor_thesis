@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.6.2)  22 FEB 2016 17:39
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.6.2)  23 FEB 2016 17:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -963,7 +963,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.34 ...il }List of Tables}{30}{figure.caption.48}
+l.35 ...il }List of Tables}{31}{figure.caption.49}
                                                    [1
 
 
@@ -989,7 +989,7 @@ ine 11.
 
 
 ]
-<../Figures/lytro/Lytro_Light_Field_Camera-front_background_removed.png, id=228
+<../Figures/lytro/Lytro_Light_Field_Camera-front_background_removed.png, id=234
 , 2846.635pt x 2238.3625pt>
 File: ../Figures/lytro/Lytro_Light_Field_Camera-front_background_removed.png Gr
 aphic file (type png)
@@ -999,7 +999,7 @@ Package pdftex.def Info: ../Figures/lytro/Lytro_Light_Field_Camera-front_backgr
 ound_removed.png used on input line 31.
 (pdftex.def)             Requested size: 126.61621pt x 99.58464pt.
 
-<../Figures/camera_array/stanford_camera_array_2.jpg, id=230, 401.5pt x 314.173
+<../Figures/camera_array/stanford_camera_array_2.jpg, id=236, 401.5pt x 314.173
 75pt>
 File: ../Figures/camera_array/stanford_camera_array_2.jpg Graphic file (type jp
 g)
@@ -1009,7 +1009,7 @@ ed on input line 38.
 (pdftex.def)             Requested size: 127.26346pt x 99.58464pt.
  [2 <../Figures/lytro/Lytro_Light_Field_Camera-front_background_removed.png> <.
 ./Figures/camera_array/stanford_camera_array_2.jpg>]
-<../Figures/hand_craft/glass_plates_front_view_cropped.jpg, id=240, 1608.0075pt
+<../Figures/hand_craft/glass_plates_front_view_cropped.jpg, id=246, 1608.0075pt
  x 1610.015pt>
 File: ../Figures/hand_craft/glass_plates_front_view_cropped.jpg Graphic file (t
 ype jpg)
@@ -1018,7 +1018,7 @@ Package pdftex.def Info: ../Figures/hand_craft/glass_plates_front_view_cropped.
 jpg used on input line 81.
 (pdftex.def)             Requested size: 169.0519pt x 169.24081pt.
 
-<../Figures/hand_craft/glass_plates_side_view_cropped.jpg, id=241, 1638.12pt x 
+<../Figures/hand_craft/glass_plates_side_view_cropped.jpg, id=247, 1638.12pt x 
 1640.1275pt>
 File: ../Figures/hand_craft/glass_plates_side_view_cropped.jpg Graphic file (ty
 pe jpg)
@@ -1052,7 +1052,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (../Figures/perspective-projection-shift.tex)
 (../Figures/perspective-projection-sheared.tex) [8]
 (../Figures/epi_dice_overview.tex
-<../Figures/epi_1x500x1000x1000/overview.png, id=325, 1003.75pt x 617.30624pt>
+<../Figures/epi_1x500x1000x1000/overview.png, id=333, 1003.75pt x 617.30624pt>
 File: ../Figures/epi_1x500x1000x1000/overview.png Graphic file (type png)
 
 <use ../Figures/epi_1x500x1000x1000/overview.png>
@@ -1060,7 +1060,7 @@ Package pdftex.def Info: ../Figures/epi_1x500x1000x1000/overview.png used on in
 put line 25.
 (pdftex.def)             Requested size: 92.3553pt x 56.79851pt.
 ) (../Figures/epi_dice_1.tex
-<../Figures/epi_1x500x1000x1000/scanY=379.png, id=326, 1003.75pt x 501.875pt>
+<../Figures/epi_1x500x1000x1000/scanY=379.png, id=334, 1003.75pt x 501.875pt>
 File: ../Figures/epi_1x500x1000x1000/scanY=379.png Graphic file (type png)
 
 <use ../Figures/epi_1x500x1000x1000/scanY=379.png>
@@ -1068,7 +1068,7 @@ Package pdftex.def Info: ../Figures/epi_1x500x1000x1000/scanY=379.png used on i
 nput line 25.
 (pdftex.def)             Requested size: 92.3553pt x 46.17764pt.
 ) (../Figures/epi_dice_2.tex
-<../Figures/epi_1x500x1000x1000/scanY=641.png, id=327, 1003.75pt x 501.875pt>
+<../Figures/epi_1x500x1000x1000/scanY=641.png, id=335, 1003.75pt x 501.875pt>
 File: ../Figures/epi_1x500x1000x1000/scanY=641.png Graphic file (type png)
 
 <use ../Figures/epi_1x500x1000x1000/scanY=641.png>
@@ -1077,7 +1077,7 @@ nput line 25.
 (pdftex.def)             Requested size: 92.3553pt x 46.17764pt.
 )
 (../Figures/epi_dice_overview_rectified.tex
-<../Figures/epi_1x500x1000x1000/rectified/overview.png, id=328, 752.8125pt x 61
+<../Figures/epi_1x500x1000x1000/rectified/overview.png, id=336, 752.8125pt x 61
 7.30624pt>
 File: ../Figures/epi_1x500x1000x1000/rectified/overview.png Graphic file (type 
 png)
@@ -1087,7 +1087,7 @@ used on input line 25.
 (pdftex.def)             Requested size: 69.26648pt x 56.79851pt.
 )
 (../Figures/epi_dice_1_rectified.tex
-<../Figures/epi_1x500x1000x1000/rectified/scanY=379.png, id=329, 752.8125pt x 5
+<../Figures/epi_1x500x1000x1000/rectified/scanY=379.png, id=337, 752.8125pt x 5
 01.875pt>
 File: ../Figures/epi_1x500x1000x1000/rectified/scanY=379.png Graphic file (type
  png)
@@ -1097,7 +1097,7 @@ Package pdftex.def Info: ../Figures/epi_1x500x1000x1000/rectified/scanY=379.png
 (pdftex.def)             Requested size: 69.26648pt x 46.17764pt.
 )
 (../Figures/epi_dice_2_rectified.tex
-<../Figures/epi_1x500x1000x1000/rectified/scanY=641.png, id=330, 752.8125pt x 5
+<../Figures/epi_1x500x1000x1000/rectified/scanY=641.png, id=338, 752.8125pt x 5
 01.875pt>
 File: ../Figures/epi_1x500x1000x1000/rectified/scanY=641.png Graphic file (type
  png)
@@ -1176,7 +1176,7 @@ LaTeX Warning: Marginpar on page 16 moved.
 (../Figures/spectral_support/epi_fourier_transform.tex)
 (../Figures/spectral_support/epi_two_objects.tex)
 (../Figures/spectral_support/fourier_transform_red_and_blue.tex
-<../Figures/spectral_support/fft_red_and_blue.png, id=449, 1003.75pt x 1003.75p
+<../Figures/spectral_support/fft_red_and_blue.png, id=457, 1003.75pt x 1003.75p
 t>
 File: ../Figures/spectral_support/fft_red_and_blue.png Graphic file (type png)
  <use ../Figures/spectral_support/fft_red_and_blue.png>
@@ -1198,7 +1198,7 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 )
-<../Figures/spectral_support/convolution_2_layers.png, id=480, 3012.25375pt x 3
+<../Figures/spectral_support/convolution_2_layers.png, id=488, 3012.25375pt x 3
 012.25375pt>
 File: ../Figures/spectral_support/convolution_2_layers.png Graphic file (type p
 ng)
@@ -1207,7 +1207,7 @@ Package pdftex.def Info: ../Figures/spectral_support/convolution_2_layers.png u
 sed on input line 156.
 (pdftex.def)             Requested size: 99.55635pt x 99.58464pt.
 
-<../Figures/spectral_support/convolution_3_layers.png, id=481, 3012.25375pt x 3
+<../Figures/spectral_support/convolution_3_layers.png, id=489, 3012.25375pt x 3
 012.25375pt>
 File: ../Figures/spectral_support/convolution_3_layers.png Graphic file (type p
 ng)
@@ -1216,7 +1216,7 @@ Package pdftex.def Info: ../Figures/spectral_support/convolution_3_layers.png u
 sed on input line 157.
 (pdftex.def)             Requested size: 99.55635pt x 99.58464pt.
 
-<../Figures/spectral_support/convolution_5_layers.png, id=482, 3012.25375pt x 3
+<../Figures/spectral_support/convolution_5_layers.png, id=490, 3012.25375pt x 3
 012.25375pt>
 File: ../Figures/spectral_support/convolution_5_layers.png Graphic file (type p
 ng)
@@ -1243,7 +1243,7 @@ Chapter 5.
 
 ] [22] (../Figures/depth_compression/baseline_unscaled.tex
 <../Figures/depth_compression/baseline_unscaled/Reconstruction_of_view_(9,9).pn
-g, id=526, 513.92pt x 513.92pt>
+g, id=534, 513.92pt x 513.92pt>
 File: ../Figures/depth_compression/baseline_unscaled/Reconstruction_of_view_(9,
 9).png Graphic file (type png)
 
@@ -1270,7 +1270,7 @@ ruction_of_view_(9,9).png used on input line 36.
 (pdftex.def)             Requested size: 106.69783pt x 106.69522pt.
 ) (../Figures/depth_compression/baseline_scaled.tex
 <../Figures/depth_compression/baseline_scaled_shifted/Reconstruction_of_view_(9
-,9).png, id=527, 513.92pt x 513.92pt>
+,9).png, id=535, 513.92pt x 513.92pt>
 File: ../Figures/depth_compression/baseline_scaled_shifted/Reconstruction_of_vi
 ew_(9,9).png Graphic file (type png)
 
@@ -1295,98 +1295,98 @@ w_(9,9).png>
 Package pdftex.def Info: ../Figures/depth_compression/baseline_scaled_shifted/R
 econstruction_of_view_(9,9).png used on input line 36.
 (pdftex.def)             Requested size: 106.69783pt x 106.69522pt.
-) (../Figures/tiling/tiling_layout.tex)
-(../Figures/tiling/tiling_masks_sum.tex
-<../Figures/tiling/blending_masks_sum_3x3.png, id=531, 376.40625pt x 376.40625p
+) [23 <../Figures/depth_compression/baseline_unscaled/Reconstruction_of_view_(9
+,9).png (PNG copy)> <../Figures/depth_compression/baseline_scaled_shifted/Recon
+struction_of_view_(9,9).png (PNG copy)>]
+(../Figures/tiling/tiling_layout.tex) (../Figures/tiling/tiling_masks_sum.tex
+<../Figures/tiling/blending_masks_sum_3x3.png, id=545, 376.40625pt x 376.40625p
 t>
 File: ../Figures/tiling/blending_masks_sum_3x3.png Graphic file (type png)
  <use ../Figures/tiling/blending_masks_sum_3x3.png>
 Package pdftex.def Info: ../Figures/tiling/blending_masks_sum_3x3.png used on i
 nput line 16.
 (pdftex.def)             Requested size: 106.69783pt x 106.6968pt.
-) [23 <../Figures/depth_compression/baseline_unscaled/Reconstruction_of_view_(9
-,9).png (PNG copy)> <../Figures/depth_compression/baseline_scaled_shifted/Recon
-struction_of_view_(9,9).png (PNG copy)>]
-<../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/1.png, id=540, 51
+)
+<../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/1.png, id=547, 51
 3.92pt x 513.92pt>
 File: ../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/1.png Graphi
 c file (type png)
 
 <use ../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/1.png>
 Package pdftex.def Info: ../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_
-layers/1.png used on input line 162.
+layers/1.png used on input line 164.
 (pdftex.def)             Requested size: 79.34853pt x 79.3431pt.
 
-<../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/1.png, id=541, 51
+<../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/1.png, id=548, 51
 3.92pt x 513.92pt>
 File: ../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/1.png Graphi
 c file (type png)
 
 <use ../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/1.png>
 Package pdftex.def Info: ../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_
-layers/1.png used on input line 166.
+layers/1.png used on input line 168.
 (pdftex.def)             Requested size: 79.34853pt x 79.3431pt.
 
-<../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/2.png, id=542, 51
+<../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/2.png, id=549, 51
 3.92pt x 513.92pt>
 File: ../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/2.png Graphi
 c file (type png)
 
 <use ../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/2.png>
 Package pdftex.def Info: ../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_
-layers/2.png used on input line 170.
+layers/2.png used on input line 172.
 (pdftex.def)             Requested size: 79.34853pt x 79.3431pt.
 
-<../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/2.png, id=543, 51
+<../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/2.png, id=550, 51
 3.92pt x 513.92pt>
 File: ../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/2.png Graphi
 c file (type png)
 
 <use ../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/2.png>
 Package pdftex.def Info: ../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_
-layers/2.png used on input line 174.
+layers/2.png used on input line 176.
 (pdftex.def)             Requested size: 79.34853pt x 79.3431pt.
 
-<../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/3.png, id=544, 51
+<../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/3.png, id=551, 51
 3.92pt x 513.92pt>
 File: ../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/3.png Graphi
 c file (type png)
 
 <use ../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/3.png>
 Package pdftex.def Info: ../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_
-layers/3.png used on input line 178.
+layers/3.png used on input line 180.
 (pdftex.def)             Requested size: 79.34853pt x 79.3431pt.
 
-<../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/3.png, id=545, 51
+<../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/3.png, id=552, 51
 3.92pt x 513.92pt>
 File: ../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/3.png Graphi
 c file (type png)
 
 <use ../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/3.png>
 Package pdftex.def Info: ../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_
-layers/3.png used on input line 182.
+layers/3.png used on input line 184.
 (pdftex.def)             Requested size: 79.34853pt x 79.3431pt.
 
 <../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/blendingMaskSum.p
-ng, id=546, 513.92pt x 513.92pt>
+ng, id=553, 513.92pt x 513.92pt>
 File: ../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/blendingMask
 Sum.png Graphic file (type png)
 
 <use ../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/blendingMaskS
 um.png>
 Package pdftex.def Info: ../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_
-layers/blendingMaskSum.png used on input line 186.
+layers/blendingMaskSum.png used on input line 188.
 (pdftex.def)             Requested size: 79.34853pt x 79.3431pt.
 
 <../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/blendingMaskSum.p
-ng, id=547, 513.92pt x 513.92pt>
+ng, id=554, 513.92pt x 513.92pt>
 File: ../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/blendingMask
 Sum.png Graphic file (type png)
 
 <use ../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/blendingMaskS
 um.png>
 Package pdftex.def Info: ../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_
-layers/blendingMaskSum.png used on input line 190.
+layers/blendingMaskSum.png used on input line 192.
 (pdftex.def)             Requested size: 79.34853pt x 79.3431pt.
  [24 <../Figures/tiling/blending_masks_sum_3x3.png (PNG copy)>]
 (../Figures/optimization_performance/iterations_vs_rmse.tex
@@ -1401,11 +1401,67 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 )
-<../Figures/gui/overview.PNG, id=562, 930.47626pt x 685.8122pt>
+<../Figures/contrast/2layer/Reconstruction_of_view_(5,5).png, id=568, 642.4pt x
+ 481.8pt>
+File: ../Figures/contrast/2layer/Reconstruction_of_view_(5,5).png Graphic file 
+(type png)
+ <use ../Figures/contrast/2layer/Reconstruction_of_view_(5,5).png>
+Package pdftex.def Info: ../Figures/contrast/2layer/Reconstruction_of_view_(5,5
+).png used on input line 251.
+(pdftex.def)             Requested size: 110.40253pt x 43.68285pt.
+
+<../Figures/contrast/2layer/MSE_for_view_(5,5).png, id=570, 642.4pt x 481.8pt>
+File: ../Figures/contrast/2layer/MSE_for_view_(5,5).png Graphic file (type png)
+
+
+<use ../Figures/contrast/2layer/MSE_for_view_(5,5).png>
+Package pdftex.def Info: ../Figures/contrast/2layer/MSE_for_view_(5,5).png used
+ on input line 255.
+(pdftex.def)             Requested size: 110.40253pt x 43.68285pt.
+
+<../Figures/contrast/5layer/Reconstruction_of_view_(5,5).png, id=572, 642.4pt x
+ 481.8pt>
+File: ../Figures/contrast/5layer/Reconstruction_of_view_(5,5).png Graphic file 
+(type png)
+ <use ../Figures/contrast/5layer/Reconstruction_of_view_(5,5).png>
+Package pdftex.def Info: ../Figures/contrast/5layer/Reconstruction_of_view_(5,5
+).png used on input line 260.
+(pdftex.def)             Requested size: 110.40253pt x 43.68285pt.
+
+<../Figures/contrast/5layer/MSE_for_view_(5,5).png, id=574, 642.4pt x 481.8pt>
+File: ../Figures/contrast/5layer/MSE_for_view_(5,5).png Graphic file (type png)
+
+
+<use ../Figures/contrast/5layer/MSE_for_view_(5,5).png>
+Package pdftex.def Info: ../Figures/contrast/5layer/MSE_for_view_(5,5).png used
+ on input line 264.
+(pdftex.def)             Requested size: 110.40253pt x 43.68285pt.
+
+<../Figures/contrast/5layer_2x_resolution/Reconstruction_of_view_(5,5).png, id=
+576, 642.4pt x 481.8pt>
+File: ../Figures/contrast/5layer_2x_resolution/Reconstruction_of_view_(5,5).png
+ Graphic file (type png)
+
+<use ../Figures/contrast/5layer_2x_resolution/Reconstruction_of_view_(5,5).png>
+Package pdftex.def Info: ../Figures/contrast/5layer_2x_resolution/Reconstructio
+n_of_view_(5,5).png used on input line 269.
+(pdftex.def)             Requested size: 110.40253pt x 43.68285pt.
+
+<../Figures/contrast/5layer_2x_resolution/MSE_for_view_(5,5).png, id=578, 642.4
+pt x 481.8pt>
+File: ../Figures/contrast/5layer_2x_resolution/MSE_for_view_(5,5).png Graphic f
+ile (type png)
+
+<use ../Figures/contrast/5layer_2x_resolution/MSE_for_view_(5,5).png>
+Package pdftex.def Info: ../Figures/contrast/5layer_2x_resolution/MSE_for_view_
+(5,5).png used on input line 273.
+(pdftex.def)             Requested size: 110.40253pt x 43.68285pt.
+
+<../Figures/gui/overview.PNG, id=581, 930.47626pt x 685.8122pt>
 File: ../Figures/gui/overview.PNG Graphic file (type png)
 
 <use ../Figures/gui/overview.PNG>
-Package pdftex.def Info: ../Figures/gui/overview.PNG used on input line 249.
+Package pdftex.def Info: ../Figures/gui/overview.PNG used on input line 289.
 (pdftex.def)             Requested size: 345.0pt x 254.28024pt.
  [25 <../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/1.png (PNG c
 opy)> <../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/1.png (PNG 
@@ -1416,12 +1472,18 @@ NG copy)> <../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/3.png (
 PNG copy)> <../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/blendi
 ngMaskSum.png (PNG copy)> <../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_
 3_layers/blendingMaskSum.png (PNG copy)>])
-[26] [27 <../Figures/gui/overview.PNG>]
+[26] [27 <../Figures/contrast/2layer/Reconstruction_of_view_(5,5).png (PNG copy
+)> <../Figures/contrast/2layer/MSE_for_view_(5,5).png (PNG copy)> <../Figures/c
+ontrast/5layer/Reconstruction_of_view_(5,5).png (PNG copy)> <../Figures/contras
+t/5layer/MSE_for_view_(5,5).png (PNG copy)> <../Figures/contrast/5layer_2x_reso
+lution/Reconstruction_of_view_(5,5).png (PNG copy)> <../Figures/contrast/5layer
+_2x_resolution/MSE_for_view_(5,5).png (PNG copy)>] [28 <../Figures/gui/overview
+.PNG>]
 \openout2 = `Chapters/appendix.aux'.
 
  (./Chapters/appendix.tex
 Appendix A.
-<../Figures/placeholder.jpg, id=586, 301.125pt x 401.5pt>
+<../Figures/placeholder.jpg, id=617, 301.125pt x 401.5pt>
 File: ../Figures/placeholder.jpg Graphic file (type jpg)
 
 <use ../Figures/placeholder.jpg>
@@ -1436,17 +1498,17 @@ File: ../Figures/placeholder.jpg Graphic file (type jpg)
 <use ../Figures/placeholder.jpg>
 Package pdftex.def Info: ../Figures/placeholder.jpg used on input line 56.
 (pdftex.def)             Requested size: 90.33818pt x 120.45091pt.
-) [28
+) [29
 
 
 
 
-] [29 <../Figures/placeholder.jpg>]
+] [30 <../Figures/placeholder.jpg>]
 (./thesis.lot)
 \tf@lot=\write8
 \openout8 = `thesis.lot'.
 
- [30
+ [31
 
 
 
@@ -1454,12 +1516,12 @@ Package pdftex.def Info: ../Figures/placeholder.jpg used on input line 56.
 \tf@lof=\write9
 \openout9 = `thesis.lof'.
 
- (./thesis.bbl [31
+ (./thesis.bbl [32
 
-] [32
+] [33
 
 ])
-<Erklaerung.pdf, id=635, 597.23125pt x 845.1575pt>
+<Erklaerung.pdf, id=668, 597.23125pt x 845.1575pt>
 File: Erklaerung.pdf Graphic file (type pdf)
  <use Erklaerung.pdf>
 Package pdftex.def Info: Erklaerung.pdf used on input line 122.
@@ -1469,8 +1531,8 @@ File: Erklaerung.pdf Graphic file (type pdf)
 <use Erklaerung.pdf>
 Package pdftex.def Info: Erklaerung.pdf used on input line 122.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
- [33]
-<Erklaerung.pdf, id=649, page=1, 597.23125pt x 845.1575pt>
+ [34]
+<Erklaerung.pdf, id=681, page=1, 597.23125pt x 845.1575pt>
 File: Erklaerung.pdf Graphic file (type pdf)
 
 <use Erklaerung.pdf, page 1>
@@ -1494,7 +1556,7 @@ File: Erklaerung.pdf Graphic file (type pdf)
 <use Erklaerung.pdf, page 1>
 Package pdftex.def Info: Erklaerung.pdf, page1 used on input line 122.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [34 <./Erklaerung.pdf>]
+ [35 <./Erklaerung.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 124.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 124.
  (./thesis.aux
@@ -1504,14 +1566,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 124.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 124.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 124.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: D74D51D695E398A51B387FAFCA5BDF95;2343.
+(rerunfilecheck)             Checksum: C18D17BAA01038929870C0530FCEE10C;2411.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 124.
  ) 
 Here is how much of TeX's memory you used:
- 29322 strings out of 494985
- 635933 string characters out of 6180357
- 930428 words of memory out of 5000000
- 31611 multiletter control sequences out of 15000+600000
+ 29356 strings out of 494985
+ 637696 string characters out of 6180357
+ 930520 words of memory out of 5000000
+ 31637 multiletter control sequences out of 15000+600000
  12150 words of font info for 47 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  82i,22n,377p,837b,2343s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1536,10 +1598,10 @@ pe1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/symbols/msbm7.pfb>
-Output written on thesis.pdf (39 pages, 16340693 bytes).
+Output written on thesis.pdf (40 pages, 16506661 bytes).
 PDF statistics:
- 782 PDF objects out of 1000 (max. 8388607)
- 667 compressed objects within 7 object streams
- 180 named destinations out of 1000 (max. 500000)
- 456 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 815 PDF objects out of 1000 (max. 8388607)
+ 687 compressed objects within 7 object streams
+ 183 named destinations out of 1000 (max. 500000)
+ 530 words of extra memory for PDF output out of 10000 (max. 10000000)
 

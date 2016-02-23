@@ -65,11 +65,11 @@ Due to the exponential propagation model, the interpolation in the log-domain tr
 \end{equation*}
 with $\gamma$ being the linear interpolation weight, $i$ and $j$ identifying the neighboring pixels which are the query points for the interpolation.
 
-Alternatively, interpolation could be applied to the transmittance instead of the absorbance, but this requires a different optimization strategy.
-Because of the non-linearity of the logarithm, the optimization problem can not simply be transformed into a linear equation.
-
 Unfortunately, the attempt of interpolation does not exhibit a significant increase in reconstruction quality.
 For low resolution attenuation layers, the 
+
+Alternatively, interpolation could be applied to the transmittance instead of the absorbance, but this requires a different optimization strategy.
+Because of the non-linearity of the logarithm, the optimization problem can not simply be transformed into a linear equation.
 
 In general, it is not entirely clear which interpolation strategy one should choose for such a problem.
 The choice depends on a variety of physical factors as well as implementation specific restrictions.
@@ -240,6 +240,44 @@ The two iterative solvers described in section~\ref{sec:iterative_reconstruction
 			{Impact of layer count on the \mbox{PSNR}.
 			 Performance comparison of the attenuation display for two different scenes from the Stanford light field archive.
 			 The \mbox{PSNR} is evaluated against the number of layers.}
+\end{figure}
+
+\section{Contrast Sensitivity}
+
+\begin{figure}
+	\centering
+	\begin{subfigure}{0.32\textwidth}
+		\centering
+		\includegraphics[width = \textwidth, trim = {0 0 0 8cm}, clip]{../Figures/contrast/2layer/Reconstruction_of_view_(5,5)}
+		
+		\vspace{0.15cm}
+		
+		\includegraphics[width = \textwidth, trim = {0 0 0 8cm}, clip]{../Figures/contrast/2layer/MSE_for_view_(5,5)}
+		\caption{2 layers}
+	\end{subfigure}\hspace{0.15cm}%
+	\begin{subfigure}{0.32\textwidth}
+		\centering
+		\includegraphics[width = \textwidth, trim = {0 0 0 8cm}, clip]{../Figures/contrast/5layer/Reconstruction_of_view_(5,5)}
+		
+		\vspace{0.15cm}
+		
+		\includegraphics[width = \textwidth, trim = {0 0 0 8cm}, clip]{../Figures/contrast/5layer/MSE_for_view_(5,5)}
+		\caption{5 layers}		
+	\end{subfigure}\hspace{0.15cm}%
+	\begin{subfigure}{0.32\textwidth}
+		\centering
+		\includegraphics[width = \textwidth, trim = {0 0 0 8cm}, clip]{../Figures/contrast/5layer_2x_resolution/Reconstruction_of_view_(5,5)}
+		
+		\vspace{0.15cm}
+		
+		\includegraphics[width = \textwidth, trim = {0 0 0 8cm}, clip]{../Figures/contrast/5layer_2x_resolution/MSE_for_view_(5,5)}
+		\caption{5 layers, 2x resolution}
+	\end{subfigure}%
+	\caption[Contrast sensitivity analysis for layered 3D displays]
+			{Contrast sensitivity analysis for layered 3D displays.
+			 Shown are the simulated display projection from a viewing direction perpendicular to the display (top) and the absolute error (bottom).
+			 The light field is constant in angle, contains increasing spatial frequency in horizontal direction and increasing contrast in vertical direction.}
+	\label{fig:contrast_sensitivity}
 \end{figure}
 
 \section{Graphical User Interface}
