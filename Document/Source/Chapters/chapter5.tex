@@ -140,7 +140,8 @@ Figure~\ref{fig:tiling_layout} shows how the tiles are laid out.
 			{(a) Layout of the tiles that cover the attenuation layers.
 				 The pixel grid of size $R_x \times R_y$ is covered by tiles of $r_x \times r_y$ pixels with an overlap of $o_x$ in horizontal and $o_y$ in vertical direction.
 			 (b) The sum of the per-tile quadratic blending masks used for the normalization.}
-\end{figure} 
+\end{figure}
+\todo{fix gridlines in figure!} 
 The inputs for the tiling algorithm are the resolution of the tiles $r = (r_x, r_y)$ and the overlap in horizontal and vertical direction, $o = (o_x, o_y)$. 
 The tiles are then laid out in a grid beginning in the top left corner of the layer. 
 The number of tiles needed to cover the plane can be calculated by 
@@ -208,7 +209,6 @@ For the results shown in this work, a quadratic blending mask (weights increase 
 \label{sec:performance_of_SART}
 
 The two iterative solvers described in section~\ref{sec:iterative_reconstruction} are compared in figure~\ref{fig:sart_vs_lsqlin} in terms of reconstruction error and runtime.
-\todo{fix gridlines in figure!}
 \begin{figure}[tb]
 	\begin{subfigure}{0.5\textwidth}
 		\centering
@@ -224,11 +224,14 @@ The two iterative solvers described in section~\ref{sec:iterative_reconstruction
 	\end{subfigure}%
 	\caption[Performance assessment of the optimization]
 			{Performance assessment of the optimization.
-			 The two iterative methods \mbox{SART} and \mbox{MATLAB's} linear least squares solver \emph{lsqlin} are compared in terms of \mbox{RMSE} (a) and runtime (b).
+			 The two iterative methods \mbox{SART} and \mbox{MATLAB's} linear least squares solver LSQLIN are compared in terms of \mbox{RMSE} (a) and runtime (b).
 			 The input light field is the same as in figure~\ref{fig:baseline_scaling} and five attenuation layers were used.}
 	\label{fig:sart_vs_lsqlin}
 \end{figure}
-
+Although the standard least squares solver uses fewer iterations compared to SART, the computation time is significantly longer.
+For the specific experiment in the figure, both methods achieve the same RMSE with twenty iterations, but SART performs the twenty iterations in the same time as LSQLIN solves two iterations.
+Furthermore, the simple update rule of SART allows for concurrent optimization in each color channel as opposed to LSQLIN, which needs to be run on every channel separately.
+This shows that SART is a superior solver for this large scale layered 3D problem.
 \begin{figure}[tb]
 	\begin{subfigure}{\textwidth}
 		\centering
