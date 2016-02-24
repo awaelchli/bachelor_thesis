@@ -309,6 +309,23 @@ and does not require a \mbox{MATLAB} installation in order to run.
 \section{Benefits and Limitations}
 \label{sec:benefits_limitations}
 
+From a theoretical standpoint, the layered 3D architecture seems to be very promising.
+The analysis shows that multiplicative displays encompass extended spectral support resulting in a higher depth of field compared to other automultiscopic systems.
+The multi-layer design eliminates the trade-off between angular- and spatial resolution that is present with parallax barriers or integral imaging.
+In practice, there are a few limitations that need to be addressed.
+First off, to solve the multiplicative problem given by equation~\ref{eq:transmittance_layers} it is assumed that the transmission values are positive in order to solve the problem in a linear manner with the logarithm applied.
+For the physical realization, this is of course a well justified assumption since negative transmission is not possible to achieve.
+Nonetheless, the restriction to positive transmittance is reducing the space of solutions for optimal attenuation layers.
+Althought it would require an entirely different approach, it is plausible to achieve better results if real valued transmission values were permitted.
+
+The prototypes produced in the context of this thesis are suited for demonstration purposes, though the viewing angles are limited to a small range.
+Unfortunately, experiments to show objects in virtual planes outside the displays enclosure were not successful.
+Another challenge with display fabrication is the manual layer alignment.
+The marks printed on the border of the layers help with alignment, but the process remains tedious and becomes increasingly harder with more layers.
+Moreover, there are no universally best printer settings (amount of ink, drying time etc.) for printing on transparencies.
+The settings have to be tuned by trial-and-error depending on the particular printer model and transparencies.
+Moir\'{e} does not seem to be a problem because of the natural blending of ink.
+
 Contrast sensitivity
 Manual layer alignment
 Printing restrictions and difficulties
@@ -317,4 +334,9 @@ Optimization only for positive transmittance
 \section{Future Work and Improvements}
 \label{sec:future_work}
 
+
 GPU implementation for sart / projection matrix construction, 
+
+better printer
+print on glass
+
