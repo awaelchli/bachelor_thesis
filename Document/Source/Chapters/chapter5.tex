@@ -111,9 +111,18 @@ As a consequence, objects outside the depth of field appear blurry as demonstrat
 \end{figure}
 The reconstruction shows that cards in the front and back are blurred because they are virtually further away from the display, while the objects in the center are sharper.
 This problem can be solved by virtually scaling the baseline while keeping all other distances the same.
-The effect is that depth is compressed and thus objects appear to be squeezed in Z-direction.
-
-\todo{Explain back-projection.}
+The effect is that depth is compressed and hence objects appear to be squeezed in Z-direction.
+But the question is: How should one chose the scale such that a desired range is sharp?
+It is possible to solve this problem analytically, for example by using equation~\ref{eq:approx_upper_bound_spatial_cut_off} or ~\ref{eq:expected_upper_bound_spatial_cut_off}.
+But often it is the case that the exact baseline is unknown, as it is for nearly all light fields used in this work.
+The alternative, more visual way, is to back-project the light field to the layers by trial-and-error using the propagation matrix $P$ for a guessed baseline.
+Although the propagation matrix must be computed for every trial, the back projection itself is fast because it is simply a matrix multiplication, 
+\begin{equation*}\label{eq:back_projection}
+	\beta = P^T L.
+\end{equation*}
+The outcome of this operation is a vector $\beta$ holding the values of $N$ refocused images where $N$ is the number of layers used.
+In this way, one can control the depth compression by observing the focused parts of the light field in the top- and bottommost layer.
+This method can also be used to align the display center with the center of the scene, or an arbitrary position if desired.
 
 \section{Attenuator Tiling and Blending}
 \label{sec:tiling_and_blending}
@@ -247,7 +256,7 @@ This shows that SART is a superior solver for this large scale layered 3D proble
 
 \section{Contrast Sensitivity}
 
-\begin{figure}
+\begin{figure}[tb]
 	\centering
 	\begin{subfigure}{0.32\textwidth}
 		\centering
@@ -324,18 +333,20 @@ Another challenge with display fabrication is the manual layer alignment.
 The marks printed on the border of the layers help with alignment, but the process remains tedious and becomes increasingly harder with more layers.
 Moreover, there are no universally best printer settings (amount of ink, drying time etc.) for printing on transparencies.
 The settings have to be tuned by trial-and-error depending on the particular printer model and transparencies.
-Moir\'{e} does not seem to be a problem because of the natural blending of ink.
+Also, Moir\'{e} does not seem to be a problem because of the natural blending of ink.
 
 Contrast sensitivity
-Manual layer alignment
-Printing restrictions and difficulties
-Optimization only for positive transmittance
 
 \section{Future Work and Improvements}
 \label{sec:future_work}
 
+The current implementation in MATLAB provides the necessary features in order to produce a static layered 3D display.
+However, with greater effort a lot of operations can be made more efficient.
+A GPU implementation of SART like the one from \cite{SARTGPU} could be incorporated in the software to accelerate the optimization process.
+A parallelization of SART is possible because the update rule depends solely on matrix multiplication and addition.
+The parallel approach would also eliminate the need of explicitly pre-computing the propagation matrix, which is a computationally- and memory intensive process.
+Nonetheless, printing and layer alignment is time consuming and must be attacked with patience.
 
-GPU implementation for sart / projection matrix construction, 
 
 better printer
 print on glass

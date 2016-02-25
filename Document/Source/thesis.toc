@@ -17,7 +17,6 @@
 \contentsline {section}{\numberline {4.1}Definitions}{16}{section.4.1}
 \contentsline {section}{\numberline {4.2}Spectral Support of Light Fields}{17}{section.4.2}
 \contentsline {section}{\numberline {4.3}Spectral Support of Layered 3D Displays}{18}{section.4.3}
-\contentsline {section}{\numberline {4.4}The Fourier Slice Theorem}{20}{section.4.4}
 \contentsline {chapter}{\numberline {5}Implementation and Assessment}{21}{chapter.5}
 \contentsline {section}{\numberline {5.1}Requirements}{21}{section.5.1}
 \contentsline {section}{\numberline {5.2}The Basic Procedure}{21}{section.5.2}
@@ -26,13 +25,13 @@
 \contentsline {section}{\numberline {5.5}Baseline Scaling and Back Projection}{23}{section.5.5}
 \contentsline {section}{\numberline {5.6}Attenuator Tiling and Blending}{24}{section.5.6}
 \contentsline {section}{\numberline {5.7}Performance of SART}{25}{section.5.7}
-\contentsline {section}{\numberline {5.8}Contrast Sensitivity}{26}{section.5.8}
-\contentsline {section}{\numberline {5.9}Graphical User Interface}{26}{section.5.9}
+\contentsline {section}{\numberline {5.8}Contrast Sensitivity}{25}{section.5.8}
+\contentsline {section}{\numberline {5.9}Graphical User Interface}{25}{section.5.9}
 \contentsline {section}{\numberline {5.10}Benefits and Limitations}{26}{section.5.10}
-\contentsline {section}{\numberline {5.11}Future Work and Improvements}{28}{section.5.11}
-\contentsline {chapter}{\numberline {A}Appendix}{29}{appendix.A}
-\contentsline {section}{\numberline {A.1}Printing}{29}{section.A.1}
-\contentsline {section}{\numberline {A.2}Backlight Fabrication}{29}{section.A.2}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Tables}{31}{figure.caption.48}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Figures}{31}{appendix*.49}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{32}{appendix*.50}
+\contentsline {section}{\numberline {5.11}Future Work and Improvements}{27}{section.5.11}
+\contentsline {chapter}{\numberline {A}Appendix}{30}{appendix.A}
+\contentsline {section}{\numberline {A.1}Printing}{30}{section.A.1}
+\contentsline {section}{\numberline {A.2}Backlight Fabrication}{30}{section.A.2}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Tables}{32}{figure.caption.46}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Figures}{32}{appendix*.47}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{33}{appendix*.48}

@@ -17,22 +17,21 @@
 \BOOKMARK [1][-]{section.4.1}{Definitions}{chapter.4}% 17
 \BOOKMARK [1][-]{section.4.2}{Spectral Support of Light Fields}{chapter.4}% 18
 \BOOKMARK [1][-]{section.4.3}{Spectral Support of Layered 3D Displays}{chapter.4}% 19
-\BOOKMARK [1][-]{section.4.4}{The Fourier Slice Theorem}{chapter.4}% 20
-\BOOKMARK [0][-]{chapter.5}{Implementation and Assessment}{}% 21
-\BOOKMARK [1][-]{section.5.1}{Requirements}{chapter.5}% 22
-\BOOKMARK [1][-]{section.5.2}{The Basic Procedure}{chapter.5}% 23
-\BOOKMARK [1][-]{section.5.3}{Interpolation}{chapter.5}% 24
-\BOOKMARK [1][-]{section.5.4}{Oversampling}{chapter.5}% 25
-\BOOKMARK [1][-]{section.5.5}{Baseline Scaling and Back Projection}{chapter.5}% 26
-\BOOKMARK [1][-]{section.5.6}{Attenuator Tiling and Blending}{chapter.5}% 27
-\BOOKMARK [1][-]{section.5.7}{Performance of SART}{chapter.5}% 28
-\BOOKMARK [1][-]{section.5.8}{Contrast Sensitivity}{chapter.5}% 29
-\BOOKMARK [1][-]{section.5.9}{Graphical User Interface}{chapter.5}% 30
-\BOOKMARK [1][-]{section.5.10}{Benefits and Limitations}{chapter.5}% 31
-\BOOKMARK [1][-]{section.5.11}{Future Work and Improvements}{chapter.5}% 32
-\BOOKMARK [0][-]{appendix.A}{Appendix}{}% 33
-\BOOKMARK [1][-]{section.A.1}{Printing}{appendix.A}% 34
-\BOOKMARK [1][-]{section.A.2}{Backlight Fabrication}{appendix.A}% 35
-\BOOKMARK [0][-]{figure.caption.48}{List of Tables}{}% 36
-\BOOKMARK [0][-]{appendix*.49}{List of Figures}{}% 37
-\BOOKMARK [0][-]{appendix*.50}{Bibliography}{}% 38
+\BOOKMARK [0][-]{chapter.5}{Implementation and Assessment}{}% 20
+\BOOKMARK [1][-]{section.5.1}{Requirements}{chapter.5}% 21
+\BOOKMARK [1][-]{section.5.2}{The Basic Procedure}{chapter.5}% 22
+\BOOKMARK [1][-]{section.5.3}{Interpolation}{chapter.5}% 23
+\BOOKMARK [1][-]{section.5.4}{Oversampling}{chapter.5}% 24
+\BOOKMARK [1][-]{section.5.5}{Baseline Scaling and Back Projection}{chapter.5}% 25
+\BOOKMARK [1][-]{section.5.6}{Attenuator Tiling and Blending}{chapter.5}% 26
+\BOOKMARK [1][-]{section.5.7}{Performance of SART}{chapter.5}% 27
+\BOOKMARK [1][-]{section.5.8}{Contrast Sensitivity}{chapter.5}% 28
+\BOOKMARK [1][-]{section.5.9}{Graphical User Interface}{chapter.5}% 29
+\BOOKMARK [1][-]{section.5.10}{Benefits and Limitations}{chapter.5}% 30
+\BOOKMARK [1][-]{section.5.11}{Future Work and Improvements}{chapter.5}% 31
+\BOOKMARK [0][-]{appendix.A}{Appendix}{}% 32
+\BOOKMARK [1][-]{section.A.1}{Printing}{appendix.A}% 33
+\BOOKMARK [1][-]{section.A.2}{Backlight Fabrication}{appendix.A}% 34
+\BOOKMARK [0][-]{figure.caption.46}{List of Tables}{}% 35
+\BOOKMARK [0][-]{appendix*.47}{List of Figures}{}% 36
+\BOOKMARK [0][-]{appendix*.48}{Bibliography}{}% 37
