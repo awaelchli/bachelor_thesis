@@ -44,9 +44,10 @@ Another important quality measure in signal processing is the peak signal-to-noi
 \begin{equation*}
 	\text{PSNR} \coloneqq 10 \log_{10} \left(\frac{X_\text{max}^2}{\text{MSE}}\right),
 \end{equation*}
-where $X_\text{max}$ is the maximum value the image/color channel can hold, e.g. for 8-bit color channel representation this value would be 255.
+where $X_\text{max}$ is the maximum intensity value the image or color channel can hold, e.g. for 8-bit color channel representation this value would be 255.
 It measures the loss of power in a reconstructed signal, with an additional adjustment for the human perception of error.
 The use of this measure is motivated by the fact that \mbox{Layered 3D} is also about signal reconstruction, and the goal is to compare the original signal (light field) with the reconstructed one. 
+As opposed to the MSE, it is easier to compare the PSNR of different images because it does not depend on the pixels intensity scale given by the bit depth.
 Generally, a higher \mbox{PSNR} indicates greater image fidelity and conversely, a highly corrupted signal produces low \mbox{PSNR}.
 
 The following sections present a variety of ideas and improvements that were implemented on top of the standard procedure explained above.
@@ -241,6 +242,11 @@ Although the standard least squares solver uses fewer iterations compared to SAR
 For the specific experiment in the figure, both methods achieve the same RMSE with twenty iterations, but SART performs the twenty iterations in the same time as LSQLIN solves two iterations.
 Furthermore, the simple update rule of SART allows for concurrent optimization in each color channel as opposed to LSQLIN, which needs to be run on every channel separately.
 This shows that SART is a superior solver for this large scale layered 3D problem.
+
+Next, the reconstruction quality of SART is compared against the number of layers used to display.
+Adding more layers means adding more pixels and hence there are more degrees of freedom for the optimization.
+In theory the more layers there are, the closer is the display to a full attenuation volume.
+The plot in figure~\ref{fig:sart_layers_vs_psnr} shows how the PSNR of the simulated projections behaves with with up to twenty layers.
 \begin{figure}[tb]
 	\begin{subfigure}{\textwidth}
 		\centering
@@ -256,6 +262,12 @@ This shows that SART is a superior solver for this large scale layered 3D proble
 
 \section{Contrast Sensitivity}
 
+The contrast sensitivity is a very important measure for human visual perception.
+The human visual system does not only perceive light intensity in a non-linear fashion, but it is also very sensitive to contrast.
+Contrast sensitivity is defined to be the threshold at which the individual can no longer distinguish between contrast differences, and this threshold changes with spatial frequency.
+The image in figure \todo{insert figure} shows a pattern which changes horizontally in frequency and vertically in contrast.
+In context of Layered 3D, it is of course desirable that the loss of contrast in the emitted images is as little as possible.
+The experiments shown in figure~\ref{fig:contrast_sensitivity} quantify the absolute error of contrast with a light field comprising the contrast sensitivity pattern in spatial dimension which is constant in angular dimension.
 \begin{figure}[tb]
 	\centering
 	\begin{subfigure}{0.32\textwidth}
@@ -288,9 +300,11 @@ This shows that SART is a superior solver for this large scale layered 3D proble
 	\caption[Contrast sensitivity analysis for layered 3D displays]
 			{Contrast sensitivity analysis for layered 3D displays.
 			 Shown are the simulated display projection from a viewing direction perpendicular to the display (top) and the absolute error (bottom).
-			 The light field is constant in angle, contains increasing spatial frequency in horizontal direction and increasing contrast in vertical direction.}
+			 The light field is constant in angle, contains increasing spatial frequency from left to right and increasing contrast from top to bottom.}
 	\label{fig:contrast_sensitivity}
 \end{figure}
+
+\todo{plot absolute error against baseline!!}
 
 \section{Graphical User Interface}
 \label{sec:GUI}
@@ -337,7 +351,7 @@ Also, Moir\'{e} does not seem to be a problem because of the natural blending of
 
 Contrast sensitivity
 
-\section{Future Work and Improvements}
+\section{Improvements and Future Work}
 \label{sec:future_work}
 
 The current implementation in MATLAB provides the necessary features in order to produce a static layered 3D display.
@@ -345,9 +359,9 @@ However, with greater effort a lot of operations can be made more efficient.
 A GPU implementation of SART like the one from \cite{SARTGPU} could be incorporated in the software to accelerate the optimization process.
 A parallelization of SART is possible because the update rule depends solely on matrix multiplication and addition.
 The parallel approach would also eliminate the need of explicitly pre-computing the propagation matrix, which is a computationally- and memory intensive process.
-Nonetheless, printing and layer alignment is time consuming and must be attacked with patience.
+Still, the final printing and layer alignment remains time consuming and must be attacked with patience.
+Alternatively the masks could be printed directly on glass which would result in a higher build quality and precise layer alignment.
 
-
-better printer
-print on glass
-
+As \cite{WetzsteinTensor} have shown, LCD panels can be used to modulate light instead of printed layers.
+The benefit here is that the panels can be accurately aligned and calibrated once, and no further adjustments to the hardware are necessary in order to view different content.
+Building the display however requires advanced technical knowledge in developing custom electronics to control and interface with the panels.

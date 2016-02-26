@@ -1,25 +1,25 @@
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Light field aquisition devices}}{2}{figure.caption.4}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Attenuation layers between glass plates}}{3}{figure.caption.5}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Light field aquisition devices}}{2}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Attenuation layers between glass plates}}{3}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Parametrization of the light field with two planes}}{6}{figure.caption.7}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Parameterization for light fields from oblique projections}}{7}{figure.caption.10}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Parameterization for light fields from perspective projections}}{8}{figure.caption.13}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Visualization of the light field with epipolar plane images}}{9}{figure.caption.15}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Parametrization of the light field with two planes}}{6}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Parameterization for light fields from oblique projections}}{7}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Parameterization for light fields from perspective projections}}{8}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Visualization of the light field with epipolar plane images}}{9}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces The Radon transform}}{11}{figure.caption.22}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Computation of the ray-layer intersections from oblique and perspective projections}}{13}{figure.caption.23}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces The Radon transform}}{11}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Computation of the ray-layer intersections from oblique and perspective projections}}{13}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Spectral analysis for light fields with bounded depth range}}{17}{figure.caption.32}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Spectral analysis for layered 3D displays}}{19}{figure.caption.33}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Spectral support of layered 3D displays}}{20}{figure.caption.34}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Spectral analysis for light fields with bounded depth range}}{17}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Spectral analysis for layered 3D displays}}{19}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Spectral support of layered 3D displays}}{20}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Baseline scaling}}{23}{figure.caption.36}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Tiling layout}}{25}{figure.caption.37}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Impact of tile overlap on attenuation layers}}{26}{figure.caption.39}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Performance assessment of the optimization}}{27}{figure.caption.40}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Impact of layer count on \unhbox \voidb@x \hbox {PSNR}}}{28}{figure.caption.41}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Contrast sensitivity analysis for layered 3D displays}}{28}{figure.caption.42}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Graphical user interface}}{29}{figure.caption.43}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Baseline scaling}}{24}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Tiling layout}}{25}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Impact of tile overlap on attenuation layers}}{26}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Performance assessment of the optimization}}{27}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Impact of layer count on \unhbox \voidb@x \hbox {PSNR}}}{28}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Contrast sensitivity analysis for layered 3D displays}}{28}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Graphical user interface}}{29}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Handcrafted backlights for the attenuation displays}}{31}{figure.caption.46}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Handcrafted backlights for the attenuation displays}}{31}

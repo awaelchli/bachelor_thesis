@@ -1,9 +1,6 @@
 \chapter{Spectral Analysis}
 \label{chp:spectral_analysis}
 
-\todo{Introduction to fourier transform: Why is it needed/important}
-\todo{Decide if Fourier slice theorem is needed}
-
 This chapter is intended to give an overview of the spectral properties and limitations specific to multiplicative light field displays.
 Spectral analysis is a crucial method for the quality assessment and it is the origin of a comprehensive understanding of 3D displays. 
 A light field emitted by the display can be interpreted as a signal that is composed of sine waves with different amplitude, phase and frequency.
@@ -33,6 +30,9 @@ On the other hand, a multiplication in the spatial domain becomes a convolution 
 \begin{equation}\label{eq:convolution_theorem_2}
 	\widehat{(f \cdot g)}(\xi) = (\widehat{f} \ast \widehat{g})(\xi).
 \end{equation}
+These two properties of the Fourier transform are known as the convolution theorem.
+The Fourier transform and its inverse can also be discretized so that the convolution theorem still holds.
+Hence, for the following analysis it is immaterial which form of the Fourier transform is used.
 
 \section{Spectral Support of Light Fields}
 \label{sec:Spectral_Support_for_Light_Field}
@@ -175,4 +175,4 @@ Simplifications in the attenuation model, approximate solutions to equation~\ref
 \end{equation}
 This is the expected upper bound on the depth of field, which is drawn as a dashed line in figure~\ref{fig:cut-off-frequency_N_layers} for a two- and six layer display.
 In particular, it shows that adding more layers to the display does not necessarily increase the potential for higher depth of field.
-\todo{Text: The addition of more layers has other benefits as discussed in chapter/section ...}
+As will be discussed in section~\ref{sec:performance_of_SART}, the addition of more layers has other benefits.
