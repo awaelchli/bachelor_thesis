@@ -265,44 +265,36 @@ The plot in figure~\ref{fig:sart_layers_vs_psnr} shows how the PSNR of the simul
 The contrast sensitivity is a very important measure for human visual perception.
 The human visual system does not only perceive light intensity in a non-linear fashion, but it is also very sensitive to contrast.
 Contrast sensitivity is defined to be the threshold at which the individual can no longer distinguish between contrast differences, and this threshold changes with spatial frequency.
-The image in figure \todo{insert figure} shows a pattern which changes horizontally in frequency and vertically in contrast.
-In context of Layered 3D, it is of course desirable that the loss of contrast in the emitted images is as little as possible.
-The experiments shown in figure~\ref{fig:contrast_sensitivity} quantify the absolute error of contrast with a light field comprising the contrast sensitivity pattern in spatial dimension which is constant in angular dimension.
+The top left image in figure~\ref{fig:contrast_sensitivity} shows the contrast sensitivity pattern which changes horizontally in frequency and vertically in contrast.
 \begin{figure}[tb]
-	\centering
-	\begin{subfigure}{0.32\textwidth}
-		\centering
-		\includegraphics[width = \textwidth, trim = {0 0 0 8cm}, clip]{../Figures/contrast/2layer/Reconstruction_of_view_(5,5)}
-		
-		\vspace{0.15cm}
-		
-		\includegraphics[width = \textwidth, trim = {0 0 0 8cm}, clip]{../Figures/contrast/2layer/MSE_for_view_(5,5)}
-		\caption{2 layers}
-	\end{subfigure}\hspace{0.15cm}%
-	\begin{subfigure}{0.32\textwidth}
-		\centering
-		\includegraphics[width = \textwidth, trim = {0 0 0 8cm}, clip]{../Figures/contrast/5layer/Reconstruction_of_view_(5,5)}
-		
-		\vspace{0.15cm}
-		
-		\includegraphics[width = \textwidth, trim = {0 0 0 8cm}, clip]{../Figures/contrast/5layer/MSE_for_view_(5,5)}
-		\caption{5 layers}		
-	\end{subfigure}\hspace{0.15cm}%
-	\begin{subfigure}{0.32\textwidth}
-		\centering
-		\includegraphics[width = \textwidth, trim = {0 0 0 8cm}, clip]{../Figures/contrast/5layer_2x_resolution/Reconstruction_of_view_(5,5)}
-		
-		\vspace{0.15cm}
-		
-		\includegraphics[width = \textwidth, trim = {0 0 0 8cm}, clip]{../Figures/contrast/5layer_2x_resolution/MSE_for_view_(5,5)}
-		\caption{5 layers, 2x resolution}
+	\begin{subfigure}{0.45\textwidth}
+		\input{../Figures/contrast/contrast_sensitivity.tex}
+	\end{subfigure}\hfill%
+	\begin{subfigure}{0.45\textwidth}
+		\input{../Figures/contrast/2layer_1x_resolution.tex}
+	\end{subfigure}%
+	\\
+	\begin{subfigure}{0.45\textwidth}
+		\input{../Figures/contrast/2layer_2x_resolution.tex}
+	\end{subfigure}\hfill%
+	\begin{subfigure}{0.45\textwidth}
+		\input{../Figures/contrast/5layer_1x_resolution.tex}
+	\end{subfigure}%
+	\\
+	\begin{subfigure}{0.45\textwidth}
+		\input{../Figures/contrast/5layer_2x_resolution.tex}
+	\end{subfigure}\hfill%
+	\begin{subfigure}{0.45\textwidth}
+		\input{../Figures/contrast/5layer_3x_resolution.tex}
 	\end{subfigure}%
 	\caption[Contrast sensitivity analysis for layered 3D displays]
 			{Contrast sensitivity analysis for layered 3D displays.
-			 Shown are the simulated display projection from a viewing direction perpendicular to the display (top) and the absolute error (bottom).
+			 Shown are the simulated display projection from a viewing direction perpendicular to the display (top) and the absolute error (bottom) for a two-layer and five-layer display with different layer resolution.
 			 The light field is constant in angle, contains increasing spatial frequency from left to right and increasing contrast from top to bottom.}
 	\label{fig:contrast_sensitivity}
 \end{figure}
+In context of Layered 3D, it is of course desirable that the loss of contrast in the emitted images is as little as possible.
+The experiments in figure~\ref{fig:contrast_sensitivity} quantify the absolute error of contrast with a light field comprising the contrast sensitivity pattern in spatial dimension which is constant in angular dimension.
 
 \todo{plot absolute error against baseline!!}
 
