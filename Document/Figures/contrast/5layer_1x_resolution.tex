@@ -1,0 +1,45 @@
+\documentclass{standalone}
+\usepackage{pgfplots}
+\usepgfplotslibrary{groupplots}
+\usetikzlibrary{matrix, positioning}
+\pgfplotsset{compat=newest}
+
+\begin{document}
+	\begin{tikzpicture}
+	    \begin{groupplot}
+	    [group style = {group name = my plots, group size = 1 by 2, vertical sep = 0.15cm, 
+				    	every plot/.style = {
+				    		axis equal image,
+				    		axis lines = left, 
+							hide axis, 
+							xtick=\empty, 
+							ytick=\empty, 
+				    	}}, 
+		    height = 5.5cm
+		]
+			
+			\nextgroupplot
+							
+				\addplot graphics[xmin=0, xmax=320, ymin=0, ymax=120] {../Figures/contrast/5layer_1x_resolution/5layer_1x_resolution_rec.png};
+				\coordinate (top) at (rel axis cs:0,1);% coordinate at top of the first plot
+				
+			\nextgroupplot[	colorbar, 
+							colormap/jet, 
+							point meta min = 0, 
+							point meta max = 0.2,
+							colorbar style = {
+								ytick = {0, 0.2},
+								every tick label/.append style = {font = \small},
+								shift = {(-2mm, 0cm)}, 
+								width = 2mm
+							}]
+				
+				\addplot graphics[xmin=0, xmax=320, ymin=0, ymax=120] {../Figures/contrast/5layer_1x_resolution/5layer_1x_resolution.png};
+	    
+	    \end{groupplot}
+	    
+	    \node[below = 0.15cm of my plots c1r2.south] {5 layers};
+	    
+	    
+	\end{tikzpicture}
+\end{document}

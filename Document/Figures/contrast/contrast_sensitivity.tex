@@ -1,0 +1,40 @@
+\documentclass{standalone}
+\usepackage{pgfplots}
+\usepgfplotslibrary{groupplots}
+\usetikzlibrary{matrix, positioning}
+\pgfplotsset{compat=newest}
+
+\begin{document}
+	\begin{tikzpicture}
+	    \begin{groupplot}
+	    [group style = {group name = my plots, group size = 1 by 1, vertical sep = 0.15cm, 
+				    	every plot/.style = {
+				    		axis equal image,
+				    		axis lines = left, 
+							hide axis, 
+							xtick=\empty, 
+							ytick=\empty, 
+				    	}}, 
+		    height = 5.5cm
+		]
+				
+			\nextgroupplot[	colorbar, 
+							colormap/blackwhite, 
+							point meta min = 0, 
+							point meta max = 1,
+							colorbar style = {
+								ytick = {0, 1},
+								every tick label/.append style = {font = \small},
+								shift = {(-2mm, 0cm)}, 
+								width = 2mm
+							}]
+				
+				\addplot graphics[xmin=0, xmax=640, ymin=0, ymax=480] {../Figures/contrast/contrast_sensitivity.png};
+	    
+	    \end{groupplot}
+	    
+	    \node[below = 0.3cm of my plots c1r1.south] {Contrast sensitivity pattern};
+	    
+	    
+	\end{tikzpicture}
+\end{document}

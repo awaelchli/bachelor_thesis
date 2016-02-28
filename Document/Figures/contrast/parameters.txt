@@ -3,7 +3,7 @@ oblique projection
 fov: 10 degrees
 image plane size: 80 x 80
 layer size: 90 x 90
-layer resolution: 480 x 640
+layer resolution: 240 x 320
 attenuator thickness: 16
 algorithm: SART
 iterations: 20
