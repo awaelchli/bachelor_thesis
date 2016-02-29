@@ -59,8 +59,8 @@ Next to that, the results are evaluated using the introduced error measures.
 In addition to nearest neighbor interpolation indicated in equation~\ref{eq:pixel_shift_perspective_projection}, bilinear interpolation is incorporated into the pipeline in order to reduce artifacts.
 For every ray, the value of the intersection point on the attenuation layer is represented as a linearly weighted sum of four neighboring pixels corresponding to the rounded indices.
 Accordingly, instead of storing $N$ binary weights, each row of the propagation matrix now holds $4 N$ values.
-Essentially, this just means that each ray in the log-light field is a linear combination of $4 N$ absobance values.
-Due to the exponential propagation model, the interpolation in the log-domain translates to a multiplication of the transmittance simply by the exponatial law,
+Essentially, this just means that each ray in the log-light field is a linear combination of $4 N$ absorbance values.
+Due to the exponential propagation model, the interpolation in the log-domain translates to a multiplication of the transmittance simply by the exponential law,
 \begin{equation*}	
 	\exp( \gamma \alpha_i + (1 - \gamma) \alpha_j ) = \exp( \gamma \alpha_i ) \exp( (1 - \gamma) \alpha_j ) = t_i^{\gamma} t_j^{1 - \gamma},
 \end{equation*}
@@ -74,13 +74,13 @@ Because of the non-linearity of the logarithm, the optimization problem can not 
 
 In general, it is not entirely clear which interpolation strategy one should choose for such a problem.
 The choice depends on a variety of physical factors as well as implementation specific restrictions.
-For example, an inkjet printer produces slightly different attenuation masks than a laser printer.
+For example, an ink-jet printer produces slightly different attenuation masks than a laser printer.
 One could estimate the point spread function (PSF) of the printer by observing the distribution of a single ink drop on the surface.
 The interpolation weights should then be chosen according to the PSF.
 This approach would take into account the very physical aspects of printing.
 However, an accurate validation of this idea would introduce a lot of challenges because it requires accurate calibration and fabrication in order to compare the input light field with the displayed light field:
 The measuring process would require two iterations, one with PSF interpolation and one without.
-The attenuation layers need to be precisely aligned and placed in front of the capturing device (camera array, plenoptic camera etc.) such that the emited light rays directly correspond to the original light rays.
+The attenuation layers need to be precisely aligned and placed in front of the capturing device (camera array, plenoptic camera etc.) such that the emitted light rays directly correspond to the original light rays.
 
 \section{Oversampling}
 \label{sec:oversampling}
@@ -251,13 +251,12 @@ The plot in figure~\ref{fig:sart_layers_vs_psnr} shows how the PSNR of the simul
 	\begin{subfigure}{\textwidth}
 		\centering
 		\input{../Figures/optimization_performance/layers_vs_psnr.tex}
-		\caption{SART}
 		\label{fig:sart_layers_vs_psnr}
 	\end{subfigure}%
 	\caption[Impact of layer count on \mbox{PSNR}]
 			{Impact of layer count on the \mbox{PSNR}.
 			 Performance comparison of the attenuation display for two different scenes from the Stanford light field archive.
-			 The \mbox{PSNR} is evaluated against the number of layers.}
+			 Ten iterations of SART were performed for each scene.}
 \end{figure}
 
 \section{Contrast Sensitivity}
@@ -295,8 +294,7 @@ The top left image in figure~\ref{fig:contrast_sensitivity} shows the contrast s
 \end{figure}
 In context of Layered 3D, it is of course desirable that the loss of contrast in the emitted images is as little as possible.
 The experiments in figure~\ref{fig:contrast_sensitivity} quantify the absolute error of contrast with a light field comprising the contrast sensitivity pattern in spatial dimension which is constant in angular dimension.
-
-\todo{plot absolute error against baseline!!}
+It shows that adding more layers reduces the magnitude of the error, and increasing the layer resolution reduces the error for higher frequencies.
 
 \section{Graphical User Interface}
 \label{sec:GUI}
@@ -331,7 +329,7 @@ In practice, there are a few limitations that need to be addressed.
 First off, to solve the multiplicative problem given by equation~\ref{eq:transmittance_layers} it is assumed that the transmission values are positive in order to solve the problem in a linear manner with the logarithm applied.
 For the physical realization, this is of course a well justified assumption since negative transmission is not possible to achieve.
 Nonetheless, the restriction to positive transmittance is reducing the space of solutions for optimal attenuation layers.
-Althought it would require an entirely different approach, it is plausible to achieve better results if real valued transmission values were permitted.
+Although it would require an entirely different approach, it is plausible to achieve better results if real valued transmission values were permitted.
 
 The prototypes produced in the context of this thesis are suited for demonstration purposes, though the viewing angles are limited to a small range.
 Unfortunately, experiments to show objects in virtual planes outside the displays enclosure were not successful.

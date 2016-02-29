@@ -11,46 +11,44 @@ A level-1 auxiliary file: Chapters/chapter5.aux
 A level-1 auxiliary file: Chapters/appendix.aux
 The style file: abbrvnat.bst
 Database file #1: thesis.bib
-Warning--empty journal in ConvergenceSART
-You've used 23 entries,
+You've used 15 entries,
             2773 wiz_defined-function locations,
-            754 strings with 9666 characters,
-and the built_in function-call counts, 13267 in all, are:
-= -- 1216
-> -- 803
-< -- 19
-+ -- 269
-- -- 246
-* -- 1117
-:= -- 1962
-add.period$ -- 76
-call.type$ -- 23
-change.case$ -- 151
-chr.to.int$ -- 23
-cite$ -- 47
-duplicate$ -- 578
-empty$ -- 1035
-format.name$ -- 279
-if$ -- 2837
+            707 strings with 8059 characters,
+and the built_in function-call counts, 8861 in all, are:
+= -- 806
+> -- 558
+< -- 12
++ -- 186
+- -- 171
+* -- 751
+:= -- 1313
+add.period$ -- 49
+call.type$ -- 15
+change.case$ -- 102
+chr.to.int$ -- 15
+cite$ -- 30
+duplicate$ -- 381
+empty$ -- 676
+format.name$ -- 194
+if$ -- 1892
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 23
-newline$ -- 123
-num.names$ -- 92
-pop$ -- 299
+missing$ -- 15
+newline$ -- 83
+num.names$ -- 60
+pop$ -- 199
 preamble$ -- 1
-purify$ -- 128
+purify$ -- 87
 quote$ -- 0
-skip$ -- 470
+skip$ -- 319
 stack$ -- 0
-substring$ -- 638
-swap$ -- 107
-text.length$ -- 12
+substring$ -- 409
+swap$ -- 74
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 253
-warning$ -- 1
-while$ -- 119
+type$ -- 165
+warning$ -- 0
+while$ -- 78
 width$ -- 0
-write$ -- 318
-(There was 1 warning)
+write$ -- 210
