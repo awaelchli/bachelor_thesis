@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.1.20)  1 MAR 2016 19:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.1.20)  1 MAR 2016 19:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -777,7 +777,16 @@ braryintersections.code.tex
 (c:/texlive/2015/texmf-dist/tex/generic/pgf/libraries/pgflibraryintersections.c
 ode.tex
 \pgf@intersect@solutions=\count159
-)) (c:/texlive/2015/texmf-dist/tex/latex/standalone/standalone.sty
+))
+(c:/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarymatrix.code.tex
+File: tikzlibrarymatrix.code.tex 2013/07/12 v3.0.1a (rcs-revision 1.4)
+)
+(c:/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
+)
+(c:/texlive/2015/texmf-dist/tex/latex/standalone/standalone.sty
 Package: standalone 2015/07/15 v1.2 Package to include TeX sub-files with pream
 bles
 
@@ -861,22 +870,22 @@ Package: dirtytalk 2010/11/21 A package making "quoting" easier
 (./Chapters/chapter4.aux) (./Chapters/chapter5.aux) (./Chapters/appendix.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
 \AtBeginShipoutBox=\box48
-Package hyperref Info: Link coloring OFF on input line 58.
+Package hyperref Info: Link coloring OFF on input line 59.
 
 (c:/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -886,9 +895,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count165
 )
-LaTeX Info: Redefining \ref on input line 58.
-LaTeX Info: Redefining \pageref on input line 58.
-LaTeX Info: Redefining \nameref on input line 58.
+LaTeX Info: Redefining \ref on input line 59.
+LaTeX Info: Redefining \pageref on input line 59.
+LaTeX Info: Redefining \nameref on input line 59.
 
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write6
@@ -941,7 +950,7 @@ ABD: EveryShipout initializing macros
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.13} into 
 your preamble.
- on input line 58.
+ on input line 59.
 
 [1
 
@@ -986,7 +995,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.85 \newpage
+l.86 \newpage
              {\pagestyle{empty} \cleardoublepage} [2]
 \openout2 = `Chapters/chapter1.aux'.
 
@@ -1381,14 +1390,6 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 ) [26 <../Figures/tiling/blending_masks_sum_3x3.png (PNG copy)>]
-
-Package caption Warning: \label without proper \caption on input line 260.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:sart_layers_vs_psnr' on page 27 undefined on inpu
-t line 255.
-
 (../Figures/optimization_performance/layers_vs_psnr.tex
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -1401,24 +1402,8 @@ File: ../Figures/contrast/contrast_sensitivity.png Graphic file (type png)
 Package pdftex.def Info: ../Figures/contrast/contrast_sensitivity.png used on i
 nput line 34.
 (pdftex.def)             Requested size: 136.43712pt x 102.32048pt.
-
-
-! Package PGF Math Error: Unknown operator `o' or `of' (in '0.3cm of my plots c
-1r1.south').
-
-See the PGF Math package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.36 ...node[below = 0.3cm of my plots c1r1.south]
-                                                   {Contrast sensitivity pat...
-This error message was generated by an \errmessage
-command, so I can't give any explicit help.
-Pretend that you're Hercule Poirot: Examine all clues,
-and deduce the truth by order and method.
-
 )
-Overfull \hbox (65.21265pt too wide) in paragraph at lines 39--277
+Overfull \hbox (1.21289pt too wide) in paragraph at lines 39--277
 [][] 
  []
 
@@ -1442,21 +1427,8 @@ File: ../Figures/contrast/2layer_1x_resolution/2layer_1x_resolution.png Graphic
 Package pdftex.def Info: ../Figures/contrast/2layer_1x_resolution/2layer_1x_res
 olution.png used on input line 49.
 (pdftex.def)             Requested size: 136.43712pt x 51.16301pt.
-
-
-! Package PGF Math Error: Unknown operator `o' or `of' (in '0.15cm of my plots 
-c1r2.south').
-
-See the PGF Math package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.51 ...ode[below = 0.15cm of my plots c1r2.south]
-                                                   {2 layers};
-(That was another \errmessage.)
-
 )
-Overfull \hbox (28.30972pt too wide) in paragraph at lines 54--280
+Overfull \hbox (8.40729pt too wide) in paragraph at lines 54--280
 [][] 
  []
 
@@ -1480,21 +1452,8 @@ File: ../Figures/contrast/2layer_2x_resolution/2layer_2x_resolution.png Graphic
 Package pdftex.def Info: ../Figures/contrast/2layer_2x_resolution/2layer_2x_res
 olution.png used on input line 39.
 (pdftex.def)             Requested size: 136.43712pt x 51.16301pt.
-
-
-! Package PGF Math Error: Unknown operator `o' or `of' (in '0.15cm of my plots 
-c1r2.south').
-
-See the PGF Math package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.41 ...ode[below = 0.15cm of my plots c1r2.south]
-                                                   {2 layers, 2x resolution};
-(That was another \errmessage.)
-
 )
-Overfull \hbox (59.60146pt too wide) in paragraph at lines 44--284
+Overfull \hbox (8.40729pt too wide) in paragraph at lines 44--284
 [][] 
  []
 
@@ -1518,21 +1477,8 @@ File: ../Figures/contrast/5layer_1x_resolution/5layer_1x_resolution.png Graphic
 Package pdftex.def Info: ../Figures/contrast/5layer_1x_resolution/5layer_1x_res
 olution.png used on input line 39.
 (pdftex.def)             Requested size: 136.43712pt x 51.16301pt.
-
-
-! Package PGF Math Error: Unknown operator `o' or `of' (in '0.15cm of my plots 
-c1r2.south').
-
-See the PGF Math package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.41 ...ode[below = 0.15cm of my plots c1r2.south]
-                                                   {5 layers};
-(That was another \errmessage.)
-
 )
-Overfull \hbox (28.30972pt too wide) in paragraph at lines 44--287
+Overfull \hbox (8.40729pt too wide) in paragraph at lines 44--287
 [][] 
  []
 
@@ -1556,21 +1502,8 @@ File: ../Figures/contrast/5layer_2x_resolution/5layer_2x_resolution.png Graphic
 Package pdftex.def Info: ../Figures/contrast/5layer_2x_resolution/5layer_2x_res
 olution.png used on input line 39.
 (pdftex.def)             Requested size: 136.43712pt x 51.16301pt.
-
-
-! Package PGF Math Error: Unknown operator `o' or `of' (in '0.15cm of my plots 
-c1r2.south').
-
-See the PGF Math package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.41 ...ode[below = 0.15cm of my plots c1r2.south]
-                                                   {5 layers, 2x resolution};
-(That was another \errmessage.)
-
 )
-Overfull \hbox (59.60146pt too wide) in paragraph at lines 44--291
+Overfull \hbox (8.40729pt too wide) in paragraph at lines 44--291
 [][] 
  []
 
@@ -1594,21 +1527,8 @@ File: ../Figures/contrast/5layer_3x_resolution/5layer_3x_resolution.png Graphic
 Package pdftex.def Info: ../Figures/contrast/5layer_3x_resolution/5layer_3x_res
 olution.png used on input line 39.
 (pdftex.def)             Requested size: 136.43712pt x 51.16301pt.
-
-
-! Package PGF Math Error: Unknown operator `o' or `of' (in '0.15cm of my plots 
-c1r2.south').
-
-See the PGF Math package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.41 ...ode[below = 0.15cm of my plots c1r2.south]
-                                                   {5 layers, 3x resolution};
-(That was another \errmessage.)
-
 )
-Overfull \hbox (59.60146pt too wide) in paragraph at lines 44--294
+Overfull \hbox (8.40729pt too wide) in paragraph at lines 44--294
 [][] 
  []
 
@@ -1684,64 +1604,60 @@ Package pdftex.def Info: ../Figures/placeholder.jpg used on input line 51.
 <Erklaerung.pdf, id=697, 597.23125pt x 845.1575pt>
 File: Erklaerung.pdf Graphic file (type pdf)
  <use Erklaerung.pdf>
-Package pdftex.def Info: Erklaerung.pdf used on input line 123.
+Package pdftex.def Info: Erklaerung.pdf used on input line 124.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 File: Erklaerung.pdf Graphic file (type pdf)
 
 <use Erklaerung.pdf>
-Package pdftex.def Info: Erklaerung.pdf used on input line 123.
+Package pdftex.def Info: Erklaerung.pdf used on input line 124.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 
 <Erklaerung.pdf, id=700, page=1, 597.23125pt x 845.1575pt>
 File: Erklaerung.pdf Graphic file (type pdf)
 
 <use Erklaerung.pdf, page 1>
-Package pdftex.def Info: Erklaerung.pdf, page1 used on input line 123.
+Package pdftex.def Info: Erklaerung.pdf, page1 used on input line 124.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 File: Erklaerung.pdf Graphic file (type pdf)
  <use Erklaerung.pdf, page 1>
-Package pdftex.def Info: Erklaerung.pdf, page1 used on input line 123.
+Package pdftex.def Info: Erklaerung.pdf, page1 used on input line 124.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
  [38]
 File: Erklaerung.pdf Graphic file (type pdf)
 
 <use Erklaerung.pdf, page 1>
-Package pdftex.def Info: Erklaerung.pdf, page1 used on input line 123.
+Package pdftex.def Info: Erklaerung.pdf, page1 used on input line 124.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
 File: Erklaerung.pdf Graphic file (type pdf)
  <use Erklaerung.pdf, page 1>
-Package pdftex.def Info: Erklaerung.pdf, page1 used on input line 123.
+Package pdftex.def Info: Erklaerung.pdf, page1 used on input line 124.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
 File: Erklaerung.pdf Graphic file (type pdf)
 
 <use Erklaerung.pdf, page 1>
-Package pdftex.def Info: Erklaerung.pdf, page1 used on input line 123.
+Package pdftex.def Info: Erklaerung.pdf, page1 used on input line 124.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
  [39 <./Erklaerung.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 125.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 125.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 126.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 126.
  (./thesis.aux
 (./Chapters/abstract.aux) (./Chapters/acknowledgements.aux)
 (./Chapters/chapter1.aux) (./Chapters/chapter2.aux) (./Chapters/chapter3.aux)
 (./Chapters/chapter4.aux) (./Chapters/chapter5.aux) (./Chapters/appendix.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 125.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 125.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 126.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 126.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 24DFFEC2D0B7673F5A158837384E8649;2395.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 125.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 126.
  ) 
 Here is how much of TeX's memory you used:
- 33336 strings out of 494289
- 774086 string characters out of 6162254
- 1089704 words of memory out of 5000000
- 35727 multiletter control sequences out of 15000+600000
+ 33415 strings out of 494289
+ 776688 string characters out of 6162254
+ 1092228 words of memory out of 5000000
+ 35800 multiletter control sequences out of 15000+600000
  13396 words of font info for 52 fonts, out of 8000000 for 9000
  372 hyphenation exceptions out of 8191
- 92i,22n,383p,735b,2931s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 92i,22n,383p,735b,2934s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
 live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2015
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2015/texmf-di
@@ -1763,7 +1679,7 @@ ist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2015/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmtt8.pfb><c:/texlive/2015/texmf-dist/fonts/type1/pub
 lic/amsfonts/symbols/msbm10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/
 amsfonts/symbols/msbm7.pfb>
-Output written on thesis.pdf (44 pages, 25661871 bytes).
+Output written on thesis.pdf (44 pages, 25661614 bytes).
 PDF statistics:
  837 PDF objects out of 1000 (max. 8388607)
  691 compressed objects within 7 object streams
