@@ -32,6 +32,6 @@
 \contentsline {chapter}{\numberline {A}Appendix}{33}{appendix.A}
 \contentsline {section}{\numberline {A.1}Printing}{33}{section.A.1}
 \contentsline {section}{\numberline {A.2}Backlight Fabrication}{33}{section.A.2}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Tables}{35}{figure.caption.33}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Figures}{35}{appendix*.34}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{36}{appendix*.35}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Tables}{35}{figure.caption.29}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Figures}{35}{appendix*.30}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{36}{appendix*.31}
