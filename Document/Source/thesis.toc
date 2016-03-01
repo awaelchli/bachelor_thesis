@@ -22,16 +22,16 @@
 \contentsline {section}{\numberline {5.2}The Basic Procedure}{21}{section.5.2}
 \contentsline {section}{\numberline {5.3}Interpolation}{22}{section.5.3}
 \contentsline {section}{\numberline {5.4}Oversampling}{23}{section.5.4}
-\contentsline {section}{\numberline {5.5}Baseline Scaling and Back Projection}{23}{section.5.5}
+\contentsline {section}{\numberline {5.5}Baseline Scaling and Back Projection}{24}{section.5.5}
 \contentsline {section}{\numberline {5.6}Attenuator Tiling and Blending}{24}{section.5.6}
-\contentsline {section}{\numberline {5.7}Performance of SART}{25}{section.5.7}
+\contentsline {section}{\numberline {5.7}Performance of SART}{26}{section.5.7}
 \contentsline {section}{\numberline {5.8}Contrast Sensitivity}{26}{section.5.8}
-\contentsline {section}{\numberline {5.9}Graphical User Interface}{26}{section.5.9}
-\contentsline {section}{\numberline {5.10}Benefits and Limitations}{27}{section.5.10}
+\contentsline {section}{\numberline {5.9}Graphical User Interface}{27}{section.5.9}
+\contentsline {section}{\numberline {5.10}Benefits and Limitations}{28}{section.5.10}
 \contentsline {section}{\numberline {5.11}Improvements and Future Work}{28}{section.5.11}
-\contentsline {chapter}{\numberline {A}Appendix}{31}{appendix.A}
-\contentsline {section}{\numberline {A.1}Printing}{31}{section.A.1}
-\contentsline {section}{\numberline {A.2}Backlight Fabrication}{31}{section.A.2}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Tables}{33}{figure.caption.41}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Figures}{33}{appendix*.42}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{34}{appendix*.43}
+\contentsline {chapter}{\numberline {A}Appendix}{32}{appendix.A}
+\contentsline {section}{\numberline {A.1}Printing}{32}{section.A.1}
+\contentsline {section}{\numberline {A.2}Backlight Fabrication}{32}{section.A.2}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Tables}{34}{figure.caption.41}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Figures}{34}{appendix*.42}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{35}{appendix*.43}

@@ -66,9 +66,7 @@ Due to the exponential propagation model, the interpolation in the log-domain tr
 \end{equation*}
 with $\gamma$ being the linear interpolation weight, $i$ and $j$ identifying the neighboring pixels which are the query points for the interpolation.
 
-Unfortunately, the attempt of interpolation does not exhibit a significant increase in reconstruction quality.
-For low resolution attenuation layers, the 
-
+The attempt of interpolation does not exhibit a significant increase in reconstruction quality.
 Alternatively, interpolation could be applied to the transmittance instead of the absorbance, but this requires a different optimization strategy.
 Because of the non-linearity of the logarithm, the optimization problem can not simply be transformed into a linear equation.
 
@@ -85,6 +83,15 @@ The attenuation layers need to be precisely aligned and placed in front of the c
 \section{Oversampling}
 \label{sec:oversampling}
 
+Because of the perspective projection, all points that project to the camera's image plane are inside a pyramidal frustum.
+Conversely, the area of a single pixel back-projects to a larger area on the original surface, or in this case, the attenuation layers.
+This means that, depending on the resolution and size of the attenuator, the beam of light rays going through a single pixel on the image plane (\mbox{$(s,t)$-plane}) possibly covers multiple pixels on some of the attenuation layers.
+This leads to fewer constraints on the layer pixels for the optimization when sampling only a single ray per image pixel.
+The obvious solution would be to simply increase the resolution of the layers, but this is sometimes not feasible or desired due to the much longer runtime of the solver.
+Instead, the sampling density can be increased while keeping the layer resolution the same.
+In the current implementation, the sampling density can be controlled by a plane parallel to the attenuator.
+Placing this sampling plane at the same location as the bottom-most layer (farthest from the camera) ensures that the ray-density is no smaller on the other layers.
+Because the rays that are cast from the sampling plane to the image plane are different from the original rays, the light field is resampled to a higher resolution which also requires interpolation.
 
 \section{Baseline Scaling and Back Projection}
 \label{sec:baseline_scaling}
@@ -355,3 +362,5 @@ Alternatively the masks could be printed directly on glass which would result in
 As \cite{WetzsteinTensor} have shown, LCD panels can be used to modulate light instead of printed layers.
 The benefit here is that the panels can be accurately aligned and calibrated once, and no further adjustments to the hardware are necessary in order to view different content.
 Building the display however requires advanced technical knowledge in developing custom electronics to control and interface with the panels.
+\\
+pinhole cameara
