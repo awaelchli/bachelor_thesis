@@ -41,15 +41,7 @@ For practical applications, the light field must be discretized and so, an appro
 This means that only a slice of the actual light field can be captured and the two planes are clipped to form rectangles.
 In this work, the term \emph{light field} is used for both the infinite, continuous light field as well as the discrete collection of data samples.
 
-%There are different methods to sample a light field. In principle, every camera can be used to capture 
-
-%The samples on the $(u, v)$-plane correspond to the virtual positions of the camera. 
-%Properties of the light field do not change under re-parameterization. 
-
 \subsection*{Oblique Projection}
-% Parameterization, Advantages, Disadvantages
-% Mention Tomography
-% Rotation 
 
 Oblique projection, as shown in figure~\ref{fig:ObliqueProjection}, is a special case of orthographic projection: The parallel rays do not need to be perpendicular to the image plane of the camera.
 The advantage is that there is a one-to-one correspondence between camera position and ray angle, since all rays in one camera are parallel.
@@ -82,8 +74,6 @@ Despite the simplicity of this projection type, it is not feasible to build came
 \end{figure}
 
 \subsection*{Perspective Projection}
-% Parameterization, two main types: global or relative
-% Reparameterization: Orthographic <-> Perspective
 \begin{sloppypar}
 	Another way to capture the light field is with a grid of optical systems, e.g. cameras.
 	Typically, the $(u, v)$-plane is sampled on a grid $G_{uv} = \left \{ \left( u_i, v_j \right) \mid i = 1,\dots, n, j = 1, \dots, m\right \}$ on the $(u, v)$-plane with a resolution $n \times m$.
@@ -118,7 +108,7 @@ A different way to understand this coordinate change is to imagine the $(u, v)$-
 Changing the distance between the two planes is now equivalent to changing the focal length of this one camera.
 The effect on the light field inside is similar to refocusing, except that in a conventional camera, the image on the sensor is formed by a weighted integral over $u$ and $v$ such that the angular information vanishes.
 Objects at focal distance from the camera would appear sharp and objects away from the focal point would become blurred.
-\todo{Refer to section about the plenoptic camera}
+Section~\ref{sec:plenoptic_camera} discusses this type of camera in more detail.
 
 From stereo vision, it is known that the displacement of the projections in the image planes of two cameras is only dependent on the focal length $f$, the baseline $\Delta u$ and the distance $z$, and the relation is given by $\Delta x = f \Delta u / z$.
 This knowledge can directly be applied to the two-plane parameterization. 
@@ -145,7 +135,7 @@ In the discrete case, the displacement $\Delta s$ or $\Delta t$ is also called t
 
 \section{Visualization}
 \label{sec:Visualization}
-\todo{Mention other types of visualization? 2D grid of images, etc.}
+
 The epipolar-plane image (EPI) allows for a very intuitive visualization of depth from a 4D light field.
 It was first defined by~\cite{EPI} as follows.
 Consider a point $P$ in 3D space and a pair of cameras with the optical axis pointing in the same direcion.
@@ -184,15 +174,25 @@ Also, for a perfectly Lambertian scene, each line in the EPI has a uniform color
 \end{figure}
 
 \section{The Plenoptic Camera}
+\label{sec:plenoptic_camera}
 
-\todo{Introduce Lytro Camera, mention refocusing}
-\todo{Produce figure showing the "aperture view" with the circular drop-off.}
-
+The plenoptic camera as depicted in figure~\ref{fig:lytro_camera} is a hand-held device capable of capturing a light field similar to a camera array but with a much smaller baseline.
+The design of Lytro's camera is based on the work of~\cite{LightFieldPhotographyHandHeldPlenopticCamera}.
+In principle, it functions like a conventional hand-held camera with the only major difference being that it has an array of microlenses placed in front of the image sensor.
+A light ray entering the aperture and hitting a microlens is mapped to one of the sensor's pixels behind the microlens.
+By knowing the position of the microlens array, focal length of the lenses and size of the aperture, each pixel in the final image can be identified with the direction of the incident ray. 
+Hence the plenoptic camera directly adopts the two-plane parameterization with the microlens-array being the \mbox{$(s, t)$-plane} and the main lens representing the \mbox{$(u, v)$-plane}.
+Figure~\ref{fig:lytro_lenslet_array_zoom} shows an enlarged part of the image formed on the sensor.
 \begin{figure}[tb]
 	\centering
 	\input{../Figures/lytro/lenslet_view_magnified_parts.tex}
-	\label{fig:lytro_lenslet_array_zoom}
 	\caption[Light field image captured with a plenoptic camera]
 			{Raw light field image captured by the Lytro Illum plenoptic camera. 
 			 The circularly shaped patches are the images that form behind each microlens.}
+	\label{fig:lytro_lenslet_array_zoom}
 \end{figure}
+It consists of rectangular patches corresponding to the images behind the microlenses.
+Because of the circular shape the main lens has, only a disk of pixels pictures the light coming from outside the camera.
+A popular application of the plenoptic camera is digital refocusing.
+After the light is captured by the camera, refocused photographs can be created by re-parameterization of the light field with equation~\ref{eq:two_plane_reparameterization} as described by~\cite{LightFieldPhotographyHandHeldPlenopticCamera}.
+Although the plenoptic camera was specifically designed for digital refocusing, the captured light field can be used for 3D display like any other light field.
