@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.6.2)  1 MAR 2016 17:28
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.6.2)  1 MAR 2016 17:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -969,7 +969,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.35 ...il }List of Tables}{35}{figure.caption.34}
+l.35 ...il }List of Tables}{35}{figure.caption.33}
                                                    [1
 
 
@@ -1560,31 +1560,27 @@ yer_3x_resolution/5layer_3x_resolution.png>]
 
  (./Chapters/appendix.tex
 Appendix A.
-[33
-
-
-
-
-]
-
-LaTeX Warning: Marginpar on page 34 moved.
-
-<../Figures/placeholder.jpg, id=661, 301.125pt x 401.5pt>
+<../Figures/placeholder.jpg, id=655, 301.125pt x 401.5pt>
 File: ../Figures/placeholder.jpg Graphic file (type jpg)
 
 <use ../Figures/placeholder.jpg>
-Package pdftex.def Info: ../Figures/placeholder.jpg used on input line 62.
+Package pdftex.def Info: ../Figures/placeholder.jpg used on input line 49.
 (pdftex.def)             Requested size: 90.33818pt x 120.45091pt.
 File: ../Figures/placeholder.jpg Graphic file (type jpg)
  <use ../Figures/placeholder.jpg>
-Package pdftex.def Info: ../Figures/placeholder.jpg used on input line 63.
+Package pdftex.def Info: ../Figures/placeholder.jpg used on input line 50.
 (pdftex.def)             Requested size: 90.33818pt x 120.45091pt.
 File: ../Figures/placeholder.jpg Graphic file (type jpg)
 
 <use ../Figures/placeholder.jpg>
-Package pdftex.def Info: ../Figures/placeholder.jpg used on input line 64.
+Package pdftex.def Info: ../Figures/placeholder.jpg used on input line 51.
 (pdftex.def)             Requested size: 90.33818pt x 120.45091pt.
-) [34 <../Figures/placeholder.jpg>]
+ [33
+
+
+
+
+]) [34 <../Figures/placeholder.jpg>]
 (./thesis.lot)
 \tf@lot=\write8
 \openout8 = `thesis.lot'.
@@ -1602,7 +1598,7 @@ Package pdftex.def Info: ../Figures/placeholder.jpg used on input line 64.
 ] [37
 
 ])
-<Erklaerung.pdf, id=702, 597.23125pt x 845.1575pt>
+<Erklaerung.pdf, id=701, 597.23125pt x 845.1575pt>
 File: Erklaerung.pdf Graphic file (type pdf)
  <use Erklaerung.pdf>
 Package pdftex.def Info: Erklaerung.pdf used on input line 123.
@@ -1613,7 +1609,7 @@ File: Erklaerung.pdf Graphic file (type pdf)
 Package pdftex.def Info: Erklaerung.pdf used on input line 123.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
  [38]
-<Erklaerung.pdf, id=710, page=1, 597.23125pt x 845.1575pt>
+<Erklaerung.pdf, id=709, page=1, 597.23125pt x 845.1575pt>
 File: Erklaerung.pdf Graphic file (type pdf)
 
 <use Erklaerung.pdf, page 1>
@@ -1647,7 +1643,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 125.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 125.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 125.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: F253D718859F264A9E944A6106367B79;2395.
+(rerunfilecheck)             Checksum: 85C650F4B330BA8258F50B1A377A3C47;2395.
 
 
 LaTeX Warning: There were undefined references.
@@ -1655,10 +1651,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 125.
  ) 
 Here is how much of TeX's memory you used:
- 29581 strings out of 494985
- 645361 string characters out of 6180357
- 938056 words of memory out of 5000000
- 31846 multiletter control sequences out of 15000+600000
+ 29575 strings out of 494985
+ 645210 string characters out of 6180357
+ 937976 words of memory out of 5000000
+ 31841 multiletter control sequences out of 15000+600000
  13396 words of font info for 52 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  91i,22n,377p,837b,2724s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1684,10 +1680,10 @@ lic/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/s
 ymbols/msbm7.pfb>
-Output written on thesis.pdf (44 pages, 25664158 bytes).
+Output written on thesis.pdf (44 pages, 25663927 bytes).
 PDF statistics:
- 843 PDF objects out of 1000 (max. 8388607)
- 697 compressed objects within 7 object streams
- 164 named destinations out of 1000 (max. 500000)
+ 842 PDF objects out of 1000 (max. 8388607)
+ 696 compressed objects within 7 object streams
+ 163 named destinations out of 1000 (max. 500000)
  571 words of extra memory for PDF output out of 10000 (max. 10000000)
 

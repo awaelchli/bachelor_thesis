@@ -346,8 +346,6 @@ Moreover, there are no universally best printer settings (amount of ink, drying 
 The settings have to be tuned by trial-and-error depending on the particular printer model and transparencies.
 Also, Moir\'{e} does not seem to be a problem because of the natural blending of ink.
 
-Contrast sensitivity
-
 \section{Improvements and Future Work}
 \label{sec:future_work}
 
@@ -359,8 +357,10 @@ The parallel approach would also eliminate the need of explicitly pre-computing 
 Still, the final printing and layer alignment remains time consuming and must be attacked with patience.
 Alternatively the masks could be printed directly on glass which would result in a higher build quality and precise layer alignment.
 
+Some assumptions that are incorporated into the software could be generalized.
+Among them is the pinhole camera model that could be extended to a more realistic lens model.
+Further, only regularly sampled light fields are supported which would make it harder to adopt light fields from unconventional capturing devices.
+
 As \cite{WetzsteinTensor} have shown, LCD panels can be used to modulate light instead of printed layers.
 The benefit here is that the panels can be accurately aligned and calibrated once, and no further adjustments to the hardware are necessary in order to view different content.
 Building the display however requires advanced technical knowledge in developing custom electronics to control and interface with the panels.
-\\
-pinhole cameara
