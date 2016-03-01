@@ -8,30 +8,30 @@
 \contentsline {section}{\numberline {2.2}Light Field Acquisition}{6}{section.2.2}
 \contentsline {section}{\numberline {2.3}Visualization}{8}{section.2.3}
 \contentsline {section}{\numberline {2.4}The Plenoptic Camera}{9}{section.2.4}
-\contentsline {chapter}{\numberline {3}Light Field Tomography}{10}{chapter.3}
-\contentsline {section}{\numberline {3.1}A Model for Light Attenuation}{10}{section.3.1}
-\contentsline {section}{\numberline {3.2}Discrete Attenuation Layers}{12}{section.3.2}
-\contentsline {section}{\numberline {3.3}Ray Casting}{12}{section.3.3}
-\contentsline {section}{\numberline {3.4}Iterative Reconstruction}{14}{section.3.4}
-\contentsline {chapter}{\numberline {4}Spectral Analysis}{16}{chapter.4}
-\contentsline {section}{\numberline {4.1}Definitions}{16}{section.4.1}
-\contentsline {section}{\numberline {4.2}Spectral Support of Light Fields}{17}{section.4.2}
-\contentsline {section}{\numberline {4.3}Spectral Support of Layered 3D Displays}{18}{section.4.3}
-\contentsline {chapter}{\numberline {5}Implementation and Assessment}{21}{chapter.5}
-\contentsline {section}{\numberline {5.1}Requirements}{21}{section.5.1}
-\contentsline {section}{\numberline {5.2}The Basic Procedure}{21}{section.5.2}
-\contentsline {section}{\numberline {5.3}Interpolation}{22}{section.5.3}
-\contentsline {section}{\numberline {5.4}Oversampling}{23}{section.5.4}
-\contentsline {section}{\numberline {5.5}Baseline Scaling and Back Projection}{24}{section.5.5}
-\contentsline {section}{\numberline {5.6}Attenuator Tiling and Blending}{24}{section.5.6}
-\contentsline {section}{\numberline {5.7}Performance of SART}{26}{section.5.7}
-\contentsline {section}{\numberline {5.8}Contrast Sensitivity}{26}{section.5.8}
-\contentsline {section}{\numberline {5.9}Graphical User Interface}{27}{section.5.9}
-\contentsline {section}{\numberline {5.10}Benefits and Limitations}{28}{section.5.10}
-\contentsline {section}{\numberline {5.11}Improvements and Future Work}{28}{section.5.11}
-\contentsline {chapter}{\numberline {A}Appendix}{32}{appendix.A}
-\contentsline {section}{\numberline {A.1}Printing}{32}{section.A.1}
-\contentsline {section}{\numberline {A.2}Backlight Fabrication}{32}{section.A.2}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Tables}{34}{figure.caption.41}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Figures}{34}{appendix*.42}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{35}{appendix*.43}
+\contentsline {chapter}{\numberline {3}Light Field Tomography}{11}{chapter.3}
+\contentsline {section}{\numberline {3.1}A Model for Light Attenuation}{11}{section.3.1}
+\contentsline {section}{\numberline {3.2}Discrete Attenuation Layers}{13}{section.3.2}
+\contentsline {section}{\numberline {3.3}Ray Casting}{13}{section.3.3}
+\contentsline {section}{\numberline {3.4}Iterative Reconstruction}{15}{section.3.4}
+\contentsline {chapter}{\numberline {4}Spectral Analysis}{17}{chapter.4}
+\contentsline {section}{\numberline {4.1}Definitions}{17}{section.4.1}
+\contentsline {section}{\numberline {4.2}Spectral Support of Light Fields}{18}{section.4.2}
+\contentsline {section}{\numberline {4.3}Spectral Support of Layered 3D Displays}{19}{section.4.3}
+\contentsline {chapter}{\numberline {5}Implementation and Assessment}{22}{chapter.5}
+\contentsline {section}{\numberline {5.1}Requirements}{22}{section.5.1}
+\contentsline {section}{\numberline {5.2}The Basic Procedure}{22}{section.5.2}
+\contentsline {section}{\numberline {5.3}Interpolation}{23}{section.5.3}
+\contentsline {section}{\numberline {5.4}Oversampling}{24}{section.5.4}
+\contentsline {section}{\numberline {5.5}Baseline Scaling and Back Projection}{25}{section.5.5}
+\contentsline {section}{\numberline {5.6}Attenuator Tiling and Blending}{25}{section.5.6}
+\contentsline {section}{\numberline {5.7}Performance of SART}{27}{section.5.7}
+\contentsline {section}{\numberline {5.8}Contrast Sensitivity}{27}{section.5.8}
+\contentsline {section}{\numberline {5.9}Graphical User Interface}{28}{section.5.9}
+\contentsline {section}{\numberline {5.10}Benefits and Limitations}{29}{section.5.10}
+\contentsline {section}{\numberline {5.11}Improvements and Future Work}{29}{section.5.11}
+\contentsline {chapter}{\numberline {A}Appendix}{33}{appendix.A}
+\contentsline {section}{\numberline {A.1}Printing}{33}{section.A.1}
+\contentsline {section}{\numberline {A.2}Backlight Fabrication}{33}{section.A.2}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Tables}{35}{figure.caption.42}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Figures}{35}{appendix*.43}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{36}{appendix*.44}

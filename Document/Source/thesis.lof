@@ -6,20 +6,21 @@
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Parameterization for light fields from oblique projections}}{7}{figure.caption.10}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Parameterization for light fields from perspective projections}}{8}{figure.caption.13}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Visualization of the light field with epipolar plane images}}{9}{figure.caption.15}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Light field image captured with a plenoptic camera}}{10}{figure.caption.19}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces The Radon transform}}{11}{figure.caption.22}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Computation of the ray-layer intersections from oblique and perspective projections}}{13}{figure.caption.23}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces The Radon transform}}{12}{figure.caption.23}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Computation of the ray-layer intersections from oblique and perspective projections}}{14}{figure.caption.24}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Spectral analysis for light fields with bounded depth range}}{17}{figure.caption.28}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Spectral analysis for layered 3D displays}}{19}{figure.caption.29}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Spectral support of layered 3D displays}}{20}{figure.caption.30}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Spectral analysis for light fields with bounded depth range}}{18}{figure.caption.29}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Spectral analysis for layered 3D displays}}{20}{figure.caption.30}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Spectral support of layered 3D displays}}{21}{figure.caption.31}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Baseline scaling}}{24}{figure.caption.31}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Tiling layout}}{25}{figure.caption.32}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Impact of tile overlap on attenuation layers}}{26}{figure.caption.34}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Performance assessment of the optimization}}{27}{figure.caption.35}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Impact of layer count on \unhbox \voidb@x \hbox {PSNR}}}{27}{figure.caption.36}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Contrast sensitivity analysis for layered 3D displays}}{30}{figure.caption.37}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Graphical user interface}}{31}{figure.caption.38}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Baseline scaling}}{25}{figure.caption.32}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Tiling layout}}{26}{figure.caption.33}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Impact of tile overlap on attenuation layers}}{27}{figure.caption.35}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Performance assessment of the optimization}}{28}{figure.caption.36}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Impact of layer count on \unhbox \voidb@x \hbox {PSNR}}}{28}{figure.caption.37}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Contrast sensitivity analysis for layered 3D displays}}{31}{figure.caption.38}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Graphical user interface}}{32}{figure.caption.39}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Handcrafted backlights for the attenuation displays}}{33}{figure.caption.41}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Handcrafted backlights for the attenuation displays}}{34}{figure.caption.42}
