@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.1.20)  1 MAR 2016 21:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.1.20)  1 MAR 2016 21:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1833,17 +1833,17 @@ mulated_views/knights_tiles3x3x256x256_overlap0.5_5layers_resolution9x9x512x512
 _SART_50iter/3.png (PNG copy)> <../Figures/simulated_views/knights_tiles3x3x256
 x256_overlap0.5_5layers_resolution9x9x512x512_SART_50iter/4.png (PNG copy)> <..
 /Figures/simulated_views/knights_tiles3x3x256x256_overlap0.5_5layers_resolution
-9x9x512x512_SART_50iter/5.png (PNG copy)>] (./thesis.lot)
-\tf@lot=\write8
-\openout8 = `thesis.lot'.
+9x9x512x512_SART_50iter/5.png (PNG copy)>] (./thesis.lof)
+\tf@lof=\write8
+\openout8 = `thesis.lof'.
 
  [36
 
 
 
-] (./thesis.lof)
-\tf@lof=\write9
-\openout9 = `thesis.lof'.
+] (./thesis.lot)
+\tf@lot=\write9
+\openout9 = `thesis.lot'.
 
 
 (./thesis.bbl [37
@@ -1895,14 +1895,21 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 126.
 (./Chapters/chapter4.aux) (./Chapters/chapter5.aux) (./Chapters/appendix.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 126.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 126.
-Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: C40C017A516FB419DB41B4318176F55F;2469.
+
+
+Package rerunfilecheck Warning: File `thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `thesis.out':
+(rerunfilecheck)             Before: C40C017A516FB419DB41B4318176F55F;2469
+(rerunfilecheck)             After:  728FAB6712A28F774C9D3F903D6FF817;2469.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 126.
  ) 
 Here is how much of TeX's memory you used:
  33504 strings out of 494289
  786113 string characters out of 6162254
- 1093363 words of memory out of 5000000
+ 1093362 words of memory out of 5000000
  35871 multiletter control sequences out of 15000+600000
  13396 words of font info for 52 fonts, out of 8000000 for 9000
  372 hyphenation exceptions out of 8191
@@ -1928,7 +1935,7 @@ ist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2015/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmtt8.pfb><c:/texlive/2015/texmf-dist/fonts/type1/pub
 lic/amsfonts/symbols/msbm10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/
 amsfonts/symbols/msbm7.pfb>
-Output written on thesis.pdf (45 pages, 29615649 bytes).
+Output written on thesis.pdf (45 pages, 29615658 bytes).
 PDF statistics:
  866 PDF objects out of 1000 (max. 8388607)
  701 compressed objects within 8 object streams
