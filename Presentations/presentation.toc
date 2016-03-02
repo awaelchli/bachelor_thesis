@@ -1,3 +1,9 @@
 \beamer@endinputifotherversion {3.36pt}
-\beamer@sectionintoc {1}{Elements}{4}{0}{1}
-\beamer@sectionintoc {2}{Conclusion}{18}{0}{2}
+\beamer@sectionintoc {1}{Motivation}{3}{0}{1}
+\beamer@sectionintoc {2}{Introduction to Light Fields}{4}{0}{2}
+\beamer@sectionintoc {3}{Problem Statement}{9}{0}{3}
+\beamer@sectionintoc {4}{Solution}{10}{0}{4}
+\beamer@sectionintoc {5}{Frequency Analysis}{11}{0}{5}
+\beamer@sectionintoc {6}{Conclusion}{12}{0}{6}
+\beamer@sectionintoc {7}{Elements}{15}{0}{7}
+\beamer@sectionintoc {8}{Conclusion}{29}{0}{8}

@@ -6,6 +6,14 @@
 \usepackage[scale=2]{ccicons}
 \usepackage{minted}
 
+% For presentation mode
+%\usepackage{pgfpages}
+%\setbeameroption{show notes}
+%\setbeameroption{show notes on second screen=right}
+
+% Numbered sections in table of contents
+\setbeamertemplate{section in toc}[sections numbered]
+
 \usemintedstyle{trac}
 
 \title{Attenuation-based Light Field Displays}
@@ -17,6 +25,45 @@
 \begin{document}
 
 \maketitle
+
+\begin{frame}[fragile]
+	\frametitle{Outline}
+	\tableofcontents
+\end{frame}
+
+\section{Motivation}
+\section{Introduction to Light Fields}
+
+\begin{frame}[fragile]
+	\frametitle{The Plenoptic Function}
+	
+	\begin{columns}[onlytextwidth]
+		\column{0.6\textwidth}
+		\begin{itemize}[<+- | alert@+>]
+			\item Measures light in the world
+			\item Defined
+			\item And now this
+		\end{itemize}
+		
+		
+		\column{0.4\textwidth}
+		
+		$P(x, y, z, \theta, \phi, t, \lambda)$
+		Sketch of plenoptic function
+		
+	\end{columns}
+	
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{The 4D Light Field}
+\end{frame}
+
+\section{Problem Statement}
+\section{Solution}
+\section{Frequency Analysis}
+\section{Conclusion}
+
 
 \begin{frame}[fragile]
   \frametitle{mtheme}
@@ -35,6 +82,11 @@
   Note, that you have to have Mozilla's \emph{Fira Sans} font and XeTeX
   installed to enjoy this wonderful typography.
 \end{frame}
+
+%\note[itemize]{
+%	\item Note 1
+%	\item Note 2
+%}
 
 \begin{frame}[fragile]
   \frametitle{Sections}
