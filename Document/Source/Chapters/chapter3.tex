@@ -119,7 +119,7 @@ Thus, the objective becomes
 \begin{equation} \label{eq:minimize_norm}
 	\begin{aligned}
 		& \underset{\alpha}{\text{argmin}} 	& & \left\lVert P \alpha + \bar{L} \right\rVert ^2 \\
-		& \text{subject to} 				& & 0 \leq \alpha < \infty.
+		& \text{subject to} 				& & \alpha \geq 0.
 	\end{aligned}
 \end{equation}
 Finally, when optimal values $\alpha$ are found, the transmittance used to fabricate the layers is obtained by calculating $e^{-\alpha}$.
@@ -139,8 +139,7 @@ For simplicity, only a two-dimensional attenuator of size $w$ is assumed, consis
 $Z_{\text{min}} = z_1 < z_2 < \dots < z_N = Z_{\text{max}}$.
 It is also assumed that the image plane $s$ of the virtual cameras is bisecting the attenuator in the middle, at depth 
 $Z_s = \frac{Z_{\text{max}} - Z_{\text{min}}}{2}$.
-
-\begin{figure}[htb]
+\begin{figure}[tb]
 	\subcaptionbox{\label{fig:ray_casting_oblique_projection}}{\input{../Figures/ray_casting_oblique_projection}}\hfill%
 	\subcaptionbox{\label{fig:ray_casting_perspective_projection}}{\input{../Figures/ray_casting_perspective_projection}}
 	\caption[Computation of the ray-layer intersections from oblique and perspective projections]
@@ -187,8 +186,9 @@ and the assignment $P_{m k^\prime}^{(n)} = 1$ is made.
 \label{sec:iterative_reconstruction}
 
 The optimization problem in equation~\ref{eq:minimize_norm} is essentially a fitting problem.
-Theoretically, it can be solved in a least squares sense using the normal equation $P^T P \alpha = P^T \bar{L}$ and by inverting the matrix $P^T P$.
+Theoretically, the unconstrained problem can be solved in a least squares sense using the normal equation $P^T P \alpha = P^T \bar{L}$ and by inverting the matrix $P^T P$.
 For high resolution light fields, the matrix $P$ becomes extremely large and it is unfeasible to compute the inverse of $P^T P$.
+And because the problem in~\ref{eq:minimize_norm} is constrained by the inequality $\alpha \geq 0$, a different strategy is needed anyhow.
 In general, the approach to solve these kind of problems is to use iterative methods.
 The choice of the method depends on the type of problem and the structure of the design matrix.
 In the following, the two iterative solvers used in this work are presented and later compared in section~\ref{sec:performance_of_SART} in terms of reconstruction quality.

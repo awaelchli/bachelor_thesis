@@ -23,6 +23,11 @@
 		\draw[->] (0, 8) -- (0, -8);
 		\node[below] at (0, -8) {$z$};		
 		
+		% Labels for image plane and layers
+		\node[above, anchor = south west] at (-14, 0) {Image plane};
+		\node[above, anchor = south west] at (-14, 6) {Layer 2};
+		\node[above, anchor = south west] at (-14, -6) {Layer 1};
+		
 		% Save current bounding box to clip light rays
 		\coordinate (NE) at (current bounding box.north east);
 		\coordinate (SW) at (current bounding box.south west);
@@ -78,6 +83,11 @@
 		\draw (12, -0.5 - 6) -- (12, 0.5 - 6);
 		\node[below] at (-12, -0.5 - 6) {$-\frac{w}{2}$};
 		\node[below] at (12, -0.5 - 6) {$\frac{w}{2}$};
+		
+		% Draw again on top of gray lines
+		\node[above, anchor = south west] at (-14, 0) {Image plane};
+		\node[above, anchor = south west] at (-14, 6) {Layer 2};
+		\node[above, anchor = south west] at (-14, -6) {Layer 1};
 		
 	\end{tikzpicture}
 	

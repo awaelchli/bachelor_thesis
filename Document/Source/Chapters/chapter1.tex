@@ -13,7 +13,7 @@ Light fields are the foundation for image based rendering, a technique to presen
 The light field is a simplified version of the more general plenoptic function, first characterized by~\cite{AdelsonBergen}.
 It can be thought of a snapshot of the light in the entire scene, a database storing the radiance for every possible ray in the scene.
 This data can be captured by a grid of cameras such as the one depicted in figure~\ref{fig:stanford_camera_array}.
-In fact, a light field is formed inside every conventional camera, but the per-ray radiance information is lost when the light striking the sensor is accumulated over all angles. 
+In fact, a light field is formed inside every conventional camera, but the per-ray radiance information is lost when the light striking the sensor is accumulated over all angles under the aperture. 
 A camera that does not discard the additional radiance information is called a plenoptic camera or light field camera, shown in figure~\ref{fig:lytro_camera}.
 As described by~\cite{LightFieldPhotographyHandHeldPlenopticCamera}, an application for the plenoptic camera is digital refocusing, the process of refocusing an image after it was taken.
 Chapter~\ref{chp:light_field_capturing} gives an overview of the properties of light fields and how they are used in this work.
@@ -107,14 +107,14 @@ The idea for this thesis was to extend their work in addition to support camera 
 As a followup to the original paper, \cite{WetzsteinTensor} have built a display comprising a stack of liquid crystal panels that modulate the light similar to the static layered 3D for printed transparencies.
 To reduce artifacts from limited depth of field and to increase the displays field of view, they extend the degrees of freedom for the optimization by time-multiplexing a number of frames on each layer.
 As a result, the observer perceives a time-average over the multi-layer frame sequence.
-Their GPU-implementation solves the problem of finding the attenuation layes and frames by means of multiplicative update rules rather than tomographic reconstruction techniques, achieving interactive frame rates.
+Their GPU-implementation solves the problem of finding the attenuation layers and frames by means of multiplicative update rules rather than tomographic reconstruction techniques, achieving interactive frame rates.
 
 Multi-layer displays are not only suited for 3D presentation.
 \cite{FocusCuesMultiPlaneDisplays} use multi-plane displays to present focus cues instead of parallax.
 With their model for image formation inside the human eye, they describe the defocus effects produced in the eye when accommodating at different distances.
 They compute optimal presentation layers that create a focal stack for the viewer, which handles occlusion boundaries and specularity correctly.
 The proposed algorithm requires a series of images focused at different distances rather than a full 4D light field and thus requires less memory for computation.
-Contrary to this work, the display planes are additive and the optimization is performed via the frequency domain.
+Contrary to this work, the display planes are additive and the optimization is performed in the frequency domain.
 
 A different application for light field displays is vision correction.
 As shown by \cite{EyeglassesFreeDisplay}, light field displays can be used to pre-distort imagery in order to compensate for visual aberrations in the observers eye and to obviate the need for eyeglasses or contact lenses.

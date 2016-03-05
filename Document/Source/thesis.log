@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.1.20)  5 MAR 2016 16:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.1.20)  5 MAR 2016 18:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1174,7 +1174,7 @@ Chapter 4.
 (../Figures/spectral_support/epi_fourier_transform.tex)
 (../Figures/spectral_support/epi_two_objects.tex)
 (../Figures/spectral_support/fourier_transform_red_and_blue.tex
-<../Figures/spectral_support/fft_red_and_blue.png, id=462, 1003.75pt x 1003.75p
+<../Figures/spectral_support/fft_red_and_blue.png, id=463, 1003.75pt x 1003.75p
 t>
 File: ../Figures/spectral_support/fft_red_and_blue.png Graphic file (type png)
  <use ../Figures/spectral_support/fft_red_and_blue.png>
@@ -1182,7 +1182,7 @@ Package pdftex.def Info: ../Figures/spectral_support/fft_red_and_blue.png used
 on input line 13.
 (pdftex.def)             Requested size: 142.26378pt x 142.25475pt.
 )
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 47--74
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 47--75
 []$[]$ $[]$ 
  []
 
@@ -1196,31 +1196,31 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 ) [19]
-<../Figures/spectral_support/convolution_2_layers.png, id=502, 3012.25375pt x 3
+<../Figures/spectral_support/convolution_2_layers.png, id=503, 3012.25375pt x 3
 012.25375pt>
 File: ../Figures/spectral_support/convolution_2_layers.png Graphic file (type p
 ng)
  <use ../Figures/spectral_support/convolution_2_layers.png>
 Package pdftex.def Info: ../Figures/spectral_support/convolution_2_layers.png u
-sed on input line 156.
+sed on input line 157.
 (pdftex.def)             Requested size: 99.55635pt x 99.58464pt.
 
-<../Figures/spectral_support/convolution_3_layers.png, id=503, 3012.25375pt x 3
+<../Figures/spectral_support/convolution_3_layers.png, id=504, 3012.25375pt x 3
 012.25375pt>
 File: ../Figures/spectral_support/convolution_3_layers.png Graphic file (type p
 ng)
  <use ../Figures/spectral_support/convolution_3_layers.png>
 Package pdftex.def Info: ../Figures/spectral_support/convolution_3_layers.png u
-sed on input line 157.
+sed on input line 158.
 (pdftex.def)             Requested size: 99.55635pt x 99.58464pt.
 
-<../Figures/spectral_support/convolution_5_layers.png, id=504, 3012.25375pt x 3
+<../Figures/spectral_support/convolution_5_layers.png, id=505, 3012.25375pt x 3
 012.25375pt>
 File: ../Figures/spectral_support/convolution_5_layers.png Graphic file (type p
 ng)
  <use ../Figures/spectral_support/convolution_5_layers.png>
 Package pdftex.def Info: ../Figures/spectral_support/convolution_5_layers.png u
-sed on input line 158.
+sed on input line 159.
 (pdftex.def)             Requested size: 99.55635pt x 99.58464pt.
 
 [20]) [21 <../Figures/spectral_support/convolution_2_layers.png (PNG copy)> <..
@@ -1237,7 +1237,7 @@ Chapter 5.
 
 ] [23] (../Figures/depth_compression/baseline_unscaled.tex
 <../Figures/depth_compression/baseline_unscaled/Reconstruction_of_view_(9,9).pn
-g, id=538, 513.92pt x 513.92pt>
+g, id=539, 513.92pt x 513.92pt>
 File: ../Figures/depth_compression/baseline_unscaled/Reconstruction_of_view_(9,
 9).png Graphic file (type png)
 
@@ -1264,7 +1264,7 @@ ruction_of_view_(9,9).png used on input line 36.
 (pdftex.def)             Requested size: 106.69783pt x 106.69522pt.
 ) (../Figures/depth_compression/baseline_scaled.tex
 <../Figures/depth_compression/baseline_scaled_shifted/Reconstruction_of_view_(9
-,9).png, id=539, 513.92pt x 513.92pt>
+,9).png, id=540, 513.92pt x 513.92pt>
 File: ../Figures/depth_compression/baseline_scaled_shifted/Reconstruction_of_vi
 ew_(9,9).png Graphic file (type png)
 
@@ -1291,7 +1291,7 @@ econstruction_of_view_(9,9).png used on input line 36.
 (pdftex.def)             Requested size: 106.69783pt x 106.69522pt.
 ) [24] (../Figures/tiling/tiling_layout.tex)
 (../Figures/tiling/tiling_masks_sum.tex
-<../Figures/tiling/blending_masks_sum_3x3.png, id=549, 376.40625pt x 376.40625p
+<../Figures/tiling/blending_masks_sum_3x3.png, id=550, 376.40625pt x 376.40625p
 t>
 File: ../Figures/tiling/blending_masks_sum_3x3.png Graphic file (type png)
  <use ../Figures/tiling/blending_masks_sum_3x3.png>
@@ -1301,7 +1301,7 @@ nput line 16.
 ) [25 <../Figures/depth_compression/baseline_unscaled/Reconstruction_of_view_(9
 ,9).png (PNG copy)> <../Figures/depth_compression/baseline_scaled_shifted/Recon
 struction_of_view_(9,9).png (PNG copy)>]
-<../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/1.png, id=558, 51
+<../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/1.png, id=559, 51
 3.92pt x 513.92pt>
 File: ../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/1.png Graphi
 c file (type png)
@@ -1311,7 +1311,7 @@ Package pdftex.def Info: ../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_
 layers/1.png used on input line 181.
 (pdftex.def)             Requested size: 79.34853pt x 79.3431pt.
 
-<../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/1.png, id=559, 51
+<../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/1.png, id=560, 51
 3.92pt x 513.92pt>
 File: ../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/1.png Graphi
 c file (type png)
@@ -1321,7 +1321,7 @@ Package pdftex.def Info: ../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_
 layers/1.png used on input line 185.
 (pdftex.def)             Requested size: 79.34853pt x 79.3431pt.
 
-<../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/2.png, id=560, 51
+<../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/2.png, id=561, 51
 3.92pt x 513.92pt>
 File: ../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/2.png Graphi
 c file (type png)
@@ -1331,7 +1331,7 @@ Package pdftex.def Info: ../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_
 layers/2.png used on input line 189.
 (pdftex.def)             Requested size: 79.34853pt x 79.3431pt.
 
-<../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/2.png, id=561, 51
+<../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/2.png, id=562, 51
 3.92pt x 513.92pt>
 File: ../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/2.png Graphi
 c file (type png)
@@ -1341,7 +1341,7 @@ Package pdftex.def Info: ../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_
 layers/2.png used on input line 193.
 (pdftex.def)             Requested size: 79.34853pt x 79.3431pt.
 
-<../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/3.png, id=562, 51
+<../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/3.png, id=563, 51
 3.92pt x 513.92pt>
 File: ../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/3.png Graphi
 c file (type png)
@@ -1351,7 +1351,7 @@ Package pdftex.def Info: ../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_
 layers/3.png used on input line 197.
 (pdftex.def)             Requested size: 79.34853pt x 79.3431pt.
 
-<../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/3.png, id=563, 51
+<../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/3.png, id=564, 51
 3.92pt x 513.92pt>
 File: ../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/3.png Graphi
 c file (type png)
@@ -1362,7 +1362,7 @@ layers/3.png used on input line 201.
 (pdftex.def)             Requested size: 79.34853pt x 79.3431pt.
 
 <../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/blendingMaskSum.p
-ng, id=564, 513.92pt x 513.92pt>
+ng, id=565, 513.92pt x 513.92pt>
 File: ../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/blendingMask
 Sum.png Graphic file (type png)
 
@@ -1373,7 +1373,7 @@ layers/blendingMaskSum.png used on input line 205.
 (pdftex.def)             Requested size: 79.34853pt x 79.3431pt.
 
 <../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/blendingMaskSum.p
-ng, id=565, 513.92pt x 513.92pt>
+ng, id=566, 513.92pt x 513.92pt>
 File: ../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/blendingMask
 Sum.png Graphic file (type png)
 
@@ -1395,7 +1395,7 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 )
 (../Figures/contrast/contrast_sensitivity.tex
-<../Figures/contrast/contrast_sensitivity.png, id=581, 642.4pt x 481.8pt>
+<../Figures/contrast/contrast_sensitivity.png, id=582, 642.4pt x 481.8pt>
 File: ../Figures/contrast/contrast_sensitivity.png Graphic file (type png)
 
 <use ../Figures/contrast/contrast_sensitivity.png>
@@ -1408,7 +1408,7 @@ Overfull \hbox (1.21289pt too wide) in paragraph at lines 39--277
  []
 
 (../Figures/contrast/2layer_1x_resolution.tex
-<../Figures/contrast/2layer_1x_resolution/2layer_1x_resolution_rec.png, id=584,
+<../Figures/contrast/2layer_1x_resolution/2layer_1x_resolution_rec.png, id=585,
  642.4pt x 241.90375pt>
 File: ../Figures/contrast/2layer_1x_resolution/2layer_1x_resolution_rec.png Gra
 phic file (type png)
@@ -1418,7 +1418,7 @@ Package pdftex.def Info: ../Figures/contrast/2layer_1x_resolution/2layer_1x_res
 olution_rec.png used on input line 45.
 (pdftex.def)             Requested size: 136.43712pt x 51.16301pt.
 
-<../Figures/contrast/2layer_1x_resolution/2layer_1x_resolution.png, id=587, 642
+<../Figures/contrast/2layer_1x_resolution/2layer_1x_resolution.png, id=588, 642
 .4pt x 241.90375pt>
 File: ../Figures/contrast/2layer_1x_resolution/2layer_1x_resolution.png Graphic
  file (type png)
@@ -1433,7 +1433,7 @@ Overfull \hbox (8.40729pt too wide) in paragraph at lines 54--280
  []
 
 (../Figures/contrast/2layer_2x_resolution.tex
-<../Figures/contrast/2layer_2x_resolution/2layer_2x_resolution_rec.png, id=590,
+<../Figures/contrast/2layer_2x_resolution/2layer_2x_resolution_rec.png, id=591,
  642.4pt x 241.90375pt>
 File: ../Figures/contrast/2layer_2x_resolution/2layer_2x_resolution_rec.png Gra
 phic file (type png)
@@ -1443,7 +1443,7 @@ Package pdftex.def Info: ../Figures/contrast/2layer_2x_resolution/2layer_2x_res
 olution_rec.png used on input line 35.
 (pdftex.def)             Requested size: 136.43712pt x 51.16301pt.
 
-<../Figures/contrast/2layer_2x_resolution/2layer_2x_resolution.png, id=591, 642
+<../Figures/contrast/2layer_2x_resolution/2layer_2x_resolution.png, id=592, 642
 .4pt x 241.90375pt>
 File: ../Figures/contrast/2layer_2x_resolution/2layer_2x_resolution.png Graphic
  file (type png)
@@ -1458,7 +1458,7 @@ Overfull \hbox (8.40729pt too wide) in paragraph at lines 44--284
  []
 
 (../Figures/contrast/5layer_1x_resolution.tex
-<../Figures/contrast/5layer_1x_resolution/5layer_1x_resolution_rec.png, id=594,
+<../Figures/contrast/5layer_1x_resolution/5layer_1x_resolution_rec.png, id=595,
  642.4pt x 241.90375pt>
 File: ../Figures/contrast/5layer_1x_resolution/5layer_1x_resolution_rec.png Gra
 phic file (type png)
@@ -1468,7 +1468,7 @@ Package pdftex.def Info: ../Figures/contrast/5layer_1x_resolution/5layer_1x_res
 olution_rec.png used on input line 35.
 (pdftex.def)             Requested size: 136.43712pt x 51.16301pt.
 
-<../Figures/contrast/5layer_1x_resolution/5layer_1x_resolution.png, id=595, 642
+<../Figures/contrast/5layer_1x_resolution/5layer_1x_resolution.png, id=596, 642
 .4pt x 241.90375pt>
 File: ../Figures/contrast/5layer_1x_resolution/5layer_1x_resolution.png Graphic
  file (type png)
@@ -1483,7 +1483,7 @@ Overfull \hbox (8.40729pt too wide) in paragraph at lines 44--287
  []
 
 (../Figures/contrast/5layer_2x_resolution.tex
-<../Figures/contrast/5layer_2x_resolution/5layer_2x_resolution_rec.png, id=598,
+<../Figures/contrast/5layer_2x_resolution/5layer_2x_resolution_rec.png, id=599,
  642.4pt x 241.90375pt>
 File: ../Figures/contrast/5layer_2x_resolution/5layer_2x_resolution_rec.png Gra
 phic file (type png)
@@ -1493,7 +1493,7 @@ Package pdftex.def Info: ../Figures/contrast/5layer_2x_resolution/5layer_2x_res
 olution_rec.png used on input line 35.
 (pdftex.def)             Requested size: 136.43712pt x 51.16301pt.
 
-<../Figures/contrast/5layer_2x_resolution/5layer_2x_resolution.png, id=599, 642
+<../Figures/contrast/5layer_2x_resolution/5layer_2x_resolution.png, id=600, 642
 .4pt x 241.90375pt>
 File: ../Figures/contrast/5layer_2x_resolution/5layer_2x_resolution.png Graphic
  file (type png)
@@ -1508,7 +1508,7 @@ Overfull \hbox (8.40729pt too wide) in paragraph at lines 44--291
  []
 
 (../Figures/contrast/5layer_3x_resolution.tex
-<../Figures/contrast/5layer_3x_resolution/5layer_3x_resolution_rec.png, id=602,
+<../Figures/contrast/5layer_3x_resolution/5layer_3x_resolution_rec.png, id=603,
  642.4pt x 241.90375pt>
 File: ../Figures/contrast/5layer_3x_resolution/5layer_3x_resolution_rec.png Gra
 phic file (type png)
@@ -1518,7 +1518,7 @@ Package pdftex.def Info: ../Figures/contrast/5layer_3x_resolution/5layer_3x_res
 olution_rec.png used on input line 35.
 (pdftex.def)             Requested size: 136.43712pt x 51.16301pt.
 
-<../Figures/contrast/5layer_3x_resolution/5layer_3x_resolution.png, id=603, 642
+<../Figures/contrast/5layer_3x_resolution/5layer_3x_resolution.png, id=604, 642
 .4pt x 241.90375pt>
 File: ../Figures/contrast/5layer_3x_resolution/5layer_3x_resolution.png Graphic
  file (type png)
@@ -1541,7 +1541,7 @@ G copy)> <../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/3.png (P
 NG copy)> <../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/blendin
 gMaskSum.png (PNG copy)> <../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3
 _layers/blendingMaskSum.png (PNG copy)>]
-<../Figures/gui/overview.png, id=615, 930.47626pt x 685.8122pt>
+<../Figures/gui/overview.png, id=616, 930.47626pt x 685.8122pt>
 File: ../Figures/gui/overview.png Graphic file (type png)
 
 <use ../Figures/gui/overview.png>
@@ -1563,7 +1563,7 @@ yer_3x_resolution/5layer_3x_resolution.png>]
 
  (./Chapters/appendix.tex
 Appendix A.
-<../Figures/hand_craft/all_displays_on.JPG, id=656, 1638.12pt x 921.4425pt>
+<../Figures/hand_craft/all_displays_on.JPG, id=657, 1638.12pt x 921.4425pt>
 File: ../Figures/hand_craft/all_displays_on.JPG Graphic file (type jpg)
 
 <use ../Figures/hand_craft/all_displays_on.JPG>
@@ -1571,7 +1571,7 @@ Package pdftex.def Info: ../Figures/hand_craft/all_displays_on.JPG used on inpu
 t line 49.
 (pdftex.def)             Requested size: 345.0pt x 87.83546pt.
 
-<../Figures/hand_craft/display_frame_removed_cropped.jpg, id=658, 2421.045pt x 
+<../Figures/hand_craft/display_frame_removed_cropped.jpg, id=659, 2421.045pt x 
 2421.045pt>
 File: ../Figures/hand_craft/display_frame_removed_cropped.jpg Graphic file (typ
 e jpg)
@@ -1580,7 +1580,7 @@ Package pdftex.def Info: ../Figures/hand_craft/display_frame_removed_cropped.jp
 g used on input line 53.
 (pdftex.def)             Requested size: 155.24895pt x 155.2308pt.
 
-<../Figures/hand_craft/raw_backlight_from_top_cropped.jpg, id=659, 2665.96pt x 
+<../Figures/hand_craft/raw_backlight_from_top_cropped.jpg, id=660, 2665.96pt x 
 2665.96pt>
 File: ../Figures/hand_craft/raw_backlight_from_top_cropped.jpg Graphic file (ty
 pe jpg)
@@ -1598,7 +1598,7 @@ pg used on input line 54.
 y_frame_removed_cropped.jpg> <../Figures/hand_craft/raw_backlight_from_top_crop
 ped.jpg>]
 <../Figures/simulated_views/knights_tiles3x3x256x256_overlap0.5_5layers_resolut
-ion9x9x512x512_SART_50iter/Reconstruction_of_view_(1,1).png, id=673, 513.92pt x
+ion9x9x512x512_SART_50iter/Reconstruction_of_view_(1,1).png, id=674, 513.92pt x
  513.92pt>
 File: ../Figures/simulated_views/knights_tiles3x3x256x256_overlap0.5_5layers_re
 solution9x9x512x512_SART_50iter/Reconstruction_of_view_(1,1).png Graphic file (
@@ -1612,7 +1612,7 @@ erlap0.5_5layers_resolution9x9x512x512_SART_50iter/Reconstruction_of_view_(1,1)
 (pdftex.def)             Requested size: 99.58272pt x 99.58464pt.
 
 <../Figures/simulated_views/knights_tiles3x3x256x256_overlap0.5_5layers_resolut
-ion9x9x512x512_SART_50iter/Reconstruction_of_view_(1,5).png, id=674, 513.92pt x
+ion9x9x512x512_SART_50iter/Reconstruction_of_view_(1,5).png, id=675, 513.92pt x
  513.92pt>
 File: ../Figures/simulated_views/knights_tiles3x3x256x256_overlap0.5_5layers_re
 solution9x9x512x512_SART_50iter/Reconstruction_of_view_(1,5).png Graphic file (
@@ -1626,7 +1626,7 @@ erlap0.5_5layers_resolution9x9x512x512_SART_50iter/Reconstruction_of_view_(1,5)
 (pdftex.def)             Requested size: 99.58272pt x 99.58464pt.
 
 <../Figures/simulated_views/knights_tiles3x3x256x256_overlap0.5_5layers_resolut
-ion9x9x512x512_SART_50iter/Reconstruction_of_view_(1,9).png, id=675, 513.92pt x
+ion9x9x512x512_SART_50iter/Reconstruction_of_view_(1,9).png, id=676, 513.92pt x
  513.92pt>
 File: ../Figures/simulated_views/knights_tiles3x3x256x256_overlap0.5_5layers_re
 solution9x9x512x512_SART_50iter/Reconstruction_of_view_(1,9).png Graphic file (
@@ -1640,7 +1640,7 @@ erlap0.5_5layers_resolution9x9x512x512_SART_50iter/Reconstruction_of_view_(1,9)
 (pdftex.def)             Requested size: 99.58272pt x 99.58464pt.
 
 <../Figures/simulated_views/knights_tiles3x3x256x256_overlap0.5_5layers_resolut
-ion9x9x512x512_SART_50iter/MSE_for_view_(1,1).png, id=676, 513.92pt x 513.92pt>
+ion9x9x512x512_SART_50iter/MSE_for_view_(1,1).png, id=677, 513.92pt x 513.92pt>
 File: ../Figures/simulated_views/knights_tiles3x3x256x256_overlap0.5_5layers_re
 solution9x9x512x512_SART_50iter/MSE_for_view_(1,1).png Graphic file (type png)
 
@@ -1652,7 +1652,7 @@ on input line 88.
 (pdftex.def)             Requested size: 99.58272pt x 99.58464pt.
 
 <../Figures/simulated_views/knights_tiles3x3x256x256_overlap0.5_5layers_resolut
-ion9x9x512x512_SART_50iter/MSE_for_view_(1,5).png, id=677, 513.92pt x 513.92pt>
+ion9x9x512x512_SART_50iter/MSE_for_view_(1,5).png, id=678, 513.92pt x 513.92pt>
 File: ../Figures/simulated_views/knights_tiles3x3x256x256_overlap0.5_5layers_re
 solution9x9x512x512_SART_50iter/MSE_for_view_(1,5).png Graphic file (type png)
 
@@ -1664,7 +1664,7 @@ on input line 89.
 (pdftex.def)             Requested size: 99.58272pt x 99.58464pt.
 
 <../Figures/simulated_views/knights_tiles3x3x256x256_overlap0.5_5layers_resolut
-ion9x9x512x512_SART_50iter/MSE_for_view_(1,9).png, id=678, 513.92pt x 513.92pt>
+ion9x9x512x512_SART_50iter/MSE_for_view_(1,9).png, id=679, 513.92pt x 513.92pt>
 File: ../Figures/simulated_views/knights_tiles3x3x256x256_overlap0.5_5layers_re
 solution9x9x512x512_SART_50iter/MSE_for_view_(1,9).png Graphic file (type png)
 
@@ -1676,7 +1676,7 @@ on input line 90.
 (pdftex.def)             Requested size: 99.58272pt x 99.58464pt.
 
 <../Figures/simulated_views/knights_tiles3x3x256x256_overlap0.5_5layers_resolut
-ion9x9x512x512_SART_50iter/Reconstruction_of_view_(5,1).png, id=679, 513.92pt x
+ion9x9x512x512_SART_50iter/Reconstruction_of_view_(5,1).png, id=680, 513.92pt x
  513.92pt>
 File: ../Figures/simulated_views/knights_tiles3x3x256x256_overlap0.5_5layers_re
 solution9x9x512x512_SART_50iter/Reconstruction_of_view_(5,1).png Graphic file (
@@ -1690,7 +1690,7 @@ erlap0.5_5layers_resolution9x9x512x512_SART_50iter/Reconstruction_of_view_(5,1)
 (pdftex.def)             Requested size: 99.58272pt x 99.58464pt.
 
 <../Figures/simulated_views/knights_tiles3x3x256x256_overlap0.5_5layers_resolut
-ion9x9x512x512_SART_50iter/Reconstruction_of_view_(5,5).png, id=680, 513.92pt x
+ion9x9x512x512_SART_50iter/Reconstruction_of_view_(5,5).png, id=681, 513.92pt x
  513.92pt>
 File: ../Figures/simulated_views/knights_tiles3x3x256x256_overlap0.5_5layers_re
 solution9x9x512x512_SART_50iter/Reconstruction_of_view_(5,5).png Graphic file (
@@ -1704,7 +1704,7 @@ erlap0.5_5layers_resolution9x9x512x512_SART_50iter/Reconstruction_of_view_(5,5)
 (pdftex.def)             Requested size: 99.58272pt x 99.58464pt.
 
 <../Figures/simulated_views/knights_tiles3x3x256x256_overlap0.5_5layers_resolut
-ion9x9x512x512_SART_50iter/Reconstruction_of_view_(5,9).png, id=681, 513.92pt x
+ion9x9x512x512_SART_50iter/Reconstruction_of_view_(5,9).png, id=682, 513.92pt x
  513.92pt>
 File: ../Figures/simulated_views/knights_tiles3x3x256x256_overlap0.5_5layers_re
 solution9x9x512x512_SART_50iter/Reconstruction_of_view_(5,9).png Graphic file (
@@ -1718,7 +1718,7 @@ erlap0.5_5layers_resolution9x9x512x512_SART_50iter/Reconstruction_of_view_(5,9)
 (pdftex.def)             Requested size: 99.58272pt x 99.58464pt.
 
 <../Figures/simulated_views/knights_tiles3x3x256x256_overlap0.5_5layers_resolut
-ion9x9x512x512_SART_50iter/MSE_for_view_(5,1).png, id=682, 513.92pt x 513.92pt>
+ion9x9x512x512_SART_50iter/MSE_for_view_(5,1).png, id=683, 513.92pt x 513.92pt>
 File: ../Figures/simulated_views/knights_tiles3x3x256x256_overlap0.5_5layers_re
 solution9x9x512x512_SART_50iter/MSE_for_view_(5,1).png Graphic file (type png)
 
@@ -1730,7 +1730,7 @@ on input line 100.
 (pdftex.def)             Requested size: 99.58272pt x 99.58464pt.
 
 <../Figures/simulated_views/knights_tiles3x3x256x256_overlap0.5_5layers_resolut
-ion9x9x512x512_SART_50iter/MSE_for_view_(5,5).png, id=683, 513.92pt x 513.92pt>
+ion9x9x512x512_SART_50iter/MSE_for_view_(5,5).png, id=684, 513.92pt x 513.92pt>
 File: ../Figures/simulated_views/knights_tiles3x3x256x256_overlap0.5_5layers_re
 solution9x9x512x512_SART_50iter/MSE_for_view_(5,5).png Graphic file (type png)
 
@@ -1742,7 +1742,7 @@ on input line 101.
 (pdftex.def)             Requested size: 99.58272pt x 99.58464pt.
 
 <../Figures/simulated_views/knights_tiles3x3x256x256_overlap0.5_5layers_resolut
-ion9x9x512x512_SART_50iter/MSE_for_view_(5,9).png, id=684, 513.92pt x 513.92pt>
+ion9x9x512x512_SART_50iter/MSE_for_view_(5,9).png, id=685, 513.92pt x 513.92pt>
 File: ../Figures/simulated_views/knights_tiles3x3x256x256_overlap0.5_5layers_re
 solution9x9x512x512_SART_50iter/MSE_for_view_(5,9).png Graphic file (type png)
 
@@ -1754,7 +1754,7 @@ on input line 102.
 (pdftex.def)             Requested size: 99.58272pt x 99.58464pt.
 
 <../Figures/simulated_views/knights_tiles3x3x256x256_overlap0.5_5layers_resolut
-ion9x9x512x512_SART_50iter/1.png, id=685, 513.92pt x 513.92pt>
+ion9x9x512x512_SART_50iter/1.png, id=686, 513.92pt x 513.92pt>
 File: ../Figures/simulated_views/knights_tiles3x3x256x256_overlap0.5_5layers_re
 solution9x9x512x512_SART_50iter/1.png Graphic file (type png)
 
@@ -1766,7 +1766,7 @@ erlap0.5_5layers_resolution9x9x512x512_SART_50iter/1.png used on input line 106
 (pdftex.def)             Requested size: 65.43962pt x 65.44142pt.
 
 <../Figures/simulated_views/knights_tiles3x3x256x256_overlap0.5_5layers_resolut
-ion9x9x512x512_SART_50iter/2.png, id=686, 513.92pt x 513.92pt>
+ion9x9x512x512_SART_50iter/2.png, id=687, 513.92pt x 513.92pt>
 File: ../Figures/simulated_views/knights_tiles3x3x256x256_overlap0.5_5layers_re
 solution9x9x512x512_SART_50iter/2.png Graphic file (type png)
 
@@ -1778,7 +1778,7 @@ erlap0.5_5layers_resolution9x9x512x512_SART_50iter/2.png used on input line 107
 (pdftex.def)             Requested size: 65.43962pt x 65.44142pt.
 
 <../Figures/simulated_views/knights_tiles3x3x256x256_overlap0.5_5layers_resolut
-ion9x9x512x512_SART_50iter/3.png, id=687, 513.92pt x 513.92pt>
+ion9x9x512x512_SART_50iter/3.png, id=688, 513.92pt x 513.92pt>
 File: ../Figures/simulated_views/knights_tiles3x3x256x256_overlap0.5_5layers_re
 solution9x9x512x512_SART_50iter/3.png Graphic file (type png)
 
@@ -1790,7 +1790,7 @@ erlap0.5_5layers_resolution9x9x512x512_SART_50iter/3.png used on input line 108
 (pdftex.def)             Requested size: 65.43962pt x 65.44142pt.
 
 <../Figures/simulated_views/knights_tiles3x3x256x256_overlap0.5_5layers_resolut
-ion9x9x512x512_SART_50iter/4.png, id=688, 513.92pt x 513.92pt>
+ion9x9x512x512_SART_50iter/4.png, id=689, 513.92pt x 513.92pt>
 File: ../Figures/simulated_views/knights_tiles3x3x256x256_overlap0.5_5layers_re
 solution9x9x512x512_SART_50iter/4.png Graphic file (type png)
 
@@ -1802,7 +1802,7 @@ erlap0.5_5layers_resolution9x9x512x512_SART_50iter/4.png used on input line 109
 (pdftex.def)             Requested size: 65.43962pt x 65.44142pt.
 
 <../Figures/simulated_views/knights_tiles3x3x256x256_overlap0.5_5layers_resolut
-ion9x9x512x512_SART_50iter/5.png, id=689, 513.92pt x 513.92pt>
+ion9x9x512x512_SART_50iter/5.png, id=690, 513.92pt x 513.92pt>
 File: ../Figures/simulated_views/knights_tiles3x3x256x256_overlap0.5_5layers_re
 solution9x9x512x512_SART_50iter/5.png Graphic file (type png)
 
@@ -1818,7 +1818,7 @@ LaTeX Warning: Float too large for page by 53.8509pt on input line 118.
 
 
 <../Figures/simulated_views/lytro_cubes_tiles_4x4x200x200_overlap0.5_5layers_re
-solution_7x7x381x381_SART_50_iter/Reconstruction_of_view_(1,1).png, id=690, 383
+solution_7x7x381x381_SART_50_iter/Reconstruction_of_view_(1,1).png, id=691, 383
 .4325pt x 382.42876pt>
 File: ../Figures/simulated_views/lytro_cubes_tiles_4x4x200x200_overlap0.5_5laye
 rs_resolution_7x7x381x381_SART_50_iter/Reconstruction_of_view_(1,1).png Graphic
@@ -1832,7 +1832,7 @@ w_(1,1).png used on input line 121.
 (pdftex.def)             Requested size: 99.84221pt x 99.58464pt.
 
 <../Figures/simulated_views/lytro_cubes_tiles_4x4x200x200_overlap0.5_5layers_re
-solution_7x7x381x381_SART_50_iter/Reconstruction_of_view_(1,4).png, id=691, 383
+solution_7x7x381x381_SART_50_iter/Reconstruction_of_view_(1,4).png, id=692, 383
 .4325pt x 382.42876pt>
 File: ../Figures/simulated_views/lytro_cubes_tiles_4x4x200x200_overlap0.5_5laye
 rs_resolution_7x7x381x381_SART_50_iter/Reconstruction_of_view_(1,4).png Graphic
@@ -1846,7 +1846,7 @@ w_(1,4).png used on input line 122.
 (pdftex.def)             Requested size: 99.84221pt x 99.58464pt.
 
 <../Figures/simulated_views/lytro_cubes_tiles_4x4x200x200_overlap0.5_5layers_re
-solution_7x7x381x381_SART_50_iter/Reconstruction_of_view_(1,7).png, id=692, 383
+solution_7x7x381x381_SART_50_iter/Reconstruction_of_view_(1,7).png, id=693, 383
 .4325pt x 382.42876pt>
 File: ../Figures/simulated_views/lytro_cubes_tiles_4x4x200x200_overlap0.5_5laye
 rs_resolution_7x7x381x381_SART_50_iter/Reconstruction_of_view_(1,7).png Graphic
@@ -1860,7 +1860,7 @@ w_(1,7).png used on input line 123.
 (pdftex.def)             Requested size: 99.84221pt x 99.58464pt.
 
 <../Figures/simulated_views/lytro_cubes_tiles_4x4x200x200_overlap0.5_5layers_re
-solution_7x7x381x381_SART_50_iter/MSE_for_view_(1,1).png, id=693, 383.4325pt x 
+solution_7x7x381x381_SART_50_iter/MSE_for_view_(1,1).png, id=694, 383.4325pt x 
 382.42876pt>
 File: ../Figures/simulated_views/lytro_cubes_tiles_4x4x200x200_overlap0.5_5laye
 rs_resolution_7x7x381x381_SART_50_iter/MSE_for_view_(1,1).png Graphic file (typ
@@ -1874,7 +1874,7 @@ g used on input line 127.
 (pdftex.def)             Requested size: 99.84221pt x 99.58464pt.
 
 <../Figures/simulated_views/lytro_cubes_tiles_4x4x200x200_overlap0.5_5layers_re
-solution_7x7x381x381_SART_50_iter/MSE_for_view_(1,4).png, id=694, 383.4325pt x 
+solution_7x7x381x381_SART_50_iter/MSE_for_view_(1,4).png, id=695, 383.4325pt x 
 382.42876pt>
 File: ../Figures/simulated_views/lytro_cubes_tiles_4x4x200x200_overlap0.5_5laye
 rs_resolution_7x7x381x381_SART_50_iter/MSE_for_view_(1,4).png Graphic file (typ
@@ -1888,7 +1888,7 @@ g used on input line 128.
 (pdftex.def)             Requested size: 99.84221pt x 99.58464pt.
 
 <../Figures/simulated_views/lytro_cubes_tiles_4x4x200x200_overlap0.5_5layers_re
-solution_7x7x381x381_SART_50_iter/MSE_for_view_(1,7).png, id=695, 383.4325pt x 
+solution_7x7x381x381_SART_50_iter/MSE_for_view_(1,7).png, id=696, 383.4325pt x 
 382.42876pt>
 File: ../Figures/simulated_views/lytro_cubes_tiles_4x4x200x200_overlap0.5_5laye
 rs_resolution_7x7x381x381_SART_50_iter/MSE_for_view_(1,7).png Graphic file (typ
@@ -1902,7 +1902,7 @@ g used on input line 129.
 (pdftex.def)             Requested size: 99.84221pt x 99.58464pt.
 
 <../Figures/simulated_views/lytro_cubes_tiles_4x4x200x200_overlap0.5_5layers_re
-solution_7x7x381x381_SART_50_iter/Reconstruction_of_view_(4,1).png, id=696, 383
+solution_7x7x381x381_SART_50_iter/Reconstruction_of_view_(4,1).png, id=697, 383
 .4325pt x 382.42876pt>
 File: ../Figures/simulated_views/lytro_cubes_tiles_4x4x200x200_overlap0.5_5laye
 rs_resolution_7x7x381x381_SART_50_iter/Reconstruction_of_view_(4,1).png Graphic
@@ -1916,7 +1916,7 @@ w_(4,1).png used on input line 133.
 (pdftex.def)             Requested size: 99.84221pt x 99.58464pt.
 
 <../Figures/simulated_views/lytro_cubes_tiles_4x4x200x200_overlap0.5_5layers_re
-solution_7x7x381x381_SART_50_iter/Reconstruction_of_view_(4,4).png, id=697, 383
+solution_7x7x381x381_SART_50_iter/Reconstruction_of_view_(4,4).png, id=698, 383
 .4325pt x 382.42876pt>
 File: ../Figures/simulated_views/lytro_cubes_tiles_4x4x200x200_overlap0.5_5laye
 rs_resolution_7x7x381x381_SART_50_iter/Reconstruction_of_view_(4,4).png Graphic
@@ -1930,7 +1930,7 @@ w_(4,4).png used on input line 134.
 (pdftex.def)             Requested size: 99.84221pt x 99.58464pt.
 
 <../Figures/simulated_views/lytro_cubes_tiles_4x4x200x200_overlap0.5_5layers_re
-solution_7x7x381x381_SART_50_iter/Reconstruction_of_view_(4,7).png, id=698, 383
+solution_7x7x381x381_SART_50_iter/Reconstruction_of_view_(4,7).png, id=699, 383
 .4325pt x 382.42876pt>
 File: ../Figures/simulated_views/lytro_cubes_tiles_4x4x200x200_overlap0.5_5laye
 rs_resolution_7x7x381x381_SART_50_iter/Reconstruction_of_view_(4,7).png Graphic
@@ -1944,7 +1944,7 @@ w_(4,7).png used on input line 135.
 (pdftex.def)             Requested size: 99.84221pt x 99.58464pt.
 
 <../Figures/simulated_views/lytro_cubes_tiles_4x4x200x200_overlap0.5_5layers_re
-solution_7x7x381x381_SART_50_iter/MSE_for_view_(4,1).png, id=699, 383.4325pt x 
+solution_7x7x381x381_SART_50_iter/MSE_for_view_(4,1).png, id=700, 383.4325pt x 
 382.42876pt>
 File: ../Figures/simulated_views/lytro_cubes_tiles_4x4x200x200_overlap0.5_5laye
 rs_resolution_7x7x381x381_SART_50_iter/MSE_for_view_(4,1).png Graphic file (typ
@@ -1958,7 +1958,7 @@ g used on input line 139.
 (pdftex.def)             Requested size: 99.84221pt x 99.58464pt.
 
 <../Figures/simulated_views/lytro_cubes_tiles_4x4x200x200_overlap0.5_5layers_re
-solution_7x7x381x381_SART_50_iter/MSE_for_view_(4,4).png, id=700, 383.4325pt x 
+solution_7x7x381x381_SART_50_iter/MSE_for_view_(4,4).png, id=701, 383.4325pt x 
 382.42876pt>
 File: ../Figures/simulated_views/lytro_cubes_tiles_4x4x200x200_overlap0.5_5laye
 rs_resolution_7x7x381x381_SART_50_iter/MSE_for_view_(4,4).png Graphic file (typ
@@ -1972,7 +1972,7 @@ g used on input line 140.
 (pdftex.def)             Requested size: 99.84221pt x 99.58464pt.
 
 <../Figures/simulated_views/lytro_cubes_tiles_4x4x200x200_overlap0.5_5layers_re
-solution_7x7x381x381_SART_50_iter/MSE_for_view_(4,7).png, id=701, 383.4325pt x 
+solution_7x7x381x381_SART_50_iter/MSE_for_view_(4,7).png, id=702, 383.4325pt x 
 382.42876pt>
 File: ../Figures/simulated_views/lytro_cubes_tiles_4x4x200x200_overlap0.5_5laye
 rs_resolution_7x7x381x381_SART_50_iter/MSE_for_view_(4,7).png Graphic file (typ
@@ -1986,7 +1986,7 @@ g used on input line 141.
 (pdftex.def)             Requested size: 99.84221pt x 99.58464pt.
 
 <../Figures/simulated_views/lytro_cubes_tiles_4x4x200x200_overlap0.5_5layers_re
-solution_7x7x381x381_SART_50_iter/1.png, id=702, 501.875pt x 501.875pt>
+solution_7x7x381x381_SART_50_iter/1.png, id=703, 501.875pt x 501.875pt>
 File: ../Figures/simulated_views/lytro_cubes_tiles_4x4x200x200_overlap0.5_5laye
 rs_resolution_7x7x381x381_SART_50_iter/1.png Graphic file (type png)
 
@@ -1998,7 +1998,7 @@ ine 145.
 (pdftex.def)             Requested size: 65.43748pt x 65.44142pt.
 
 <../Figures/simulated_views/lytro_cubes_tiles_4x4x200x200_overlap0.5_5layers_re
-solution_7x7x381x381_SART_50_iter/2.png, id=703, 501.875pt x 501.875pt>
+solution_7x7x381x381_SART_50_iter/2.png, id=704, 501.875pt x 501.875pt>
 File: ../Figures/simulated_views/lytro_cubes_tiles_4x4x200x200_overlap0.5_5laye
 rs_resolution_7x7x381x381_SART_50_iter/2.png Graphic file (type png)
 
@@ -2010,7 +2010,7 @@ ine 146.
 (pdftex.def)             Requested size: 65.43748pt x 65.44142pt.
 
 <../Figures/simulated_views/lytro_cubes_tiles_4x4x200x200_overlap0.5_5layers_re
-solution_7x7x381x381_SART_50_iter/3.png, id=704, 501.875pt x 501.875pt>
+solution_7x7x381x381_SART_50_iter/3.png, id=705, 501.875pt x 501.875pt>
 File: ../Figures/simulated_views/lytro_cubes_tiles_4x4x200x200_overlap0.5_5laye
 rs_resolution_7x7x381x381_SART_50_iter/3.png Graphic file (type png)
 
@@ -2022,7 +2022,7 @@ ine 147.
 (pdftex.def)             Requested size: 65.43748pt x 65.44142pt.
 
 <../Figures/simulated_views/lytro_cubes_tiles_4x4x200x200_overlap0.5_5layers_re
-solution_7x7x381x381_SART_50_iter/4.png, id=705, 501.875pt x 501.875pt>
+solution_7x7x381x381_SART_50_iter/4.png, id=706, 501.875pt x 501.875pt>
 File: ../Figures/simulated_views/lytro_cubes_tiles_4x4x200x200_overlap0.5_5laye
 rs_resolution_7x7x381x381_SART_50_iter/4.png Graphic file (type png)
 
@@ -2034,7 +2034,7 @@ ine 148.
 (pdftex.def)             Requested size: 65.43748pt x 65.44142pt.
 
 <../Figures/simulated_views/lytro_cubes_tiles_4x4x200x200_overlap0.5_5layers_re
-solution_7x7x381x381_SART_50_iter/5.png, id=706, 501.875pt x 501.875pt>
+solution_7x7x381x381_SART_50_iter/5.png, id=707, 501.875pt x 501.875pt>
 File: ../Figures/simulated_views/lytro_cubes_tiles_4x4x200x200_overlap0.5_5laye
 rs_resolution_7x7x381x381_SART_50_iter/5.png Graphic file (type png)
 
@@ -2127,7 +2127,7 @@ ayers_resolution_7x7x381x381_SART_50_iter/5.png (PNG copy)>] (./thesis.lof)
 ] [40
 
 ])
-<Erklaerung.pdf, id=759, 597.23125pt x 845.1575pt>
+<Erklaerung.pdf, id=760, 597.23125pt x 845.1575pt>
 File: Erklaerung.pdf Graphic file (type pdf)
  <use Erklaerung.pdf>
 Package pdftex.def Info: Erklaerung.pdf used on input line 124.
@@ -2138,7 +2138,7 @@ File: Erklaerung.pdf Graphic file (type pdf)
 Package pdftex.def Info: Erklaerung.pdf used on input line 124.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 
-<Erklaerung.pdf, id=762, page=1, 597.23125pt x 845.1575pt>
+<Erklaerung.pdf, id=763, page=1, 597.23125pt x 845.1575pt>
 File: Erklaerung.pdf Graphic file (type pdf)
 
 <use Erklaerung.pdf, page 1>
@@ -2205,10 +2205,10 @@ ist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2015/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmtt8.pfb><c:/texlive/2015/texmf-dist/fonts/type1/pub
 lic/amsfonts/symbols/msbm10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/
 amsfonts/symbols/msbm7.pfb>
-Output written on thesis.pdf (47 pages, 38161814 bytes).
+Output written on thesis.pdf (47 pages, 38162408 bytes).
 PDF statistics:
- 900 PDF objects out of 1000 (max. 8388607)
- 713 compressed objects within 8 object streams
+ 901 PDF objects out of 1000 (max. 8388607)
+ 714 compressed objects within 8 object streams
  165 named destinations out of 1000 (max. 500000)
  765 words of extra memory for PDF output out of 10000 (max. 10000000)
 
