@@ -57,6 +57,7 @@ For an easier soldering process and to reduce the risk of an electrical short, t
 			 (b) Close up of the inside with the outer frame removed.
 				 Top to bottom: Glass plates holding attenuation layers, diffusion plate, LED grid.
 			 (c) Close up of the LED grid with the diffuser removed.}
+	\label{fig:hand_crafted_backlight}
 \end{figure}
 A connector for the power supply is mounted on one end of the strip.
 Wooden stand-offs glued to the base hold the diffuser plate 17 mm above the LEDs.
@@ -70,6 +71,12 @@ The set also includes a remote control to turn the displays on and off or to adj
 
 \section{More Simulated Projections}
 \label{sec:simulated_projections}
+
+The following pages show simulated projections from various scenes displayed with the attenuation display.
+All the examples here have display parameters that correspond to the displays shown in figures~\ref{fig:glass_display} and~\ref{fig:hand_crafted_backlight}.
+Five layers are equally spaced to form a 1.6 cm thick stack.
+The baseline has been manually adjusted such that the desired depth range is within the displays depth of field.
+Each simulated view is labeled with an index $(i, j)$ that corresponds to the location of the virtual camera on the \mbox{$(u, v)$-plane} where $i$ denotes the vertical placement from top to bottom and $j$ denotes the horizontal placement from left to right.
 
 \begin{figure}[htb]
 	\subcaptionbox*{(1,1)}{\includegraphics[height = 3.5cm]{../Figures/simulated_views/knights_tiles3x3x256x256_overlap0.5_5layers_resolution9x9x512x512_SART_50iter/Reconstruction_of_view_(1,1).png}}\hfill%
@@ -141,7 +148,10 @@ The set also includes a remote control to turn the displays on and off or to adj
 	\subcaptionbox*{4}{\includegraphics[height = 2.3cm]{../Figures/simulated_views/lytro_cubes_tiles_4x4x200x200_overlap0.5_5layers_resolution_7x7x381x381_SART_50_iter/4.png}}\hfill%
 	\subcaptionbox*{5}{\includegraphics[height = 2.3cm]{../Figures/simulated_views/lytro_cubes_tiles_4x4x200x200_overlap0.5_5layers_resolution_7x7x381x381_SART_50_iter/5.png}}
 	\caption[Simulated projections of a scene taken with Lytro]
-			{Simulated projections of a scene taken with Lytro.
-			}
+			{Simulated projections of a scene taken with the Lytro camera.
+			 The light field extends over a baseline of about 5 cm with a distance of 1 m between the two reference planes.
+			 The camera plane is sampled at $7 \times 7$ positions.
+			 Shown are the simulated views at different positions on the camera plane and the respective visualization of the error compared to the input light field.
+			 All five attenuation layers are displayed in the bottom row.}
 	\label{fig:simulated_projections_lytro_cubes}
 \end{figure}
