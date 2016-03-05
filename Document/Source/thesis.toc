@@ -33,6 +33,6 @@
 \contentsline {section}{\numberline {A.1}Printing}{33}{section.A.1}
 \contentsline {section}{\numberline {A.2}Backlight Fabrication}{33}{section.A.2}
 \contentsline {section}{\numberline {A.3}More Simulated Projections}{34}{section.A.3}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Figures}{36}{figure.caption.30}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Tables}{36}{appendix*.31}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{37}{appendix*.32}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Figures}{37}{figure.caption.31}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Tables}{37}{appendix*.32}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{38}{appendix*.33}
