@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.1.20)  5 MAR 2016 18:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.1.20)  6 MAR 2016 20:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1195,6 +1195,8 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
 ) [19]
 <../Figures/spectral_support/convolution_2_layers.png, id=503, 3012.25375pt x 3
 012.25375pt>
@@ -1202,7 +1204,7 @@ File: ../Figures/spectral_support/convolution_2_layers.png Graphic file (type p
 ng)
  <use ../Figures/spectral_support/convolution_2_layers.png>
 Package pdftex.def Info: ../Figures/spectral_support/convolution_2_layers.png u
-sed on input line 157.
+sed on input line 160.
 (pdftex.def)             Requested size: 99.55635pt x 99.58464pt.
 
 <../Figures/spectral_support/convolution_3_layers.png, id=504, 3012.25375pt x 3
@@ -1211,7 +1213,7 @@ File: ../Figures/spectral_support/convolution_3_layers.png Graphic file (type p
 ng)
  <use ../Figures/spectral_support/convolution_3_layers.png>
 Package pdftex.def Info: ../Figures/spectral_support/convolution_3_layers.png u
-sed on input line 158.
+sed on input line 161.
 (pdftex.def)             Requested size: 99.55635pt x 99.58464pt.
 
 <../Figures/spectral_support/convolution_5_layers.png, id=505, 3012.25375pt x 3
@@ -1220,7 +1222,7 @@ File: ../Figures/spectral_support/convolution_5_layers.png Graphic file (type p
 ng)
  <use ../Figures/spectral_support/convolution_5_layers.png>
 Package pdftex.def Info: ../Figures/spectral_support/convolution_5_layers.png u
-sed on input line 159.
+sed on input line 162.
 (pdftex.def)             Requested size: 99.55635pt x 99.58464pt.
 
 [20]) [21 <../Figures/spectral_support/convolution_2_layers.png (PNG copy)> <..
@@ -2177,10 +2179,10 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 126.
  ) 
 Here is how much of TeX's memory you used:
- 33600 strings out of 494289
- 796592 string characters out of 6162254
- 1092601 words of memory out of 5000000
- 35950 multiletter control sequences out of 15000+600000
+ 33604 strings out of 494289
+ 796656 string characters out of 6162254
+ 1088181 words of memory out of 5000000
+ 35954 multiletter control sequences out of 15000+600000
  13396 words of font info for 52 fonts, out of 8000000 for 9000
  372 hyphenation exceptions out of 8191
  92i,22n,383p,735b,2934s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2205,7 +2207,7 @@ ist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2015/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmtt8.pfb><c:/texlive/2015/texmf-dist/fonts/type1/pub
 lic/amsfonts/symbols/msbm10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/
 amsfonts/symbols/msbm7.pfb>
-Output written on thesis.pdf (47 pages, 38162408 bytes).
+Output written on thesis.pdf (47 pages, 38162513 bytes).
 PDF statistics:
  901 PDF objects out of 1000 (max. 8388607)
  714 compressed objects within 8 object streams
