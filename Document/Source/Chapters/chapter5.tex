@@ -169,7 +169,7 @@ The number of tiles needed to cover the plane can be calculated by
 	N_y = \left \lceil \dfrac{R_y - o_y}{r_y - o_y} \right \rceil.
 \end{equation}
 The combination of the same tile from each layer forms a subsection of the original layer stack and so, essentially a new attenuator of smaller size and lower resolution.
-The optimization is then performed on every of the subsections with a smaller propagation matrix per tile (fewer columns). 
+The optimization is then performed on all of the subsections with a smaller propagation matrix per tile (fewer columns). 
 As a consequence, less memory is used to store attenuation layers and propagation data in each step.
 In the end, the optimized tiles are put together to form the complete attenuation layers. 
 
@@ -219,7 +219,7 @@ To solve this issue, the tiles have to overlap.
 In this case, when reassembling the layers from the tiles, the overlaps need to be blended with a mask:
 After the optimization, each tile gets multiplied with a quadratic blending mask.
 The finished layers are then obtained by summing the tiles and dividing by the sum of the blending masks shown in figure~\ref{fig:sum_of_quadratic_blending_masks}.
-For the results shown in this work, a quadratic blending mask (weights increase quadratically towards the middle of the tile) was used.
+For the results shown in this work, a quadratic blending mask was used (weights increase quadratically towards the middle of the tile).
 
 \section{Performance of SART}
 \label{sec:performance_of_SART}
