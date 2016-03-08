@@ -57,9 +57,15 @@ Next to that, the results are evaluated using the introduced error measures.
 \label{sec:challenges_ray_casting}
 
 \begin{figure}[tb]
-	\input{../Figures/ray_casting_from_camera.tex}
-	\caption[]{text}
-	\label{fig:ray_casting_from_camera}
+	\subcaptionbox{\label{fig:ray_casting_from_camera}}{\input{../Figures/ray_casting_from_camera.tex}}\hfill %
+	\subcaptionbox{\label{fig:interpolation_on_layers}}{\input{../Figures/interpolation_on_layers.tex}}
+	\caption[Intersecting light rays with attenuation layers]
+			{Intersecting light rays with attenuation layers.
+			 (a) Alternative ray casting method. 
+			 	 The rays are cast from the camera center through the pixel centers (blue) and intersect with the pixels on the layers (red).
+			 	 The colored areas indicate the projection volume of an individual pixel on the image plane.
+			 (b) Linear interpolation of the intersections between adjacent pixel centers.}
+	%\label{fig:ray_casting_from_camera}
 \end{figure}
 
 \section{Interpolation}

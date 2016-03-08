@@ -1,0 +1,59 @@
+\documentclass[tikz]{standalone}
+
+\usetikzlibrary{intersections}
+
+\begin{document}
+	\begin{tikzpicture}[scale = 0.35, baseline]
+		
+		% First layer axis
+		\draw[name path = layer1, ->] (-1, 3) --(11, 3) node[right] {Layer 1};
+		
+		% Second layer axis
+		\draw[name path = layer2, ->] (-1, -1) --(11, -1) node[right] {Layer 2};
+		
+		% Pixel boundaries on first layer
+		\foreach \i in {1,...,4} 
+			\draw ({(\i - 1) * 3}, 3) -- ++(0, 0.5) -- ++(0, -1);
+
+		% Pixel boundaries on second layer
+		\foreach \i in {1,...,4} 
+			\draw ({(\i - 1) * 3}, -1) -- ++(0, 0.5) -- ++(0, -1);	
+			
+		% Pixel centers on first layer	
+		\foreach \i in {1,...,3} 
+			\fill ({1.5 + (\i - 1) * 3}, 3) circle[radius = 0.15];	
+		
+		% Pixel centers on second layer	
+		\foreach \i in {1,...,3} 
+			\fill ({1.5 + (\i - 1) * 3}, -1) circle[radius = 0.15];	
+			
+		% The ray passing the two layers
+		\begin{scope}
+			\clip (0, 5) rectangle (11, -3);
+			\coordinate (anchor) at (2.3, -1);
+			
+			\draw[name path = ray, red] (anchor) -- ++(46 : 10cm);
+			\draw[red, ->] (anchor) -- ++(180 + 46 : 2cm);
+		\end{scope}
+		
+		% Mark intersections with layers
+		\fill[red] (anchor) circle[radius = 0.15];
+		\fill[name intersections={of=layer1 and ray, total=\t}, red]
+			\foreach \s in {1,...,\t}{(intersection-\s) circle[radius = 0.15]};
+			
+		% Interpolation markers and labels on first layer
+		\draw[name intersections={of=layer1 and ray, total=\t}, blue, |-|]
+			(intersection-1) ++(0, -1) -- node[below, yshift = -1.5] {$1 - \alpha$} (7.5, 2);
+		
+		\draw[name intersections={of=layer1 and ray, total=\t}, blue, |-|]
+			(intersection-1) ++(0, 1) -- node[above, yshift = 1.5] {$\alpha$} (4.5, 4);
+			
+		% Interpolation markers and labels on second layer
+		\draw[blue, |-|]
+			(anchor) ++(0, 1) -- node[above, yshift = 1.5] {$\beta$} (1.5, 0);
+				
+		\draw[blue, |-|]
+			(anchor) ++(0, -1) -- node[below, yshift = -1.5] {$1 - \beta$} (4.5, -2);
+		
+	\end{tikzpicture}
+\end{document}

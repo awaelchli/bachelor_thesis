@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.2)  8 MAR 2016 14:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.2)  8 MAR 2016 16:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1271,7 +1271,8 @@ Chapter 5.
 
 
 
-] (../Figures/ray_casting_from_camera.tex) [23] [24]
+] (../Figures/ray_casting_from_camera.tex)
+(../Figures/interpolation_on_layers.tex) [23] [24]
 (../Figures/depth_compression/baseline_unscaled.tex
 <../Figures/depth_compression/baseline_unscaled/Reconstruction_of_view_(9,9).pn
 g, id=549, 513.92pt x 513.92pt>
@@ -1337,90 +1338,89 @@ File: ../Figures/tiling/blending_masks_sum_3x3.png Graphic file (type png)
 Package pdftex.def Info: ../Figures/tiling/blending_masks_sum_3x3.png used on i
 nput line 16.
 (pdftex.def)             Requested size: 106.69783pt x 106.6968pt.
-)
-<../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/1.png, id=565, 51
+) [26 <../Figures/tiling/blending_masks_sum_3x3.png (PNG copy)>]
+<../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/1.png, id=572, 51
 3.92pt x 513.92pt>
 File: ../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/1.png Graphi
 c file (type png)
 
 <use ../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/1.png>
 Package pdftex.def Info: ../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_
-layers/1.png used on input line 190.
+layers/1.png used on input line 196.
 (pdftex.def)             Requested size: 79.34853pt x 79.3431pt.
 
-<../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/1.png, id=566, 51
+<../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/1.png, id=573, 51
 3.92pt x 513.92pt>
 File: ../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/1.png Graphi
 c file (type png)
 
 <use ../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/1.png>
 Package pdftex.def Info: ../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_
-layers/1.png used on input line 194.
+layers/1.png used on input line 200.
 (pdftex.def)             Requested size: 79.34853pt x 79.3431pt.
 
-<../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/2.png, id=567, 51
+<../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/2.png, id=574, 51
 3.92pt x 513.92pt>
 File: ../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/2.png Graphi
 c file (type png)
 
 <use ../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/2.png>
 Package pdftex.def Info: ../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_
-layers/2.png used on input line 198.
+layers/2.png used on input line 204.
 (pdftex.def)             Requested size: 79.34853pt x 79.3431pt.
 
-<../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/2.png, id=568, 51
+<../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/2.png, id=575, 51
 3.92pt x 513.92pt>
 File: ../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/2.png Graphi
 c file (type png)
 
 <use ../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/2.png>
 Package pdftex.def Info: ../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_
-layers/2.png used on input line 202.
+layers/2.png used on input line 208.
 (pdftex.def)             Requested size: 79.34853pt x 79.3431pt.
 
-<../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/3.png, id=569, 51
+<../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/3.png, id=576, 51
 3.92pt x 513.92pt>
 File: ../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/3.png Graphi
 c file (type png)
 
 <use ../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/3.png>
 Package pdftex.def Info: ../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_
-layers/3.png used on input line 206.
+layers/3.png used on input line 212.
 (pdftex.def)             Requested size: 79.34853pt x 79.3431pt.
 
-<../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/3.png, id=570, 51
+<../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/3.png, id=577, 51
 3.92pt x 513.92pt>
 File: ../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/3.png Graphi
 c file (type png)
 
 <use ../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/3.png>
 Package pdftex.def Info: ../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_
-layers/3.png used on input line 210.
+layers/3.png used on input line 216.
 (pdftex.def)             Requested size: 79.34853pt x 79.3431pt.
 
 <../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/blendingMaskSum.p
-ng, id=571, 513.92pt x 513.92pt>
+ng, id=578, 513.92pt x 513.92pt>
 File: ../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/blendingMask
 Sum.png Graphic file (type png)
 
 <use ../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/blendingMaskS
 um.png>
 Package pdftex.def Info: ../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_
-layers/blendingMaskSum.png used on input line 214.
+layers/blendingMaskSum.png used on input line 220.
 (pdftex.def)             Requested size: 79.34853pt x 79.3431pt.
 
 <../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/blendingMaskSum.p
-ng, id=572, 513.92pt x 513.92pt>
+ng, id=579, 513.92pt x 513.92pt>
 File: ../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/blendingMask
 Sum.png Graphic file (type png)
 
 <use ../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/blendingMaskS
 um.png>
 Package pdftex.def Info: ../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_
-layers/blendingMaskSum.png used on input line 218.
+layers/blendingMaskSum.png used on input line 224.
 (pdftex.def)             Requested size: 79.34853pt x 79.3431pt.
- [26 <../Figures/tiling/blending_masks_sum_3x3.png (PNG copy)>]
-(../Figures/optimization_performance/iterations_vs_rmse.tex
+ (../Figures/optimization_performance/iterations_vs_rmse.tex
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 )
@@ -1441,7 +1441,7 @@ PNG copy)> <../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/3.png
 ingMaskSum.png (PNG copy)> <../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5
 _3_layers/blendingMaskSum.png (PNG copy)>] (../Figures/contrast/contrast_sensit
 ivity.tex
-<../Figures/contrast/contrast_sensitivity.png, id=594, 642.4pt x 481.8pt>
+<../Figures/contrast/contrast_sensitivity.png, id=593, 642.4pt x 481.8pt>
 File: ../Figures/contrast/contrast_sensitivity.png Graphic file (type png)
 
 <use ../Figures/contrast/contrast_sensitivity.png>
@@ -1449,12 +1449,12 @@ Package pdftex.def Info: ../Figures/contrast/contrast_sensitivity.png used on i
 nput line 34.
 (pdftex.def)             Requested size: 136.43712pt x 102.32048pt.
 )
-Overfull \hbox (1.21289pt too wide) in paragraph at lines 39--286
+Overfull \hbox (1.21289pt too wide) in paragraph at lines 39--292
 [][] 
  []
 
 (../Figures/contrast/2layer_1x_resolution.tex
-<../Figures/contrast/2layer_1x_resolution/2layer_1x_resolution_rec.png, id=597,
+<../Figures/contrast/2layer_1x_resolution/2layer_1x_resolution_rec.png, id=596,
  642.4pt x 241.90375pt>
 File: ../Figures/contrast/2layer_1x_resolution/2layer_1x_resolution_rec.png Gra
 phic file (type png)
@@ -1464,7 +1464,7 @@ Package pdftex.def Info: ../Figures/contrast/2layer_1x_resolution/2layer_1x_res
 olution_rec.png used on input line 45.
 (pdftex.def)             Requested size: 136.43712pt x 51.16301pt.
 
-<../Figures/contrast/2layer_1x_resolution/2layer_1x_resolution.png, id=600, 642
+<../Figures/contrast/2layer_1x_resolution/2layer_1x_resolution.png, id=599, 642
 .4pt x 241.90375pt>
 File: ../Figures/contrast/2layer_1x_resolution/2layer_1x_resolution.png Graphic
  file (type png)
@@ -1474,12 +1474,12 @@ Package pdftex.def Info: ../Figures/contrast/2layer_1x_resolution/2layer_1x_res
 olution.png used on input line 49.
 (pdftex.def)             Requested size: 136.43712pt x 51.16301pt.
 )
-Overfull \hbox (8.40729pt too wide) in paragraph at lines 54--289
+Overfull \hbox (8.40729pt too wide) in paragraph at lines 54--295
 [][] 
  []
 
 (../Figures/contrast/2layer_2x_resolution.tex
-<../Figures/contrast/2layer_2x_resolution/2layer_2x_resolution_rec.png, id=603,
+<../Figures/contrast/2layer_2x_resolution/2layer_2x_resolution_rec.png, id=602,
  642.4pt x 241.90375pt>
 File: ../Figures/contrast/2layer_2x_resolution/2layer_2x_resolution_rec.png Gra
 phic file (type png)
@@ -1489,7 +1489,7 @@ Package pdftex.def Info: ../Figures/contrast/2layer_2x_resolution/2layer_2x_res
 olution_rec.png used on input line 35.
 (pdftex.def)             Requested size: 136.43712pt x 51.16301pt.
 
-<../Figures/contrast/2layer_2x_resolution/2layer_2x_resolution.png, id=604, 642
+<../Figures/contrast/2layer_2x_resolution/2layer_2x_resolution.png, id=603, 642
 .4pt x 241.90375pt>
 File: ../Figures/contrast/2layer_2x_resolution/2layer_2x_resolution.png Graphic
  file (type png)
@@ -1499,12 +1499,12 @@ Package pdftex.def Info: ../Figures/contrast/2layer_2x_resolution/2layer_2x_res
 olution.png used on input line 39.
 (pdftex.def)             Requested size: 136.43712pt x 51.16301pt.
 )
-Overfull \hbox (8.40729pt too wide) in paragraph at lines 44--293
+Overfull \hbox (8.40729pt too wide) in paragraph at lines 44--299
 [][] 
  []
 
 (../Figures/contrast/5layer_1x_resolution.tex
-<../Figures/contrast/5layer_1x_resolution/5layer_1x_resolution_rec.png, id=607,
+<../Figures/contrast/5layer_1x_resolution/5layer_1x_resolution_rec.png, id=606,
  642.4pt x 241.90375pt>
 File: ../Figures/contrast/5layer_1x_resolution/5layer_1x_resolution_rec.png Gra
 phic file (type png)
@@ -1514,7 +1514,7 @@ Package pdftex.def Info: ../Figures/contrast/5layer_1x_resolution/5layer_1x_res
 olution_rec.png used on input line 35.
 (pdftex.def)             Requested size: 136.43712pt x 51.16301pt.
 
-<../Figures/contrast/5layer_1x_resolution/5layer_1x_resolution.png, id=608, 642
+<../Figures/contrast/5layer_1x_resolution/5layer_1x_resolution.png, id=607, 642
 .4pt x 241.90375pt>
 File: ../Figures/contrast/5layer_1x_resolution/5layer_1x_resolution.png Graphic
  file (type png)
@@ -1524,12 +1524,12 @@ Package pdftex.def Info: ../Figures/contrast/5layer_1x_resolution/5layer_1x_res
 olution.png used on input line 39.
 (pdftex.def)             Requested size: 136.43712pt x 51.16301pt.
 )
-Overfull \hbox (8.40729pt too wide) in paragraph at lines 44--296
+Overfull \hbox (8.40729pt too wide) in paragraph at lines 44--302
 [][] 
  []
 
 (../Figures/contrast/5layer_2x_resolution.tex
-<../Figures/contrast/5layer_2x_resolution/5layer_2x_resolution_rec.png, id=611,
+<../Figures/contrast/5layer_2x_resolution/5layer_2x_resolution_rec.png, id=610,
  642.4pt x 241.90375pt>
 File: ../Figures/contrast/5layer_2x_resolution/5layer_2x_resolution_rec.png Gra
 phic file (type png)
@@ -1539,7 +1539,7 @@ Package pdftex.def Info: ../Figures/contrast/5layer_2x_resolution/5layer_2x_res
 olution_rec.png used on input line 35.
 (pdftex.def)             Requested size: 136.43712pt x 51.16301pt.
 
-<../Figures/contrast/5layer_2x_resolution/5layer_2x_resolution.png, id=612, 642
+<../Figures/contrast/5layer_2x_resolution/5layer_2x_resolution.png, id=611, 642
 .4pt x 241.90375pt>
 File: ../Figures/contrast/5layer_2x_resolution/5layer_2x_resolution.png Graphic
  file (type png)
@@ -1549,12 +1549,12 @@ Package pdftex.def Info: ../Figures/contrast/5layer_2x_resolution/5layer_2x_res
 olution.png used on input line 39.
 (pdftex.def)             Requested size: 136.43712pt x 51.16301pt.
 )
-Overfull \hbox (8.40729pt too wide) in paragraph at lines 44--300
+Overfull \hbox (8.40729pt too wide) in paragraph at lines 44--306
 [][] 
  []
 
 (../Figures/contrast/5layer_3x_resolution.tex
-<../Figures/contrast/5layer_3x_resolution/5layer_3x_resolution_rec.png, id=615,
+<../Figures/contrast/5layer_3x_resolution/5layer_3x_resolution_rec.png, id=614,
  642.4pt x 241.90375pt>
 File: ../Figures/contrast/5layer_3x_resolution/5layer_3x_resolution_rec.png Gra
 phic file (type png)
@@ -1564,7 +1564,7 @@ Package pdftex.def Info: ../Figures/contrast/5layer_3x_resolution/5layer_3x_res
 olution_rec.png used on input line 35.
 (pdftex.def)             Requested size: 136.43712pt x 51.16301pt.
 
-<../Figures/contrast/5layer_3x_resolution/5layer_3x_resolution.png, id=616, 642
+<../Figures/contrast/5layer_3x_resolution/5layer_3x_resolution.png, id=615, 642
 .4pt x 241.90375pt>
 File: ../Figures/contrast/5layer_3x_resolution/5layer_3x_resolution.png Graphic
  file (type png)
@@ -1574,15 +1574,15 @@ Package pdftex.def Info: ../Figures/contrast/5layer_3x_resolution/5layer_3x_res
 olution.png used on input line 39.
 (pdftex.def)             Requested size: 136.43712pt x 51.16301pt.
 )
-Overfull \hbox (8.40729pt too wide) in paragraph at lines 44--303
+Overfull \hbox (8.40729pt too wide) in paragraph at lines 44--309
 [][] 
  []
 
-[28] <../Figures/gui/overview.PNG, id=626, 930.47626pt x 685.8122pt>
+[28] <../Figures/gui/overview.PNG, id=625, 930.47626pt x 685.8122pt>
 File: ../Figures/gui/overview.PNG Graphic file (type png)
 
 <use ../Figures/gui/overview.PNG>
-Package pdftex.def Info: ../Figures/gui/overview.PNG used on input line 320.
+Package pdftex.def Info: ../Figures/gui/overview.PNG used on input line 326.
 (pdftex.def)             Requested size: 345.0pt x 254.28024pt.
  [29]) [30] [31 <../Figures/contrast/contrast_sensitivity.png (PNG copy)> <../F
 igures/contrast/2layer_1x_resolution/2layer_1x_resolution_rec.png (PNG copy)> <
@@ -2164,7 +2164,7 @@ ayers_resolution_7x7x381x381_SART_50_iter/5.png (PNG copy)>] (./thesis.lof)
 ] [40
 
 ])
-<Erklaerung.pdf, id=766, 597.23125pt x 845.1575pt>
+<Erklaerung.pdf, id=767, 597.23125pt x 845.1575pt>
 File: Erklaerung.pdf Graphic file (type pdf)
  <use Erklaerung.pdf>
 Package pdftex.def Info: Erklaerung.pdf used on input line 124.
@@ -2175,7 +2175,7 @@ File: Erklaerung.pdf Graphic file (type pdf)
 Package pdftex.def Info: Erklaerung.pdf used on input line 124.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 
-<Erklaerung.pdf, id=769, page=1, 597.23125pt x 845.1575pt>
+<Erklaerung.pdf, id=770, page=1, 597.23125pt x 845.1575pt>
 File: Erklaerung.pdf Graphic file (type pdf)
 
 <use Erklaerung.pdf, page 1>
@@ -2214,10 +2214,10 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 126.
  ) 
 Here is how much of TeX's memory you used:
- 33673 strings out of 493033
- 801550 string characters out of 6134146
- 1087389 words of memory out of 5000000
- 36212 multiletter control sequences out of 15000+600000
+ 33705 strings out of 493033
+ 802217 string characters out of 6134146
+ 1087493 words of memory out of 5000000
+ 36241 multiletter control sequences out of 15000+600000
  13396 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  92i,22n,383p,733b,2934s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2244,10 +2244,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf
 dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2015/texmf-di
 st/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/texm
 f-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on thesis.pdf (47 pages, 38164282 bytes).
+Output written on thesis.pdf (47 pages, 38166069 bytes).
 PDF statistics:
- 907 PDF objects out of 1000 (max. 8388607)
- 720 compressed objects within 8 object streams
+ 908 PDF objects out of 1000 (max. 8388607)
+ 721 compressed objects within 8 object streams
  167 named destinations out of 1000 (max. 500000)
  773 words of extra memory for PDF output out of 10000 (max. 10000000)
 
