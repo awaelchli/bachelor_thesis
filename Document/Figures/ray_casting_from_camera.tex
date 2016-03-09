@@ -20,7 +20,7 @@
 		\draw[name path = ray3, ->] (0, 0) -- (-30 : 8cm);
 		
 		% Center of projection
-		\fill (0, 0) circle[radius = 0.1];
+		\fill (0, 0) circle[radius = 0.1] node[right] {Camera};
 		
 		% Image plane
 		\draw[name path = imagePlane, ->] (2, -3) -- (2, 3) node[right] {$s$};
@@ -32,8 +32,8 @@
 		\draw (2, {-3 * tan(30) * 2 / 2}) -- ++(0.2, 0) -- ++(-0.4, 0);
 		
 		% Layer axis
-		\draw[name path = layer1, <-] (4.5, 5.5) -- (4.5, -5.5);
-		\draw[name path = layer2, <-] (6, 5.5) -- (6, -5.5);
+		\draw[name path = layer1, <-] (4.5, 5.5) -- (4.5, -5.5) node[pos = 0.05, anchor = south west, above] {Layer 2};
+		\draw[name path = layer2, <-] (6, 5.5) -- (6, -5.5) node[pos = 0.05, anchor = south west, above] {Layer 1};
 		
 		% Layer set of pixels
 		\foreach \x in {1,...,10} 
