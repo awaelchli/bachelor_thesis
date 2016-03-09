@@ -56,6 +56,9 @@ Next to that, the results are evaluated using the introduced error measures.
 \section{Challenges with Ray Casting}
 \label{sec:challenges_ray_casting}
 
+In section~\ref{sec:ray_casting} it was explained how to compute the pixel indices on the layers for a ray that passes the attenuator.
+But it is not entirely obvious how to sample the rays in the first place.
+One of the simplest methods is to cast one ray per image pixel for each of the virtual cameras as it is illustrated in figure~\ref{fig:ray_casting_from_camera}. 
 \begin{figure}[tb]
 	\subcaptionbox{\label{fig:ray_casting_from_camera}}{\input{../Figures/ray_casting_from_camera.tex}}\hfill %
 	\subcaptionbox{\label{fig:interpolation_on_layers}}{\input{../Figures/interpolation_on_layers.tex}}
@@ -64,8 +67,17 @@ Next to that, the results are evaluated using the introduced error measures.
 			 (a) Alternative ray casting method. 
 			 	 The rays are cast from the camera center through the pixel centers (blue) and intersect with the pixels on the layers (red).
 			 	 The colored areas indicate the projection volume of an individual pixel on the image plane.
-			 (b) Linear interpolation of the intersections between adjacent pixel centers.}
+			 (b) Linear interpolation of the intersections between adjacent pixel centers marked by the black dots.}
 \end{figure}
+The sketch shows a one-dimensional pinhole camera with three pixels of equal width and the associated projection volumes.
+Because of the perspective projection it is possible that multiple pixel elements on the layers project to a single pixel on the image plane.
+If the strategy is to only cast one ray per image pixel, many layer pixels inside the respective projection volume are missed and thereby left unconstrained.
+But precisely because they lie in the same projection volume, the missed pixels are equally important and should be considered when setting up the linear system of equations.
+Note that although the proportions in the illustration are different for real-world applications, the problem exists in any case and the severity of it mainly depends on the resolution and placement of the layers. 
+
+Based on this observation, it seems natural to sample more than one ray per camera pixel.
+But then, how many rays are necessary? 
+Again, because of the perspective projection, a uniform sampling of the image plane does not imply a uniform distribution of intersections on the layers.
 
 \section{Interpolation}
 \label{sec:interpolation}

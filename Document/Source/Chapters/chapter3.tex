@@ -180,7 +180,9 @@ As before, the new pixel index $k^\prime = k + \Delta k$ is computed from the sh
 \begin{equation}\label{eq:pixel_shift_perspective_projection}
 	\Delta k = \left[ \frac{h(m, n) - s(k)}{\Delta s} \right], 
 \end{equation}
-and the assignment $P_{m k^\prime}^{(n)} = 1$ is made.
+and the assignment $P_{m k^\prime}^{(n)} = 1$ is made. 
+Although these equations are straightforward to implement, there are some improvements that can be made.
+These and the challenges that come with them are discussed in section~\ref{sec:challenges_ray_casting}.
 
 \section{Iterative Reconstruction}
 \label{sec:iterative_reconstruction}
