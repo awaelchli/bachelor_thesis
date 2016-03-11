@@ -77,7 +77,25 @@ Note that although the proportions in the illustration are different for real-wo
 
 Based on this observation, it seems natural to sample more than one ray per camera pixel.
 But then, how many rays are necessary? 
-Again, because of the perspective projection, a uniform sampling of the image plane does not imply a uniform distribution of intersections on the layers.
+Again because of the perspective projection, a uniform sampling of the image plane does not imply uniform distribution of intersections on the layers.
+%
+% talk about sampling directly from layers
+%
+The final method implemented in this thesis introduces a new virtual plane that is parallel to the attenuation layers but can be placed at any distance.
+
+
+\section{Oversampling}
+\label{sec:oversampling}
+
+Because of the perspective projection, all points that project to the camera's image plane are inside a pyramidal frustum.
+Conversely, the area of a single pixel back-projects to a larger area on the original surface, or in this case, the attenuation layers.
+This means that, depending on the resolution and size of the attenuator, the beam of light rays going through a single pixel on the image plane (\mbox{$(s,t)$-plane}) possibly covers multiple pixels on some of the attenuation layers.
+This leads to fewer constraints on the layer pixels for the optimization when sampling only a single ray per image pixel.
+The obvious solution would be to simply increase the resolution of the layers, but this is sometimes not feasible or desired due to the much longer runtime of the solver.
+Instead, the sampling density can be increased while keeping the layer resolution the same.
+In the current implementation, the sampling density can be controlled by a plane parallel to the attenuator.
+Placing this sampling plane at the same location as the bottom-most layer (farthest from the camera) ensures that the ray-density is no smaller on the other layers.
+Because the rays that are cast from the sampling plane to the image plane are different from the original rays, the light field is resampled to a higher resolution which also requires interpolation.
 
 \section{Interpolation}
 \label{sec:interpolation}
@@ -105,19 +123,6 @@ This approach would take into account the very physical aspects of printing.
 However, an accurate validation of this idea would introduce a lot of challenges because it requires accurate calibration and fabrication in order to compare the input light field with the displayed light field:
 The measuring process would require two iterations, one with PSF interpolation and one without.
 The attenuation layers need to be precisely aligned and placed in front of the capturing device (camera array, plenoptic camera etc.) such that the emitted light rays directly correspond to the original light rays.
-
-\section{Oversampling}
-\label{sec:oversampling}
-
-Because of the perspective projection, all points that project to the camera's image plane are inside a pyramidal frustum.
-Conversely, the area of a single pixel back-projects to a larger area on the original surface, or in this case, the attenuation layers.
-This means that, depending on the resolution and size of the attenuator, the beam of light rays going through a single pixel on the image plane (\mbox{$(s,t)$-plane}) possibly covers multiple pixels on some of the attenuation layers.
-This leads to fewer constraints on the layer pixels for the optimization when sampling only a single ray per image pixel.
-The obvious solution would be to simply increase the resolution of the layers, but this is sometimes not feasible or desired due to the much longer runtime of the solver.
-Instead, the sampling density can be increased while keeping the layer resolution the same.
-In the current implementation, the sampling density can be controlled by a plane parallel to the attenuator.
-Placing this sampling plane at the same location as the bottom-most layer (farthest from the camera) ensures that the ray-density is no smaller on the other layers.
-Because the rays that are cast from the sampling plane to the image plane are different from the original rays, the light field is resampled to a higher resolution which also requires interpolation.
 
 \section{Baseline Scaling and Back Projection}
 \label{sec:baseline_scaling}
