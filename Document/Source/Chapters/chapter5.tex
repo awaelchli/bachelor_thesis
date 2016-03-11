@@ -76,26 +76,29 @@ But precisely because they lie in the same projection volume, the missed pixels 
 Note that although the proportions in the illustration are different for real-world applications, the problem exists in any case and the severity of it mainly depends on the resolution and placement of the layers. 
 
 Based on this observation, it seems natural to sample more than one ray per camera pixel.
-But then, how many rays are necessary? 
+But how many rays are necessary? 
 Again because of the perspective projection, a uniform sampling of the image plane does not imply uniform distribution of intersections on the layers.
-%
-% talk about sampling directly from layers
-%
-The final method implemented in this thesis introduces a new virtual plane that is parallel to the attenuation layers but can be placed at any distance.
-
-
-\section{Oversampling}
-\label{sec:oversampling}
-
-Because of the perspective projection, all points that project to the camera's image plane are inside a pyramidal frustum.
-Conversely, the area of a single pixel back-projects to a larger area on the original surface, or in this case, the attenuation layers.
-This means that, depending on the resolution and size of the attenuator, the beam of light rays going through a single pixel on the image plane (\mbox{$(s,t)$-plane}) possibly covers multiple pixels on some of the attenuation layers.
-This leads to fewer constraints on the layer pixels for the optimization when sampling only a single ray per image pixel.
-The obvious solution would be to simply increase the resolution of the layers, but this is sometimes not feasible or desired due to the much longer runtime of the solver.
-Instead, the sampling density can be increased while keeping the layer resolution the same.
-In the current implementation, the sampling density can be controlled by a plane parallel to the attenuator.
-Placing this sampling plane at the same location as the bottom-most layer (farthest from the camera) ensures that the ray-density is no smaller on the other layers.
+It stands to reason that the rays should be sampled from a plane near the attenuation layers such that the intersections are approximately uniformly distributed.
+Thus, the final method implemented in this thesis introduces a new virtual plane that is parallel to the attenuation layers but can be placed at an arbitrary distance.
+Placing this so called \textbf{sampling plane} at the same location as the bottom-most layer (farthest from the camera) ensures that the ray-density is no smaller on the other layers.
 Because the rays that are cast from the sampling plane to the image plane are different from the original rays, the light field is resampled to a higher resolution which also requires interpolation.
+On top of that, the sampling plane can have a different resolution than the attenuation layers and increasing it results in an increased ray density.
+If this density is higher than the resolution of the input light field, the outcome is a oversampled light field that requires more memory.
+Because one ray is equivalent to a constraint in the system of equations, the resolution of the sampling plane directly affects the number of equations.
+
+%This allows for oversampling 
+%Instead, the sampling density can be increased while keeping the layer resolution the same:
+
+%\section{Oversampling}
+%\label{sec:oversampling}
+%
+%Because of the perspective projection, all points that project to the camera's image plane are inside a pyramidal frustum.
+%Conversely, the area of a single pixel back-projects to a larger area on the original surface, or in this case, the attenuation layers.
+%This means that, depending on the resolution and size of the attenuator, the beam of light rays going through a single pixel on the image plane (\mbox{$(s,t)$-plane}) possibly covers multiple pixels on some of the attenuation layers.
+%
+%This leads to fewer constraints on the layer pixels for the optimization when sampling only a single ray per image pixel.
+%The obvious solution would be to simply increase the resolution of the layers, but this is sometimes not feasible or desired due to the much longer runtime of the solver.
+
 
 \section{Interpolation}
 \label{sec:interpolation}
