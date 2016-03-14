@@ -73,7 +73,7 @@ The sketch shows a one-dimensional pinhole camera with three pixels of equal wid
 Because of the perspective projection it is possible that multiple pixel elements on the layers project to a single pixel on the image plane (\mbox{$(s,t)$-plane}).
 If the strategy is to only cast one ray per image pixel, many layer pixels inside the respective projection volume are missed and thereby left unconstrained.
 But precisely because they lie in the same projection volume, the missed pixels are equally important and should be considered when setting up the linear system of equations.
-Note that although the proportions in the illustration are different for real-world applications, the problem exists in any case and the severity of it mainly depends on the resolution and placement of the layers. 
+Note that although the proportions in the illustration are different for a real scenario, the problem exists in any case and the severity of it mainly depends on the resolution and placement of the layers. 
 
 Based on this observation, it seems natural to sample more than one ray per camera pixel.
 But how many rays are necessary? 
@@ -302,6 +302,7 @@ The plot in figure~\ref{fig:sart_layers_vs_psnr} shows how the PSNR of the simul
 			 Ten iterations of SART were performed for each scene.}
 	\label{fig:sart_layers_vs_psnr}
 \end{figure}
+%It shows that the quality measured by the \mbox{PSNR} increases with more layers added to the display, but above five layers, there seems to be not much of a benefit.
 
 \section{Contrast Sensitivity}
 
