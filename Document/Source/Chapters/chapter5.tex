@@ -105,13 +105,17 @@ Because one ray is equivalent to a constraint in the system of equations, the re
 
 In addition to nearest neighbor interpolation indicated in equation~\ref{eq:pixel_shift_perspective_projection}, bilinear interpolation is incorporated into the pipeline in order to reduce artifacts.
 For every ray, the value of the intersection point on the attenuation layer is represented as a linearly weighted sum of four neighboring pixels corresponding to the rounded indices.
+Figure~\ref{fig:interpolation_on_layers} shows how the weights for linear interpolation are computed in the one-dimensional case.
+For each intersection, there are two nearest pixels that represent the unknown attenuation values.
+The weights are deduced simply based on the distance between intersection point and pixel centers.
+This yields two weights $\gamma_n$ and $1 - \gamma_n$ for each layer $n$, or four weights in the case of two-dimensional attenuation layers.
 Accordingly, instead of storing $N$ binary weights, each row of the propagation matrix now holds $4 N$ values.
 Essentially, this just means that each ray in the log-light field is a linear combination of $4 N$ absorbance values.
 Due to the exponential propagation model, the interpolation in the log-domain translates to a multiplication of the transmittance simply by the exponential law,
 \begin{equation*}	
 	\exp( \gamma \alpha_i + (1 - \gamma) \alpha_j ) = \exp( \gamma \alpha_i ) \exp( (1 - \gamma) \alpha_j ) = t_i^{\gamma} t_j^{1 - \gamma},
 \end{equation*}
-with $\gamma$ being the linear interpolation weight, $i$ and $j$ identifying the neighboring pixels which are the query points for the interpolation.
+with $\gamma \coloneqq \gamma_n$ being the linear interpolation weight, $i$ and $j$ identifying the neighboring pixels which are the query points for the interpolation.
 
 The attempt of interpolation does not exhibit a significant increase in reconstruction quality.
 Alternatively, interpolation could be applied to the transmittance instead of the absorbance, but this requires a different optimization strategy.
