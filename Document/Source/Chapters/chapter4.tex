@@ -155,7 +155,7 @@ It turns out to be quite hard to analytically derive an exact expression for the
 	\lvert \xi_a \rvert \leq N \xi_0 \sqrt{ \frac{(N + 1) h^2}{(N + 1) h^2 + 12(N - 1)(z_a - Z_s)^2} }
 \end{equation}
 This approximation is based on the observation that the region of support approaches the shape of an ellipse when increasing the number of layers as seen in figure~\ref{fig:magnitude_response_2_3_5_layers}.
-The right side of the equation is plotted in figure~\ref{fig:cut-off-frequency_N_layers} for different positions $z_a$ of the virtual plane.
+The right side of the equation is plotted in figure~\ref{fig:cut-off-frequency_N_layers} for different positions $z_a$ of the virtual plane and with $Z_s = 0$.
 \begin{figure}[tb]
 	\subcaptionbox{\label{fig:spectral_support_2_layers}}{\includegraphics[height = 3.5cm]{../Figures/spectral_support/convolution_2_layers}}\hfill%
 	\subcaptionbox{\label{fig:spectral_support_3_layers}}{\includegraphics[height = 3.5cm]{../Figures/spectral_support/convolution_3_layers}}\hfill%
@@ -178,5 +178,10 @@ Simplifications in the attenuation model, approximate solutions to equation~\ref
 	\lvert \xi_a \rvert \leq \xi_0 \sqrt{ \frac{2(2N - 1) h^2}{(N + 1) h^2 + 12(N - 1)(z_a - Z_s)^2} }.
 \end{equation}
 This is the expected upper bound on the depth of field, which is drawn as a dashed line in figure~\ref{fig:cut-off-frequency_N_layers} for a two- and six layer display.
-In particular, it shows that adding more layers to the display does not necessarily increase the potential for higher depth of field.
-As will be discussed in section~\ref{sec:performance_of_SART}, the addition of more layers has other benefits.
+In particular, it shows that adding more layers to the display alone does not necessarily increase the potential for higher depth of field.
+As~\cite{WetzsteinTomo} explain in their supplement to the paper, the derivation of this inequality is based on the assumption that the display designer does not attempt to show content on the outer layer with spatial frequency higher than $\xi_0$.
+This is where the two dashed lines in figure~\ref{fig:cut-off-frequency_N_layers} intersect the display boundary ($z_a = \frac{h}{2}$).
+In other words, it is assumed that the input light field has a depth of field equal to the displays thickness $h$, which means that content outside this range is already blurred.
+Since the expected upper bound for six layers is lower than for two, one may conclude that a two layer display is optimal.
+But as will be discussed in sections~\ref{sec:performance_of_SART} and~\ref{sec:benefits_limitations}, the addition of more layers has other benefits such as increased reconstruction quality.
+What can be concluded though is that for the best display performance, not only the number of layers but also the optimal thickness of the attenuator needs to be found for each new light field.

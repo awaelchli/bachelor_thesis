@@ -70,7 +70,7 @@ One of the simplest methods is to cast one ray per image pixel for each of the v
 			 (b) Linear interpolation of the intersections between adjacent pixel centers marked by the black dots.}
 \end{figure}
 The sketch shows a one-dimensional pinhole camera with three pixels of equal width and the associated projection volumes.
-Because of the perspective projection it is possible that multiple pixel elements on the layers project to a single pixel on the image plane.
+Because of the perspective projection it is possible that multiple pixel elements on the layers project to a single pixel on the image plane (\mbox{$(s,t)$-plane}).
 If the strategy is to only cast one ray per image pixel, many layer pixels inside the respective projection volume are missed and thereby left unconstrained.
 But precisely because they lie in the same projection volume, the missed pixels are equally important and should be considered when setting up the linear system of equations.
 Note that although the proportions in the illustration are different for real-world applications, the problem exists in any case and the severity of it mainly depends on the resolution and placement of the layers. 
@@ -94,7 +94,7 @@ Because one ray is equivalent to a constraint in the system of equations, the re
 %
 %Because of the perspective projection, all points that project to the camera's image plane are inside a pyramidal frustum.
 %Conversely, the area of a single pixel back-projects to a larger area on the original surface, or in this case, the attenuation layers.
-%This means that, depending on the resolution and size of the attenuator, the beam of light rays going through a single pixel on the image plane (\mbox{$(s,t)$-plane}) possibly covers multiple pixels on some of the attenuation layers.
+%This means that, depending on the resolution and size of the attenuator, the beam of light rays going through a single pixel on the image plane  possibly covers multiple pixels on some of the attenuation layers.
 %
 %This leads to fewer constraints on the layer pixels for the optimization when sampling only a single ray per image pixel.
 %The obvious solution would be to simply increase the resolution of the layers, but this is sometimes not feasible or desired due to the much longer runtime of the solver.
