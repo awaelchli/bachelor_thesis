@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.2)  14 MAR 2016 15:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.2)  15 MAR 2016 12:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1441,7 +1441,7 @@ Package pdftex.def Info: ../Figures/contrast/contrast_sensitivity.png used on i
 nput line 34.
 (pdftex.def)             Requested size: 136.43712pt x 102.32048pt.
 )
-Overfull \hbox (1.21289pt too wide) in paragraph at lines 39--315
+Overfull \hbox (1.21289pt too wide) in paragraph at lines 39--323
 [][] 
  []
 
@@ -1466,7 +1466,7 @@ Package pdftex.def Info: ../Figures/contrast/2layer_1x_resolution/2layer_1x_res
 olution.png used on input line 49.
 (pdftex.def)             Requested size: 136.43712pt x 51.16301pt.
 )
-Overfull \hbox (8.40729pt too wide) in paragraph at lines 54--318
+Overfull \hbox (8.40729pt too wide) in paragraph at lines 54--326
 [][] 
  []
 
@@ -1491,7 +1491,7 @@ Package pdftex.def Info: ../Figures/contrast/2layer_2x_resolution/2layer_2x_res
 olution.png used on input line 39.
 (pdftex.def)             Requested size: 136.43712pt x 51.16301pt.
 )
-Overfull \hbox (8.40729pt too wide) in paragraph at lines 44--322
+Overfull \hbox (8.40729pt too wide) in paragraph at lines 44--330
 [][] 
  []
 
@@ -1516,7 +1516,7 @@ Package pdftex.def Info: ../Figures/contrast/5layer_1x_resolution/5layer_1x_res
 olution.png used on input line 39.
 (pdftex.def)             Requested size: 136.43712pt x 51.16301pt.
 )
-Overfull \hbox (8.40729pt too wide) in paragraph at lines 44--325
+Overfull \hbox (8.40729pt too wide) in paragraph at lines 44--333
 [][] 
  []
 
@@ -1541,7 +1541,7 @@ Package pdftex.def Info: ../Figures/contrast/5layer_2x_resolution/5layer_2x_res
 olution.png used on input line 39.
 (pdftex.def)             Requested size: 136.43712pt x 51.16301pt.
 )
-Overfull \hbox (8.40729pt too wide) in paragraph at lines 44--329
+Overfull \hbox (8.40729pt too wide) in paragraph at lines 44--337
 [][] 
  []
 
@@ -1566,40 +1566,40 @@ Package pdftex.def Info: ../Figures/contrast/5layer_3x_resolution/5layer_3x_res
 olution.png used on input line 39.
 (pdftex.def)             Requested size: 136.43712pt x 51.16301pt.
 )
-Overfull \hbox (8.40729pt too wide) in paragraph at lines 44--332
+Overfull \hbox (8.40729pt too wide) in paragraph at lines 44--340
 [][] 
  []
 
-<../Figures/gui/overview.PNG, id=624, 930.47626pt x 685.8122pt>
+[28 <../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/1.png (PNG co
+py)> <../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/1.png (PNG c
+opy)> <../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/2.png (PNG 
+copy)> <../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/2.png (PNG
+ copy)> <../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/3.png (PN
+G copy)> <../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/3.png (P
+NG copy)> <../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/blendin
+gMaskSum.png (PNG copy)> <../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3
+_layers/blendingMaskSum.png (PNG copy)>]
+<../Figures/gui/overview.PNG, id=629, 930.47626pt x 685.8122pt>
 File: ../Figures/gui/overview.PNG Graphic file (type png)
 
 <use ../Figures/gui/overview.PNG>
-Package pdftex.def Info: ../Figures/gui/overview.PNG used on input line 349.
+Package pdftex.def Info: ../Figures/gui/overview.PNG used on input line 357.
 (pdftex.def)             Requested size: 345.0pt x 254.28024pt.
- [28 <../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/1.png (PNG c
-opy)> <../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/1.png (PNG 
-copy)> <../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/2.png (PNG
- copy)> <../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/2.png (PN
-G copy)> <../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/3.png (P
-NG copy)> <../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/3.png (
-PNG copy)> <../Figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/blendi
-ngMaskSum.png (PNG copy)> <../Figures/tiling/tarot_tiles5x5x200x200_overlap0.5_
-3_layers/blendingMaskSum.png (PNG copy)>]
-[29] [30]) [31] [32 <../Figures/contrast/contrast_sensitivity.png (PNG copy)> <
-../Figures/contrast/2layer_1x_resolution/2layer_1x_resolution_rec.png (PNG copy
-)> <../Figures/contrast/2layer_1x_resolution/2layer_1x_resolution.png> <../Figu
-res/contrast/2layer_2x_resolution/2layer_2x_resolution_rec.png (PNG copy)> <../
-Figures/contrast/2layer_2x_resolution/2layer_2x_resolution.png> <../Figures/con
-trast/5layer_1x_resolution/5layer_1x_resolution_rec.png (PNG copy)> <../Figures
-/contrast/5layer_1x_resolution/5layer_1x_resolution.png> <../Figures/contrast/5
-layer_2x_resolution/5layer_2x_resolution_rec.png (PNG copy)> <../Figures/contra
-st/5layer_2x_resolution/5layer_2x_resolution.png> <../Figures/contrast/5layer_3
-x_resolution/5layer_3x_resolution_rec.png (PNG copy)> <../Figures/contrast/5lay
-er_3x_resolution/5layer_3x_resolution.png>] [33 <../Figures/gui/overview.PNG>]
+ [29] [30]) [31] [32 <../Figures/contrast/contrast_sensitivity.png (PNG copy)> 
+<../Figures/contrast/2layer_1x_resolution/2layer_1x_resolution_rec.png (PNG cop
+y)> <../Figures/contrast/2layer_1x_resolution/2layer_1x_resolution.png> <../Fig
+ures/contrast/2layer_2x_resolution/2layer_2x_resolution_rec.png (PNG copy)> <..
+/Figures/contrast/2layer_2x_resolution/2layer_2x_resolution.png> <../Figures/co
+ntrast/5layer_1x_resolution/5layer_1x_resolution_rec.png (PNG copy)> <../Figure
+s/contrast/5layer_1x_resolution/5layer_1x_resolution.png> <../Figures/contrast/
+5layer_2x_resolution/5layer_2x_resolution_rec.png (PNG copy)> <../Figures/contr
+ast/5layer_2x_resolution/5layer_2x_resolution.png> <../Figures/contrast/5layer_
+3x_resolution/5layer_3x_resolution_rec.png (PNG copy)> <../Figures/contrast/5la
+yer_3x_resolution/5layer_3x_resolution.png>]
+[33 <../Figures/gui/overview.PNG>]
 \openout2 = `Chapters/appendix.aux'.
 
-
-(./Chapters/appendix.tex
+ (./Chapters/appendix.tex
 Appendix A.
 <../Figures/hand_craft/all_displays_on.JPG, id=671, 1638.12pt x 921.4425pt>
 File: ../Figures/hand_craft/all_displays_on.JPG Graphic file (type jpg)
@@ -2217,7 +2217,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 126.
 Here is how much of TeX's memory you used:
  33707 strings out of 493033
  802266 string characters out of 6134146
- 1091615 words of memory out of 5000000
+ 1090615 words of memory out of 5000000
  36243 multiletter control sequences out of 15000+600000
  13396 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2245,7 +2245,7 @@ f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf
 dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2015/texmf-di
 st/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/texm
 f-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on thesis.pdf (48 pages, 38169712 bytes).
+Output written on thesis.pdf (48 pages, 38170660 bytes).
 PDF statistics:
  916 PDF objects out of 1000 (max. 8388607)
  728 compressed objects within 8 object streams

@@ -26,9 +26,9 @@
 \contentsline {section}{\numberline {5.6}Attenuator Tiling and Blending}{26}{section.5.6}
 \contentsline {section}{\numberline {5.7}Performance of SART}{27}{section.5.7}
 \contentsline {section}{\numberline {5.8}Contrast Sensitivity}{28}{section.5.8}
-\contentsline {section}{\numberline {5.9}Graphical User Interface}{28}{section.5.9}
+\contentsline {section}{\numberline {5.9}Graphical User Interface}{29}{section.5.9}
 \contentsline {section}{\numberline {5.10}Benefits and Limitations}{30}{section.5.10}
-\contentsline {section}{\numberline {5.11}Improvements and Future Work}{30}{section.5.11}
+\contentsline {section}{\numberline {5.11}Improvements and Future Work}{31}{section.5.11}
 \contentsline {chapter}{\numberline {A}Appendix}{34}{appendix.A}
 \contentsline {section}{\numberline {A.1}Printing}{34}{section.A.1}
 \contentsline {section}{\numberline {A.2}Backlight Fabrication}{34}{section.A.2}
