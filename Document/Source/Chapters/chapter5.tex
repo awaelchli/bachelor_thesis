@@ -304,12 +304,15 @@ The plot in figure~\ref{fig:sart_layers_vs_psnr} shows how the PSNR of the simul
 \end{figure}
 The quality measured by the \mbox{PSNR} increases with more layers added to the display, but above five layers, it is nearly constant.
 As it can be seen in the figure, the \mbox{PSNR} even drops above ten layers.
-The main reason for this is the limitation of the attenuator to have a minimum transmission:
+There are two possible reasons for that:
+The first is the limitation of the attenuator to have a minimum transmission:
 It is assumed that the attenuation masks cannot produce total absorbance, that is completely black pixels.
 Hence, the transmitted light field will also have a minimum brightness and completely black regions cannot be reproduced by the display.
 To incorporate this property, the values in the input light field that are smaller than the minimum transmission allowed by the attenuator are replaced by this constant and the resulting clamped light field is the new input for the optimization algorithm.
 Because of the logarithms singularity at zero, the elements in the light field vector need to be strictly positive and thus the clamping becomes necessary anyway.
 This alteration introduces a small error when computing the \mbox{PSNR} between simulated projections and the unmodified light field.
+The second reason for the decrease in \mbox{PSNR} could be that the increase of layers changes their placement slightly because the display thickness is kept constant.
+The displacement affects the approximation of the scene volume and depending on the light field, one setting may be better than the other.
 
 \section{Contrast Sensitivity}
 
