@@ -12,7 +12,7 @@ But there is also the desire to view real-world photos or videos on such a displ
 
 Light fields are the foundation for image based rendering, a technique to present different perspectives of a scene without the need to store geometry data, texture or lighting information.
 The light field is a simplified version of the more general plenoptic function, first characterized by~\cite{AdelsonBergen}.
-It can be thought of a snapshot of the light in the entire scene, a database storing the radiance for every possible ray in the scene.
+It can be thought of as a snapshot of the light in the entire scene, a database storing the radiance for every possible ray in the scene.
 This data can be captured by a grid of cameras such as the one depicted in figure~\ref{fig:stanford_camera_array}.
 In fact, a light field is formed inside every conventional camera, but the per-ray radiance information is lost when the light striking the sensor is accumulated over all angles under the aperture. 
 A camera that does not discard the additional radiance information is called a plenoptic camera or light field camera, shown in figure~\ref{fig:lytro_camera}.
@@ -22,7 +22,7 @@ Chapter~\ref{chp:light_field_capturing} gives an overview of the properties of l
 The ideal 3D display should be able to display any light field, meaning it should emit light rays with radiance equal to the value in the database.
 It turns out it is not so easy to build these displays. 
 On the one hand are physical challenges, such as the direction of light in different angles or the correct depiction of color, contrast and brightness.
-On the other side comes a lot of data from the light field that needs to be processed, desirably in real-time and full resolution.
+On the other hand comes a lot of data from the light field that needs to be processed, desirably in real-time and full resolution.
 Despite these challenges, many types of displays have been developed, although not necessarily based around light field technology, all having different trade-offs and limitations.
 There are two main categories, stereoscopic- and true 3D displays.
 
@@ -105,14 +105,22 @@ It consists of masks, printed on transparencies, which attenuate light from a ba
 This thesis was inspired by and builds upon the work of \cite{WetzsteinTomo}.
 In their paper, they present a model for an inexpensive 3D display built from light attenuating, multiplicative masks.
 The simulated reconstructions they achieve are very convincing, although they only worked with synthetic light fields from oblique projections.
-The idea for this thesis was to extend their work in addition to support camera light fields, e.g. captured with a plenoptic camera or camera array.
+The idea for this thesis was to extend their work in addition to support camera light fields, e.g. captured with a plenoptic camera or a camera array.
 With a conclusive spectral analysis, they show that multi-layer displays have increased depth of field and improved spatial resolution in comparison to other automultiscopic displays such as parallax barriers or integral imaging.
 
-% cyclic images with parallax barrier
-% spatial Resolution tradoff
-% brightness compared to parallax barrier
-% both have finite depth of field, but layered 3d has extended -> higher resolution inside volume
+The Layered 3D architecture falls in the category of volumetric displays, although the theoretical approach and physical realization is quite different from previous work.
+\cite{volumetric_display_systems} distinguish previous volumetric devices between swept- and static volume display units.
+Both types restrict the 3D content to lie within the physical enclosure of the device as opposed to light field displays.
+As a consequence, this type of display is not suited for most mobile applications.
+Also in both cases, the image is formed by the light emitting volume elements (voxels) in an additive manner in contrast to the multiplicative transport of Layered 3D, for example by temporally multiplexed presentation planes (\cite{multi-planar_volumetric_display}).
+Due to manufacturing reasons, it is challenging to produce high resolution voxel volumes to guarantee high image fidelity.
+The size of the voxels dictates the highest spatial frequency that can be depicted by the volume.
+As will be demonstrated, Layered 3D is capable of displaying higher frequency than allowed by the individual display mask inside the display.
 
+% cyclic images with parallax barrier
+% spatial Resolution tradoff: parallax b. and integral imaging require spatial resolution that is the product of the number of views and the resolution of each view.
+% brightness compared to parallax barrier: parallax barrier dark because of the barrier in front, if slits are to small -> diffraction
+% both have finite depth of field, but layered 3d has extended -> higher resolution inside volume
 
 As a followup to the original paper, \cite{WetzsteinTensor} have built a display comprising a stack of liquid crystal panels that modulate the light similar to the static layered 3D for printed transparencies.
 To reduce artifacts from limited depth of field and to increase the displays field of view, they extend the degrees of freedom for the optimization by time-multiplexing a number of frames on each layer.

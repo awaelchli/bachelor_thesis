@@ -1,4 +1,4 @@
-\begin{thebibliography}{15}
+\begin{thebibliography}{17}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -15,6 +15,12 @@ A.~H. Andersen and A.~C. Kak.
 \newblock Simultaneous algebraic reconstruction technique ({SART}): A superior
   implementation of the {ART} algorithm.
 \newblock \emph{Ultrasonic Imaging}, 6\penalty0 (1):\penalty0 81--94, 1984.
+
+\bibitem[Blundell and Schwarz(2000)]{volumetric_display_systems}
+B.~G. Blundell and A.~J. Schwarz.
+\newblock \emph{Volumetric Three-Dimensional Display Systems}.
+\newblock Wiley-VCH, Mar. 2000.
+\newblock ISBN 0-471-23928-3.
 
 \bibitem[Bolles et~al.(1987)Bolles, Baker, and Marimont]{EPI}
 R.~C. Bolles, H.~H. Baker, and D.~H. Marimont.
@@ -84,6 +90,12 @@ R.~Narain, R.~A. Albert, A.~Bulbul, G.~J. Ward, M.~S. Banks, and J.~F. O'Brien.
 R.~Ng, M.~Levoy, M.~Br{\'e}dif, G.~Duval, M.~Horowitz, and P.~Hanrahan.
 \newblock Light field photography with a hand-held plenoptic camera.
 \newblock \emph{Computer Science Technical Report CSTR}, 2\penalty0 (11), 2005.
+
+\bibitem[Sullivan(2003)]{multi-planar_volumetric_display}
+A.~Sullivan.
+\newblock A solid-state multi-planar volumetric display.
+\newblock In \emph{SID Symposium Digest of Technical Papers}, volume~34, pages
+  1531--1533. Wiley Online Library, 2003.
 
 \bibitem[Wetzstein et~al.(2011)Wetzstein, Lanman, Heidrich, and
   Raskar]{WetzsteinTomo}

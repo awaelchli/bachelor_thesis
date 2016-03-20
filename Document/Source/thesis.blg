@@ -11,44 +11,46 @@ A level-1 auxiliary file: Chapters/chapter5.aux
 A level-1 auxiliary file: Chapters/appendix.aux
 The style file: abbrvnat.bst
 Database file #1: thesis.bib
-You've used 15 entries,
+Warning--can't use both volume and number fields in multi-planar_volumetric_display
+You've used 17 entries,
             2773 wiz_defined-function locations,
-            707 strings with 8059 characters,
-and the built_in function-call counts, 8861 in all, are:
-= -- 806
-> -- 558
-< -- 12
-+ -- 186
-- -- 171
-* -- 751
-:= -- 1313
-add.period$ -- 49
-call.type$ -- 15
-change.case$ -- 102
-chr.to.int$ -- 15
-cite$ -- 30
-duplicate$ -- 381
-empty$ -- 676
-format.name$ -- 194
-if$ -- 1892
+            720 strings with 8357 characters,
+and the built_in function-call counts, 9808 in all, are:
+= -- 898
+> -- 589
+< -- 16
++ -- 197
+- -- 180
+* -- 813
+:= -- 1445
+add.period$ -- 57
+call.type$ -- 17
+change.case$ -- 110
+chr.to.int$ -- 17
+cite$ -- 35
+duplicate$ -- 435
+empty$ -- 764
+format.name$ -- 207
+if$ -- 2106
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 15
-newline$ -- 83
-num.names$ -- 60
-pop$ -- 199
+missing$ -- 18
+newline$ -- 94
+num.names$ -- 68
+pop$ -- 221
 preamble$ -- 1
-purify$ -- 87
+purify$ -- 94
 quote$ -- 0
-skip$ -- 319
+skip$ -- 361
 stack$ -- 0
-substring$ -- 409
-swap$ -- 74
-text.length$ -- 8
+substring$ -- 453
+swap$ -- 91
+text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 165
-warning$ -- 0
-while$ -- 78
+type$ -- 182
+warning$ -- 1
+while$ -- 87
 width$ -- 0
-write$ -- 210
+write$ -- 239
+(There was 1 warning)
