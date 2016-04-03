@@ -75,6 +75,8 @@ The set also includes a remote control to turn the displays on and off or to adj
 The following pages show simulated projections from various scenes displayed with the attenuation display.
 All the examples here have display parameters that correspond to the displays shown in figures~\ref{fig:glass_display} and~\ref{fig:hand_crafted_backlight}.
 Five layers are equally spaced to form a 1.6 cm thick stack.
+\mbox{SART} is used with 50 iterations.
+All computations were performed on a Intel Quad Core i7 3770K CPU with 8 Gigabyte of RAM.
 The baseline has been manually adjusted such that the desired depth range is approximately within the displays depth of field.
 Each simulated view is labeled with an index $(i, j)$ that corresponds to the location of the virtual camera on the \mbox{$(u, v)$-plane} where $i$ denotes the vertical placement from top to bottom and $j$ denotes the horizontal placement from left to right.
 The images below each simulation show the per-pixel \mbox{RMSE} over the three color channels.
@@ -115,7 +117,8 @@ High error is visualized with yellow and red color and bluish colors indicate lo
 			 The light field extends over a baseline of about 14 cm with a distance of 20 cm between the two reference planes.
 			 The camera plane is sampled at $9 \times 9$ positions.
 			 Shown are the simulated views at different positions on the camera plane and the respective visualization of the error compared to the input light field.
-			 All five attenuation layers are displayed in the bottom row.}
+			 All five attenuation layers are displayed in the bottom row.
+			 Runtime: 9.68 minutes.}
 	\label{fig:simulated_projections_lego_knights}
 \end{figure}
 
@@ -154,6 +157,7 @@ High error is visualized with yellow and red color and bluish colors indicate lo
 			 The light field extends over a baseline of about 5 cm with a distance of 1 m between the two reference planes.
 			 The camera plane is sampled at $7 \times 7$ positions.
 			 Shown are the simulated views at different positions on the camera plane and the respective visualization of the error compared to the input light field.
-			 All five attenuation layers are displayed in the bottom row.}
+			 All five attenuation layers are displayed in the bottom row.
+			 Runtime 3.7 minutes.}
 	\label{fig:simulated_projections_lytro_cubes}
 \end{figure}
