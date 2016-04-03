@@ -174,19 +174,29 @@ Also, for a perfectly Lambertian scene, each line in the EPI has a uniform color
 
 The plenoptic camera as depicted in figure~\ref{fig:lytro_camera} is a hand-held device capable of capturing a light field similar to a camera array but with a much smaller baseline.
 The design of Lytro's camera is based on the work of~\cite{LightFieldPhotographyHandHeldPlenopticCamera}.
-In principle, it functions like a conventional hand-held camera with the only major difference being that it has an array of microlenses placed in front of the image sensor.
+In principle, it functions like a conventional hand-held camera with the only major difference being that it has an array of microlenses placed in front of the image sensor as it is shown in figure~\ref{fig:lytro_schematic}.
+\begin{figure}[tb]
+	\centering
+	\subcaptionbox{	The layout of the plenoptic camera. 
+					The rays starting from the same point in the scene are mapped to different pixels on the photosensor via the microlens array.
+					Image taken from~\cite{LightFieldPhotographyHandHeldPlenopticCamera}.
+					\label{fig:lytro_schematic}}{\includegraphics[width=0.935\linewidth]
+					{../Figures/lytro/lytro_schematic}}\hfill%
+	 
+	\vspace{0.15cm}
+
+	\subcaptionbox{	Raw light field image captured by the Lytro Illum plenoptic camera. 
+				 	The circularly shaped patches are the images that form behind each microlens.
+				 	\label{fig:lytro_lenslet_array_zoom}}
+					{\input{../Figures/lytro/lenslet_view_magnified_parts.tex}}\hfill%
+	\caption[The inner workings of the plenoptic camera]
+			{The inner workings of the plenoptic camera.}
+	\label{fig:how_lytro_works}
+\end{figure}
 A light ray entering the aperture and hitting a microlens is mapped to one of the sensor's pixels behind the microlens.
 By knowing the position of the microlens array, focal length of the lenses and size of the aperture, each pixel in the final image can be identified with the direction of the incident ray. 
 Hence the plenoptic camera directly adopts the two-plane parameterization with the microlens-array being the \mbox{$(s, t)$-plane} and the main lens representing the \mbox{$(u, v)$-plane}.
 Figure~\ref{fig:lytro_lenslet_array_zoom} shows an enlarged part of the image formed on the sensor.
-\begin{figure}[tb]
-	\centering
-	\input{../Figures/lytro/lenslet_view_magnified_parts.tex}
-	\caption[Light field image captured with a plenoptic camera]
-			{Raw light field image captured by the Lytro Illum plenoptic camera. 
-			 The circularly shaped patches are the images that form behind each microlens.}
-	\label{fig:lytro_lenslet_array_zoom}
-\end{figure}
 It consists of rectangular patches corresponding to the images behind the microlenses.
 Because of the circular shape the main lens has, only a disk of pixels pictures the light coming from outside the camera.
 A popular application of the plenoptic camera is digital refocusing.
