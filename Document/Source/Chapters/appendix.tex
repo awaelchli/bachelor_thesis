@@ -114,8 +114,10 @@ High error is visualized with yellow and red color and bluish colors indicate lo
 	\subcaptionbox*{5}{\includegraphics[height = 2.3cm]{../Figures/simulated_views/knights_tiles3x3x256x256_overlap0.5_5layers_resolution9x9x512x512_SART_50iter/5.png}}
 	\caption[Simulated projections of the lego knight scene]
 			{Simulated projections of the lego knight scene.
-			 The light field extends over a baseline of about 14 cm with a distance of 20 cm between the two reference planes.
-			 The camera plane is sampled at $9 \times 9$ positions.
+			 Light field resolution (input): $9 \times 9 \times 512 \times 512$. 
+			 Baseline in both dimensions: 14 cm. 
+			 Distance between camera- and image plane: 20 cm.
+			 Size of P-matrix: $21233664 \times 1310720$ (with 103321284 non-zero entries).
 			 Shown are the simulated views at different positions on the camera plane and the respective visualization of the error compared to the input light field.
 			 All five attenuation layers are displayed in the bottom row.
 			 Runtime: 9.68 minutes.}
@@ -153,11 +155,12 @@ High error is visualized with yellow and red color and bluish colors indicate lo
 	\subcaptionbox*{4}{\includegraphics[height = 2.3cm]{../Figures/simulated_views/lytro_cubes_tiles_4x4x200x200_overlap0.5_5layers_resolution_7x7x381x381_SART_50_iter/4.png}}\hfill%
 	\subcaptionbox*{5}{\includegraphics[height = 2.3cm]{../Figures/simulated_views/lytro_cubes_tiles_4x4x200x200_overlap0.5_5layers_resolution_7x7x381x381_SART_50_iter/5.png}}
 	\caption[Simulated projections of a scene taken with Lytro]
-			{Simulated projections of a scene taken with the Lytro camera.
-			 The light field extends over a baseline of about 5 cm with a distance of 1 m between the two reference planes.
-			 The camera plane is sampled at $7 \times 7$ positions.
+			{Light field resolution (input): $7 \times 7 \times 381 \times 381$. 
+			 Baseline in both dimensions: 5 cm. 
+			 Distance between camera- and image plane: 1 m.
+			 Size of P-matrix: $7131558 \times 1250000$ (with 35657790 non-zero entries).
 			 Shown are the simulated views at different positions on the camera plane and the respective visualization of the error compared to the input light field.
 			 All five attenuation layers are displayed in the bottom row.
-			 Runtime 3.7 minutes.}
+			 Runtime: 3.7 minutes.}
 	\label{fig:simulated_projections_lytro_cubes}
 \end{figure}
