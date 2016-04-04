@@ -68,7 +68,6 @@ In computed tomography, the \textbf{Radon transform} of a real valued and compac
 	\mathrm{d}y,
 \end{equation}
 where $(\rho, \theta) \in \mathbb{R} \times \left(- \frac{\pi}{2}, \frac{\pi}{2}\right)$ defines a ray as shown in figure~\ref{fig:radon_transform_2D_sketch}.
-Because the Radon transform is essentially a line integral, it can be generalized to three or more dimensions.
 \begin{figure}[tb]
 	\centering
 	\input{../Figures/radon_transform_2D.tex}
@@ -76,6 +75,10 @@ Because the Radon transform is essentially a line integral, it can be generalize
 			{The 2D Radon transform of the ray $(\rho, \theta)$ passing a material with density $f(x, y)$.}
 	\label{fig:radon_transform_2D_sketch}
 \end{figure}
+In other words, the Radon transform simply computes the accumulation of values from the material $f$ along a straight line, the light ray.
+The Radon transform is often visualized by fixing the angle $\theta$ which results in a image that varies with displacement $\rho$.
+These parallel projections are the output of a tomographic scan: A device rotates around the object, shoots X-ray beams through it and reads the projection off of the detector placed on the other side of the scanned object. 
+Note that because the Radon transform is essentially a line integral, it can be generalized to three or more dimensions.
 Adapting the notation from the two-plane parameterization, the Radon transform of the attenuation map $\mu$ along ray $\mathcal{R}$ becomes
 \begin{equation}
 	p(u, v, s, t) = 
@@ -93,6 +96,9 @@ This shows that
 	\bar{L}(u, v, s, t) = -p(u, v, s, t), 
 \end{equation}
 or with the words of~\cite{WetzsteinTomo}: \say{The logarithm of the emitted light field is equivalent to the negative Radon transform of the attenuation map.}
+
+The reason why the Radon transform is so important in medical imaging is the fact that it can be inverted, that is:
+Given a collection of parallel projections, the full 3D volume of the object can be reconstructed (although there are numerous limitations and challenges involved).
 
 \section{Discrete Attenuation Layers}
 
