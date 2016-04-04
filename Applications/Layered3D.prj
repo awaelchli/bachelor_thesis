@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration build-checksum="326670684" file="C:\Users\Adrian\Documents\MATLAB\bachelor_project\Layered3D.prj" location="C:\Users\Adrian\Documents\MATLAB\bachelor_project" name="Layered3D" preferred-package-location="C:\Users\Adrian\Documents\MATLAB\bachelor_project\bin\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+  <configuration build-checksum="911185572" file="C:\Users\Adrian\Documents\bachelor_thesis\Applications\Layered3D.prj" location="C:\Users\Adrian\Documents\bachelor_thesis\Applications" name="Layered3D" preferred-package-location="C:\Users\Adrian\Documents\bachelor_thesis\Applications\Layered3D\bin\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
     <param.appname>Layered3D</param.appname>
     <param.icon />
     <param.icons />
@@ -16,9 +16,9 @@
     <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
     <param.logo />
     <param.install.notes />
-    <param.intermediate>${PROJECT_ROOT}\bin\for_testing</param.intermediate>
-    <param.files.only>${PROJECT_ROOT}\bin\for_redistribution_files_only</param.files.only>
-    <param.output>${PROJECT_ROOT}\bin\for_redistribution</param.output>
+    <param.intermediate>${PROJECT_ROOT}\Layered3D\bin\for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\Layered3D\bin\for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}\Layered3D\bin\for_redistribution</param.output>
     <param.enable.clean.build>false</param.enable.clean.build>
     <param.user.defined.mcr.options />
     <param.embed.ctf>true</param.embed.ctf>
@@ -63,100 +63,23 @@
       <param.log.file />
     </unset>
     <fileset.main>
-      <file>${PROJECT_ROOT}\gui\main.m</file>
+      <file>${PROJECT_ROOT}\Layered3D\src\main.m</file>
     </fileset.main>
     <fileset.resources>
-      <file>${PROJECT_ROOT}\code\Attenuator.m</file>
-      <file>${PROJECT_ROOT}\code\computeCenteredGridPositions.m</file>
-      <file>${PROJECT_ROOT}\code\LightField\CameraPlane.m</file>
-      <file>${PROJECT_ROOT}\code\LightField\LightField.m</file>
-      <file>${PROJECT_ROOT}\code\LightField\LightFieldEditor.m</file>
-      <file>${PROJECT_ROOT}\code\LightField\LightFieldO.m</file>
-      <file>${PROJECT_ROOT}\code\LightField\LightFieldP.m</file>
-      <file>${PROJECT_ROOT}\code\LightField\SensorPlane.m</file>
-      <file>${PROJECT_ROOT}\code\loadLightFieldFromLytroFile.m</file>
-      <file>${PROJECT_ROOT}\code\Optimization\sart.m</file>
-      <file>${PROJECT_ROOT}\code\Plane\PixelPlane.m</file>
-      <file>${PROJECT_ROOT}\code\Plane\SimplePixelPlane.m</file>
-      <file>${PROJECT_ROOT}\code\Plane\Tile.m</file>
-      <file>${PROJECT_ROOT}\code\Plane\TiledPixelPlane.m</file>
-      <file>${PROJECT_ROOT}\code\Print\addMarkersToLayers.m</file>
-      <file>${PROJECT_ROOT}\code\Print\printImagesToPDF.m</file>
-      <file>${PROJECT_ROOT}\code\PropagationMatrix\AbstractPropagationMatrix.m</file>
-      <file>${PROJECT_ROOT}\code\PropagationMatrix\PropagationMatrix.m</file>
-      <file>${PROJECT_ROOT}\code\PropagationMatrix\PropagationMatrixM.m</file>
-      <file>${PROJECT_ROOT}\code\Reconstruction\AbstractReconstruction.m</file>
-      <file>${PROJECT_ROOT}\code\Reconstruction\FastReconstructionForResampledLF.m</file>
-      <file>${PROJECT_ROOT}\code\Reconstruction\meanSquaredErrorImage.m</file>
-      <file>${PROJECT_ROOT}\code\Reconstruction\ReconstructionEvaluation.m</file>
-      <file>${PROJECT_ROOT}\code\Reconstruction\ReconstructionForOrthographicLF.m</file>
-      <file>${PROJECT_ROOT}\code\Reconstruction\ReconstructionForResampledLF.m</file>
-      <file>${PROJECT_ROOT}\gui\gui_animateLightField.m</file>
-      <file>${PROJECT_ROOT}\gui\gui_backprojection.m</file>
-      <file>${PROJECT_ROOT}\gui\gui_browse_for_image_folder.m</file>
-      <file>${PROJECT_ROOT}\gui\gui_browse_for_lytro_file.m</file>
-      <file>${PROJECT_ROOT}\gui\gui_browse_for_matlab_file.m</file>
-      <file>${PROJECT_ROOT}\gui\gui_clear_warning.m</file>
-      <file>${PROJECT_ROOT}\gui\gui_create_attenuator.m</file>
-      <file>${PROJECT_ROOT}\gui\gui_display_image.m</file>
-      <file>${PROJECT_ROOT}\gui\gui_display_layers.m</file>
-      <file>${PROJECT_ROOT}\gui\gui_display_reconstruction_or_error.m</file>
-      <file>${PROJECT_ROOT}\gui\gui_enable_all_import_controls.m</file>
-      <file>${PROJECT_ROOT}\gui\gui_enable_layer_preview.m</file>
-      <file>${PROJECT_ROOT}\gui\gui_enable_reconstruction_preview.m</file>
-      <file>${PROJECT_ROOT}\gui\gui_evaluate_all_views.m</file>
-      <file>${PROJECT_ROOT}\gui\gui_generate_PDF.m</file>
-      <file>${PROJECT_ROOT}\gui\gui_load_light_field_from_image_collection.m</file>
-      <file>${PROJECT_ROOT}\gui\gui_load_light_field_from_lytro_file.m</file>
-      <file>${PROJECT_ROOT}\gui\gui_load_lightfield_o.m</file>
-      <file>${PROJECT_ROOT}\gui\gui_load_lightfield_p.m</file>
-      <file>${PROJECT_ROOT}\gui\gui_lsqlin.m</file>
-      <file>${PROJECT_ROOT}\gui\gui_reconstruct_lightfield.m</file>
-      <file>${PROJECT_ROOT}\gui\gui_run_optimization_no_tiles.m</file>
-      <file>${PROJECT_ROOT}\gui\gui_run_optimization_tiles.m</file>
-      <file>${PROJECT_ROOT}\gui\gui_sart.m</file>
-      <file>${PROJECT_ROOT}\gui\gui_save_results.m</file>
-      <file>${PROJECT_ROOT}\gui\gui_update_layerNumbers_for_print.m</file>
-      <file>${PROJECT_ROOT}\gui\gui_warning.m</file>
-      <file>${PROJECT_ROOT}\gui\lytro_settings.fig</file>
-      <file>${PROJECT_ROOT}\gui\lytro_settings.m</file>
-      <file>${PROJECT_ROOT}\gui\main.fig</file>
-      <file>${PROJECT_ROOT}\tools\LFToolbox0.4\LFCalRectifyLF.m</file>
-      <file>${PROJECT_ROOT}\tools\LFToolbox0.4\LFColourCorrect.m</file>
-      <file>${PROJECT_ROOT}\tools\LFToolbox0.4\LFFigure.m</file>
-      <file>${PROJECT_ROOT}\tools\LFToolbox0.4\LFFindFilesRecursive.m</file>
-      <file>${PROJECT_ROOT}\tools\LFToolbox0.4\LFHistEqualize.m</file>
-      <file>${PROJECT_ROOT}\tools\LFToolbox0.4\LFLytroDecodeImage.m</file>
-      <file>${PROJECT_ROOT}\tools\LFToolbox0.4\LFReadLFP.m</file>
-      <file>${PROJECT_ROOT}\tools\LFToolbox0.4\LFReadMetadata.m</file>
-      <file>${PROJECT_ROOT}\tools\LFToolbox0.4\LFReadRaw.m</file>
-      <file>${PROJECT_ROOT}\tools\LFToolbox0.4\LFRecenterIntrinsics.m</file>
-      <file>${PROJECT_ROOT}\tools\LFToolbox0.4\LFUtilDecodeLytroFolder.m</file>
-      <file>${PROJECT_ROOT}\tools\LFToolbox0.4\LFUtilProcessWhiteImages.m</file>
-      <file>${PROJECT_ROOT}\tools\LFToolbox0.4\LFUtilUnpackLytroArchive.m</file>
-      <file>${PROJECT_ROOT}\tools\LFToolbox0.4\LFWriteMetadata.m</file>
-      <file>${PROJECT_ROOT}\tools\LFToolbox0.4\SupportFunctions\LFBuildLensletGridModel.m</file>
-      <file>${PROJECT_ROOT}\tools\LFToolbox0.4\SupportFunctions\LFDecodeLensletImageSimple.m</file>
-      <file>${PROJECT_ROOT}\tools\LFToolbox0.4\SupportFunctions\LFDefaultField.m</file>
-      <file>${PROJECT_ROOT}\tools\LFToolbox0.4\SupportFunctions\LFDefaultIntrinsics.m</file>
-      <file>${PROJECT_ROOT}\tools\LFToolbox0.4\SupportFunctions\LFDefaultVal.m</file>
-      <file>${PROJECT_ROOT}\tools\LFToolbox0.4\SupportFunctions\LFDispSetup.m</file>
-      <file>${PROJECT_ROOT}\tools\LFToolbox0.4\SupportFunctions\LFFindCalInfo.m</file>
-      <file>${PROJECT_ROOT}\tools\LFToolbox0.4\SupportFunctions\LFFindLytroPartnerFile.m</file>
-      <file>${PROJECT_ROOT}\tools\LFToolbox0.4\SupportFunctions\LFGatherCamInfo.m</file>
-      <file>${PROJECT_ROOT}\tools\LFToolbox0.4\SupportFunctions\LFMapRectifiedToMeasured.m</file>
-      <file>${PROJECT_ROOT}\tools\LFToolbox0.4\SupportFunctions\LFRotz.m</file>
-      <file>${PROJECT_ROOT}\tools\LFToolbox0.4\SupportFunctions\LFSelectFromDatabase.m</file>
-      <file>${PROJECT_ROOT}\tools\LFToolbox0.4\SupportFunctions\LFStruct2Var.m</file>
-      <file>${PROJECT_ROOT}\tools\LFToolbox0.4\SupportFunctions\LFToolboxVersion.m</file>
-      <file>${PROJECT_ROOT}\tools\LFToolbox0.4\SupportFunctions\LFUnpackRawBuffer.m</file>
-      <file>${PROJECT_ROOT}\tools\LFToolbox0.4\SupportFunctions\LFVar2Struct.m</file>
+      <file>C:\Users\Adrian\Documents\bachelor_thesis\Source\computeCenteredGridPositions.m</file>
+      <file>C:\Users\Adrian\Documents\bachelor_thesis\Source\LightField\CameraPlane.m</file>
+      <file>C:\Users\Adrian\Documents\bachelor_thesis\Source\LightField\LightField.m</file>
+      <file>C:\Users\Adrian\Documents\bachelor_thesis\Source\LightField\LightFieldEditor.m</file>
+      <file>C:\Users\Adrian\Documents\bachelor_thesis\Source\LightField\LightFieldO.m</file>
+      <file>C:\Users\Adrian\Documents\bachelor_thesis\Source\LightField\LightFieldP.m</file>
+      <file>C:\Users\Adrian\Documents\bachelor_thesis\Source\LightField\SensorPlane.m</file>
+      <file>C:\Users\Adrian\Documents\bachelor_thesis\Source\Plane\PixelPlane.m</file>
     </fileset.resources>
     <fileset.package />
     <build-deliverables>
-      <file location="${PROJECT_ROOT}\bin\for_testing" name="readme.txt" optional="true">C:\Users\Adrian\Documents\MATLAB\bachelor_project\bin\for_testing\readme.txt</file>
-      <file location="${PROJECT_ROOT}\bin\for_testing" name="Layered3D.exe" optional="false">C:\Users\Adrian\Documents\MATLAB\bachelor_project\bin\for_testing\Layered3D.exe</file>
-      <file location="${PROJECT_ROOT}\bin\for_testing" name="splash.png" optional="false">C:\Users\Adrian\Documents\MATLAB\bachelor_project\bin\for_testing\splash.png</file>
+      <file location="${PROJECT_ROOT}\Layered3D\bin\for_testing" name="Layered3D.exe" optional="false">C:\Users\Adrian\Documents\bachelor_thesis\Applications\Layered3D\bin\for_testing\Layered3D.exe</file>
+      <file location="${PROJECT_ROOT}\Layered3D\bin\for_testing" name="readme.txt" optional="true">C:\Users\Adrian\Documents\bachelor_thesis\Applications\Layered3D\bin\for_testing\readme.txt</file>
+      <file location="${PROJECT_ROOT}\Layered3D\bin\for_testing" name="splash.png" optional="false">C:\Users\Adrian\Documents\bachelor_thesis\Applications\Layered3D\bin\for_testing\splash.png</file>
     </build-deliverables>
     <workflow />
     <matlab>
