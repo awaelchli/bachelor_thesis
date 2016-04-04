@@ -10,8 +10,8 @@
 \contentsline {section}{\numberline {2.4}The Plenoptic Camera}{9}{section.2.4}
 \contentsline {chapter}{\numberline {3}Light Field Tomography}{11}{chapter.3}
 \contentsline {section}{\numberline {3.1}A Model for Light Attenuation}{11}{section.3.1}
-\contentsline {section}{\numberline {3.2}Discrete Attenuation Layers}{12}{section.3.2}
-\contentsline {section}{\numberline {3.3}Ray Casting}{13}{section.3.3}
+\contentsline {section}{\numberline {3.2}Discrete Attenuation Layers}{13}{section.3.2}
+\contentsline {section}{\numberline {3.3}Ray Casting}{14}{section.3.3}
 \contentsline {section}{\numberline {3.4}Iterative Reconstruction}{15}{section.3.4}
 \contentsline {chapter}{\numberline {4}Spectral Analysis}{17}{chapter.4}
 \contentsline {section}{\numberline {4.1}Definitions}{17}{section.4.1}

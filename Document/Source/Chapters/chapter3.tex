@@ -1,6 +1,15 @@
 \chapter{Light Field Tomography}
 \label{chp:light_field_tomography}
 
+This chapter introduces the model that is used to create the attenuation display.
+In the first part, the light propagation through a continuously varying attenuation volume is described by physical laws.
+Each point in the material has an absorbance property that influences the light traveling through it.
+The goal is to control the absorbance of the material in a way that the exiting light ray has the exact same color as the corresponding ray in the light field.
+To do this, the attenuation volume is approximated by a discrete set of layers, each represented by an array of pixels that store the absorbance values.
+The rays intersecting with the layers provide a set of constraints for the pixel values.
+These propagation constraints are formulated as a linear system of equations with respect to the unkown absorbance values.
+The unknowns are then found by solving the equations with an interative method.
+
 \section{A Model for Light Attenuation}
 \label{sec:light_attenuation_model}
 
