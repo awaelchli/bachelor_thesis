@@ -5,7 +5,7 @@ actualThickness = 16;
 attenuatorSize = [actualLayerHeight, actualLayerWidth];
 
 editor = LightFieldEditor();
-editor.inputFromImageCollection('lightFields/dice/perspective/baseline_1.0/10x10x1000x1000_lambertian/rectified/', 'png', [10, 10], 0.5);
+editor.inputFromImageCollection('../Data/lightFields/dice/perspective/baseline_1.0/10x10x1000x1000_lambertian/rectified/', 'png', [10, 10], 0.2);
 editor.angularSliceY(1 : 10);
 editor.angularSliceX(1 : 10);
 
@@ -19,7 +19,7 @@ lightField = editor.getPerspectiveLightField();
 
 %% Run through different sampling densities
 
-samplingDensity = [1.5, 2];
+samplingDensity = [1, 1.5, 2, 3];
 mse = zeros(size(samplingDensity));
 psnr = zeros(size(samplingDensity));
 time = zeros(size(samplingDensity));
@@ -30,6 +30,7 @@ for i = 1 : numel(samplingDensity)
     fprintf('Sampling Density: %i\n', samplingDensity(i));
     
     params.iterations = 10;
+%     params.tileIndices = [];
     params.attenuatorSize = attenuatorSize;
     params.attenuatorThickness = actualThickness;
     params.numberOfLayers = 5;
@@ -40,13 +41,15 @@ for i = 1 : numel(samplingDensity)
     params.tileSizeMultiplier = 1; 
     params.verbose = 1;
     params.solver = @sart;
-    params.outputFolder = sprintf('results/oversampling/density_%i/', samplingDensity(i));
+    params.outputFolder = sprintf('../results/oversampling/density_%i/', samplingDensity(i));
     
     mkdir(params.outputFolder);
 
     tic;
     [ attenuator ] = solveTiles(lightField, params);
     time(i) = toc;
+    
+    attenuator.attenuationValues(isnan(attenuator.attenuationValues)) = 0;
     
     resamplingPlane2 = SensorPlane(lightField.spatialResolution, lightField.sensorPlane.planeSize, lightField.sensorPlane.z);
     rec = FastReconstructionForResampledLF(lightField, attenuator, resamplingPlane2);
@@ -64,7 +67,7 @@ for i = 1 : numel(samplingDensity)
 
     indices = [indY(:), indX(:)];
     evaluation.evaluateViews(indices);
-%     evaluation.storeReconstructedViews();
+    evaluation.storeReconstructedViews();
     evaluation.storeErrorImages();
     evaluation.storeLayers(1 : params.numberOfLayers);
     
@@ -89,4 +92,4 @@ plot(samplingDensity, psnr);
 figure(3);
 plot(samplingDensity, time);
 
-save('results/oversampling/plots.mat', 'samplingDensity', 'mse', 'psnr', 'time');
+save('../results/oversampling/plots.mat', 'samplingDensity', 'mse', 'psnr', 'time');
