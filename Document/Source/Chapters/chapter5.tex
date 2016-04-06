@@ -121,20 +121,6 @@ Unfortunately, the apparent improvement does not directly translate to lower RMS
 \enlargethispage{\baselineskip}
 The plot in figure~\ref{fig:oversampling_results} shows that the RMSE even increases, but the changes are so small that the impact is not visible in the reconstructed light field.
 
-%This allows for oversampling 
-%Instead, the sampling density can be increased while keeping the layer resolution the same:
-
-%\section{Oversampling}
-%\label{sec:oversampling}
-%
-%Because of the perspective projection, all points that project to the camera's image plane are inside a pyramidal frustum.
-%Conversely, the area of a single pixel back-projects to a larger area on the original surface, or in this case, the attenuation layers.
-%This means that, depending on the resolution and size of the attenuator, the beam of light rays going through a single pixel on the image plane  possibly covers multiple pixels on some of the attenuation layers.
-%
-%This leads to fewer constraints on the layer pixels for the optimization when sampling only a single ray per image pixel.
-%The obvious solution would be to simply increase the resolution of the layers, but this is sometimes not feasible or desired due to the much longer runtime of the solver.
-
-
 \section{Interpolation}
 \label{sec:interpolation}
 
