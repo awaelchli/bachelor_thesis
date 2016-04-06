@@ -19,7 +19,7 @@ lightField = editor.getPerspectiveLightField();
 
 %% Run through different sampling densities
 
-samplingDensity = [1, 1.5, 2, 3];
+samplingDensity = [1, 1.5, 2, 3, 4, 5];
 mse = zeros(size(samplingDensity));
 psnr = zeros(size(samplingDensity));
 time = zeros(size(samplingDensity));
@@ -35,7 +35,7 @@ for i = 1 : numel(samplingDensity)
     params.attenuatorThickness = actualThickness;
     params.numberOfLayers = 5;
     params.layerResolution = round(1 * lightField.spatialResolution);
-    params.tileResolution = 1 * [250, 250];
+    params.tileResolution = 1 * [50, 50];
     params.tileOverlap = ceil(0.5 * params.tileResolution);
     params.tileResolutionMultiplier = samplingDensity(i);
     params.tileSizeMultiplier = 1; 
