@@ -22,17 +22,17 @@
 \contentsline {section}{\numberline {5.2}The Basic Procedure}{22}{section.5.2}
 \contentsline {section}{\numberline {5.3}Challenges with Ray Casting}{23}{section.5.3}
 \contentsline {section}{\numberline {5.4}Interpolation}{24}{section.5.4}
-\contentsline {section}{\numberline {5.5}Baseline Scaling and Back Projection}{25}{section.5.5}
-\contentsline {section}{\numberline {5.6}Attenuator Tiling and Blending}{26}{section.5.6}
-\contentsline {section}{\numberline {5.7}Performance of SART}{27}{section.5.7}
-\contentsline {section}{\numberline {5.8}Contrast Sensitivity}{29}{section.5.8}
+\contentsline {section}{\numberline {5.5}Baseline Scaling and Back Projection}{26}{section.5.5}
+\contentsline {section}{\numberline {5.6}Attenuator Tiling and Blending}{27}{section.5.6}
+\contentsline {section}{\numberline {5.7}Performance of SART}{28}{section.5.7}
+\contentsline {section}{\numberline {5.8}Contrast Sensitivity}{30}{section.5.8}
 \contentsline {section}{\numberline {5.9}Graphical User Interface}{30}{section.5.9}
-\contentsline {section}{\numberline {5.10}Benefits and Limitations}{30}{section.5.10}
+\contentsline {section}{\numberline {5.10}Benefits and Limitations}{31}{section.5.10}
 \contentsline {section}{\numberline {5.11}Improvements and Future Work}{31}{section.5.11}
-\contentsline {chapter}{\numberline {A}Appendix}{34}{appendix.A}
-\contentsline {section}{\numberline {A.1}Printing}{34}{section.A.1}
-\contentsline {section}{\numberline {A.2}Backlight Fabrication}{34}{section.A.2}
-\contentsline {section}{\numberline {A.3}More Simulated Projections}{35}{section.A.3}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Figures}{39}{figure.caption.32}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Tables}{39}{appendix*.33}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{40}{appendix*.34}
+\contentsline {chapter}{\numberline {A}Appendix}{35}{appendix.A}
+\contentsline {section}{\numberline {A.1}Printing}{35}{section.A.1}
+\contentsline {section}{\numberline {A.2}Backlight Fabrication}{35}{section.A.2}
+\contentsline {section}{\numberline {A.3}More Simulated Projections}{36}{section.A.3}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Figures}{40}{figure.caption.33}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of Tables}{40}{appendix*.34}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{41}{appendix*.35}

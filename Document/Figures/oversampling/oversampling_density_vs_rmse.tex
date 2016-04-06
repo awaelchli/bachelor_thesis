@@ -1,0 +1,30 @@
+\documentclass{standalone}
+\usepackage{pgfplots}
+
+\begin{document}
+	\begin{tikzpicture}
+		
+		\begin{axis}[	xtick = {1, 2, 3, 4, 5},
+						ytick = {26.3, 26.4, 26.5, 26.6, 26.7},
+						ylabel = {RMSE},
+						xlabel = {Sampling density multiplier},
+						ylabel near ticks,
+						grid = major,
+						axis on top = false,
+						width = 8 cm, 
+						height = 4cm]
+		
+			\addplot coordinates {
+				(1, 	26.3812)
+				(1.5, 	26.6302)
+				(2, 	26.6761)
+				(3, 	26.5946)
+				(4, 	26.5779)
+				(5, 	26.5879)
+			};
+			
+			 
+		\end{axis}
+		
+	\end{tikzpicture}
+\end{document}

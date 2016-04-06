@@ -85,6 +85,34 @@ Because the rays that are cast from the sampling plane to the image plane are di
 On top of that, the sampling plane can have a different resolution than the attenuation layers and increasing it results in an increased ray density.
 If this density is higher than the resolution of the input light field, the outcome is an oversampled light field that requires more memory.
 Because one ray is equivalent to a constraint in the system of equations, the resolution of the sampling plane directly affects the number of equations.
+\begin{figure}[t]
+	\centering
+	\subcaptionbox*{Original ray density (same as light field)}{
+		\adjustbox{width = 0.3\textwidth, trim={0.15\width} {0.2\height} {0.15\width} {0.15\height}, clip}{\includegraphics{../Figures/oversampling/density_1/1.png}}
+		\adjustbox{width = 0.3\textwidth, trim={0.15\width} {0.2\height} {0.15\width} {0.15\height}, clip}{\includegraphics{../Figures/oversampling/density_1/3.png}}
+		\adjustbox{width = 0.3\textwidth, trim={0.15\width} {0.2\height} {0.15\width} {0.15\height}, clip}{\includegraphics{../Figures/oversampling/density_1/5.png}}
+	}\hfill%
+	
+	\vspace{0.15cm}
+	
+	\subcaptionbox*{5x ray density in spatial dimensions}{
+		\adjustbox{width = 0.3\textwidth, trim={0.15\width} {0.2\height} {0.15\width} {0.15\height}, clip}{\includegraphics{../Figures/oversampling/density_5/1.png}}
+		\adjustbox{width = 0.3\textwidth, trim={0.15\width} {0.2\height} {0.15\width} {0.15\height}, clip}{\includegraphics{../Figures/oversampling/density_5/3.png}}
+		\adjustbox{width = 0.3\textwidth, trim={0.15\width} {0.2\height} {0.15\width} {0.15\height}, clip}{\includegraphics{../Figures/oversampling/density_5/5.png}}
+	}\hfill%
+	
+	\vspace{0.15cm}
+	
+	\subcaptionbox*{}{
+		\input{../Figures/oversampling/oversampling_density_vs_rmse.tex}
+	}
+	
+	\caption[Impact of oversampling on attenuation layers and reconstruction error]
+			{Impact of oversampling on attenuation layers and reconstruction error.
+			 Three of five layers (bottom most, middle, topmost) are shown and compared for different sampling densities.
+			 Below, the RMSE of the reconstructed light field is plotted for an increasing sampling density.}
+	\label{fig:oversampling_results}
+\end{figure}
 
 %This allows for oversampling 
 %Instead, the sampling density can be increased while keeping the layer resolution the same:
