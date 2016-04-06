@@ -7,8 +7,8 @@ Each point in the material has an absorbance property that influences the light 
 The goal is to control the absorbance of the material in a way that the exiting light ray has the exact same color as the corresponding ray in the light field.
 To do this, the attenuation volume is approximated by a discrete set of layers, each represented by an array of pixels that store the absorbance values.
 The rays intersecting with the layers provide a set of constraints for the pixel values.
-These propagation constraints are formulated as a linear system of equations with respect to the unkown absorbance values.
-The unknowns are then found by solving the equations with an interative method.
+These propagation constraints are formulated as a linear system of equations with respect to the unknown absorbance values.
+The unknowns are then found by solving the equations with an iterative method.
 
 \section{A Model for Light Attenuation}
 \label{sec:light_attenuation_model}
@@ -143,7 +143,7 @@ Also note that the matrix P is very sparse because it is assumed that a ray pass
 Thus, $P$ can be efficiently stored using an appropriate data structure.
 
 In summary, the problem statement is this:
-Given a light field and the associated parameters, the goal is to find optimal pixel values for the attenuation masks where ``optimal'' means that the light is attenuated in such a way that the emited light field is as close as possible to the original light field.
+Given a light field and the associated parameters, the goal is to find optimal pixel values for the attenuation masks where ``optimal'' means that the light is attenuated in such a way that the emitted light field is as close as possible to the original light field.
 The following sections explain how this problem is solved.
 
 \section{Ray Casting}
