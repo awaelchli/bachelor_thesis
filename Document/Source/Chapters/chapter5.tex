@@ -83,7 +83,7 @@ Thus, the final method implemented in this thesis introduces a new virtual plane
 Placing this so called \textbf{sampling plane} at the same location as the bottom-most layer (farthest from the camera) ensures that the ray-density is no smaller on the other layers.
 Because the rays that are cast from the sampling plane to the image plane are different from the original rays, the light field is resampled to a higher resolution which also requires interpolation.
 On top of that, the sampling plane can have a different resolution than the attenuation layers and increasing it results in an increased ray density.
-If this density is higher than the resolution of the input light field, the outcome is a oversampled light field that requires more memory.
+If this density is higher than the resolution of the input light field, the outcome is an oversampled light field that requires more memory.
 Because one ray is equivalent to a constraint in the system of equations, the resolution of the sampling plane directly affects the number of equations.
 
 %This allows for oversampling 

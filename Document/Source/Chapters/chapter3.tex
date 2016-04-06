@@ -142,6 +142,10 @@ Finally, when optimal values $\alpha$ are found, the transmittance used to fabri
 Also note that the matrix P is very sparse because it is assumed that a ray passes through each layer at exactly one pixel no more than once and inter-reflections between the layers are not supported by the model.
 Thus, $P$ can be efficiently stored using an appropriate data structure.
 
+In summary, the problem statement is this:
+Given a light field and the associated parameters, the goal is to find optimal pixel values for the attenuation masks where ``optimal'' means that the light is attenuated in such a way that the emited light field is as close as possible to the original light field.
+The following sections explain how this problem is solved.
+
 \section{Ray Casting}
 \label{sec:ray_casting}
 
