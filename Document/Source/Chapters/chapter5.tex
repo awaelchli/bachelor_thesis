@@ -138,7 +138,8 @@ Due to the exponential propagation model, the interpolation in the log-domain tr
 \end{equation*}
 with $\gamma \coloneqq \gamma_n$ being the linear interpolation weight, $i$ and $j$ identifying the neighboring pixels which are the query points for the interpolation.
 
-The attempt of interpolation does not exhibit a significant increase in reconstruction quality.
+The attempt of interpolation was unsuccessful:
+A significant increase in reconstruction quality for the light fields tested in this thesis can neither be observed visually nor by means of RMSE.
 Alternatively, interpolation could be applied to the transmittance instead of the absorbance, but this requires a different optimization strategy.
 Because of the non-linearity of the logarithm, the optimization problem can not simply be transformed into a linear equation.
 
