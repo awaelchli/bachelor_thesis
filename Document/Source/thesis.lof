@@ -17,11 +17,11 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Intersecting light rays with attenuation layers}}{24}{figure.caption.21}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Impact of oversampling on attenuation layers and reconstruction error}}{25}{figure.caption.22}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Baseline scaling}}{26}{figure.caption.23}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Tiling layout}}{27}{figure.caption.24}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Impact of tile overlap on attenuation layers}}{28}{figure.caption.25}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Performance assessment of the optimization}}{29}{figure.caption.26}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Impact of layer count on \unhbox \voidb@x \hbox {PSNR}}}{29}{figure.caption.27}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Baseline scaling}}{27}{figure.caption.23}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Tiling layout}}{28}{figure.caption.24}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Impact of tile overlap on attenuation layers}}{29}{figure.caption.25}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Performance assessment of the optimization}}{30}{figure.caption.26}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Impact of layer count on \unhbox \voidb@x \hbox {PSNR}}}{30}{figure.caption.27}
 \contentsline {figure}{\numberline {5.8}{\ignorespaces Contrast sensitivity analysis for layered 3D displays}}{33}{figure.caption.28}
 \contentsline {figure}{\numberline {5.9}{\ignorespaces Graphical user interface}}{34}{figure.caption.29}
 \addvspace {10\p@ }
