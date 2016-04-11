@@ -5,24 +5,45 @@
 	\begin{tikzpicture}
 		
 		\begin{axis}[	xtick = {1, 2, 3, 4, 5},
-						ytick = {26.3, 26.4, 26.5, 26.6, 26.7},
+						ymin = 30, 
+						ymax = 33,
+						ytick = {30.0, 30.5, 31.0, 31.5, 32.0, 32.5, 33.0},
 						ylabel = {RMSE},
-						xlabel = {Sampling density multiplier},
+						xlabel = {Sampling density factor},
 						ylabel near ticks,
 						grid = major,
 						axis on top = false,
 						width = 8 cm, 
-						height = 4cm]
+						height = 5cm, 
+						legend cell align = left,
+						legend pos = outer north east]
 		
-			\addplot coordinates {
-				(1, 	26.3812)
-				(1.5, 	26.6302)
-				(2, 	26.6761)
-				(3, 	26.5946)
-				(4, 	26.5779)
-				(5, 	26.5879)
+			\addplot coordinates { 
+				(1, 	30.2980)
+				(2, 	30.4251)
+				(3, 	30.4056)
+				(4, 	30.3855)
+				(5, 	30.3890)
 			};
+			\addlegendentry{1x layer res.};
+
+			\addplot coordinates {
+				(1, 	31.2485)
+				(2, 	31.5784)
+				(3, 	31.5396)
+				(4, 	31.5140)
+				(5, 	31.5059)
+			};
+			\addlegendentry{0.5x layer res.};
 			
+			\addplot coordinates {
+				(1, 	32.2331) 
+				(2, 	32.5038)
+				(3, 	32.3703)
+				(4, 	32.4936)
+				(5, 	32.4477)
+			};
+			\addlegendentry{0.25x layer res.};			
 			 
 		\end{axis}
 		

@@ -87,39 +87,46 @@ If this density is higher than the resolution of the input light field, the outc
 Because one ray is equivalent to a constraint in the system of equations, the resolution of the sampling plane directly affects the number of equations.
 \begin{figure}[t]
 	\centering
-	\subcaptionbox*{Original ray density (same as light field)}{
-		\adjustbox{width = 0.3\textwidth, trim={0.15\width} {0.2\height} {0.15\width} {0.15\height}, clip}{\includegraphics{../Figures/oversampling/density_1/1.png}}
-		\adjustbox{width = 0.3\textwidth, trim={0.15\width} {0.2\height} {0.15\width} {0.15\height}, clip}{\includegraphics{../Figures/oversampling/density_1/3.png}}
-		\adjustbox{width = 0.3\textwidth, trim={0.15\width} {0.2\height} {0.15\width} {0.15\height}, clip}{\includegraphics{../Figures/oversampling/density_1/5.png}}
-	}\hfill%
-	
-	\vspace{0.15cm}
-	
-	\subcaptionbox*{5x ray density in spatial dimensions}{
-		\adjustbox{width = 0.3\textwidth, trim={0.15\width} {0.2\height} {0.15\width} {0.15\height}, clip}{\includegraphics{../Figures/oversampling/density_5/1.png}}
-		\adjustbox{width = 0.3\textwidth, trim={0.15\width} {0.2\height} {0.15\width} {0.15\height}, clip}{\includegraphics{../Figures/oversampling/density_5/3.png}}
-		\adjustbox{width = 0.3\textwidth, trim={0.15\width} {0.2\height} {0.15\width} {0.15\height}, clip}{\includegraphics{../Figures/oversampling/density_5/5.png}}
-	}\hfill%
-	
-	\vspace{0.15cm}
+%	\subcaptionbox*{Original ray density (same as light field)}{
+%		\adjustbox{width = 0.3\textwidth, trim={0.15\width} {0.2\height} {0.15\width} {0.15\height}, clip}{\includegraphics{../Figures/oversampling/density_1/1.png}}
+%		\adjustbox{width = 0.3\textwidth, trim={0.15\width} {0.2\height} {0.15\width} {0.15\height}, clip}{\includegraphics{../Figures/oversampling/density_1/3.png}}
+%		\adjustbox{width = 0.3\textwidth, trim={0.15\width} {0.2\height} {0.15\width} {0.15\height}, clip}{\includegraphics{../Figures/oversampling/density_1/5.png}}
+%	}\hfill%
+%	
+%	\vspace{0.15cm}
+%	
+%	\subcaptionbox*{5x ray density in spatial dimensions}{
+%		\adjustbox{width = 0.3\textwidth, trim={0.15\width} {0.2\height} {0.15\width} {0.15\height}, clip}{\includegraphics{../Figures/oversampling/density_5/1.png}}
+%		\adjustbox{width = 0.3\textwidth, trim={0.15\width} {0.2\height} {0.15\width} {0.15\height}, clip}{\includegraphics{../Figures/oversampling/density_5/3.png}}
+%		\adjustbox{width = 0.3\textwidth, trim={0.15\width} {0.2\height} {0.15\width} {0.15\height}, clip}{\includegraphics{../Figures/oversampling/density_5/5.png}}
+%	}\hfill%
+%	
+%	\vspace{0.15cm}
 	
 	\subcaptionbox*{}{
 		\input{../Figures/oversampling/oversampling_density_vs_rmse.tex}
 	}
 	
-	\caption[Impact of oversampling on attenuation layers and reconstruction error]
-			{Impact of oversampling on attenuation layers and reconstruction error.
-			 Three of five layers (bottom most, middle, topmost) are shown and compared for different sampling densities.
-			 Below, the RMSE of the reconstructed light field is plotted for an increasing sampling density.}
+	\caption[Impact of oversampling on the reconstruction error]
+			{Impact of oversampling on the reconstruction error.
+			 The RMSE of the reconstructed light field is plotted against an increasing sampling density for different layer resolutions.
+			 The first plot is created using a layer resolution equal to the light fields spatial resolution, the second uses half and the third a forth that.}
 	\label{fig:oversampling_results}
 \end{figure}
 
 The results of oversampling are presented in figure~\ref{fig:oversampling_results}.
-The impact of higher sampling density is demonstrated for a low resolution synthetic light field.
-Visible grid artifacts (vertical and horizontal lines) present without oversampling are reduced with higher sampling density.
-Unfortunately, the apparent improvement does not directly translate to lower RMSE in the reconstructions.
-\enlargethispage{\baselineskip}
-The plot in figure~\ref{fig:oversampling_results} shows that the RMSE even increases, but the changes are so small that the impact is not visible in the reconstructed light field.
+The plot shows the impact of higher sampling density on the RMSE.
+%Visible grid artifacts (vertical and horizontal lines) present without oversampling are reduced with higher sampling density.
+%Unfortunately, the apparent improvement does not directly translate to lower RMSE in the reconstructions.
+%\enlargethispage{\baselineskip}
+%The plot in figure~\ref{fig:oversampling_results} shows that the RMSE even increases, but the changes are so small that the impact is not visible in the reconstructed light field.
+
+%The results of oversampling are presented in figure~\ref{fig:oversampling_results}.
+%The impact of higher sampling density is demonstrated for a low resolution synthetic light field.
+%Visible grid artifacts (vertical and horizontal lines) present without oversampling are reduced with higher sampling density.
+%Unfortunately, the apparent improvement does not directly translate to lower RMSE in the reconstructions.
+%\enlargethispage{\baselineskip}
+%The plot in figure~\ref{fig:oversampling_results} shows that the RMSE even increases, but the changes are so small that the impact is not visible in the reconstructed light field.
 
 \section{Interpolation}
 \label{sec:interpolation}
