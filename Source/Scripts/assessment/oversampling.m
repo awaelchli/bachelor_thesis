@@ -5,7 +5,7 @@ actualThickness = 16;
 attenuatorSize = [actualLayerHeight, actualLayerWidth];
 
 editor = LightFieldEditor();
-editor.inputFromImageCollection('../Data/lightFields/dice/perspective/baseline_1.0/10x10x1000x1000_lambertian/rectified/', 'png', [10, 10], 0.2);
+editor.inputFromImageCollection('../Data/lightFields/dice/perspective/baseline_1.0/10x10x1000x1000_lambertian/rectified/', 'png', [10, 10], 0.4);
 editor.angularSliceY(1 : 10);
 editor.angularSliceX(1 : 10);
 
@@ -19,7 +19,7 @@ lightField = editor.getPerspectiveLightField();
 
 %% Run through different sampling densities
 
-samplingDensity = [1, 1.5, 2, 3, 4, 5];
+samplingDensity = [1, 2, 3, 4, 5];
 mse = zeros(size(samplingDensity));
 psnr = zeros(size(samplingDensity));
 time = zeros(size(samplingDensity));
@@ -35,13 +35,13 @@ for i = 1 : numel(samplingDensity)
     params.attenuatorThickness = actualThickness;
     params.numberOfLayers = 5;
     params.layerResolution = round(1 * lightField.spatialResolution);
-    params.tileResolution = 1 * [50, 50];
+    params.tileResolution = 2 * [50, 50];
     params.tileOverlap = ceil(0.5 * params.tileResolution);
     params.tileResolutionMultiplier = samplingDensity(i);
     params.tileSizeMultiplier = 1; 
     params.verbose = 1;
     params.solver = @sart;
-    params.outputFolder = sprintf('../results/oversampling/density_%i/', samplingDensity(i));
+    params.outputFolder = sprintf('../results/oversampling/1_layer_resolution/density_%i/', samplingDensity(i));
     
     mkdir(params.outputFolder);
 
@@ -92,4 +92,4 @@ plot(samplingDensity, psnr);
 figure(3);
 plot(samplingDensity, time);
 
-save('../results/oversampling/plots.mat', 'samplingDensity', 'mse', 'psnr', 'time');
+save('../results/oversampling/1_layer_resolution/plots.mat', 'samplingDensity', 'mse', 'psnr', 'time');
