@@ -28,7 +28,7 @@
 \contentsline {section}{\numberline {5.8}Contrast Sensitivity}{30}{section.5.8}
 \contentsline {section}{\numberline {5.9}Graphical User Interface}{30}{section.5.9}
 \contentsline {section}{\numberline {5.10}Benefits and Limitations}{31}{section.5.10}
-\contentsline {section}{\numberline {5.11}Improvements and Future Work}{31}{section.5.11}
+\contentsline {section}{\numberline {5.11}Improvements and Future Work}{32}{section.5.11}
 \contentsline {chapter}{\numberline {A}Appendix}{35}{appendix.A}
 \contentsline {section}{\numberline {A.1}Printing}{35}{section.A.1}
 \contentsline {section}{\numberline {A.2}Backlight Fabrication}{35}{section.A.2}

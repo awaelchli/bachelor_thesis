@@ -87,46 +87,25 @@ If this density is higher than the resolution of the input light field, the outc
 Because one ray is equivalent to a constraint in the system of equations, the resolution of the sampling plane directly affects the number of equations.
 \begin{figure}[t]
 	\centering
-%	\subcaptionbox*{Original ray density (same as light field)}{
-%		\adjustbox{width = 0.3\textwidth, trim={0.15\width} {0.2\height} {0.15\width} {0.15\height}, clip}{\includegraphics{../Figures/oversampling/density_1/1.png}}
-%		\adjustbox{width = 0.3\textwidth, trim={0.15\width} {0.2\height} {0.15\width} {0.15\height}, clip}{\includegraphics{../Figures/oversampling/density_1/3.png}}
-%		\adjustbox{width = 0.3\textwidth, trim={0.15\width} {0.2\height} {0.15\width} {0.15\height}, clip}{\includegraphics{../Figures/oversampling/density_1/5.png}}
-%	}\hfill%
-%	
-%	\vspace{0.15cm}
-%	
-%	\subcaptionbox*{5x ray density in spatial dimensions}{
-%		\adjustbox{width = 0.3\textwidth, trim={0.15\width} {0.2\height} {0.15\width} {0.15\height}, clip}{\includegraphics{../Figures/oversampling/density_5/1.png}}
-%		\adjustbox{width = 0.3\textwidth, trim={0.15\width} {0.2\height} {0.15\width} {0.15\height}, clip}{\includegraphics{../Figures/oversampling/density_5/3.png}}
-%		\adjustbox{width = 0.3\textwidth, trim={0.15\width} {0.2\height} {0.15\width} {0.15\height}, clip}{\includegraphics{../Figures/oversampling/density_5/5.png}}
-%	}\hfill%
-%	
-%	\vspace{0.15cm}
-	
 	\subcaptionbox*{}{
 		\input{../Figures/oversampling/oversampling_density_vs_rmse.tex}
 	}
-	
 	\caption[Impact of oversampling on the reconstruction error]
 			{Impact of oversampling on the reconstruction error.
 			 The RMSE of the reconstructed light field is plotted against an increasing sampling density for different layer resolutions.
+			 The sampling density factor is the multiplier of the original resolution in one spatial dimension.
 			 The first plot is created using a layer resolution equal to the light fields spatial resolution, the second uses half and the third a forth that.}
 	\label{fig:oversampling_results}
 \end{figure}
 
 The results of oversampling are presented in figure~\ref{fig:oversampling_results}.
-The plot shows the impact of higher sampling density on the RMSE.
-%Visible grid artifacts (vertical and horizontal lines) present without oversampling are reduced with higher sampling density.
-%Unfortunately, the apparent improvement does not directly translate to lower RMSE in the reconstructions.
-%\enlargethispage{\baselineskip}
-%The plot in figure~\ref{fig:oversampling_results} shows that the RMSE even increases, but the changes are so small that the impact is not visible in the reconstructed light field.
-
-%The results of oversampling are presented in figure~\ref{fig:oversampling_results}.
-%The impact of higher sampling density is demonstrated for a low resolution synthetic light field.
-%Visible grid artifacts (vertical and horizontal lines) present without oversampling are reduced with higher sampling density.
-%Unfortunately, the apparent improvement does not directly translate to lower RMSE in the reconstructions.
-%\enlargethispage{\baselineskip}
-%The plot in figure~\ref{fig:oversampling_results} shows that the RMSE even increases, but the changes are so small that the impact is not visible in the reconstructed light field.
+The plot shows the impact of higher sampling density on the \mbox{RMSE}.
+As it can be seen in this experiment, the oversampling strategy does not yield a lower \mbox{RMSE}.
+In fact, the \mbox{RMSE} increases when using a sampling density factor of two (four times more rays).
+This behavior can be explained as follows:
+Because of the oversampling, many rays pass through a single layer pixel at different positions.
+The question is how these rays should be weighted for the optimization because they don't all contribute the same amount to that pixel.
+Such considerations have not yet been incorporated into the software and require further investigation.
 
 \section{Interpolation}
 \label{sec:interpolation}
@@ -321,15 +300,26 @@ Adding more layers means adding more pixels and hence there are more degrees of 
 In theory the more layers there are, the closer is the display to a full attenuation volume.
 The plot in figure~\ref{fig:sart_layers_vs_psnr} shows how the PSNR of the simulated projections behaves with up to twenty layers.
 \begin{figure}[tb]
-	\begin{subfigure}{\textwidth}
+	\begin{subfigure}{0.5\textwidth}
 		\centering
 		\input{../Figures/optimization_performance/layers_vs_psnr.tex}
+		\caption{}
+		\label{fig:sart_layers_vs_psnr}
 	\end{subfigure}%
-	\caption[Impact of layer count on \mbox{PSNR}]
-			{Impact of layer count on the \mbox{PSNR}.
-			 Performance comparison of the attenuation display for two different scenes from the Stanford light field archive.
-			 Ten iterations of SART were performed for each scene.}
-	\label{fig:sart_layers_vs_psnr}
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\input{../Figures/optimization_performance/layer_resolution_vs_psnr.tex}
+		\caption{}
+		\label{fig:sart_layer_resolution_vs_psnr}
+	\end{subfigure}%
+	\caption[Impact of layer count and resolution on \mbox{PSNR}]
+			{Impact of layer count and resolution on the \mbox{PSNR}.
+			 Ten iterations of SART were performed for each scene.
+			 (a) Performance comparison of the attenuation display for two different scenes from the Stanford light field archive.
+			 (b) The plot shows an improvement in PSNR with increasing layer resolution. 
+				 The layer resolution for each data point is given by the product of spatial resolution and resolution factor (horizontal axis) in each spatial dimension.
+				 Five attenuation layers were used for the experiment.}
+	\label{fig:sart_num_layers_and_resolution}
 \end{figure}
 The quality measured by the \mbox{PSNR} increases with more layers added to the display, but above five layers, it is nearly constant.
 As it can be seen in the figure, the \mbox{PSNR} even drops above ten layers.
@@ -343,7 +333,14 @@ This alteration introduces a small error when computing the \mbox{PSNR} between 
 The second reason for the decrease in \mbox{PSNR} could be that the increase of layers changes their placement slightly because the display thickness is kept constant.
 The displacement affects the approximation of the scene volume and depending on the light field, one setting may be better than the other.
 
+In the second plot in figure~\ref{fig:sart_num_layers_and_resolution} the \mbox{PSNR} is shown for different numbers of layer pixels.
+The first data point corresponds to a layer resolution equal to the spatial resolution of the light field.
+For the subsequent data points, this resolution is increased by a factor in each dimension. 
+For example, a factor of $2$ multiplies the original resolution by $2$ in each dimension, resulting in $2^2 = 4$ times the pixels on each layer.
+This increase of the \mbox{PSNR} (and thus the decrease of \mbox{RMSE}) can be explained by the fact that the layer pixel values are the unknowns in the system of equations and thus more layer pixels result in more degrees of freedom for the solver.
+
 \section{Contrast Sensitivity}
+\label{sec:contrast_sensitivity}
 
 The contrast sensitivity is a very important measure for human visual perception.
 The human visual system does not only perceive light intensity in a non-linear fashion, but it is also very sensitive to contrast.
