@@ -30,7 +30,6 @@ for i = 1 : numel(samplingDensity)
     fprintf('Sampling Density: %i\n', samplingDensity(i));
     
     params.iterations = 10;
-%     params.tileIndices = [];
     params.attenuatorSize = attenuatorSize;
     params.attenuatorThickness = actualThickness;
     params.numberOfLayers = 5;
