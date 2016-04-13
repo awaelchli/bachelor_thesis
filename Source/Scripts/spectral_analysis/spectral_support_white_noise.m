@@ -72,5 +72,5 @@ im = log(1 + abs(c));
 im = (im - min(im(:))) / (max(im(:)) - min(im(:)));
 
 rgb = ind2rgb(gray2ind(im, 255), jet(255));
-filename = ['output/convolution_' num2str(N) '_layers.png'];
+filename = ['../output/convolution_' num2str(N) '_layers.png'];
 imwrite(rgb, filename);

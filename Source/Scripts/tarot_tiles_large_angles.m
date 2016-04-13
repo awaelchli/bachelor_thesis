@@ -7,7 +7,7 @@ attenuatorSize = [actualLayerHeight, actualLayerWidth];
 samplingPlaneSize = attenuatorSize;
 
 editor = LightFieldEditor();
-editor.inputFromImageCollection('lightFields/tarot/large_angular_extent/', 'png', [17, 17], 0.4);
+editor.inputFromImageCollection('../Data/lightFields/tarot/large_angular_extent/', 'png', [17, 17], 0.4);
 editor.angularSliceY(17 : -2 : 1);
 editor.angularSliceX(17 : -2 : 1);
 editor.distanceBetweenTwoCameras = [35, 35] * 2.7;
@@ -36,7 +36,7 @@ b = rec.backprojectLightField();
 for i = 1 : attenuator.numberOfLayers
     figure('Name', sprintf('Layer %i', i));
     imshow(squeeze(b(i, :, :, :)), []);
-    imwrite(squeeze(b(i, :, :, :)), sprintf('output/Back_Projection_Layer_%i.png', i));
+    imwrite(squeeze(b(i, :, :, :)), sprintf('../output/Back_Projection_Layer_%i.png', i));
 end
 
 %% Compute tile positions
@@ -96,7 +96,7 @@ for index = 1 : size(tileIndices, 1)
         weightSumMatrix(:, indicesY, indicesX, :) = weightSumMatrix(:, indicesY, indicesX, :) + F;
         
         % Store the current attenuator tile
-        out = sprintf('output/tile_%i_%i/', tileY, tileX);
+        out = sprintf('../output/tile_%i_%i/', tileY, tileX);
         mkdir(out);
         eval = rec.evaluation();
         eval.outputFolder = out;

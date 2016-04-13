@@ -5,7 +5,7 @@ actualThickness = 16;
 attenuatorSize = [actualLayerHeight, actualLayerWidth];
 
 editor = LightFieldEditor();
-editor.inputFromImageCollection('lightFields/tarot/small_angular_extent/rectified/', 'png', [17, 17], 0.5);
+editor.inputFromImageCollection('../Data/lightFields/tarot/small_angular_extent/rectified/', 'png', [17, 17], 0.5);
 editor.angularSliceY(17 : -1 : 1);
 editor.angularSliceX(17 : -1 : 1);
 
@@ -31,7 +31,7 @@ params.tileSizeMultiplier = 1;
 params.verbose = 1;
 params.solver = @sart;
 params.iterations = 6;
-params.outputFolder = 'output/';
+params.outputFolder = '../output/';
 
 tic;
 [ attenuator ] = solveTiles(lightField, params);

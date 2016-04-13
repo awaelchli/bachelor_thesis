@@ -1,5 +1,5 @@
 editor = LightFieldEditor();
-editor.inputFromImageCollection('lightFields/tarot/small_angular_extent/', 'png', [17, 17], 0.2);
+editor.inputFromImageCollection('../Data/lightFields/tarot/small_angular_extent/', 'png', [17, 17], 0.2);
 editor.angularSliceY(1 : 3 : 17);
 editor.angularSliceX(1 : 3 : 17);
 editor.distanceBetweenTwoCameras = [0.03, 0.03];
@@ -46,5 +46,5 @@ b = rec.backprojectLightField();
 
 for i = 1 : attenuator.numberOfLayers
     figure('Name', sprintf('Layer %i', i)); imshow(squeeze(b(i, :, :, :)));
-    imwrite(squeeze(b(i, :, :, :)), sprintf('output/Back_Projection_Layer_%i.png', i));
+    imwrite(squeeze(b(i, :, :, :)), sprintf('../output/Back_Projection_Layer_%i.png', i));
 end

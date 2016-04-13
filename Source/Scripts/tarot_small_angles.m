@@ -7,7 +7,7 @@ attenuatorSize = [actualLayerHeight, actualLayerWidth];
 samplingPlaneSize = attenuatorSize;
 
 editor = LightFieldEditor();
-editor.inputFromImageCollection('lightFields/tarot/small_angular_extent/rectified/', 'png', [17, 17], 0.4);
+editor.inputFromImageCollection('../Data/lightFields/tarot/small_angular_extent/rectified/', 'png', [17, 17], 0.4);
 editor.angularSliceY(17 : -1 : 1);
 editor.angularSliceX(17 : -1 : 1);
 
@@ -40,7 +40,7 @@ b = rec.backprojectLightField();
 for i = 1 : attenuator.numberOfLayers
     figure('Name', sprintf('Layer %i', i));
     imshow(squeeze(b(i, :, :, :)), []);
-    imwrite(squeeze(b(i, :, :, :)), sprintf('output/Back_Projection_Layer_%i.png', i));
+    imwrite(squeeze(b(i, :, :, :)), sprintf('../output/Back_Projection_Layer_%i.png', i));
 end
 
 clear b;

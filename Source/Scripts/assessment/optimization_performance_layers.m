@@ -5,8 +5,8 @@ actualThickness = 16;
 attenuatorSize = [actualLayerHeight, actualLayerWidth];
 
 editor = LightFieldEditor();
-% editor.inputFromImageCollection('lightFields/tarot/small_angular_extent/rectified/', 'png', [17, 17], 0.5);
-editor.inputFromImageCollection('lightFields/knights/rectified/', 'png', [17, 17], 0.5);
+% editor.inputFromImageCollection('../Data/lightFields/tarot/small_angular_extent/rectified/', 'png', [17, 17], 0.5);
+editor.inputFromImageCollection('../Data/lightFields/knights/rectified/', 'png', [17, 17], 0.5);
 editor.angularSliceY(17 : -2 : 1);
 editor.angularSliceX(17 : -2 : 1);
 
@@ -46,7 +46,7 @@ for i = 1 : numel(numberOfLayers)
     params.verbose = 1;
     params.solver = @sart;
     params.iterations = 10;
-    params.outputFolder = sprintf('results/numberOfLayers/knights/%i_layers/', params.numberOfLayers);
+    params.outputFolder = sprintf('../results/numberOfLayers/knights/%i_layers/', params.numberOfLayers);
     
     mkdir(params.outputFolder);
 
@@ -95,4 +95,4 @@ plot(numberOfLayers, psnr);
 figure(3);
 plot(numberOfLayers, time);
 
-save('results/numberOfLayers/knights/plots.mat', 'numberOfLayers', 'mse', 'psnr', 'time');
+save('../results/numberOfLayers/knights/plots.mat', 'numberOfLayers', 'mse', 'psnr', 'time');

@@ -2,7 +2,7 @@ close all;
 clc;
 
 
-file = 'lightFields/cubes_bright.lfr';
+file = '../Data/lightFields/cubes_bright.lfr';
 cameraPath = 'C:\Users\Adrian\AppData\Local\Lytro\cameras\';
 
 LF = loadLightFieldFromLytroFile(file, cameraPath);
@@ -30,7 +30,7 @@ end
 img = cell2mat(views);
 imshow(img);
 
-imwrite(img, 'output/aperture_view.png');
+imwrite(img, '../output/aperture_view.png');
 
 %% Lenslet view
 
@@ -48,4 +48,4 @@ end
 img = cell2mat(views);
 imshow(img);
 
-imwrite(img, 'output/lenslet_view.png');
+imwrite(img, '../output/lenslet_view.png');

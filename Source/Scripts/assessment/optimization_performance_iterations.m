@@ -5,7 +5,7 @@ actualThickness = 16;
 attenuatorSize = [actualLayerHeight, actualLayerWidth];
 
 editor = LightFieldEditor();
-editor.inputFromImageCollection('lightFields/tarot/small_angular_extent/rectified/', 'png', [17, 17], 0.5);
+editor.inputFromImageCollection('../Data/lightFields/tarot/small_angular_extent/rectified/', 'png', [17, 17], 0.5);
 editor.angularSliceY(17 : -2 : 1);
 editor.angularSliceX(17 : -2 : 1);
 
@@ -42,7 +42,7 @@ for i = 1 : numel(iterations)
     params.tileSizeMultiplier = 1; 
     params.verbose = 1;
     params.solver = @sart;
-    params.outputFolder = sprintf('results/sart/%i_iterations/', params.iterations);
+    params.outputFolder = sprintf('../results/sart/%i_iterations/', params.iterations);
     
     mkdir(params.outputFolder);
 
@@ -91,4 +91,4 @@ plot(iterations, psnr);
 figure(3);
 plot(iterations, time);
 
-save('results/sart/plots.mat', 'iterations', 'mse', 'psnr', 'time');
+save('../results/sart/plots.mat', 'iterations', 'mse', 'psnr', 'time');

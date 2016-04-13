@@ -1,5 +1,5 @@
 editor = LightFieldEditor();
-editor.inputFromImageCollection('lightFields/dice/orthographic/7x7x384x512_fov10/', 'png', [7, 7], 1);
+editor.inputFromImageCollection('../Data/lightFields/dice/orthographic/7x7x384x512_fov10/', 'png', [7, 7], 1);
 editor.lightFieldFOV = [10, 10];
 lightField = editor.getOrthographicLightField();
 

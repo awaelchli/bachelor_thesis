@@ -47,4 +47,4 @@ figure; imagesc(weightSumMatrix); axis equal image; colormap jet;
 
 %% Store
 W = (weightSumMatrix - min(weightSumMatrix(:))) / (max(weightSumMatrix(:)) - min(weightSumMatrix(:)));
-imwrite(W, ['../../bachelor_thesis/Document/Figures/tiling/', 'blending_masks_sum_3x3.png']);
+imwrite(W, ['../Document/Figures/tiling/', 'blending_masks_sum_3x3.png']);

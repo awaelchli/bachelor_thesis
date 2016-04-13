@@ -5,7 +5,7 @@ actualThickness = 16;
 attenuatorSize = [actualLayerHeight, actualLayerWidth];
 
 editor = LightFieldEditor();
-editor.inputFromImageCollection('lightFields/knights/rectified/', 'png', [17, 17], 0.5);
+editor.inputFromImageCollection('../Data/lightFields/knights/rectified/', 'png', [17, 17], 0.5);
 editor.angularSliceY(17 : -2 : 1);
 editor.angularSliceX(17 : -2 : 1);
 
@@ -31,7 +31,7 @@ params.tileSizeMultiplier = 1;
 params.verbose = 1;
 params.solver = @sart;
 params.iterations = 50;
-params.outputFolder = 'output/knights/';
+params.outputFolder = '../output/knights/';
 
 start = tic;
 [ attenuator ] = solveTiles(lightField, params);

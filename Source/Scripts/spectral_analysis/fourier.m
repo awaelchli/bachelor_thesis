@@ -1,15 +1,15 @@
 close all;
 clc;
 
-inputEPI = 'thesis/Document/Figures/epi_1x500x1000x1000/scanY=641.png';
-% inputEPI = 'thesis/Document/Figures/epi_1x500x1000x1000/rectified/scanY=641.png';
-% inputEPI = 'lightFields/constant/one_object1.png';
-% inputEPI = 'lightFields/constant/one_object2.png';
-% inputEPI = 'lightFields/constant/one_object4.png';
-% inputEPI = 'lightFields/constant/one_object4.png';
-% inputEPI = 'lightFields/constant/two_objects.png';
-inputEPI = 'lightFields/constant/set1/layer1.png';
-% inputEPI = 'lightFields/constant/three_dice_lambertian.png';
+inputEPI = '../Document/Figures/epi_1x500x1000x1000/scanY=641.png';
+% inputEPI = '../Document/Figures/epi_1x500x1000x1000/rectified/scanY=641.png';
+% inputEPI = '../Data/lightFields/constant/one_object1.png';
+% inputEPI = '../Data/lightFields/constant/one_object2.png';
+% inputEPI = '../Data/lightFields/constant/one_object4.png';
+% inputEPI = '../Data/lightFields/constant/one_object4.png';
+% inputEPI = '../Data/lightFields/constant/two_objects.png';
+inputEPI = '../Data/lightFields/constant/set1/layer1.png';
+% inputEPI = '../Data/lightFields/constant/three_dice_lambertian.png';
 
 % Name and location to store the fourier image as .mat file
 output = 'output/fft_layer_1.mat';
@@ -95,8 +95,8 @@ title(['$ \log (1 + \textrm{abs} ( \hat{f} ) ) > ' num2str(clamp) '$'], 'interpr
 %% Save data
 
 rgb = ind2rgb(gray2ind(spectrum, 255), jet(255));
-imwrite(rgb, 'output/fft_three_dice_lambertian.png');
+imwrite(rgb, '../output/fft_three_dice_lambertian.png');
 
 map = colormap([1, 1, 1; 0, 0, 1]);
 rgb = ind2rgb(gray2ind(spectrum > clamp, 255), map);
-imwrite(rgb, ['output/fft_three_dice_lambertian_clamp=' num2str(clamp) '.png']);
+imwrite(rgb, ['../output/fft_three_dice_lambertian_clamp=' num2str(clamp) '.png']);

@@ -3,7 +3,7 @@ actualThickness = 15.2;
 
 
 editor = LightFieldEditor();
-editor.inputFromImageCollection('lightFields/legotruck/', 'png', [17, 17], 0.5);
+editor.inputFromImageCollection('../Data/lightFields/legotruck/', 'png', [17, 17], 0.5);
 editor.angularSliceY(17 : -3 : 1);
 editor.angularSliceX(1 : 3 : 17);
 
@@ -36,7 +36,7 @@ b = rec.backprojectLightField();
 for i = 1 : attenuator.numberOfLayers
     figure('Name', sprintf('Layer %i', i));
     imshow(squeeze(b(i, :, :, :)), []);
-    imwrite(squeeze(b(i, :, :, :)), sprintf('output/Back_Projection_Layer_%i.png', i));
+    imwrite(squeeze(b(i, :, :, :)), sprintf('../output/Back_Projection_Layer_%i.png', i));
 end
 
 %% Compute tile positions
@@ -97,7 +97,7 @@ for index = 1 : size(tileIndices, 1)
         weightSumMatrix(:, indicesY, indicesX, :) = weightSumMatrix(:, indicesY, indicesX, :) + F;
         
         % Store the current attenuator tile
-        out = sprintf('output/tile_%i_%i/', tileY, tileX);
+        out = sprintf('../output/tile_%i_%i/', tileY, tileX);
         mkdir(out);
         eval = rec.evaluation();
         eval.outputFolder = out;

@@ -1,6 +1,6 @@
 %% Setup the parameters for rectification
 
-inputFolder = 'lightFields/dice/perspective/baseline_2.7/10x10x500x500/';
+inputFolder = '../Data/lightFields/dice/perspective/baseline_2.7/10x10x500x500/';
 outputFolder = [inputFolder 'rectified/'];
 
 % Baseline in vertical and horizontal direction

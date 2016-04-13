@@ -3,7 +3,7 @@ actualThickness = 16;
 
 
 editor = LightFieldEditor();
-editor.inputFromImageCollection('lightFields/knights/rectified/', 'png', [17, 17], 0.5);
+editor.inputFromImageCollection('../Data/lightFields/knights/rectified/', 'png', [17, 17], 0.5);
 editor.angularSliceY(17 : -2 : 1);
 editor.angularSliceX(17 : -2 : 1);
 
@@ -42,7 +42,7 @@ b = rec.backprojectLightField();
 for i = 1 : attenuator.numberOfLayers
     figure('Name', sprintf('Layer %i', i));
     imshow(squeeze(b(i, :, :, :)), []);
-    imwrite(squeeze(b(i, :, :, :)), sprintf('output/Back_Projection_Layer_%i.png', i));
+    imwrite(squeeze(b(i, :, :, :)), sprintf('../output/Back_Projection_Layer_%i.png', i));
 end
 
 %% Compute tile positions
@@ -107,7 +107,7 @@ for index = 1 : size(tileIndices, 1)
         weightSumMatrix(:, indicesY, indicesX, :) = weightSumMatrix(:, indicesY, indicesX, :) + F;
         
         % Store the current attenuator tile
-        out = sprintf('output/tile_%i_%i/', tileY, tileX);
+        out = sprintf('../output/tile_%i_%i/', tileY, tileX);
         mkdir(out);
         eval = rec.evaluation();
         eval.outputFolder = out;
@@ -147,7 +147,7 @@ evaluation = rec.evaluation();
 
 %% Store evaluation data to output folder
 
-evaluation.outputFolder = 'output/knights/2/';
+evaluation.outputFolder = '../output/knights/2/';
 
 W = (weightSumMatrix - min(weightSumMatrix(:))) / (max(weightSumMatrix(:)) - min(weightSumMatrix(:)));
 imwrite(squeeze(W(1, :, :, :)), [evaluation.outputFolder, 'blendingMaskSum.png']);

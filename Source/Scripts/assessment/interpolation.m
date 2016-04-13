@@ -3,7 +3,7 @@ actualThickness = 16;
 
 
 editor = LightFieldEditor();
-editor.inputFromImageCollection('lightFields/dice/perspective/baseline_1.0/10x10x1000x1000_lambertian/rectified/', 'png', [10, 10], 0.25);
+editor.inputFromImageCollection('../Data/lightFields/dice/perspective/baseline_1.0/10x10x1000x1000_lambertian/rectified/', 'png', [10, 10], 0.25);
 editor.angularSliceY(1 : 10);
 editor.angularSliceX(1 : 10);
 
@@ -37,7 +37,7 @@ b = rec.backprojectLightField();
 for i = 1 : attenuator.numberOfLayers
     figure('Name', sprintf('Layer %i', i));
     imshow(squeeze(b(i, :, :, :)), []);
-    imwrite(squeeze(b(i, :, :, :)), sprintf('output/Back_Projection_Layer_%i.png', i));
+    imwrite(squeeze(b(i, :, :, :)), sprintf('../output/Back_Projection_Layer_%i.png', i));
 end
 
 
@@ -59,7 +59,7 @@ mse
 evaluation = rec.evaluation;
 
 %% Output
-evaluation.outputFolder = 'output/interp_near/';
+evaluation.outputFolder = '../output/interp_near/';
 
 indY = 1 : lightField.angularResolution(1);
 indX = 1 : lightField.angularResolution(2);

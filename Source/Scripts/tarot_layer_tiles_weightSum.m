@@ -7,7 +7,7 @@ attenuatorSize = [actualLayerHeight, actualLayerWidth];
 samplingPlaneSize = attenuatorSize;
 
 editor = LightFieldEditor();
-editor.inputFromImageCollection('lightFields/tarot/small_angular_extent/rectified/', 'png', [17, 17], 0.5);
+editor.inputFromImageCollection('../Data/lightFields/tarot/small_angular_extent/rectified/', 'png', [17, 17], 0.5);
 editor.angularSliceY(17 : -1 : 1);
 editor.angularSliceX(17 : -1 : 1);
 
@@ -86,7 +86,7 @@ for index = 1 : size(tileIndices, 1)
         weightSumMatrix(:, indicesY, indicesX, :) = weightSumMatrix(:, indicesY, indicesX, :) + F;
         
         % Store the current attenuator tile
-        out = sprintf('output/tile_%i_%i/', tileY, tileX);
+        out = sprintf('../output/tile_%i_%i/', tileY, tileX);
         mkdir(out);
         eval = rec.evaluation();
         eval.outputFolder = out;
@@ -118,7 +118,7 @@ rec.constructPropagationMatrix();
 rec.usePropagationMatrixForReconstruction(rec.propagationMatrix);
 
 evaluation = rec.evaluation();
-evaluation.outputFolder = 'results/baseline_adjustment/baseline_scaled_shifted/';
+evaluation.outputFolder = '../results/baseline_adjustment/baseline_scaled_shifted/';
 % evaluation.evaluateViews([3, 1; 3, 2; 3, 3; 3, 4; 3, 5; 3, 6]);
 % evaluation.displayReconstructedViews();
 % evaluation.displayErrorImages();

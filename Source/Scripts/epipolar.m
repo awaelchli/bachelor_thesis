@@ -1,7 +1,7 @@
-inputFolder = 'lightFields/dice/perspective/1x500x1000x1000/';
+inputFolder = '../Data/lightFields/dice/perspective/1x500x1000x1000/';
 fileType = 'png';
 angularResolution = [1 500];
-epiOutput = 'output/epi_1x500x1000x1000/';
+epiOutput = '../output/epi_1x500x1000x1000/';
 
 % Prepare to write results in output folder
 if ~exist(epiOutput, 'dir')

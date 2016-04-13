@@ -1,13 +1,13 @@
 close all;
 
-outputFolder = 'output/ortho/';
+outputFolder = '../output/ortho/';
 if ~exist(outputFolder, 'dir')
     mkdir(outputFolder);
 end
 
 % Load perspective light field data
 % editor = LightFieldEditor();
-% editor.inputFromImageCollection('lightFields/dice/perspective/baseline_2.7/rectified/', 'png', [10 10], 1);
+% editor.inputFromImageCollection('../Data/lightFields/dice/perspective/baseline_2.7/rectified/', 'png', [10 10], 1);
 % % editor.spatialSliceX(1 : 100);
 % % editor.spatialSliceY(1 : 100);
 % 
@@ -15,7 +15,7 @@ end
 % d = 7;
 % editor.sensorPlaneZ = d;
 % perspectiveLF = editor.getPerspectiveLightField();
-load('lightFields/dice/perspective/baseline_2.7/10x10x500x500/rectified/rectified');
+load('../Data/lightFields/dice/perspective/baseline_2.7/10x10x500x500/rectified/rectified');
 perspectiveLF = sheared;
 d = perspectiveLF.cameraPlane.z;
 
