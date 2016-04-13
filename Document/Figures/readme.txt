@@ -1,0 +1,1 @@
+This folder contains the source code for the images and plots created for the thesis.
