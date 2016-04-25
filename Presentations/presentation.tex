@@ -8,6 +8,13 @@
 \usepackage{tikz}
 \usepackage{standalone}
 
+% Math packages
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+
 % For presentation mode
 %\usepackage{pgfpages}
 %\setbeameroption{show notes}
@@ -25,6 +32,8 @@
 \institute{Institut f\"ur Informatik und angewandte Mathematik}
 
 \begin{document}
+
+\setlength{\leftmargini}{0pt}
 
 \maketitle
 
@@ -62,27 +71,39 @@
 		\item Defined by two planes
 	\end{itemize}
 	\begin{center}
-		\only<3>{\input{figures/two-plane-parameterization.tex}}
+		\visible<3>{\input{figures/two-plane-parameterization.tex}}
 	\end{center}
 \end{frame}
 
 \begin{frame}[fragile]
-	\frametitle{The 4D Light Field}
+	\frametitle{Light Field Acquisition}
 	
 	\begin{itemize}[<+- | alert@+>]
 		\item Camera array
+		\item Camera gantry
 		\item Plenoptic camera
 	\end{itemize}
 	
 	\begin{center}
-		\only<1,2>{\includegraphics[width = 4cm]{images/stanford_camera_array_2.jpg}}
-		\hspace{1cm}
-		\only<2>{\includegraphics[width = 4cm]{images/Lytro_Light_Field_Camera-front_background_removed.png}}
+		\visible<1,2,3>{\includegraphics[height = 3.1cm]{images/stanford_camera_array_2.jpg}}
+		\hspace{0.2cm}
+		\visible<2, 3>{\includegraphics[height = 3.1cm]{images/lego_camera_gantry}}
+		\hspace{0.2cm}
+		\visible<3>{\includegraphics[height = 3.1cm]{images/Lytro_Light_Field_Camera-front_background_removed.png}}
 	\end{center}
 	
 \end{frame}
 
 \section{Problem Statement}
+\begin{frame}[fragile]
+	\frametitle{Optimization Problem}
+	\begin{equation*} \label{eq:minimize_norm}
+		\begin{aligned}
+		& \underset{\alpha}{\text{argmin}} 	& & \left\lVert P \alpha + \bar{L} \right\rVert ^2 \\
+		& \text{subject to} 				& & \alpha \geq 0.
+		\end{aligned}
+	\end{equation*}
+\end{frame}
 \section{Solution}
 \section{Assessment}
 \section{Conclusion}
@@ -122,7 +143,7 @@
   for which the \emph{mtheme} provides a nice progress indicator \ldots
 \end{frame}
 
-\section{Elements}
+\section*{Elements}
 
 \begin{frame}[fragile]
   \frametitle{Typography}
@@ -225,7 +246,7 @@ text, \alert{accent} parts or show \textbf{bold} results.
 
 \plain{Dark background}{\vspace{-2em}\begin{center}\includegraphics[width=\textwidth]{images/valley.jpg}\end{center}}
 
-\section{Conclusion}
+\section*{Conclusion}
 
 \begin{frame}{Summary}
 
