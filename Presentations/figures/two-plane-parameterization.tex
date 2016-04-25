@@ -1,0 +1,26 @@
+\documentclass{standalone}
+\usepackage{tikz}
+
+\begin{document}
+	
+	\begin{tikzpicture}[scale = 0.4]
+	
+		\filldraw[draw = black, fill = white] (0, 0) -- (5, -2) -- (5, 5) -- (0, 7) -- cycle;
+		\filldraw[draw = black, fill = white] (9, 3) -- (14, 1) -- (14, 8) -- (9, 10) -- cycle;
+		
+		\draw[<-] (-3, 4) -- (1, 4);
+		\draw (5, 4) -- (11, 4);
+		\draw (14, 4) -- (17, 4);
+		
+		\node [left] at (-3, 4) {$L(u, v, s, t)$};
+		
+		
+		\draw[fill] (1, 4) circle [radius = 0.1];
+		\draw[fill] (11, 4) circle [radius = 0.1];
+		
+		\node[below right] at (1, 4) {$(u, v)$};
+		\node[below right] at (11, 4) {$(s, t)$};
+	
+	\end{tikzpicture}
+	
+\end{document}
