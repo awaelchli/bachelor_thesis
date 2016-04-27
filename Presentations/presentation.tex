@@ -7,6 +7,7 @@
 \usepackage{minted}
 \usepackage{tikz}
 \usepackage{standalone}
+\usepackage{array}
 
 % Math packages
 \usepackage{amsthm}
@@ -96,7 +97,7 @@
 	
 	\begin{itemize}[<+- | alert@+>]
 		\item Camera array
-		\item Camera gantry
+		\item Gantry
 		\item Plenoptic camera
 	\end{itemize}
 	
@@ -108,6 +109,44 @@
 		\visible<3>{\includegraphics[height = 3.1cm]{images/Lytro_Light_Field_Camera-front_background_removed.png}}
 	\end{center}
 	
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Parameterization}
+	
+	\begin{center}
+		\visible<1,2>{\input{figures/perspective-projection-shift.tex}}
+		\visible<2>{
+			\begin{tikzpicture}
+				\draw[->, red, line width = 0.075cm] (0, 0) -- (0, -0.7);
+			\end{tikzpicture}
+		}	
+		\visible<2>{\input{figures/perspective-projection-sheared.tex}}
+	\end{center}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Parameterization}
+	
+	\begin{center}
+		\begin{tabular}{c p{0.5cm} c}
+			Raw & & Rectified \\
+			\includegraphics[height=5cm]{images/rectification/dice000_raw} 
+			& &\includegraphics[height=5cm]{images/rectification/dice000_rectified}
+		\end{tabular}
+	\end{center}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Parameterization}
+	
+	\begin{center}
+		\begin{tabular}{c p{0.5cm} c}
+			Raw & & Rectified \\
+			\includegraphics[height=5cm]{images/rectification/dice499_raw}
+			& &\includegraphics[height=5cm]{images/rectification/dice499_rectified}
+		\end{tabular}
+	\end{center}
 \end{frame}
 
 \section{Problem Statement}
