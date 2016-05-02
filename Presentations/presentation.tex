@@ -16,6 +16,8 @@
 \usepackage{mathtools}
 \usepackage{amsfonts}
 \usepackage{amsmath}
+\usepackage{kbordermatrix}
+\usepackage{blkarray}
 
 % For presentation mode
 %\usepackage{pgfpages}
@@ -162,7 +164,7 @@
 			\begin{equation*}
 				L_m = L_0 \prod_{n=1}^{N} t^{(n)} (h(m, n)) 
 			\end{equation*}
-			\begin{itemize}
+			\begin{itemize}[<+- | alert@+>]
 			    \item[$L_m$] Color of ray $m$
 			    \item[$t$] Transmission
 			    \item[$h$] Intersection 
@@ -174,16 +176,16 @@
 \begin{frame}[fragile]
 	\frametitle{Light Transmission}
 	
-	\begin{itemize}
-		\item<1,2> Hard to solve directly
-		\item<2> Transform to log-domain
-		\item<2> Solve for absorbance
+	\begin{itemize}[<+- | alert@+>]
+		\item Hard to solve directly
+		\item Transform to log-domain
+		\item Solve for absorbance
 	\end{itemize}
-	\visible<1,2>{
+	\visible<1,2,3>{
 	\begin{equation*}
 		L_m = L_0 \prod_{n=1}^{N} t^{(n)} (h(m, n)) 
 	\end{equation*}}
-	\visible<2>{
+	\visible<2,3>{
 	\begin{center}
 		\begin{tikzpicture}
 			\draw[->, red, line width = 0.075cm] (0, 0) -- (0, -0.7) node[midway, right, xshift=0.4cm, black] {$t = e^{-a}$};
@@ -212,6 +214,46 @@
 		\bar{L}_m = -\sum_{n=1}^{N} a^{(n)} (h(m, n)) 
 	\end{equation*}}
 	
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Ray Casting}
+	
+	\begin{itemize}[<+- | alert@+>]
+		\item One linear constraint per ray
+		\item Create a big matrix $P$
+		\item Matrix encodes intersections
+	\end{itemize}
+	\begin{equation*}
+			\bar{L}_m = -\sum_{n=1}^{N} a^{(n)} (h(m, n)) 
+	\end{equation*}
+	
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Ray Casting}
+	\begin{equation*}
+		P = 
+		\begin{blockarray}{lcccccccccc}
+		    				& \alpha_1 	& \alpha_2 	& \alpha_3 	& \alpha_4 	& \alpha_5 	& \alpha_6 	& \alpha_7 	& \alpha_8 	& \alpha_9 	& \alpha_{10}	\\
+		    \begin{block}{l(ccccc|ccccc@{\hspace*{5pt}})}
+			  \bar{L}_1 	& 	 		& 			& 	1		& 			& 			& 	1		&			&			&			&				\\
+			  \bar{L}_2 	& 			& 			& 			& 	1		& 			& 	1		&			&			&			&				\\
+			  \bar{L}_3 	& 	1		& 			& 			& 			& 			& 			&	1		&			&			&				\\
+			  \bar{L}_4 	& 			& 	1		& 			& 			& 			& 			&			&			&	1		&				\\
+			  \cline{2-11}
+			  \bar{L}_5 	& 			& 			& 			& 			& 	1		& 			&			&			&	1		&				\\
+			  \bar{L}_6 	& 			& 			& 	1		& 			& 			& 1			&			&			&			&				\\
+			  \bar{L}_7 	& 		1	& 			& 			& 			& 			& 			&			&			&	1		&				\\
+			  \bar{L}_8 	& 			& 			& 			& 	 		& 	1		& 			&	1		&			&			&				\\
+			  \cline{2-11}
+			  \bar{L}_9 	& 			& 	1		& 			& 			& 			& 			&	1		&			& 			&				\\
+			  \bar{L}_{10} 	& 			& 			& 			& 		1	& 			& 			&			&	1		&			&				\\
+			  \bar{L}_{11} 	& 			& 			& 	1		& 			& 			& 			&			&			&	1		&				\\
+			  \bar{L}_{12} 	& 			& 	1		& 			& 	 		& 			& 			&			&			&	1		&				\\			  
+		    \end{block}
+		\end{blockarray}
+	\end{equation*}
 \end{frame}
 
 \begin{frame}[fragile]
