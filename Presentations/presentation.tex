@@ -6,6 +6,7 @@
 \usepackage[scale=2]{ccicons}
 \usepackage{minted}
 \usepackage{tikz}
+\usetikzlibrary{intersections}
 \usepackage{standalone}
 \usepackage{array}
 
@@ -150,6 +151,69 @@
 \end{frame}
 
 \section{Problem Statement}
+
+\begin{frame}[fragile]
+	\frametitle{Light Transmission}
+	
+	\begin{columns}[onlytextwidth]
+		\column{0.45\textwidth} 
+			\input{figures/ray_casting_perspective_projection.tex}
+		\column{0.4\textwidth}
+			\begin{equation*}
+				L_m = L_0 \prod_{n=1}^{N} t^{(n)} (h(m, n)) 
+			\end{equation*}
+			\begin{itemize}
+			    \item[$L_m$] Color of ray $m$
+			    \item[$t$] Transmission
+			    \item[$h$] Intersection 
+			\end{itemize}
+	\end{columns}
+	
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Light Transmission}
+	
+	\begin{itemize}
+		\item<1,2> Hard to solve directly
+		\item<2> Transform to log-domain
+		\item<2> Solve for absorbance
+	\end{itemize}
+	\visible<1,2>{
+	\begin{equation*}
+		L_m = L_0 \prod_{n=1}^{N} t^{(n)} (h(m, n)) 
+	\end{equation*}}
+	\visible<2>{
+	\begin{center}
+		\begin{tikzpicture}
+			\draw[->, red, line width = 0.075cm] (0, 0) -- (0, -0.7) node[midway, right, xshift=0.4cm, black] {$t = e^{-a}$};
+		\end{tikzpicture}
+	\end{center}
+	\begin{equation*}
+		\bar{L}_m = \bar{L}_0 - \sum_{n=1}^{N} a^{(n)} (h(m, n)) 
+	\end{equation*}}
+	
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Light Absorbance}
+	
+	\visible<1,2>{
+	\begin{equation*}
+		\bar{L}_m = \bar{L}_0 - \sum_{n=1}^{N} a^{(n)} (h(m, n)) 
+	\end{equation*}}
+	\visible<2>{
+	\begin{center}
+		\begin{tikzpicture}
+			\draw[->, red, line width = 0.075cm] (0, 0) -- (0, -0.7) node[midway, right, xshift=0.4cm, black] {$L_0 = 1$};
+		\end{tikzpicture}
+	\end{center}
+	\begin{equation*}
+		\bar{L}_m = -\sum_{n=1}^{N} a^{(n)} (h(m, n)) 
+	\end{equation*}}
+	
+\end{frame}
+
 \begin{frame}[fragile]
 	\frametitle{Optimization Problem}
 	\begin{equation*} \label{eq:minimize_norm}
@@ -159,9 +223,19 @@
 		\end{aligned}
 	\end{equation*}
 \end{frame}
-\section{Solution}
+
+\section{Results}
 \section{Assessment}
 \section{Conclusion}
+
+
+
+
+
+
+
+
+
 
 
 \begin{frame}[fragile]
