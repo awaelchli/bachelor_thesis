@@ -164,10 +164,10 @@
 			\begin{equation*}
 				L_m = L_0 \prod_{n=1}^{N} t^{(n)} (h(m, n)) 
 			\end{equation*}
-			\begin{itemize}[<+- | alert@+>]
-			    \item[$L_m$] Color of ray $m$
-			    \item[$t$] Transmission
-			    \item[$h$] Intersection 
+			\begin{itemize}
+			    \item[$L_m$] \alert<1>{Color of ray $m$}
+			    \item[$t$] \alert<2>{Transmission}
+			    \item[$h$] \alert<3>{Intersection} 
 			\end{itemize}
 	\end{columns}
 	
@@ -219,11 +219,12 @@
 \begin{frame}[fragile]
 	\frametitle{Ray Casting}
 	
-	\begin{itemize}[<+- | alert@+>]
-		\item One linear constraint per ray
-		\item Create a big matrix $P$
-		\item Matrix encodes intersections
+	\begin{itemize}
+		\item \alert<1>{One linear constraint per ray}
+		\item \alert<2>{Create a big matrix $P$}
+		\item \alert<3>{Matrix encodes intersections}
 	\end{itemize}
+	
 	\begin{equation*}
 			\bar{L}_m = -\sum_{n=1}^{N} a^{(n)} (h(m, n)) 
 	\end{equation*}
@@ -232,7 +233,7 @@
 
 \begin{frame}[fragile]
 	\frametitle{Ray Casting}
-	\begin{equation*}
+	$
 		P = 
 		\begin{blockarray}{lcccccccccc}
 		    				& \alpha_1 	& \alpha_2 	& \alpha_3 	& \alpha_4 	& \alpha_5 	& \alpha_6 	& \alpha_7 	& \alpha_8 	& \alpha_9 	& \alpha_{10}	\\
@@ -253,17 +254,36 @@
 			  \bar{L}_{12} 	& 			& 	1		& 			& 	 		& 			& 			&			&			&	1		&				\\			  
 		    \end{block}
 		\end{blockarray}
+	$
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{The Equation}
+	
+	\begin{equation*}
+		\bar{L} = - P \alpha
 	\end{equation*}
+	
+	\begin{itemize}
+		\item \alert<1>{$\bar{L}$ Vectorized log light field}
+		\item \alert<2>{$\alpha$ Vector holding unkowns}
+	\end{itemize}
 \end{frame}
 
 \begin{frame}[fragile]
 	\frametitle{Optimization Problem}
-	\begin{equation*} \label{eq:minimize_norm}
+	
+	\begin{equation*}
 		\begin{aligned}
-		& \underset{\alpha}{\text{argmin}} 	& & \left\lVert P \alpha + \bar{L} \right\rVert ^2 \\
-		& \text{subject to} 				& & \alpha \geq 0.
+			& \underset{\alpha}{\text{argmin}} 	& & \left\lVert P \alpha + \bar{L} \right\rVert ^2 \\
+			& \text{subject to} 				& & \alpha \geq 0.
 		\end{aligned}
 	\end{equation*}
+	
+	\begin{itemize}
+		\item \alert<1>{System is overdetermined}
+		\item \alert<2>{Need iterative solver}
+	\end{itemize}
 \end{frame}
 
 \section{Results}
