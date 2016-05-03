@@ -7,6 +7,7 @@
 \usepackage{minted}
 \usepackage{tikz}
 \usetikzlibrary{intersections}
+\usepackage{pgfplots}
 \usepackage{standalone}
 \usepackage{array}
 
@@ -288,6 +289,47 @@
 
 \section{Results}
 \section{Assessment}
+
+\begin{frame}[fragile]
+	\frametitle{Epipolar Plane Geometry}
+	\begin{center}
+		\includegraphics[height = 6cm]{images/lf_geometry.jpg}
+	\end{center}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Epipolar Plane Image}
+	\begin{center}
+		\begin{tikzpicture}
+			\draw[->] (0, 0) -- (3, 0) node[midway, above] {$u$};
+		\end{tikzpicture}
+		
+		\vspace{0.1cm}
+		
+		\frame{\includegraphics[width = 1cm]{images/epi_dice/dice000.png}}
+		\hspace{0.1cm}
+		\frame{\includegraphics[width = 1cm]{images/epi_dice/dice099.png}}
+		\hspace{0.1cm}
+		\frame{\includegraphics[width = 1cm]{images/epi_dice/dice199.png}}
+		\hspace{0.1cm}
+		\frame{\includegraphics[width = 1cm]{images/epi_dice/dice299.png}}
+		\hspace{0.1cm}
+		\frame{\includegraphics[width = 1cm]{images/epi_dice/dice399.png}}
+		\hspace{0.1cm}
+		\frame{\includegraphics[width = 1cm]{images/epi_dice/dice499.png}}
+	\end{center}
+	
+	\vspace{0.5cm}
+	
+	\begin{columns}[onlytextwidth]
+		\column{0.5\textwidth}
+			\input{figures/epi_dice_overview_rectified.tex}
+		\column{0.5\textwidth}
+			\only<1>{\input{figures/epi_dice_1_rectified.tex}}
+			\only<2>{\input{figures/epi_dice_2_rectified.tex}}
+	\end{columns}
+\end{frame}
+
 \section{Conclusion}
 
 

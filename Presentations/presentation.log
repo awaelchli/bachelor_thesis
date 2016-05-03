@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.3.2)  3 MAY 2016 12:03
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.3.2)  3 MAY 2016 15:44
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1399,7 +1399,130 @@ ctions.code.tex
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.cod
 e.tex)
 \pgf@intersect@solutions=\count296
+)) (/usr/local/texlive/2015/texmf-dist/tex/latex/pgfplots/pgfplots.sty
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2016/01/06 v1.13 Data Visualization (1.13)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks53
+\t@pgfplots@tokb=\toks54
+\t@pgfplots@tokc=\toks55
+\pgfplots@tmpa=\dimen317
+\c@pgfplots@coordindex=\count297
+\c@pgfplots@scanlineindex=\count298
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric
+.code.tex))
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.c
+ode.tex)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
+soldpgfsupp_loader.code.tex
+Package pgfplots: loading complementary arithmetics for your pgf version...
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
+soldpgfsupp_pgflibraryfpu.code.tex)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
+soldpgfsupp_pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count299
 ))
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code
+.tex
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+liststructure.code.tex)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+liststructureext.code.tex)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+array.code.tex
+\c@pgfplotsarray@tmp=\count300
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+matrix.code.tex)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
+shared.code.tex
+\c@pgfplotstable@counta=\count301
+\t@pgfplotstable@a=\toks56
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+deque.code.tex)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.co
+de.tex
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.da
+ta.code.tex))
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb
+.code.tex)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplot
+s.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count302
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots
+.surfshading.pgfsys-xetex.def
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots
+.surfshading.pgfsys-dvipdfmx.def
+\c@pgfplotslibrarysurf@streamlen=\count303
+))))
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.
+code.tex
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.cod
+e.tex))
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.c
+ode.tex)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.c
+ode.tex
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandle
+r.code.tex
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.
+code.tex)))
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.
+tex)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessin
+g.code.tex)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.cod
+e.tex)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.
+tex)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.te
+x)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.code.tex
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/modules/pgfmoduledecoration
+s.code.tex
+\pgfdecoratedcompleteddistance=\dimen318
+\pgfdecoratedremainingdistance=\dimen319
+\pgfdecoratedinputsegmentcompleteddistance=\dimen320
+\pgfdecoratedinputsegmentremainingdistance=\dimen321
+\pgf@decorate@distancetomove=\dimen322
+\pgf@decorate@repeatstate=\count304
+\pgfdecorationsegmentamplitude=\dimen323
+\pgfdecorationsegmentlength=\dimen324
+)
+\tikz@lib@dec@box=\box83
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.pathmorphing.code.tex
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
+brarydecorations.pathmorphing.code.tex))
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.pathreplacing.code.tex
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
+brarydecorations.pathreplacing.code.tex))
+\pgfplots@numplots=\count305
+\pgfplots@xmin@reg=\dimen325
+\pgfplots@xmax@reg=\dimen326
+\pgfplots@ymin@reg=\dimen327
+\pgfplots@ymax@reg=\dimen328
+\pgfplots@zmin@reg=\dimen329
+\pgfplots@zmax@reg=\dimen330
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmar
+ks.code.tex
+File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
+)))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/standalone/standalone.sty
 Package: standalone 2015/07/15 v1.2 Package to include TeX sub-files with pream
 bles
@@ -1407,7 +1530,7 @@ bles
 (/usr/local/texlive/2015/texmf-dist/tex/latex/currfile/currfile.sty
 Package: currfile 2013/02/01 v0.7b Provides the file path elements of the curre
 nt input file
-\c@currfiledepth=\count297
+\c@currfiledepth=\count306
 )
 
 Package currfile Warning: File stack underflow! on input line 296.
@@ -1430,43 +1553,43 @@ Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/collectbox/collectbox.sty
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
-\collectedbox=\box83
+\collectedbox=\box84
 )
-\tc@llx=\dimen317
-\tc@lly=\dimen318
-\tc@urx=\dimen319
-\tc@ury=\dimen320
+\tc@llx=\dimen331
+\tc@lly=\dimen332
+\tc@urx=\dimen333
+\tc@ury=\dimen334
 Package trimclip Info: Using driver 'tc-xetex.def'.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/adjustbox/tc-xetex.def
 File: tc-xetex.def 2012/05/13 v1.0 Clipping driver for xetex
 ))
-\adjbox@Width=\dimen321
-\adjbox@Height=\dimen322
-\adjbox@Depth=\dimen323
-\adjbox@Totalheight=\dimen324
+\adjbox@Width=\dimen335
+\adjbox@Height=\dimen336
+\adjbox@Depth=\dimen337
+\adjbox@Totalheight=\dimen338
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2011/09/13 v1.0 Conditionals for odd/even page detection
-\c@checkoddpage=\count298
+\c@checkoddpage=\count307
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box84
-\sift@deathcycles=\count299
-\@vwid@loff=\dimen325
-\@vwid@roff=\dimen326
+\@vwid@box=\box85
+\sift@deathcycles=\count308
+\@vwid@loff=\dimen339
+\@vwid@roff=\dimen340
 ))
-\gincltex@box=\box85
+\gincltex@box=\box86
 ))
 
-Package currfile Warning: File stack underflow! on input line 11.
+Package currfile Warning: File stack underflow! on input line 12.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/array.sty
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen327
-\extrarowheight=\dimen328
-\NC@list=\toks53
+\col@sep=\dimen341
+\extrarowheight=\dimen342
+\NC@list=\toks57
 \extratabsurround=\skip66
 \backup@length=\skip67
 )
@@ -1480,15 +1603,15 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count300
-\l_MT_multwidth_dim=\dimen329
+\g_MT_multlinerow_int=\count309
+\l_MT_multwidth_dim=\dimen343
 \origjot=\skip68
-\l_MT_shortvdotswithinadjustabove_dim=\dimen330
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen331
-\l_MT_above_intertext_sep=\dimen332
-\l_MT_below_intertext_sep=\dimen333
-\l_MT_above_shortintertext_sep=\dimen334
-\l_MT_below_shortintertext_sep=\dimen335
+\l_MT_shortvdotswithinadjustabove_dim=\dimen344
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen345
+\l_MT_above_intertext_sep=\dimen346
+\l_MT_below_intertext_sep=\dimen347
+\l_MT_above_shortintertext_sep=\dimen348
+\l_MT_below_shortintertext_sep=\dimen349
 )
 (./kbordermatrix.sty
 Package: kbordermatrix 2011/09/21 Bordered matrix with brackets
@@ -1499,20 +1622,20 @@ Package: kbordermatrix 2011/09/21 Bordered matrix with brackets
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/blkarray/blkarray.sty
 Package: blkarray 2015/02/27 v0.07 Block array (dpc)
-\c@BAenumi=\count301
-\BA@col=\count302
-\BA@block@cnt=\count303
-\BA@final@box=\box86
-\BA@first@box=\box87
-\BA@colsep=\dimen336
-\BA@ftn=\toks54
-\BAextrarowheight=\dimen337
-\BAextraheightafterhline=\dimen338
-\BAarrayrulewidth=\dimen339
-\BAdoublerulesep=\dimen340
-\BAfootskip=\dimen341
-\BA@dashbox=\box88
-\BA@ddashbox=\box89
+\c@BAenumi=\count310
+\BA@col=\count311
+\BA@block@cnt=\count312
+\BA@final@box=\box87
+\BA@first@box=\box88
+\BA@colsep=\dimen350
+\BA@ftn=\toks58
+\BAextrarowheight=\dimen351
+\BAextraheightafterhline=\dimen352
+\BAarrayrulewidth=\dimen353
+\BAdoublerulesep=\dimen354
+\BAfootskip=\dimen355
+\BA@dashbox=\box89
+\BA@ddashbox=\box90
 )
 (./_minted-presentation/trac.pygstyle)
 runsystem(which "pygmentize" && touch "presentation.aex")...executed.
@@ -1522,31 +1645,31 @@ runsystem(rm "presentation.aex")...executed.
  (./presentation.aux)
 \openout1 = `presentation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 38.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 38.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 39.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 39.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    ... okay on input line 39.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1583,8 +1706,8 @@ LaTeX Font Info:    ... okay on input line 38.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box90
-Package hyperref Info: Link coloring OFF on input line 38.
+\AtBeginShipoutBox=\box91
+Package hyperref Info: Link coloring OFF on input line 39.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1592,72 +1715,72 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count304
+\c@section@level=\count313
 )
-LaTeX Info: Redefining \ref on input line 38.
-LaTeX Info: Redefining \pageref on input line 38.
-LaTeX Info: Redefining \nameref on input line 38.
+LaTeX Info: Redefining \ref on input line 39.
+LaTeX Info: Redefining \pageref on input line 39.
+LaTeX Info: Redefining \nameref on input line 39.
 
 (./presentation.out) (./presentation.out)
 \@outlinefile=\write8
 \openout8 = `presentation.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 38.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 39.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 38.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 39.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> EU1/lmr/m/n on input line 38.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 38.
+(Font)                  OT1/cmss/m/n --> EU1/lmr/m/n on input line 39.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> EU1/FiraSans-Light.ttf(0)/bx/n on inpu
-t line 38.
+t line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
 (Font)                  OT1/cmr/bx/n --> EU1/FiraSans-Light.ttf(0)/bx/n on inpu
-t line 38.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 38.
+t line 39.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
 (Font)                  OT1/cmss/m/n --> EU1/FiraSans-Light.ttf(0)/m/n on input
- line 38.
+ line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/cmss/bx/n --> EU1/FiraSans-Light.ttf(0)/m/n on inpu
-t line 38.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 38.
+t line 39.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> EU1/FiraSans-Light.ttf(0)/m/it on inpu
-t line 38.
+t line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> EU1/FiraSans-Light.ttf(0)/m/it on inp
-ut line 38.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 38.
+ut line 39.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
 (Font)                  OT1/cmtt/m/n --> EU1/FiraMono-Regular.ttf(0)/m/n on inp
-ut line 38.
+ut line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> EU1/FiraMono-Regular.ttf(0)/m/n on inp
-ut line 38.
+ut line 39.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
 (Font)                  EU1/FiraSans-Light.ttf(0)/m/n --> EU1/FiraSans-Light.tt
-f(0)/bx/n on input line 38.
+f(0)/bx/n on input line 39.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  EU1/FiraSans-Light.ttf(0)/m/it --> EU1/FiraSans-Light.t
-tf(0)/bx/it on input line 38.
+tf(0)/bx/it on input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> EU1/lmr/bx/n on input line 38.
+(Font)                  OT1/cmss/bx/n --> EU1/lmr/bx/n on input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
 (Font)                  EU1/FiraSans-Light.ttf(0)/bx/n --> EU1/FiraSans-Light.t
-tf(0)/bx/n on input line 38.
+tf(0)/bx/n on input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  EU1/FiraSans-Light.ttf(0)/m/n --> EU1/FiraSans-Light.tt
-f(0)/bx/n on input line 38.
+f(0)/bx/n on input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  EU1/FiraSans-Light.ttf(0)/m/it --> EU1/FiraSans-Light.t
-tf(0)/bx/it on input line 38.
+tf(0)/bx/it on input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  EU1/FiraMono-Regular.ttf(0)/m/n --> EU1/FiraMono-Regula
-r.ttf(0)/bx/n on input line 38.
+r.ttf(0)/bx/n on input line 39.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/beamer/translator/dicts/translato
 r-basic-dictionary/translator-basic-dictionary-English.dict
@@ -1683,10 +1806,16 @@ Dictionary: translator-numbers-dictionary, Language: English
 r-theorem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 38.
+LaTeX Info: Redefining \includegraphics on input line 39.
 
-(./_minted-presentation/default-pyg-prefix.pygstyle) (./presentation.nav)
-[1
+(./_minted-presentation/default-pyg-prefix.pygstyle)
+
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
+ick labels; missing features). Consider writing \pgfplotsset{compat=1.13} into 
+your preamble.
+ on input line 39.
+
+(./presentation.nav) [1
 
 ]
 \openout4 = `presentation.vrb'.
@@ -1698,12 +1827,13 @@ LaTeX Info: Redefining \includegraphics on input line 38.
 ]
 \openout4 = `presentation.vrb'.
 
- (./presentation.vrb
-File: images/360_deg_display.png Graphic file (type QTm)
 
-<use  "images/360_deg_display.png" >
+(./presentation.vrb
+File: images/360_deg_display.png Graphic file (type QTm)
+ <use  "images/360_deg_display.png" >
 File: images/3d_glasses.png Graphic file (type QTm)
- <use  "images/3d_glasses.png" >
+
+<use  "images/3d_glasses.png" >
 LaTeX Font Info:    Try loading font information for U+msa on input line 7.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -1895,7 +2025,7 @@ File: images/rectification/dice499_rectified.png Graphic file (type QTm)
 \openout4 = `presentation.vrb'.
 
  (./presentation.vrb)
-Overfull \vbox (8.10318pt too high) detected at line 258
+Overfull \vbox (8.10318pt too high) detected at line 259
  []
 
 [32
@@ -1919,12 +2049,79 @@ Overfull \vbox (8.10318pt too high) detected at line 258
 
 ] [38
 
-] [39
+]
+\openout4 = `presentation.vrb'.
+
+ (./presentation.vrb
+File: images/lf_geometry.jpg Graphic file (type QTm)
+
+<use  "images/lf_geometry.jpg" >) [39
 
 ]
 \openout4 = `presentation.vrb'.
 
  (./presentation.vrb
+File: images/epi_dice/dice000.png Graphic file (type QTm)
+
+<use  "images/epi_dice/dice000.png" >
+File: images/epi_dice/dice099.png Graphic file (type QTm)
+ <use  "images/epi_dice/dice099.png" >
+File: images/epi_dice/dice199.png Graphic file (type QTm)
+
+<use  "images/epi_dice/dice199.png" >
+File: images/epi_dice/dice299.png Graphic file (type QTm)
+ <use  "images/epi_dice/dice299.png" >
+File: images/epi_dice/dice399.png Graphic file (type QTm)
+
+<use  "images/epi_dice/dice399.png" >
+File: images/epi_dice/dice499.png Graphic file (type QTm)
+ <use  "images/epi_dice/dice499.png" >
+(./figures/epi_dice_overview_rectified.tex
+File: figures/epi_1x500x1000x1000/rectified/overview.png Graphic file (type QTm
+)
+
+<use  "figures/epi_1x500x1000x1000/rectified/overview.png" >)
+(./figures/epi_dice_1_rectified.tex
+File: figures/epi_1x500x1000x1000/rectified/scanY=379.png Graphic file (type QT
+m)
+
+<use  "figures/epi_1x500x1000x1000/rectified/scanY=379.png" >)) [40
+
+]
+(./presentation.vrb
+File: images/epi_dice/dice000.png Graphic file (type QTm)
+ <use  "images/epi_dice/dice000.png" >
+File: images/epi_dice/dice099.png Graphic file (type QTm)
+
+<use  "images/epi_dice/dice099.png" >
+File: images/epi_dice/dice199.png Graphic file (type QTm)
+ <use  "images/epi_dice/dice199.png" >
+File: images/epi_dice/dice299.png Graphic file (type QTm)
+
+<use  "images/epi_dice/dice299.png" >
+File: images/epi_dice/dice399.png Graphic file (type QTm)
+ <use  "images/epi_dice/dice399.png" >
+File: images/epi_dice/dice499.png Graphic file (type QTm)
+
+<use  "images/epi_dice/dice499.png" >
+(./figures/epi_dice_overview_rectified.tex
+File: figures/epi_1x500x1000x1000/rectified/overview.png Graphic file (type QTm
+)
+
+<use  "figures/epi_1x500x1000x1000/rectified/overview.png" >)
+(./figures/epi_dice_2_rectified.tex
+File: figures/epi_1x500x1000x1000/rectified/scanY=641.png Graphic file (type QT
+m)
+
+<use  "figures/epi_1x500x1000x1000/rectified/scanY=641.png" >)) [41
+
+] [42
+
+]
+\openout4 = `presentation.vrb'.
+
+
+(./presentation.vrb
 \openout5 = `presentation.pyg'.
 
 \openout7 = `presentation.mintedcmd'.
@@ -1936,15 +2133,14 @@ tation.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher
 .hexdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeat
 other\\endinput\n \"); f.close();")...executed.
 
-
-(./presentation.mintedmd5)
+ (./presentation.mintedmd5)
 (./_minted-presentation/63df94fdec86dda81ef6a46faeed75bf5fd7e198.pygtex
 
 LaTeX Font Warning: Font shape `EU1/FiraMono-Regular.ttf(0)/bx/n' undefined
 (Font)              using `EU1/FiraMono-Regular.ttf(0)/m/n' instead on input li
 ne 2.
 
-)) [40
+)) [43
 
 ]
 \openout4 = `presentation.vrb'.
@@ -1963,7 +2159,7 @@ other\\endinput\n \"); f.close();")...executed.
 
  (./presentation.mintedmd5)
 (./_minted-presentation/677f7a6535ede418ad5f1e4a598ff9d5fbb3faef.pygtex))
-[41
+[44
 
 ]
 \openout4 = `presentation.vrb'.
@@ -1982,13 +2178,7 @@ other\\endinput\n \"); f.close();")...executed.
 
  (./presentation.mintedmd5)
 (./_minted-presentation/a8b371ae6f8fc5afc24e7dff3722adb0c1d2990e.pygtex))
-[42
-
-] [43
-
-] [44
-
-] [45
+[45
 
 ] [46
 
@@ -1996,31 +2186,37 @@ other\\endinput\n \"); f.close();")...executed.
 
 ] [48
 
-]
-\c@density=\count305
- [49
+] [49
 
 ] [50
 
 ] [51
 
-] [52
+]
+\c@density=\count314
+ [52
 
 ] [53
+
+] [54
+
+] [55
+
+] [56
 
 ]
 File: images/valley.jpg Graphic file (type QTm)
 
 <use  "images/valley.jpg" >
 LaTeX Font Info:    Font shape `U/ccicons/m/n' will be
-(Font)              scaled to size 24.0pt on input line 454.
+(Font)              scaled to size 24.0pt on input line 496.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [54
+ [57
 
 ]
-[55] [56
+[58] [59
 
 ]
 \tf@nav=\write9
@@ -2038,24 +2234,24 @@ runsystem(rm "presentation.mintedmd5")...executed.
 
 runsystem(rm "presentation.pyg")...executed.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 458.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 458.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 500.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 500.
  (./presentation.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 458.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 458.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 500.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 500.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 458.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 500.
  ) 
 Here is how much of TeX's memory you used:
- 40465 strings out of 493638
- 794726 string characters out of 6144793
- 838009 words of memory out of 5000000
- 43004 multiletter control sequences out of 15000+600000
+ 49880 strings out of 493638
+ 1114137 string characters out of 6144793
+ 1248234 words of memory out of 5000000
+ 52254 multiletter control sequences out of 15000+600000
  12010 words of font info for 99 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 60i,14n,86p,10386b,975s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 85i,14n,114p,10386b,2786s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on presentation.pdf (56 pages).
+Output written on presentation.pdf (59 pages).
