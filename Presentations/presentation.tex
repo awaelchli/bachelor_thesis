@@ -70,7 +70,7 @@
 	
 	\begin{columns}[onlytextwidth]
 		\column{0.6\textwidth}
-			\begin{itemize}[<+- | alert@+>]
+			\begin{itemize}[<alert@+>]
 				\item Measures light in the world
 				\item $P(x, y, z, \theta, \phi, t, \lambda)$
 				\item Position and viewing direction
@@ -86,7 +86,7 @@
 \begin{frame}[fragile]
 	\frametitle{The 4D Light Field}
 	
-	\begin{itemize}[<+- | alert@+>]
+	\begin{itemize}[<alert@+>]
 		\item Reduce dimensions of $P$
 		\item $L(u, v, s, t)$
 		\item Defined by two planes
@@ -99,7 +99,7 @@
 \begin{frame}[fragile]
 	\frametitle{Light Field Acquisition}
 	
-	\begin{itemize}[<+- | alert@+>]
+	\begin{itemize}[<alert@+>]
 		\item Camera array
 		\item Gantry
 		\item Plenoptic camera
@@ -156,6 +156,13 @@
 \section{Problem Statement}
 
 \begin{frame}[fragile]
+	\frametitle{Display Architecture}
+	\begin{center}
+		\includegraphics[width=10cm]{images/display_architecture.png}
+	\end{center}
+\end{frame}
+
+\begin{frame}[fragile]
 	\frametitle{Light Transmission}
 	
 	\begin{columns}[onlytextwidth]
@@ -165,10 +172,10 @@
 			\begin{equation*}
 				L_m = L_0 \prod_{n=1}^{N} t^{(n)} (h(m, n)) 
 			\end{equation*}
-			\begin{itemize}
-			    \item[$L_m$] \alert<1>{Color of ray $m$}
-			    \item[$t$] \alert<2>{Transmission}
-			    \item[$h$] \alert<3>{Intersection} 
+			\begin{itemize}[<alert@+>]
+			    \item[$L_m$] Color of ray $m$
+			    \item[$t$] Transmission
+			    \item[$h$] Intersection 
 			\end{itemize}
 	\end{columns}
 	
@@ -177,7 +184,7 @@
 \begin{frame}[fragile]
 	\frametitle{Light Transmission}
 	
-	\begin{itemize}[<+- | alert@+>]
+	\begin{itemize}[<alert@+>]
 		\item Hard to solve directly
 		\item Transform to log-domain
 		\item Solve for absorbance
@@ -220,10 +227,10 @@
 \begin{frame}[fragile]
 	\frametitle{Ray Casting}
 	
-	\begin{itemize}
-		\item \alert<1>{One linear constraint per ray}
-		\item \alert<2>{Create a big matrix $P$}
-		\item \alert<3>{Matrix encodes intersections}
+	\begin{itemize}[<alert@+>]
+		\item One linear constraint per ray
+		\item Create a big matrix $P$
+		\item Matrix encodes intersections
 	\end{itemize}
 	
 	\begin{equation*}
@@ -265,9 +272,9 @@
 		\bar{L} = - P \alpha
 	\end{equation*}
 	
-	\begin{itemize}
-		\item \alert<1>{$\bar{L}$ Vectorized log light field}
-		\item \alert<2>{$\alpha$ Vector holding unkowns}
+	\begin{itemize}[<alert@+>]
+		\item $\bar{L}$ Vectorized log light field
+		\item $\alpha$ Vector holding unkowns
 	\end{itemize}
 \end{frame}
 
@@ -282,12 +289,29 @@
 	\end{equation*}
 	
 	\begin{itemize}
-		\item \alert<1>{System is overdetermined}
-		\item \alert<2>{Need iterative solver}
+		\item System is overdetermined
+		\item Need iterative solver
 	\end{itemize}
 \end{frame}
 
 \section{Results}
+
+\begin{frame}[fragile]
+	\frametitle{The Finished Product}
+	\begin{center}
+		\includegraphics[height=4cm]{images/glass_plates_front_view_cropped}
+		\hspace{1cm}
+		\includegraphics[height=4cm]{images/raw_backlight_from_top}
+	\end{center}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{The Finished Product}
+	\begin{center}
+		\includegraphics[width=9cm]{images/all_displays_on}
+	\end{center}
+\end{frame}
+
 \section{Assessment}
 
 \begin{frame}[fragile]
@@ -328,6 +352,36 @@
 			\only<1>{\input{figures/epi_dice_1_rectified.tex}}
 			\only<2>{\input{figures/epi_dice_2_rectified.tex}}
 	\end{columns}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Spectral Analysis}
+	
+	\begin{center}
+		\input{figures/spectral_support/two_objects.tex}
+		\hspace{1cm}
+		\input{figures/spectral_support/epi_two_objects.tex}
+	\end{center}
+	
+	\begin{equation*}
+		\frac{\text{d}u}{\text{d}s} = \frac{z - Z_u}{z - Z_s}
+	\end{equation*}
+	
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Spectral Analysis}
+	
+	\begin{center}
+		\input{figures/spectral_support/epi_fourier_transform.tex}
+		\hspace{1cm}
+		\input{figures/spectral_support/fourier_transform_red_and_blue.tex}
+	\end{center}
+	
+	\begin{equation*}
+		\widehat{f}(\xi) = \int_{\mathbb{R}^n} f(x) e^{-2 \pi \text{i} x \cdot \xi} \, \text{d}x
+	\end{equation*}
+	
 \end{frame}
 
 \section{Conclusion}
