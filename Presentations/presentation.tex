@@ -232,7 +232,7 @@
 	\end{itemize}
 	\vspace{2cm}
 	\begin{equation*}
-			\bar{L}_m = -\sum_{n=1}^{N} a^{(n)} (h(m, n)) 
+			\text{log}(L_m) = -\sum_{n=1}^{N} a^{(n)} (h(m, n)) 
 	\end{equation*}
 	
 \end{frame}
@@ -267,11 +267,11 @@
 	\frametitle{The Equation}
 	
 	\begin{equation*}
-		\bar{L} = - P \alpha
+		\text{log}(L) = - P \alpha
 	\end{equation*}
 	
 	\begin{itemize}[<alert@+>]
-		\item $\bar{L}$ Vectorized log light field
+		\item $\text{log}(L)$ Vectorized log light field
 		\item $\alpha$ Vector holding unkowns
 	\end{itemize}
 \end{frame}
@@ -281,12 +281,13 @@
 	
 	\begin{equation*}
 		\begin{aligned}
-			& \underset{\alpha}{\text{argmin}} 	& & \left\lVert P \alpha + \bar{L} \right\rVert ^2 \\
+			& \underset{\alpha}{\text{argmin}} 	& & \left\lVert P \alpha + \log(L) \right\rVert ^2 \\
 			& \text{subject to} 				& & \alpha \geq 0.
 		\end{aligned}
 	\end{equation*}
 	
 	\begin{itemize}
+		\item Proposed in Wetzstein et al. 2011
 		\item System is overdetermined
 		\item Need iterative solver
 	\end{itemize}
