@@ -38,6 +38,7 @@
 \begin{document}
 
 \setlength{\leftmargini}{0pt}
+\setlength{\fboxsep}{0pt}%
 
 \maketitle
 
@@ -71,9 +72,10 @@
 		\column{0.6\textwidth}
 			\begin{itemize}[<+- | alert@+>]
 				\item Measures light in the world
-				\item $P(x, y, z, \theta, \phi, t, \lambda)$
-				\item Position and viewing direction
+				\item Position, viewing direction
 				\item Time, Wavelength
+				\item $P(x, y, z, \theta, \phi, t, \lambda)$
+				\item 7D
 			\end{itemize}
 		\column{0.4\textwidth}
 			\vspace{-5cm}
@@ -115,7 +117,7 @@
 \end{frame}
 
 \begin{frame}[fragile]
-	\frametitle{Parameterization}
+	\frametitle{Re-Parameterization to Global Coordinates}
 	
 	\begin{center}
 		\visible<1,2>{\input{figures/perspective-projection-shift.tex}}
@@ -129,34 +131,44 @@
 \end{frame}
 
 \begin{frame}[fragile]
-	\frametitle{Parameterization}
+	\frametitle{Re-Parameterization to Global Coordinates}
 	
 	\begin{center}
 		\begin{tabular}{c p{0.5cm} c}
 			Raw & & Rectified \\
-			\includegraphics[height=5cm]{images/rectification/dice000_raw} 
-			& &\includegraphics[height=5cm]{images/rectification/dice000_rectified}
+			\fbox{\includegraphics[height=5cm]{images/rectification/dice000_raw}}
+			& &\fbox{\includegraphics[height=5cm]{images/rectification/dice000_rectified}}
 		\end{tabular}
 	\end{center}
 \end{frame}
 
 \begin{frame}[fragile]
-	\frametitle{Parameterization}
+	\frametitle{Re-Parameterization to Global Coordinates}
 	
 	\begin{center}
 		\begin{tabular}{c p{0.5cm} c}
 			Raw & & Rectified \\
-			\includegraphics[height=5cm]{images/rectification/dice499_raw}
-			& &\includegraphics[height=5cm]{images/rectification/dice499_rectified}
+			\fbox{\includegraphics[height=5cm]{images/rectification/dice499_raw}}
+			& &\fbox{\includegraphics[height=5cm]{images/rectification/dice499_rectified}}
 		\end{tabular}
 	\end{center}
 \end{frame}
 
-\section{Problem Statement}
+\section{Attenuation Display}
+
+\begin{frame}[fragile]
+	\frametitle{The Beer-Lambert Law}
+	\begin{center}
+		\includegraphics<1>[height = 7cm]{figures/beer-lambert/lambert-beer-law_illustration.pdf}
+		\includegraphics<2>[height = 7cm]{figures/beer-lambert/lambert-beer-law_layers1.pdf}
+		\includegraphics<3>[height = 7cm]{figures/beer-lambert/lambert-beer-law_layers2.pdf}
+		\includegraphics<4>[height = 7cm]{figures/beer-lambert/lambert-beer-law_layers3.pdf}
+	\end{center}
+\end{frame}
 
 \begin{frame}[fragile]
 	\frametitle{Light Transmission}
-	
+	\vspace{1cm}
 	\begin{columns}[onlytextwidth]
 		\column{0.45\textwidth} 
 			\input{figures/ray_casting_perspective_projection.tex}
@@ -170,48 +182,34 @@
 			    \item[$h$] Intersection 
 			\end{itemize}
 	\end{columns}
-	
+	\vspace{1cm}
+	\begin{center}
+		\visible<4>{\alert{From now on: $L_0 = 1$}}
+	\end{center}
 \end{frame}
 
 \begin{frame}[fragile]
-	\frametitle{Light Transmission}
+	\frametitle{From Transmission to Absorbance}
 	
 	\begin{itemize}[<+- | alert@+>]
-		\item Hard to solve directly
+		\item Transmission values unknown
+		\item Solve equations simultaneously for all rays
+		\item This is hard
 		\item Transform to log-domain
 		\item Solve for absorbance
 	\end{itemize}
-	\visible<1,2,3>{
+	\visible<1,2,3,4,5>{
 	\begin{equation*}
-		L_m = L_0 \prod_{n=1}^{N} t^{(n)} (h(m, n)) 
+		L_m = \prod_{n=1}^{N} t^{(n)} (h(m, n)) 
 	\end{equation*}}
-	\visible<2,3>{
+	\visible<4,5>{
 	\begin{center}
 		\begin{tikzpicture}
 			\draw[->, red, line width = 0.075cm] (0, 0) -- (0, -0.7) node[midway, right, xshift=0.4cm, black] {$t = e^{-a}$};
 		\end{tikzpicture}
 	\end{center}
 	\begin{equation*}
-		\bar{L}_m = \bar{L}_0 - \sum_{n=1}^{N} a^{(n)} (h(m, n)) 
-	\end{equation*}}
-	
-\end{frame}
-
-\begin{frame}[fragile]
-	\frametitle{Light Absorbance}
-	
-	\visible<1,2>{
-	\begin{equation*}
-		\bar{L}_m = \bar{L}_0 - \sum_{n=1}^{N} a^{(n)} (h(m, n)) 
-	\end{equation*}}
-	\visible<2>{
-	\begin{center}
-		\begin{tikzpicture}
-			\draw[->, red, line width = 0.075cm] (0, 0) -- (0, -0.7) node[midway, right, xshift=0.4cm, black] {$L_0 = 1$};
-		\end{tikzpicture}
-	\end{center}
-	\begin{equation*}
-		\bar{L}_m = -\sum_{n=1}^{N} a^{(n)} (h(m, n)) 
+		\text{log}(L_m) = - \sum_{n=1}^{N} a^{(n)} (h(m, n)) 
 	\end{equation*}}
 	
 \end{frame}
@@ -224,6 +222,7 @@
 		\item Create a big matrix $P$
 		\item Matrix encodes intersections
 	\end{itemize}
+	\vspace{2cm}
 	\begin{equation*}
 			\bar{L}_m = -\sum_{n=1}^{N} a^{(n)} (h(m, n)) 
 	\end{equation*}
