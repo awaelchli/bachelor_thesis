@@ -1,0 +1,45 @@
+\documentclass{standalone}
+\usepackage{pgfplots}
+
+\begin{document}
+	\begin{tikzpicture}
+	
+		\begin{axis}[	legend pos = south east, 
+						legend cell align = left,
+						ymin = 19, 
+						ymax = 26,
+						xtick = {1, 1.5, 2, 2.5, 3},
+						ytick = {19, 20, 21, 22, 23, 24, 25, 26},
+						ylabel = {PSNR (dB)},
+						xlabel = {Layer resolution factor},
+						ylabel near ticks,
+						grid,
+						axis on top = false,
+						width = 6 cm]
+		
+			\addplot coordinates {    		% RMSE: 16.1326   15.1334   14.6183   14.2814   13.8718   13.6820   13.6217
+				(1, 	23.9767)
+				(1.25, 	24.5321)
+				(1.5, 	24.8329)
+				(1.75, 	25.0354)
+				(2,  	25.2881)
+				(2.25, 	25.4078)
+				(2.5, 	25.4462)
+			};
+			\addlegendentry{Tarot cards};
+			
+			\addplot coordinates {        	% RMSE: 21.5312   20.9401   20.8671   20.4615   20.4078   20.3374   20.2399
+				(1, 	21.4694)
+				(1.25,	21.7112)
+				(1.5, 	21.7416)
+				(1.75,	21.9121)
+				(2,  	21.9349)
+				(2.25,	21.9649)
+				(2.5, 	22.0066)
+			};
+			\addlegendentry{Lego knights};
+		
+		\end{axis}
+	
+	\end{tikzpicture}
+\end{document}
