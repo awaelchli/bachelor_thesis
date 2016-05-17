@@ -20,6 +20,11 @@
 \usepackage{kbordermatrix}
 \usepackage{blkarray}
 
+% Bibliography
+\usepackage{natbib}
+\bibpunct{[}{]}{,}{a}{}{;}
+
+
 % For presentation mode
 %\usepackage{pgfpages}
 %\setbeameroption{show notes}
@@ -52,16 +57,7 @@
 
 \begin{frame}[fragile]
 	\frametitle{Existing 3D Displays}
-	\begin{columns}
-		\column{0.33\textwidth}
-			\includegraphics[width=3cm]{images/360_deg_display}
-			\\
-			\includegraphics[width=3cm]{images/3d_glasses}
-		\column{0.33\textwidth}
-			Add more images
-		\column{0.33\textwidth}
-			\includegraphics[height=5cm]{images/parallax_barrier_vs_lenticular}
-	\end{columns}
+	\includegraphics[height = 7cm]{figures/overview_displays/existing_3d_displays.pdf}
 \end{frame}
 
 \section{Introduction to Light Fields}
@@ -287,7 +283,7 @@
 	\end{equation*}
 	
 	\begin{itemize}
-		\item Proposed in Wetzstein et al. 2011
+		\item Proposed by \cite{WetzsteinTomo}
 		\item System is overdetermined
 		\item Need iterative solver
 	\end{itemize}
@@ -386,10 +382,12 @@
 \section{Conclusion}
 
 
-
-
-
-
+\begin{frame}
+	\frametitle{References}
+	\bibliographystyle{abbrvnat}
+	%\nocite{*}
+	\bibliography{presentation}
+\end{frame}
 
 
 

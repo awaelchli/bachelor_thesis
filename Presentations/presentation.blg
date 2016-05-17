@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: presentation.aux
+The style file: abbrvnat.bst
+Database file #1: presentation.bib
+Warning--can't use both volume and number fields in multi-planar_volumetric_display
+Warning--empty journal in ConvergenceSART
+You've used 25 entries,
+            2773 wiz_defined-function locations,
+            759 strings with 9800 characters,
+and the built_in function-call counts, 14214 in all, are:
+= -- 1308
+> -- 834
+< -- 23
++ -- 280
+- -- 255
+* -- 1179
+:= -- 2094
+add.period$ -- 84
+call.type$ -- 25
+change.case$ -- 159
+chr.to.int$ -- 25
+cite$ -- 52
+duplicate$ -- 632
+empty$ -- 1123
+format.name$ -- 292
+if$ -- 3051
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 26
+newline$ -- 134
+num.names$ -- 100
+pop$ -- 321
+preamble$ -- 1
+purify$ -- 135
+quote$ -- 0
+skip$ -- 512
+stack$ -- 0
+substring$ -- 682
+swap$ -- 124
+text.length$ -- 14
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 270
+warning$ -- 2
+while$ -- 128
+width$ -- 0
+write$ -- 347
+(There were 2 warnings)
