@@ -299,7 +299,56 @@
 	\end{itemize}
 \end{frame}
 
-\section{Results}
+\begin{frame}[fragile]
+	\frametitle{Examples}
+	
+	% Lego truck layers
+	% No tiling
+	
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Examples}
+	
+	% Tarot cards
+	% No tiling
+	
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Examples}
+	
+	% Lytro rubik's cube
+	% No tiling
+	
+	\includegraphics[height = 2cm]{images/Lytro_Light_Field_Camera-front_background_removed}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Attenuator Tiling}
+	
+	\begin{enumerate}
+		\item Slice attenuator into smaller pieces
+		\item Solve optimization problem for every slice
+		\item Reconnect the slices
+	\end{enumerate}
+	
+	\vspace{1cm}
+	
+	\begin{center}
+		\includegraphics[height = 3cm]{figures/slicing_attenuator/tiling_overview.pdf}
+	\end{center}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Attenuator Tiling}
+
+	\begin{itemize}
+		\item Problem: Rays can overlap with multiple slices at borders
+		\item Slices need to overlap
+		\item Blend slices with mask
+	\end{itemize}
+\end{frame}
 
 \begin{frame}[fragile]
 	\frametitle{The Finished Product}
@@ -315,6 +364,16 @@
 	\begin{center}
 		\includegraphics[width=9cm]{images/all_displays_on}
 	\end{center}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Questions}
+	
+	\begin{itemize}
+		\item Impact of more layers?
+		\item Does thickness of display matter?
+		\item What are the limitations?
+	\end{itemize}
 \end{frame}
 
 \section{Assessment}

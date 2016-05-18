@@ -1,0 +1,16 @@
+\documentclass{standalone}
+\usepackage{tikz}
+
+\begin{document}
+	\begin{tikzpicture}
+		\node[anchor=south west] at (0, 0) {\includegraphics[height=3cm]{slices_stack.png}};
+		
+		\draw[->, line width = 1mm] (4.5, 2) -- ++ (1, 0);
+		
+		\draw[<-, line width = 1mm] (4.5, 1) -- ++ (1, 0);
+		
+		\node[anchor=south west] at (7, 1.5) {\includegraphics[height=1.7cm]{single_slice_stack.png}};
+		\node[anchor=south west] at (6, 0) {\includegraphics[height=1.7cm]{single_slice_stack.png}};
+		\node[anchor=south west] at (8, 0) {\includegraphics[height=1.7cm]{single_slice_stack.png}};
+	\end{tikzpicture}
+\end{document}
