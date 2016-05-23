@@ -10,6 +10,7 @@
 \usepackage{pgfplots}
 \usepackage{standalone}
 \usepackage{array}
+\usepackage[percent]{overpic}
 
 % Math packages
 \usepackage{amsthm}
@@ -301,6 +302,32 @@
 
 \begin{frame}[fragile]
 	\frametitle{Examples}
+	
+	\begin{center}
+		\begin{tabular}{cc}
+			\raisebox{-.5\height}{
+				\begin{overpic}[width=5cm,tics=10]{images/layers_and_projections/legotruck/1}
+					\put (63, 60) {bottom}
+				\end{overpic}
+			} & 
+			\raisebox{-.5\height}{
+				\begin{overpic}[width=5cm,tics=10]{images/layers_and_projections/legotruck/2}
+					\put (65, 60) {middle}
+				\end{overpic}
+			} 
+			\\
+			\raisebox{-.5\height}{
+				\begin{overpic}[width=5cm,tics=10]{images/layers_and_projections/legotruck/3}
+					\put (78, 60) {top}
+				\end{overpic}
+			} & 
+			\begin{tabular}{@{}c@{}}
+				$6 \times 6 \times 480 \times 640$ \\
+				$\sim$ 10 minutes
+			\end{tabular} 
+			\\
+		\end{tabular}
+	\end{center}
 	
 	% Lego truck layers
 	% No tiling
