@@ -1,6 +1,6 @@
 \beamer@endinputifotherversion {3.36pt}
-\beamer@sectionintoc {1}{Motivation}{3}{0}{1}
-\beamer@sectionintoc {2}{Introduction to Light Fields}{5}{0}{2}
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{Light Fields}{5}{0}{2}
 \beamer@sectionintoc {3}{Attenuation Display}{21}{0}{3}
 \beamer@sectionintoc {4}{Assessment}{52}{0}{4}
 \beamer@sectionintoc {5}{Conclusion}{58}{0}{5}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.3.2)  23 MAY 2016 13:14
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.3.2)  23 MAY 2016 19:09
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1617,7 +1617,33 @@ Enhancements to Picture Environment. Version 1.2 - Released June 1, 1986
 \@datafile=\read5
 )
 overpic: relative positioning in percent
-) (/usr/local/texlive/2015/texmf-dist/tex/latex/mathtools/mathtools.sty
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen349
+\captionmargin@=\dimen350
+\captionwidth=\dimen351
+\caption@tempdima=\dimen352
+\caption@indent=\dimen353
+\caption@parindent=\dimen354
+\caption@hangindent=\dimen355
+)
+\c@ContinuedFloat=\count317
+Package caption Info: beamer document class.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: Hyperref support is turned off
+(caption)             because hyperref has stopped early.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2016/02/20 v1.1-142 Sub-captions (AR)
+\c@subfigure=\count318
+\c@subtable=\count319
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2015/11/12 v1.18 mathematical typesetting tools
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/mathtools/mhsetup.sty
@@ -1627,15 +1653,15 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count317
-\l_MT_multwidth_dim=\dimen349
+\g_MT_multlinerow_int=\count320
+\l_MT_multwidth_dim=\dimen356
 \origjot=\skip68
-\l_MT_shortvdotswithinadjustabove_dim=\dimen350
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen351
-\l_MT_above_intertext_sep=\dimen352
-\l_MT_below_intertext_sep=\dimen353
-\l_MT_above_shortintertext_sep=\dimen354
-\l_MT_below_shortintertext_sep=\dimen355
+\l_MT_shortvdotswithinadjustabove_dim=\dimen357
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen358
+\l_MT_above_intertext_sep=\dimen359
+\l_MT_below_intertext_sep=\dimen360
+\l_MT_above_shortintertext_sep=\dimen361
+\l_MT_below_shortintertext_sep=\dimen362
 )
 (./kbordermatrix.sty
 Package: kbordermatrix 2011/09/21 Bordered matrix with brackets
@@ -1646,18 +1672,18 @@ Package: kbordermatrix 2011/09/21 Bordered matrix with brackets
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/blkarray/blkarray.sty
 Package: blkarray 2015/02/27 v0.07 Block array (dpc)
-\c@BAenumi=\count318
-\BA@col=\count319
-\BA@block@cnt=\count320
+\c@BAenumi=\count321
+\BA@col=\count322
+\BA@block@cnt=\count323
 \BA@final@box=\box88
 \BA@first@box=\box89
-\BA@colsep=\dimen356
+\BA@colsep=\dimen363
 \BA@ftn=\toks58
-\BAextrarowheight=\dimen357
-\BAextraheightafterhline=\dimen358
-\BAarrayrulewidth=\dimen359
-\BAdoublerulesep=\dimen360
-\BAfootskip=\dimen361
+\BAextrarowheight=\dimen364
+\BAextraheightafterhline=\dimen365
+\BAarrayrulewidth=\dimen366
+\BAdoublerulesep=\dimen367
+\BAfootskip=\dimen368
 \BA@dashbox=\box90
 \BA@ddashbox=\box91
 )
@@ -1666,7 +1692,7 @@ Package: natbib 2000/07/24 7.0a (PWD)
 \bibhang=\skip73
 \bibsep=\skip74
 LaTeX Info: Redefining \cite on input line 508.
-\c@NAT@ctr=\count321
+\c@NAT@ctr=\count324
 ) (./_minted-presentation/trac.pygstyle)
 runsystem(which "pygmentize" && touch "presentation.aex")...executed.
 
@@ -1675,31 +1701,31 @@ runsystem(rm "presentation.aex")...executed.
  (./presentation.aux)
 \openout1 = `presentation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 45.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 45.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 49.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 49.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    ... okay on input line 49.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1737,7 +1763,7 @@ LaTeX Font Info:    ... okay on input line 45.
 
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box92
-Package hyperref Info: Link coloring OFF on input line 45.
+Package hyperref Info: Link coloring OFF on input line 49.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1745,72 +1771,72 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count322
+\c@section@level=\count325
 )
-LaTeX Info: Redefining \ref on input line 45.
-LaTeX Info: Redefining \pageref on input line 45.
-LaTeX Info: Redefining \nameref on input line 45.
+LaTeX Info: Redefining \ref on input line 49.
+LaTeX Info: Redefining \pageref on input line 49.
+LaTeX Info: Redefining \nameref on input line 49.
 
 (./presentation.out) (./presentation.out)
 \@outlinefile=\write8
 \openout8 = `presentation.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 45.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 49.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 45.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 49.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> EU1/lmr/m/n on input line 45.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 45.
+(Font)                  OT1/cmss/m/n --> EU1/lmr/m/n on input line 49.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 49.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> EU1/FiraSans-Light.ttf(0)/bx/n on inpu
-t line 45.
+t line 49.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
 (Font)                  OT1/cmr/bx/n --> EU1/FiraSans-Light.ttf(0)/bx/n on inpu
-t line 45.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 45.
+t line 49.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 49.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
 (Font)                  OT1/cmss/m/n --> EU1/FiraSans-Light.ttf(0)/m/n on input
- line 45.
+ line 49.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/cmss/bx/n --> EU1/FiraSans-Light.ttf(0)/m/n on inpu
-t line 45.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 45.
+t line 49.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 49.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> EU1/FiraSans-Light.ttf(0)/m/it on inpu
-t line 45.
+t line 49.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> EU1/FiraSans-Light.ttf(0)/m/it on inp
-ut line 45.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 45.
+ut line 49.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 49.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
 (Font)                  OT1/cmtt/m/n --> EU1/FiraMono-Regular.ttf(0)/m/n on inp
-ut line 45.
+ut line 49.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> EU1/FiraMono-Regular.ttf(0)/m/n on inp
-ut line 45.
+ut line 49.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
 (Font)                  EU1/FiraSans-Light.ttf(0)/m/n --> EU1/FiraSans-Light.tt
-f(0)/bx/n on input line 45.
+f(0)/bx/n on input line 49.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  EU1/FiraSans-Light.ttf(0)/m/it --> EU1/FiraSans-Light.t
-tf(0)/bx/it on input line 45.
+tf(0)/bx/it on input line 49.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> EU1/lmr/bx/n on input line 45.
+(Font)                  OT1/cmss/bx/n --> EU1/lmr/bx/n on input line 49.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
 (Font)                  EU1/FiraSans-Light.ttf(0)/bx/n --> EU1/FiraSans-Light.t
-tf(0)/bx/n on input line 45.
+tf(0)/bx/n on input line 49.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  EU1/FiraSans-Light.ttf(0)/m/n --> EU1/FiraSans-Light.tt
-f(0)/bx/n on input line 45.
+f(0)/bx/n on input line 49.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  EU1/FiraSans-Light.ttf(0)/m/it --> EU1/FiraSans-Light.t
-tf(0)/bx/it on input line 45.
+tf(0)/bx/it on input line 49.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  EU1/FiraMono-Regular.ttf(0)/m/n --> EU1/FiraMono-Regula
-r.ttf(0)/bx/n on input line 45.
+r.ttf(0)/bx/n on input line 49.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/beamer/translator/dicts/translato
 r-basic-dictionary/translator-basic-dictionary-English.dict
@@ -1836,15 +1862,17 @@ Dictionary: translator-numbers-dictionary, Language: English
 r-theorem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 45.
+LaTeX Info: Redefining \includegraphics on input line 49.
 
 (./_minted-presentation/default-pyg-prefix.pygstyle)
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.13} into 
 your preamble.
- on input line 45.
+ on input line 49.
 
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 (./presentation.nav) [1
 
 ]
@@ -1859,15 +1887,18 @@ your preamble.
 
 
 (./presentation.vrb
-File: figures/overview_displays/existing_3d_displays.pdf Graphic file (type QTm
-)
+File: figures/overview_displays/360_deg_display.png Graphic file (type QTm)
+ <use  "figures/overview_displays/360_deg_display.png" >
+File: figures/overview_displays/parallax_barrier_vs_lenticular.png Graphic file
+ (type QTm)
 
-<use  "figures/overview_displays/existing_3d_displays.pdf" >)
-Overfull \hbox (3.86809pt too wide) in paragraph at lines 2--62
-[][]  
+<use  "figures/overview_displays/parallax_barrier_vs_lenticular.png" >
+Overfull \hbox (14.61844pt too wide) in paragraph at lines 9--9
+[]|[]\EU1/FiraSans-Light.ttf(0)/m/n/8 en.wikipedia.org/wiki/Autostereoscopy[]| 
+ 
  []
 
-[4
+) [4
 
 ] [5
 
@@ -1927,34 +1958,20 @@ File: images/plenoptic.png Graphic file (type QTm)
  (./presentation.vrb
 File: images/stanford_camera_array_2.jpg Graphic file (type QTm)
 
-<use  "images/stanford_camera_array_2.jpg" >
+<use  "images/stanford_camera_array_2.jpg" >) [14
+
+]
+\openout4 = `presentation.vrb'.
+
+ (./presentation.vrb
 File: images/lego_camera_gantry.jpg Graphic file (type QTm)
 
-<use  "images/lego_camera_gantry.jpg" >
-File: images/Lytro_Light_Field_Camera-front_background_removed.png Graphic file
- (type QTm)
+<use  "images/lego_camera_gantry.jpg" >) [15
 
-<use  "images/Lytro_Light_Field_Camera-front_background_removed.png" >)
-[14
+]
+\openout4 = `presentation.vrb'.
 
-] (./presentation.vrb
-File: images/stanford_camera_array_2.jpg Graphic file (type QTm)
- <use  "images/stanford_camera_array_2.jpg" >
-File: images/lego_camera_gantry.jpg Graphic file (type QTm)
-
-<use  "images/lego_camera_gantry.jpg" >
-File: images/Lytro_Light_Field_Camera-front_background_removed.png Graphic file
- (type QTm)
-
-<use  "images/Lytro_Light_Field_Camera-front_background_removed.png" >)
-[15
-
-] (./presentation.vrb
-File: images/stanford_camera_array_2.jpg Graphic file (type QTm)
- <use  "images/stanford_camera_array_2.jpg" >
-File: images/lego_camera_gantry.jpg Graphic file (type QTm)
-
-<use  "images/lego_camera_gantry.jpg" >
+ (./presentation.vrb
 File: images/Lytro_Light_Field_Camera-front_background_removed.png Graphic file
  (type QTm)
 
@@ -2100,7 +2117,7 @@ File: images/display_architecture.png Graphic file (type QTm)
 \openout4 = `presentation.vrb'.
 
  (./presentation.vrb)
-Overfull \vbox (8.10318pt too high) detected at line 261
+Overfull \vbox (8.10318pt too high) detected at line 288
  []
 
 [39
@@ -2136,12 +2153,12 @@ File: images/layers_and_projections/legotruck/2.png Graphic file (type QTm)
 File: images/layers_and_projections/legotruck/3.png Graphic file (type QTm)
 
 <use  "images/layers_and_projections/legotruck/3.png" >
-Overfull \hbox (14.6267pt too wide) in paragraph at lines 4--27
+Overfull \hbox (14.6267pt too wide) in paragraph at lines 4--26
  [] 
  []
 
 )
-Overfull \vbox (16.5526pt too high) detected at line 335
+Overfull \vbox (16.5526pt too high) detected at line 360
  []
 
 [44
@@ -2149,31 +2166,49 @@ Overfull \vbox (16.5526pt too high) detected at line 335
 ]
 \openout4 = `presentation.vrb'.
 
- (./presentation.vrb) [45
+ (./presentation.vrb
+File: images/layers_and_projections/legotruck/original/08_08.png Graphic file (
+type QTm)
+
+<use  "images/layers_and_projections/legotruck/original/08_08.png" >
+File: images/layers_and_projections/legotruck/Reconstruction_of_view_(3,3).png 
+Graphic file (type QTm)
+
+<use  "images/layers_and_projections/legotruck/Reconstruction_of_view_(3,3).png
+" >
+Overfull \hbox (13.23769pt too wide) in paragraph at lines 4--9
+ [] 
+ []
+
+) [45
 
 ]
 \openout4 = `presentation.vrb'.
 
  (./presentation.vrb
-File: images/Lytro_Light_Field_Camera-front_background_removed.png Graphic file
- (type QTm)
+File: images/layers_and_projections/legotruck/3.png Graphic file (type QTm)
 
-<use  "images/Lytro_Light_Field_Camera-front_background_removed.png" >)
-[46
+<use  "images/layers_and_projections/legotruck/3.png" >
+File: images/layers_and_projections/legotruck/2.png Graphic file (type QTm)
+
+<use  "images/layers_and_projections/legotruck/2.png" >
+File: images/layers_and_projections/legotruck/1.png Graphic file (type QTm)
+
+<use  "images/layers_and_projections/legotruck/1.png" >) [46
 
 ]
 \openout4 = `presentation.vrb'.
 
- (./presentation.vrb
+
+(./presentation.vrb
 File: figures/slicing_attenuator/tiling_overview.pdf Graphic file (type QTm)
-
-<use  "figures/slicing_attenuator/tiling_overview.pdf" >) [47
+ <use  "figures/slicing_attenuator/tiling_overview.pdf" >)
+[47
 
 ]
 \openout4 = `presentation.vrb'.
 
-
-(./presentation.vrb) [48
+ (./presentation.vrb) [48
 
 ]
 \openout4 = `presentation.vrb'.
@@ -2287,11 +2322,23 @@ File: figures/spectral_support/fft_red_and_blue.png Graphic file (type QTm)
 ] [58
 
 ]
-(./presentation.bbl)
-Overfull \vbox (1382.43301pt too high) detected at line 486
+\openout4 = `presentation.vrb'.
+
+
+(./presentation.vrb) [59
+
+] [60
+
+]
+\openout4 = `presentation.vrb'.
+
+ (./presentation.vrb) [61
+
+] (./presentation.bbl)
+Overfull \vbox (1382.43301pt too high) detected at line 560
  []
 
-[59
+[62
 
 ]
 \openout4 = `presentation.vrb'.
@@ -2315,7 +2362,7 @@ LaTeX Font Warning: Font shape `EU1/FiraMono-Regular.ttf(0)/bx/n' undefined
 (Font)              using `EU1/FiraMono-Regular.ttf(0)/m/n' instead on input li
 ne 2.
 
-)) [60
+)) [63
 
 ]
 \openout4 = `presentation.vrb'.
@@ -2334,7 +2381,7 @@ other\\endinput\n \"); f.close();")...executed.
 
  (./presentation.mintedmd5)
 (./_minted-presentation/677f7a6535ede418ad5f1e4a598ff9d5fbb3faef.pygtex))
-[61
+[64
 
 ]
 \openout4 = `presentation.vrb'.
@@ -2353,13 +2400,7 @@ other\\endinput\n \"); f.close();")...executed.
 
  (./presentation.mintedmd5)
 (./_minted-presentation/a8b371ae6f8fc5afc24e7dff3722adb0c1d2990e.pygtex))
-[62
-
-] [63
-
-] [64
-
-] [65
+[65
 
 ] [66
 
@@ -2367,31 +2408,37 @@ other\\endinput\n \"); f.close();")...executed.
 
 ] [68
 
-]
-\c@density=\count323
- [69
+] [69
 
 ] [70
 
 ] [71
 
-] [72
+]
+\c@density=\count326
+ [72
 
 ] [73
+
+] [74
+
+] [75
+
+] [76
 
 ]
 File: images/valley.jpg Graphic file (type QTm)
 
 <use  "images/valley.jpg" >
 LaTeX Font Info:    Font shape `U/ccicons/m/n' will be
-(Font)              scaled to size 24.0pt on input line 643.
+(Font)              scaled to size 24.0pt on input line 713.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [74
+ [77
 
 ]
-[75] [76
+[78] [79
 
 ]
 \tf@nav=\write9
@@ -2409,24 +2456,24 @@ runsystem(rm "presentation.mintedmd5")...executed.
 
 runsystem(rm "presentation.pyg")...executed.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 647.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 647.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 717.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 717.
  (./presentation.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 647.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 647.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 717.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 717.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 647.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 717.
  ) 
 Here is how much of TeX's memory you used:
- 50548 strings out of 493638
- 1125172 string characters out of 6144793
- 1265907 words of memory out of 5000000
- 52840 multiletter control sequences out of 15000+600000
+ 51672 strings out of 493638
+ 1146047 string characters out of 6144793
+ 1276721 words of memory out of 5000000
+ 53948 multiletter control sequences out of 15000+600000
  13588 words of font info for 108 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  85i,14n,114p,10386b,2786s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on presentation.pdf (76 pages).
+Output written on presentation.pdf (79 pages).

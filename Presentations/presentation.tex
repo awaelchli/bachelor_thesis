@@ -11,6 +11,10 @@
 \usepackage{standalone}
 \usepackage{array}
 \usepackage[percent]{overpic}
+\usepackage[font=footnotesize]{caption}
+%\usepackage{subfigure}
+\usepackage{caption}
+\usepackage{subcaption}
 
 % Math packages
 \usepackage{amsthm}
@@ -54,14 +58,22 @@
 	\tableofcontents
 \end{frame}
 
-\section{Motivation}
+\section{Introduction}
 
 \begin{frame}[fragile]
 	\frametitle{Existing 3D Displays}
-	\includegraphics[height = 7cm]{figures/overview_displays/existing_3d_displays.pdf}
+	
+	\begin{figure}
+		\captionsetup[sub]{font=scriptsize}
+		\subcaptionbox*{Jones et al.}
+		{\includegraphics[height=6.5cm]{figures/overview_displays/360_deg_display}}
+		\hspace{0.4cm}
+		\subcaptionbox*{\href{https://en.wikipedia.org/wiki/Autostereoscopy}{en.wikipedia.org/wiki/Autostereoscopy}}
+		{\includegraphics[height=6.5cm]{figures/overview_displays/parallax_barrier_vs_lenticular}}	
+	\end{figure}
 \end{frame}
 
-\section{Introduction to Light Fields}
+\section{Light Fields}
 
 \begin{frame}[fragile]
 	\frametitle{The Plenoptic Function}
@@ -76,8 +88,10 @@
 				\item 7D
 			\end{itemize}
 		\column{0.4\textwidth}
-			\vspace{-5cm}
-			\includegraphics[width = 4cm]{images/plenoptic.png}
+			\begin{figure}
+				\includegraphics[width = 4cm]{images/plenoptic.png}
+				\caption*{\cite{AdelsonBergen}}
+			\end{figure}
 	\end{columns}
 	
 \end{frame}
@@ -98,19 +112,30 @@
 \begin{frame}[fragile]
 	\frametitle{Light Field Acquisition}
 	
-	\begin{itemize}[<alert@+>]
-		\item Camera array
-		\item Gantry
-		\item Plenoptic camera
-	\end{itemize}
+	\begin{figure}
+		\includegraphics[height = 6cm]{images/stanford_camera_array_2.jpg}
+		\caption*{Stanford camera array. Source: \href{http://lightfield.stanford.edu}{lightfield.stanford.edu}}
+	\end{figure}
 	
-	\begin{center}
-		\visible<1,2,3>{\includegraphics[height = 3.1cm]{images/stanford_camera_array_2.jpg}}
-		\hspace{0.2cm}
-		\visible<2, 3>{\includegraphics[height = 3.1cm]{images/lego_camera_gantry}}
-		\hspace{0.2cm}
-		\visible<3>{\includegraphics[height = 3.1cm]{images/Lytro_Light_Field_Camera-front_background_removed.png}}
-	\end{center}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Light Field Acquisition}
+	
+	\begin{figure}
+		\includegraphics[height = 6cm]{images/lego_camera_gantry}
+		\caption*{Lego gantry. Source: \href{http://lightfield.stanford.edu}{lightfield.stanford.edu}}
+	\end{figure}
+	
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Light Field Acquisition}
+	
+	\begin{figure}
+		\includegraphics[height = 6cm]{images/Lytro_Light_Field_Camera-front_background_removed.png}
+		\caption*{Lytro plenoptic camera. Source: \href{https://de.wikipedia.org/wiki/Lytro}{de.wikipedia.org/wiki/Lytro}}
+	\end{figure}
 	
 \end{frame}
 
@@ -166,9 +191,11 @@
 
 \begin{frame}[fragile]
 	\frametitle{Display Architecture}
-	\begin{center}
+	
+	\begin{figure}
 		\includegraphics[width=10cm]{images/display_architecture.png}
-	\end{center}
+		\caption*{\cite{WetzsteinTomo}}	
+	\end{figure}
 \end{frame}
 
 \begin{frame}[fragile]
@@ -286,6 +313,9 @@
 	\begin{itemize}
 		\item Proposed by \cite{WetzsteinTomo}
 		\item System is overdetermined
+%			\begin{itemize}
+%				\item More equations than unknowns
+%			\end{itemize}
 		\item Need iterative solver
 	\end{itemize}
 \end{frame}
@@ -301,7 +331,7 @@
 \end{frame}
 
 \begin{frame}[fragile]
-	\frametitle{Examples}
+	\frametitle{Example: Lego Truck}
 	
 	\begin{center}
 		\begin{tabular}{cc}
@@ -325,30 +355,49 @@
 				$6 \times 6 \times 480 \times 640$ \\
 				$\sim$ 10 minutes
 			\end{tabular} 
-			\\
+		\end{tabular}
+	\end{center}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Example: Lego Truck}
+	
+	\begin{center}
+		\begin{tabular}{c p{0cm} c}
+			Original & & Simulation \\
+			\includegraphics[width = 5cm]{images/layers_and_projections/legotruck/original/08_08}
+			& & \includegraphics[width = 5cm]{images/layers_and_projections/legotruck/Reconstruction_of_view_(3,3)}
 		\end{tabular}
 	\end{center}
 	
-	% Lego truck layers
-	% No tiling
-	
+	Show enlarged parts of images\\
+	Compare to more layers!
 \end{frame}
 
 \begin{frame}[fragile]
-	\frametitle{Examples}
+	\frametitle{Example: Lego Truck}
 	
-	% Tarot cards
-	% No tiling
+	\begin{columns}
+		\column{0.3\textwidth}
+			\includegraphics[width = 3.1cm]{images/layers_and_projections/legotruck/3}
+			\\
+			\includegraphics[width = 3.1cm]{images/layers_and_projections/legotruck/2}
+			\\
+			\includegraphics[width = 3.1cm]{images/layers_and_projections/legotruck/1}
+			\\
+		\column{0.7\textwidth}
+			\begin{itemize}
+				\item A lot of memory is needed:
+					\begin{itemize}
+						\item Light field (uncompressed)
+						\item Propagation matrix (? nnz entries)
+						\item Additional matrices for solver
+					\end{itemize}
+				\item Memory usage grows with resolution
+				\item Solution: Slice the attenuator
+			\end{itemize}
+	\end{columns}
 	
-\end{frame}
-
-\begin{frame}[fragile]
-	\frametitle{Examples}
-	
-	% Lytro rubik's cube
-	% No tiling
-	
-	\includegraphics[height = 2cm]{images/Lytro_Light_Field_Camera-front_background_removed}
 \end{frame}
 
 \begin{frame}[fragile]
@@ -372,7 +421,7 @@
 
 	\begin{itemize}
 		\item Problem: Rays can overlap with multiple slices at borders
-		\item Slices need to overlap
+		\item Slices need to overlap too
 		\item Blend slices with mask
 	\end{itemize}
 \end{frame}
@@ -477,6 +526,31 @@
 
 \section{Conclusion}
 
+\begin{frame}[fragile]
+	\frametitle{Summary}
+	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Acknowledgements}
+	
+	\begin{block}{Supervision by}
+		Prof. Dr. Matthias Zwicker \\
+		Siavash Bigdeli
+	\end{block}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Resources}
+	
+	\begin{block}{Contact}
+  		adrian.waelchli@students.unibe.ch
+	\end{block}
+	
+	\begin{block}{Thesis and Resources}
+		\href{https://github.com/awaelchli/bachelor_thesis}{github.com/awaelchli/bachelor\_thesis}
+	\end{block}
+\end{frame}
 
 \begin{frame}
 	\frametitle{References}
@@ -484,10 +558,6 @@
 	%\nocite{*}
 	\bibliography{presentation}
 \end{frame}
-
-
-
-
 
 \begin{frame}[fragile]
   \frametitle{mtheme}
