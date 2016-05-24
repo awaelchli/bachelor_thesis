@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.3.2)  24 MAY 2016 11:48
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.3.2)  24 MAY 2016 15:28
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1900,7 +1900,28 @@ Overfull \hbox (14.61844pt too wide) in paragraph at lines 9--9
 
 ) [4
 
-] [5
+]
+\openout4 = `presentation.vrb'.
+
+ (./presentation.vrb
+File: figures/overview_displays/3d_glasses.png Graphic file (type QTm)
+ <use  "figures/overview_displays/3d_glasses.png" >)
+[5
+
+] (./presentation.vrb
+File: figures/overview_displays/no_3d_glasses.png Graphic file (type QTm)
+ <use  "figures/overview_displays/no_3d_glasses.png" >)
+[6
+
+]
+\openout4 = `presentation.vrb'.
+
+ (./presentation.vrb
+File: images/glass_plates_front_view_cropped.jpg Graphic file (type QTm)
+ <use  "images/glass_plates_front_view_cropped.jpg" >)
+[7
+
+] [8
 
 ]
 \openout4 = `presentation.vrb'.
@@ -1918,21 +1939,6 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 File: images/plenoptic.png Graphic file (type QTm)
 
-<use  "images/plenoptic.png" >) [6
-
-] (./presentation.vrb
-File: images/plenoptic.png Graphic file (type QTm)
-
-<use  "images/plenoptic.png" >) [7
-
-] (./presentation.vrb
-File: images/plenoptic.png Graphic file (type QTm)
-
-<use  "images/plenoptic.png" >) [8
-
-] (./presentation.vrb
-File: images/plenoptic.png Graphic file (type QTm)
-
 <use  "images/plenoptic.png" >) [9
 
 ] (./presentation.vrb
@@ -1940,17 +1946,32 @@ File: images/plenoptic.png Graphic file (type QTm)
 
 <use  "images/plenoptic.png" >) [10
 
+] (./presentation.vrb
+File: images/plenoptic.png Graphic file (type QTm)
+
+<use  "images/plenoptic.png" >) [11
+
+] (./presentation.vrb
+File: images/plenoptic.png Graphic file (type QTm)
+
+<use  "images/plenoptic.png" >) [12
+
+] (./presentation.vrb
+File: images/plenoptic.png Graphic file (type QTm)
+
+<use  "images/plenoptic.png" >) [13
+
 ]
 \openout4 = `presentation.vrb'.
 
  (./presentation.vrb
-(./figures/two-plane-parameterization.tex)) [11
+(./figures/two-plane-parameterization.tex)) [14
 
 ] (./presentation.vrb
-(./figures/two-plane-parameterization.tex)) [12
+(./figures/two-plane-parameterization.tex)) [15
 
 ] (./presentation.vrb
-(./figures/two-plane-parameterization.tex)) [13
+(./figures/two-plane-parameterization.tex)) [16
 
 ]
 \openout4 = `presentation.vrb'.
@@ -1958,7 +1979,7 @@ File: images/plenoptic.png Graphic file (type QTm)
  (./presentation.vrb
 File: images/stanford_camera_array_2.jpg Graphic file (type QTm)
 
-<use  "images/stanford_camera_array_2.jpg" >) [14
+<use  "images/stanford_camera_array_2.jpg" >) [17
 
 ]
 \openout4 = `presentation.vrb'.
@@ -1966,7 +1987,7 @@ File: images/stanford_camera_array_2.jpg Graphic file (type QTm)
  (./presentation.vrb
 File: images/lego_camera_gantry.jpg Graphic file (type QTm)
 
-<use  "images/lego_camera_gantry.jpg" >) [15
+<use  "images/lego_camera_gantry.jpg" >) [18
 
 ]
 \openout4 = `presentation.vrb'.
@@ -1976,17 +1997,17 @@ File: images/Lytro_Light_Field_Camera-front_background_removed.png Graphic file
  (type QTm)
 
 <use  "images/Lytro_Light_Field_Camera-front_background_removed.png" >)
-[16
+[19
 
 ]
 \openout4 = `presentation.vrb'.
 
  (./presentation.vrb (./figures/perspective-projection-shift.tex)
-(./figures/perspective-projection-sheared.tex)) [17
+(./figures/perspective-projection-sheared.tex)) [20
 
 ] (./presentation.vrb
 (./figures/perspective-projection-shift.tex)
-(./figures/perspective-projection-sheared.tex)) [18
+(./figures/perspective-projection-sheared.tex)) [21
 
 ]
 \openout4 = `presentation.vrb'.
@@ -2019,7 +2040,7 @@ File: images/rectification/dice000_raw.png Graphic file (type QTm)
 <use  "images/rectification/dice000_raw.png" >
 File: images/rectification/dice000_rectified.png Graphic file (type QTm)
 
-<use  "images/rectification/dice000_rectified.png" >) [19
+<use  "images/rectification/dice000_rectified.png" >) [22
 
 ]
 \openout4 = `presentation.vrb'.
@@ -2030,9 +2051,9 @@ File: images/rectification/dice499_raw.png Graphic file (type QTm)
 <use  "images/rectification/dice499_raw.png" >
 File: images/rectification/dice499_rectified.png Graphic file (type QTm)
 
-<use  "images/rectification/dice499_rectified.png" >) [20
+<use  "images/rectification/dice499_rectified.png" >) [23
 
-] [21
+] [24
 
 ]
 \openout4 = `presentation.vrb'.
@@ -2042,28 +2063,28 @@ File: images/rectification/dice499_rectified.png Graphic file (type QTm)
 File: figures/beer-lambert/lambert-beer-law_illustration.pdf Graphic file (type
  QTm)
 
-<use  "figures/beer-lambert/lambert-beer-law_illustration.pdf" >) [22
+<use  "figures/beer-lambert/lambert-beer-law_illustration.pdf" >) [25
 
 ]
 (./presentation.vrb
 File: figures/beer-lambert/lambert-beer-law_layers1.pdf Graphic file (type QTm)
 
 
-<use  "figures/beer-lambert/lambert-beer-law_layers1.pdf" >) [23
+<use  "figures/beer-lambert/lambert-beer-law_layers1.pdf" >) [26
 
 ]
 (./presentation.vrb
 File: figures/beer-lambert/lambert-beer-law_layers2.pdf Graphic file (type QTm)
 
 
-<use  "figures/beer-lambert/lambert-beer-law_layers2.pdf" >) [24
+<use  "figures/beer-lambert/lambert-beer-law_layers2.pdf" >) [27
 
 ]
 (./presentation.vrb
 File: figures/beer-lambert/lambert-beer-law_layers3.pdf Graphic file (type QTm)
 
 
-<use  "figures/beer-lambert/lambert-beer-law_layers3.pdf" >) [25
+<use  "figures/beer-lambert/lambert-beer-law_layers3.pdf" >) [28
 
 ]
 \openout4 = `presentation.vrb'.
@@ -2071,42 +2092,32 @@ File: figures/beer-lambert/lambert-beer-law_layers3.pdf Graphic file (type QTm)
 
 (./presentation.vrb
 File: images/display_architecture.png Graphic file (type QTm)
- <use  "images/display_architecture.png" >) [26
+ <use  "images/display_architecture.png" >) [29
 
 ]
 \openout4 = `presentation.vrb'.
 
 
 (./presentation.vrb (./figures/ray_casting_perspective_projection.tex))
-[27
-
-] (./presentation.vrb (./figures/ray_casting_perspective_projection.tex))
-[28
-
-] (./presentation.vrb (./figures/ray_casting_perspective_projection.tex))
-[29
-
-] (./presentation.vrb (./figures/ray_casting_perspective_projection.tex))
 [30
+
+] (./presentation.vrb (./figures/ray_casting_perspective_projection.tex))
+[31
+
+] (./presentation.vrb (./figures/ray_casting_perspective_projection.tex))
+[32
+
+] (./presentation.vrb (./figures/ray_casting_perspective_projection.tex))
+[33
 
 ]
 \openout4 = `presentation.vrb'.
 
- (./presentation.vrb) [31
-
-] (./presentation.vrb) [32
-
-] (./presentation.vrb)
-[33
-
-] (./presentation.vrb) [34
+ (./presentation.vrb) [34
 
 ] (./presentation.vrb) [35
 
-]
-\openout4 = `presentation.vrb'.
-
- (./presentation.vrb)
+] (./presentation.vrb)
 [36
 
 ] (./presentation.vrb) [37
@@ -2117,15 +2128,9 @@ File: images/display_architecture.png Graphic file (type QTm)
 \openout4 = `presentation.vrb'.
 
  (./presentation.vrb)
-Overfull \vbox (8.10318pt too high) detected at line 290
- []
-
 [39
 
-]
-\openout4 = `presentation.vrb'.
-
- (./presentation.vrb) [40
+] (./presentation.vrb) [40
 
 ] (./presentation.vrb) [41
 
@@ -2133,12 +2138,28 @@ Overfull \vbox (8.10318pt too high) detected at line 290
 \openout4 = `presentation.vrb'.
 
  (./presentation.vrb)
+Overfull \vbox (8.10318pt too high) detected at line 308
+ []
+
 [42
 
 ]
 \openout4 = `presentation.vrb'.
 
  (./presentation.vrb) [43
+
+] (./presentation.vrb) [44
+
+]
+\openout4 = `presentation.vrb'.
+
+ (./presentation.vrb)
+[45
+
+]
+\openout4 = `presentation.vrb'.
+
+ (./presentation.vrb) [46
 
 ]
 \openout4 = `presentation.vrb'.
@@ -2158,10 +2179,10 @@ Overfull \hbox (14.6267pt too wide) in paragraph at lines 4--26
  []
 
 )
-Overfull \vbox (16.5526pt too high) detected at line 362
+Overfull \vbox (16.5526pt too high) detected at line 380
  []
 
-[44
+[47
 
 ]
 \openout4 = `presentation.vrb'.
@@ -2180,7 +2201,7 @@ Overfull \hbox (13.23769pt too wide) in paragraph at lines 9--14
  [] 
  []
 
-) [45
+) [48
 
 ]
 \openout4 = `presentation.vrb'.
@@ -2200,10 +2221,10 @@ Overfull \hbox (13.23769pt too wide) in paragraph at lines 4--9
  []
 
 )
-Overfull \vbox (4.53609pt too high) detected at line 392
+Overfull \vbox (4.53609pt too high) detected at line 410
  []
 
-[46
+[49
 
 ]
 \openout4 = `presentation.vrb'.
@@ -2223,10 +2244,10 @@ Overfull \hbox (13.23769pt too wide) in paragraph at lines 4--9
  []
 
 )
-Overfull \vbox (4.53609pt too high) detected at line 404
+Overfull \vbox (4.53609pt too high) detected at line 422
  []
 
-[47
+[50
 
 ]
 \openout4 = `presentation.vrb'.
@@ -2246,10 +2267,10 @@ Overfull \hbox (13.23769pt too wide) in paragraph at lines 4--9
  []
 
 )
-Overfull \vbox (4.53609pt too high) detected at line 416
+Overfull \vbox (4.53609pt too high) detected at line 434
  []
 
-[48
+[51
 
 ]
 \openout4 = `presentation.vrb'.
@@ -2268,7 +2289,7 @@ Overfull \hbox (13.23769pt too wide) in paragraph at lines 4--9
  [] 
  []
 
-) [49
+) [52
 
 ]
 \openout4 = `presentation.vrb'.
@@ -2287,7 +2308,7 @@ Overfull \hbox (13.23769pt too wide) in paragraph at lines 4--9
  [] 
  []
 
-) [50
+) [53
 
 ]
 \openout4 = `presentation.vrb'.
@@ -2306,7 +2327,7 @@ Overfull \hbox (13.23769pt too wide) in paragraph at lines 4--9
  [] 
  []
 
-) [51
+) [54
 
 ]
 \openout4 = `presentation.vrb'.
@@ -2325,7 +2346,7 @@ Overfull \hbox (13.23769pt too wide) in paragraph at lines 4--9
  [] 
  []
 
-) [52
+) [55
 
 ]
 \openout4 = `presentation.vrb'.
@@ -2339,7 +2360,7 @@ File: images/layers_and_projections/legotruck/2.png Graphic file (type QTm)
 <use  "images/layers_and_projections/legotruck/2.png" >
 File: images/layers_and_projections/legotruck/1.png Graphic file (type QTm)
 
-<use  "images/layers_and_projections/legotruck/1.png" >) [53
+<use  "images/layers_and_projections/legotruck/1.png" >) [56
 
 ]
 \openout4 = `presentation.vrb'.
@@ -2348,12 +2369,12 @@ File: images/layers_and_projections/legotruck/1.png Graphic file (type QTm)
 (./presentation.vrb
 File: figures/slicing_attenuator/tiling_overview.pdf Graphic file (type QTm)
  <use  "figures/slicing_attenuator/tiling_overview.pdf" >)
-[54
+[57
 
 ]
 \openout4 = `presentation.vrb'.
 
- (./presentation.vrb) [55
+ (./presentation.vrb) [58
 
 ]
 \openout4 = `presentation.vrb'.
@@ -2364,7 +2385,7 @@ File: images/glass_plates_front_view_cropped.jpg Graphic file (type QTm)
 <use  "images/glass_plates_front_view_cropped.jpg" >
 File: images/raw_backlight_from_top.JPG Graphic file (type QTm)
 
-<use  "images/raw_backlight_from_top.JPG" >) [56
+<use  "images/raw_backlight_from_top.JPG" >) [59
 
 ]
 \openout4 = `presentation.vrb'.
@@ -2372,42 +2393,43 @@ File: images/raw_backlight_from_top.JPG Graphic file (type QTm)
  (./presentation.vrb
 File: images/all_displays_on.JPG Graphic file (type QTm)
 
-<use  "images/all_displays_on.JPG" >) [57
+<use  "images/all_displays_on.JPG" >) [60
 
 ]
 \openout4 = `presentation.vrb'.
 
- (./presentation.vrb) [58
+ (./presentation.vrb) [61
 
-] [59
+] [62
 
 ]
 \openout4 = `presentation.vrb'.
 
 
 (./presentation.vrb
-File: images/lf_geometry.jpg Graphic file (type QTm)
- <use  "images/lf_geometry.jpg" >) [60
+File: images/lf_geometry_modified.jpg Graphic file (type QTm)
+ <use  "images/lf_geometry_modified.jpg" >) [63
 
 ]
 \openout4 = `presentation.vrb'.
 
- (./presentation.vrb
+
+(./presentation.vrb
 File: images/epi_dice/dice000.png Graphic file (type QTm)
-
-<use  "images/epi_dice/dice000.png" >
+ <use  "images/epi_dice/dice000.png" >
 File: images/epi_dice/dice099.png Graphic file (type QTm)
- <use  "images/epi_dice/dice099.png" >
+
+<use  "images/epi_dice/dice099.png" >
 File: images/epi_dice/dice199.png Graphic file (type QTm)
-
-<use  "images/epi_dice/dice199.png" >
+ <use  "images/epi_dice/dice199.png" >
 File: images/epi_dice/dice299.png Graphic file (type QTm)
- <use  "images/epi_dice/dice299.png" >
-File: images/epi_dice/dice399.png Graphic file (type QTm)
 
-<use  "images/epi_dice/dice399.png" >
+<use  "images/epi_dice/dice299.png" >
+File: images/epi_dice/dice399.png Graphic file (type QTm)
+ <use  "images/epi_dice/dice399.png" >
 File: images/epi_dice/dice499.png Graphic file (type QTm)
- <use  "images/epi_dice/dice499.png" >
+
+<use  "images/epi_dice/dice499.png" >
 (./figures/epi_dice_overview_rectified.tex
 File: figures/epi_1x500x1000x1000/rectified/overview.png Graphic file (type QTm
 )
@@ -2417,7 +2439,7 @@ File: figures/epi_1x500x1000x1000/rectified/overview.png Graphic file (type QTm
 File: figures/epi_1x500x1000x1000/rectified/scanY=379.png Graphic file (type QT
 m)
 
-<use  "figures/epi_1x500x1000x1000/rectified/scanY=379.png" >)) [61
+<use  "figures/epi_1x500x1000x1000/rectified/scanY=379.png" >)) [64
 
 ]
 (./presentation.vrb
@@ -2445,14 +2467,14 @@ File: figures/epi_1x500x1000x1000/rectified/overview.png Graphic file (type QTm
 File: figures/epi_1x500x1000x1000/rectified/scanY=641.png Graphic file (type QT
 m)
 
-<use  "figures/epi_1x500x1000x1000/rectified/scanY=641.png" >)) [62
+<use  "figures/epi_1x500x1000x1000/rectified/scanY=641.png" >)) [65
 
 ]
 \openout4 = `presentation.vrb'.
 
 
 (./presentation.vrb (./figures/spectral_support/two_objects.tex)
-(./figures/spectral_support/epi_two_objects.tex)) [63
+(./figures/spectral_support/epi_two_objects.tex)) [66
 
 ]
 \openout4 = `presentation.vrb'.
@@ -2462,28 +2484,28 @@ m)
 (./figures/spectral_support/fourier_transform_red_and_blue.tex
 File: figures/spectral_support/fft_red_and_blue.png Graphic file (type QTm)
 
-<use  "figures/spectral_support/fft_red_and_blue.png" >)) [64
+<use  "figures/spectral_support/fft_red_and_blue.png" >)) [67
 
-] [65
-
-]
-\openout4 = `presentation.vrb'.
-
-
-(./presentation.vrb) [66
-
-] [67
+] [68
 
 ]
 \openout4 = `presentation.vrb'.
 
- (./presentation.vrb) [68
+
+(./presentation.vrb) [69
+
+] [70
+
+]
+\openout4 = `presentation.vrb'.
+
+ (./presentation.vrb) [71
 
 ] (./presentation.bbl)
-Overfull \vbox (502.08368pt too high) detected at line 652
+Overfull \vbox (502.08368pt too high) detected at line 678
  []
 
-[69
+[72
 
 ]
 \tf@nav=\write9
@@ -2495,29 +2517,20 @@ Overfull \vbox (502.08368pt too high) detected at line 652
 \tf@snm=\write11
 \openout11 = `presentation.snm'.
 
-runsystem(rm "_minted-presentation/63df94fdec86dda81ef6a46faeed75bf5fd7e198.pyg
-tex")...executed.
-
-runsystem(rm "_minted-presentation/677f7a6535ede418ad5f1e4a598ff9d5fbb3faef.pyg
-tex")...executed.
-
-runsystem(rm "_minted-presentation/a8b371ae6f8fc5afc24e7dff3722adb0c1d2990e.pyg
-tex")...executed.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 654.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 654.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 680.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 680.
  (./presentation.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 654.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 654.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 654.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 680.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 680.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 680.
  ) 
 Here is how much of TeX's memory you used:
- 51547 strings out of 493638
- 1143328 string characters out of 6144793
- 1276158 words of memory out of 5000000
- 53827 multiletter control sequences out of 15000+600000
+ 51527 strings out of 493638
+ 1143201 string characters out of 6144793
+ 1275450 words of memory out of 5000000
+ 53803 multiletter control sequences out of 15000+600000
  13526 words of font info for 103 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  85i,14n,114p,10386b,2786s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on presentation.pdf (69 pages).
+Output written on presentation.pdf (72 pages).

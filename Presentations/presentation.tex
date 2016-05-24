@@ -75,6 +75,24 @@
 	\end{figure}
 \end{frame}
 
+\begin{frame}[fragile]
+	\frametitle{Existing 3D Displays}
+	
+	\begin{figure}
+		\includegraphics<1>[width=5cm]{figures/overview_displays/3d_glasses}
+		\includegraphics<2>[width=5cm]{figures/overview_displays/no_3d_glasses}
+	\end{figure}
+
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Today...}
+	
+	\begin{figure}
+		\includegraphics[height=7cm]{images/glass_plates_front_view_cropped}
+	\end{figure}
+\end{frame}
+
 \section{Light Fields}
 
 \begin{frame}[fragile]
@@ -517,6 +535,13 @@
 
 \begin{frame}[fragile]
 	\frametitle{The Finished Product}
+	
+	\begin{itemize}
+		\item Finally, print images on transparent sheets
+		\item Glass plates hold sheets in place
+		\item Combine with backlight
+	\end{itemize}
+	
 	\begin{center}
 		\includegraphics[height=4cm]{images/glass_plates_front_view_cropped}
 		\hspace{1cm}
@@ -545,9 +570,10 @@
 
 \begin{frame}[fragile]
 	\frametitle{Epipolar Plane Geometry}
-	\begin{center}
-		\includegraphics[height = 6cm]{images/lf_geometry.jpg}
-	\end{center}
+	\begin{figure}
+		\includegraphics[height = 6cm]{images/lf_geometry_modified.jpg}
+		\caption*{Source: \href{http://klimt.iwr.uni-heidelberg.de/HCI/Research/LightField/images/lf_geometry.jpg}{klimt.iwr.uni-heidelberg.de}}
+	\end{figure}
 \end{frame}
 
 \begin{frame}[fragile]
@@ -607,9 +633,9 @@
 		\input{figures/spectral_support/fourier_transform_red_and_blue.tex}
 	\end{center}
 	
-	\begin{equation*}
-		\widehat{f}(\xi) = \int_{\mathbb{R}^n} f(x) e^{-2 \pi \text{i} x \cdot \xi} \, \text{d}x
-	\end{equation*}
+%	\begin{equation*}
+%		\widehat{f}(\xi) = \int_{\mathbb{R}^n} f(x) e^{-2 \pi \text{i} x \cdot \xi} \, \text{d}x
+%	\end{equation*}
 	
 \end{frame}
 
