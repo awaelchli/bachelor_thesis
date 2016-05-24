@@ -1,10 +1,9 @@
-\frametitle{Typography}
-      \begin{minted}[fontsize=\small]{latex}
-The theme provides sensible defaults to \emph{emphasis}
-text, \alert{accent} parts or show \textbf{bold} results.
-      \end{minted}
+\frametitle{Resources}
 
-  \begin{center}becomes\end{center}
+^^I\begin{block}{Contact}
+  ^^I^^Iadrian.waelchli@students.unibe.ch
+^^I\end{block}
 
-  The theme provides sensible defaults to \emph{emphasis} text,
-  \alert{accent} parts or show \textbf{bold} results.
+^^I\begin{block}{Thesis and Resources}
+^^I^^I\href{https://github.com/awaelchli/bachelor_thesis}{github.com/awaelchli/bachelor\_thesis}
+^^I\end{block}
