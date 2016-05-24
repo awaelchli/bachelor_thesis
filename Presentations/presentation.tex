@@ -15,6 +15,7 @@
 %\usepackage{subfigure}
 \usepackage{caption}
 \usepackage{subcaption}
+\usepackage{graphicx}
 
 % Math packages
 \usepackage{amsthm}
@@ -362,6 +363,11 @@
 \begin{frame}[fragile]
 	\frametitle{Example: Lego Truck}
 	
+	Goal: Simulate viewing experience before assembly
+	\begin{equation*}
+		I = e^{- P \alpha}
+	\end{equation*}
+	
 	\begin{center}
 		\begin{tabular}{c p{0cm} c}
 			Original & & Simulation \\
@@ -369,9 +375,91 @@
 			& & \includegraphics[width = 5cm]{images/layers_and_projections/legotruck/Reconstruction_of_view_(3,3)}
 		\end{tabular}
 	\end{center}
+
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{3 Layers}
 	
-	Show enlarged parts of images\\
-	Compare to more layers!
+	\begin{center}
+		\begin{tabular}{c p{0cm} c}
+			Original & & Simulation \\
+			\includegraphics[width = 5cm, trim={4cm, 20cm, 30cm, 0}, clip]{images/layers_and_projections/legotruck/original/08_08}
+			& & \includegraphics[width = 5cm, trim={2cm, 10cm, 15cm, 0}, clip]{figures/simulated_views/legotruck/3Layers_legotruck/Reconstruction_of_view_(3,3)}
+		\end{tabular}
+	\end{center}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{5 Layers}
+	
+	\begin{center}
+		\begin{tabular}{c p{0cm} c}
+			Original & & Simulation \\
+			\includegraphics[width = 5cm, trim={4cm, 20cm, 30cm, 0}, clip]{images/layers_and_projections/legotruck/original/08_08}
+			& & \includegraphics[width = 5cm, trim={2cm, 10cm, 15cm, 0}, clip]{figures/simulated_views/legotruck/5Layers_legotruck/Reconstruction_of_view_(3,3)}
+		\end{tabular}
+	\end{center}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{10 Layers}
+	
+	\begin{center}
+		\begin{tabular}{c p{0cm} c}
+			Original & & Simulation \\
+			\includegraphics[width = 5cm, trim={4cm, 20cm, 30cm, 0}, clip]{images/layers_and_projections/legotruck/original/08_08}
+			& & \includegraphics[width = 5cm, trim={2cm, 10cm, 15cm, 0}, clip]{figures/simulated_views/legotruck/10Layers_legotruck/Reconstruction_of_view_(3,3)}
+		\end{tabular}
+	\end{center}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{3 Layers}
+	
+	\begin{center}
+		\begin{tabular}{c p{0cm} c}
+			Original & & Simulation \\
+			\includegraphics[width = 5cm, trim={15cm, 10cm, 15cm, 10cm}, clip]{images/layers_and_projections/legotruck/original/08_08}
+			& & \includegraphics[width = 5cm, trim={7.5cm, 5cm, 7.5cm, 5cm}, clip]{figures/simulated_views/legotruck/3Layers_legotruck/Reconstruction_of_view_(3,3)}
+		\end{tabular}
+	\end{center}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{5 Layers}
+	
+	\begin{center}
+		\begin{tabular}{c p{0cm} c}
+			Original & & Simulation \\
+			\includegraphics[width = 5cm, trim={15cm, 10cm, 15cm, 10cm}, clip]{images/layers_and_projections/legotruck/original/08_08}
+			& & \includegraphics[width = 5cm, trim={7.5cm, 5cm, 7.5cm, 5cm}, clip]{figures/simulated_views/legotruck/5Layers_legotruck/Reconstruction_of_view_(3,3)}
+		\end{tabular}
+	\end{center}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{10 Layers}
+	
+	\begin{center}
+		\begin{tabular}{c p{0cm} c}
+			Original & & Simulation \\
+			\includegraphics[width = 5cm, trim={15cm, 10cm, 15cm, 10cm}, clip]{images/layers_and_projections/legotruck/original/08_08}
+			& & \includegraphics[width = 5cm, trim={7.5cm, 5cm, 7.5cm, 5cm}, clip]{figures/simulated_views/legotruck/10Layers_legotruck/Reconstruction_of_view_(3,3)}
+		\end{tabular}
+	\end{center}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{10 Layers, Higher Angular Resolution}
+	
+	\begin{center}
+		\begin{tabular}{c p{0cm} c}
+			Original & & Simulation \\
+			\includegraphics[width = 5cm, trim={15cm, 10cm, 15cm, 10cm}, clip]{images/layers_and_projections/legotruck/original/08_08}
+			& & \includegraphics[width = 5cm, trim={7.5cm, 5cm, 7.5cm, 5cm}, clip]{figures/simulated_views/legotruck/10_Layers_9x9_angular/Reconstruction_of_view_(5,5)}
+		\end{tabular}
+	\end{center}
 \end{frame}
 
 \begin{frame}[fragile]
