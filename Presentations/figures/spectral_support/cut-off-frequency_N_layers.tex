@@ -31,31 +31,39 @@
 		
 			% f_0 = 27.7 cycles/cm
 			% h = 1.6 cm
-		
+		\only<1,2,3,4,5>{
 			\addplot{2 * 27.7 * sqrt( (2 + 1) * 1.6^2 / ( (2 + 1) * 1.6^2 + 12 * (2 - 1) * (x^2) ) )};
 			\addlegendentry{2 layers};
-			
+		}
+		\only<2,3,4,5>{
 			\addplot{3 * 27.7 * sqrt( (3 + 1) * 1.6^2 / ( (3 + 1) * 1.6^2 + 12 * (3 - 1) * (x^2) ) )};
 			\addlegendentry{3 layers};
+		}
 			
+		\only<3,4,5>{
 			\addplot{4 * 27.7 * sqrt( (4 + 1) * 1.6^2 / ( (4 + 1) * 1.6^2 + 12 * (4 - 1) * (x^2) ) )};
 			\addlegendentry{4 layers};
+		}
 			
+		\only<4,5>{
 			\addplot{5 * 27.7 * sqrt( (5 + 1) * 1.6^2 / ( (5 + 1) * 1.6^2 + 12 * (5 - 1) * (x^2) ) )};
 			\addlegendentry{5 layers};
+		}
 			
+		\only<5>{
 			\addplot{6 * 27.7 * sqrt( (6 + 1) * 1.6^2 / ( (6 + 1) * 1.6^2 + 12 * (6 - 1) * (x^2) ) )};
 			\addlegendentry{6 layers};
-			
-			\addplot[dashed, cap = round, c1]{27.7 * sqrt( 2 * (2 * 2 - 1) * 1.6^2 / ( (2 + 1) * 1.6^2 + 12 * (2 - 1) * (x^2) ) )};
-			\addlegendentry{2 layers};
+		}
+		
+%			\addplot[dashed, cap = round, c1]{27.7 * sqrt( 2 * (2 * 2 - 1) * 1.6^2 / ( (2 + 1) * 1.6^2 + 12 * (2 - 1) * (x^2) ) )};
+%			\addlegendentry{2 layers};
 			
 %			\addplot[dotted, cap = round, c2]{27.7 * sqrt( 2 * (2 * 3 - 1) * 1.6^2 / ( (3 + 1) * 1.6^2 + 12 * (3 - 1) * (x^2) ) )};
 %			\addplot[dotted, cap = round, c3]{27.7 * sqrt( 2 * (2 * 4 - 1) * 1.6^2 / ( (4 + 1) * 1.6^2 + 12 * (4 - 1) * (x^2) ) )};
 %			\addplot[dotted, cap = round, c4]{27.7 * sqrt( 2 * (2 * 5 - 1) * 1.6^2 / ( (5 + 1) * 1.6^2 + 12 * (5 - 1) * (x^2) ) )};
 			
-			\addplot[dashed, cap = round, c4]{27.7 * sqrt( 2 * (2 * 6 - 1) * 1.6^2 / ( (6 + 1) * 1.6^2 + 12 * (6 - 1) * (x^2) ) )};
-			\addlegendentry{6 layers};
+%			\addplot[dashed, cap = round, c4]{27.7 * sqrt( 2 * (2 * 6 - 1) * 1.6^2 / ( (6 + 1) * 1.6^2 + 12 * (6 - 1) * (x^2) ) )};
+%			\addlegendentry{6 layers};
 			
 			\addplot[dashed] coordinates {(-0.8, 0) (-0.8, 100)};
 			\addplot[dashed] coordinates {(0.8, 0) (0.8, 100)};

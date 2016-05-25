@@ -611,6 +611,7 @@
 	\begin{itemize}
 		\item Impact of more layers?
 		\item Does thickness of display matter?
+		\item Is it possible to show objects outside the display?
 		\item What are the limitations?
 	\end{itemize}
 \end{frame}
@@ -734,6 +735,14 @@
 	
 \end{frame}
 
+\begin{frame}[fragile]
+	\frametitle{Depth of Field}
+	
+	\begin{figure}
+		\input{figures/spectral_support/cut-off-frequency_N_layers.tex}
+	\end{figure}
+\end{frame}
+
 \section{Conclusion}
 
 \begin{frame}[fragile]
@@ -744,8 +753,8 @@
 		\item Extended spectral support
 		\item Works with different types of light fields
 		\begin{itemize}
-			\item Perspective Projections (cameras)
 			\item Oblique Projections (synthetic scenes)
+			\item Perspective Projections (cameras)
 			\item Lytro
 		\end{itemize}
 	\end{itemize}
@@ -756,13 +765,14 @@
 	
 	\begin{itemize}
 		\item Very small viewing angles
-		\item 
+		\item Depth of field highly dependent on thickness
+		\begin{itemize}
+			\item Light field's depth of field needs to match
+			\item For fixed thickness, need to squeeze baseline
+		\end{itemize}
+		\item Need many layers to eliminate halo artefacts
+		\item Manual layer alignment is hard
 	\end{itemize}
-\end{frame}
-
-\begin{frame}[fragile]
-	\frametitle{Summary}
-	
 \end{frame}
 
 \begin{frame}
