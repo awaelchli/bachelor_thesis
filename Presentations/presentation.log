@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/W32TeX) (preloaded format=xelatex 2016.1.20)  25 MAY 2016 20:24
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/W32TeX) (preloaded format=xelatex 2016.1.20)  25 MAY 2016 21:51
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2293,7 +2293,7 @@ Overfull \hbox (13.23769pt too wide) in paragraph at lines 4--9
  []
 
 )
-Overfull \vbox (4.53609pt too high) detected at line 444
+Overfull \vbox (4.53609pt too high) detected at line 445
  []
 
 [51
@@ -2316,7 +2316,7 @@ Overfull \hbox (13.23769pt too wide) in paragraph at lines 4--9
  []
 
 )
-Overfull \vbox (4.53609pt too high) detected at line 456
+Overfull \vbox (4.53609pt too high) detected at line 457
  []
 
 [52
@@ -2339,7 +2339,7 @@ Overfull \hbox (13.23769pt too wide) in paragraph at lines 4--9
  []
 
 )
-Overfull \vbox (4.53609pt too high) detected at line 468
+Overfull \vbox (4.53609pt too high) detected at line 469
  []
 
 [53
@@ -2447,32 +2447,38 @@ File: figures/slicing_attenuator/tiling_overview.pdf Graphic file (type QTm)
 \openout4 = `presentation.vrb'.
 
  (./presentation.vrb
+File: figures/tiling/original_08_08.png Graphic file (type QTm)
+ <use  "figures/tiling/original_08_08.png" >
 File: figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/Reconstruction_
 of_view_(3,3).png Graphic file (type QTm)
 
 <use  "figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/Reconstruction
-_of_view_(3,3).png" >) [60
+_of_view_(3,3).png" >)
+Overfull \vbox (3.59785pt too high) detected at line 577
+ []
+
+[60
 
 ]
 \openout4 = `presentation.vrb'.
 
- (./presentation.vrb
-(./figures/tiling/tiling_layout.tex) (./figures/tiling/tiling_mask.tex
+ (./presentation.vrb (./figures/tiling/tiling_layout.tex)
+(./figures/tiling/tiling_mask.tex
 File: ./figures/tiling/mask1.png Graphic file (type QTm)
+ <use  "./figures/tiling/mask1.png" >))
+[61
 
-<use  "./figures/tiling/mask1.png" >)) [61
-
-] (./presentation.vrb
-(./figures/tiling/tiling_layout.tex) (./figures/tiling/tiling_mask.tex
+] (./presentation.vrb (./figures/tiling/tiling_layout.tex)
+(./figures/tiling/tiling_mask.tex
 File: ./figures/tiling/mask2.png Graphic file (type QTm)
+ <use  "./figures/tiling/mask2.png" >))
+[62
 
-<use  "./figures/tiling/mask2.png" >)) [62
-
-] (./presentation.vrb
-(./figures/tiling/tiling_layout.tex) (./figures/tiling/tiling_mask.tex
+] (./presentation.vrb (./figures/tiling/tiling_layout.tex)
+(./figures/tiling/tiling_mask.tex
 File: ./figures/tiling/mask3.png Graphic file (type QTm)
-
-<use  "./figures/tiling/mask3.png" >)) [63
+ <use  "./figures/tiling/mask3.png" >))
+[63
 
 ]
 \openout4 = `presentation.vrb'.
@@ -2588,21 +2594,21 @@ m)
 
 (./presentation.vrb (./figures/spectral_support/two_objects.tex)
 (./figures/spectral_support/epi_two_objects.tex))
-Overfull \vbox (6.51057pt too high) detected at line 685
+Overfull \vbox (6.51057pt too high) detected at line 689
  []
 
 [72
 
 ] (./presentation.vrb (./figures/spectral_support/two_objects.tex)
 (./figures/spectral_support/epi_two_objects.tex))
-Overfull \vbox (6.51057pt too high) detected at line 685
+Overfull \vbox (6.51057pt too high) detected at line 689
  []
 
 [73
 
 ] (./presentation.vrb (./figures/spectral_support/two_objects.tex)
 (./figures/spectral_support/epi_two_objects.tex))
-Overfull \vbox (6.51057pt too high) detected at line 685
+Overfull \vbox (6.51057pt too high) detected at line 689
  []
 
 [74
@@ -2670,7 +2676,7 @@ File: figures/spectral_support/convolution_5_layers.png Graphic file (type QTm)
 (./presentation.vrb (./figures/spectral_support/cut-off-frequency_N_layers.tex
 Missing character: There is no ; in font nullfont!
 ))
-Overfull \vbox (18.43713pt too high) detected at line 753
+Overfull \vbox (18.43713pt too high) detected at line 757
  []
 
 [81
@@ -2680,7 +2686,7 @@ Overfull \vbox (18.43713pt too high) detected at line 753
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 ))
-Overfull \vbox (18.43713pt too high) detected at line 753
+Overfull \vbox (18.43713pt too high) detected at line 757
  []
 
 [82
@@ -2691,7 +2697,7 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 ))
-Overfull \vbox (18.43713pt too high) detected at line 753
+Overfull \vbox (18.43713pt too high) detected at line 757
  []
 
 [83
@@ -2703,7 +2709,7 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 ))
-Overfull \vbox (18.43713pt too high) detected at line 753
+Overfull \vbox (18.43713pt too high) detected at line 757
  []
 
 [84
@@ -2716,7 +2722,7 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 ))
-Overfull \vbox (18.43713pt too high) detected at line 753
+Overfull \vbox (18.43713pt too high) detected at line 757
  []
 
 [85
@@ -2726,35 +2732,35 @@ Overfull \vbox (18.43713pt too high) detected at line 753
 
  (./presentation.vrb
 (./figures/spectral_support/cut-off-frequency_N_layers_no_colors.tex))
-Overfull \vbox (18.43713pt too high) detected at line 761
+Overfull \vbox (18.43713pt too high) detected at line 765
  []
 
 [86
 
 ] (./presentation.vrb
 (./figures/spectral_support/cut-off-frequency_N_layers_no_colors.tex))
-Overfull \vbox (18.43713pt too high) detected at line 761
+Overfull \vbox (18.43713pt too high) detected at line 765
  []
 
 [87
 
 ] (./presentation.vrb
 (./figures/spectral_support/cut-off-frequency_N_layers_no_colors.tex))
-Overfull \vbox (18.43713pt too high) detected at line 761
+Overfull \vbox (18.43713pt too high) detected at line 765
  []
 
 [88
 
 ] (./presentation.vrb
 (./figures/spectral_support/cut-off-frequency_N_layers_no_colors.tex))
-Overfull \vbox (18.43713pt too high) detected at line 761
+Overfull \vbox (18.43713pt too high) detected at line 765
  []
 
 [89
 
 ] (./presentation.vrb
 (./figures/spectral_support/cut-off-frequency_N_layers_no_colors.tex))
-Overfull \vbox (18.43713pt too high) detected at line 761
+Overfull \vbox (18.43713pt too high) detected at line 765
  []
 
 [90
@@ -2793,18 +2799,18 @@ Overfull \vbox (18.43713pt too high) detected at line 761
 \tf@snm=\write11
 \openout11 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 832.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 832.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 836.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 836.
  (./presentation.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 832.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 832.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 832.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 836.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 836.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 836.
  ) 
 Here is how much of TeX's memory you used:
- 52787 strings out of 494954
- 1175416 string characters out of 6171420
- 1432432 words of memory out of 5000000
- 54852 multiletter control sequences out of 15000+600000
+ 52789 strings out of 494954
+ 1175467 string characters out of 6171420
+ 1432457 words of memory out of 5000000
+ 54853 multiletter control sequences out of 15000+600000
  13558 words of font info for 107 fonts, out of 8000000 for 9000
  372 hyphenation exceptions out of 8191
  85i,16n,313p,10399b,2786s stack positions out of 5000i,500n,10000p,200000b,80000s
