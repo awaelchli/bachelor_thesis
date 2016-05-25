@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.3.2)  25 MAY 2016 10:01
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.3.2)  25 MAY 2016 11:50
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2511,35 +2511,56 @@ m)
 
 
 (./presentation.vrb (./figures/spectral_support/two_objects.tex)
-(./figures/spectral_support/epi_two_objects.tex)) [70
+(./figures/spectral_support/epi_two_objects.tex))
+Overfull \vbox (7.51057pt too high) detected at line 660
+ []
+
+[70
+
+] (./presentation.vrb (./figures/spectral_support/two_objects.tex)
+(./figures/spectral_support/epi_two_objects.tex))
+Overfull \vbox (7.51057pt too high) detected at line 660
+ []
+
+[71
+
+] (./presentation.vrb (./figures/spectral_support/two_objects.tex)
+(./figures/spectral_support/epi_two_objects.tex))
+Overfull \vbox (7.51057pt too high) detected at line 660
+ []
+
+[72
 
 ]
 \openout4 = `presentation.vrb'.
 
- (./presentation.vrb
-(./figures/spectral_support/epi_fourier_transform.tex)
+ (./presentation.vrb (./figures/spectral_support/epi_two_objects.tex)
+(./figures/spectral_support/epi_fourier_transform.tex)) [73
+
+]
+(./presentation.vrb (./figures/spectral_support/epi_two_objects.tex)
 (./figures/spectral_support/fourier_transform_red_and_blue.tex
 File: figures/spectral_support/fft_red_and_blue.png Graphic file (type QTm)
 
-<use  "figures/spectral_support/fft_red_and_blue.png" >)) [71
+<use  "figures/spectral_support/fft_red_and_blue.png" >)) [74
 
-] [72
-
-]
-\openout4 = `presentation.vrb'.
-
-
-(./presentation.vrb) [73
-
-] [74
+] [75
 
 ]
 \openout4 = `presentation.vrb'.
 
- (./presentation.vrb) [75
+
+(./presentation.vrb) [76
+
+] [77
+
+]
+\openout4 = `presentation.vrb'.
+
+ (./presentation.vrb) [78
 
 ] (./presentation.bbl)
-[76
+[79
 
 ]
 \tf@nav=\write9
@@ -2551,20 +2572,20 @@ File: figures/spectral_support/fft_red_and_blue.png Graphic file (type QTm)
 \tf@snm=\write11
 \openout11 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 715.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 715.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 711.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 711.
  (./presentation.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 715.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 715.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 715.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 711.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 711.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 711.
  ) 
 Here is how much of TeX's memory you used:
- 51566 strings out of 493638
- 1143975 string characters out of 6144793
+ 51585 strings out of 493638
+ 1144618 string characters out of 6144793
  1266493 words of memory out of 5000000
- 53814 multiletter control sequences out of 15000+600000
+ 53815 multiletter control sequences out of 15000+600000
  13526 words of font info for 103 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  85i,14n,114p,10386b,2786s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on presentation.pdf (76 pages).
+Output written on presentation.pdf (79 pages).
