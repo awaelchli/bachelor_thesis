@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.3.2)  25 MAY 2016 17:05
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.3.2)  25 MAY 2016 17:34
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2647,13 +2647,13 @@ File: figures/spectral_support/convolution_5_layers.png Graphic file (type QTm)
 \tf@snm=\write11
 \openout11 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 789.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 789.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 805.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 805.
 
 (./presentation.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 789.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 789.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 789.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 805.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 805.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 805.
  ) 
 Here is how much of TeX's memory you used:
  51671 strings out of 493638
