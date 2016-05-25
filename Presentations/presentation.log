@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.3.2)  25 MAY 2016 16:20
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.3.2)  25 MAY 2016 17:05
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2583,6 +2583,13 @@ File: figures/spectral_support/convolution_3_layers.png Graphic file (type QTm)
 <use  "figures/spectral_support/convolution_3_layers.png" >) [77
 
 ]
+(./presentation.vrb (./figures/spectral_support/3_layers_convolution.tex)
+File: figures/spectral_support/convolution_3_layers.png Graphic file (type QTm)
+
+
+<use  "figures/spectral_support/convolution_3_layers.png" >) [78
+
+]
 \openout4 = `presentation.vrb'.
 
 
@@ -2598,37 +2605,37 @@ File: figures/spectral_support/convolution_3_layers.png Graphic file (type QTm)
 File: figures/spectral_support/convolution_5_layers.png Graphic file (type QTm)
 
 
-<use  "figures/spectral_support/convolution_5_layers.png" >) [78
+<use  "figures/spectral_support/convolution_5_layers.png" >) [79
 
-] [79
-
-]
-\openout4 = `presentation.vrb'.
-
-
-(./presentation.vrb) [80
+] [80
 
 ]
 \openout4 = `presentation.vrb'.
 
- (./presentation.vrb) [81
+
+(./presentation.vrb) [81
+
+]
+\openout4 = `presentation.vrb'.
+
+ (./presentation.vrb) [82
 
 ]
 \openout4 = `presentation.vrb'.
 
  (./presentation.vrb)
-[82
-
-] [83
+[83
 
 ] [84
+
+] [85
 
 ]
 \openout4 = `presentation.vrb'.
 
- (./presentation.vrb) [85
+ (./presentation.vrb) [86
 
-] (./presentation.bbl) [86
+] (./presentation.bbl) [87
 
 ]
 \tf@nav=\write9
@@ -2649,12 +2656,12 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 789.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 789.
  ) 
 Here is how much of TeX's memory you used:
- 51639 strings out of 493638
- 1146559 string characters out of 6144793
- 1266388 words of memory out of 5000000
- 53839 multiletter control sequences out of 15000+600000
+ 51671 strings out of 493638
+ 1146945 string characters out of 6144793
+ 1267006 words of memory out of 5000000
+ 53867 multiletter control sequences out of 15000+600000
  13534 words of font info for 104 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  85i,14n,313p,10386b,2786s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on presentation.pdf (86 pages).
+Output written on presentation.pdf (87 pages).

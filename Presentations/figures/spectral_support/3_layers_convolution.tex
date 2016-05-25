@@ -14,7 +14,7 @@
 		\node[left, opacity = 0] at (-5, 0) {$\xi_s$};
 		
 		\draw[draw = black, fill = gray, fill opacity = 0.2, draw opacity = 0.5, name path = support_cut_off] (-4, 0) -- (-1.5, 2) -- (1.5, 2) -- (4, 0) -- (1.5, -2) -- (-1.5, -2) -- cycle;
-		
+		\only<2>{
 		\begin{scope}
 			\clip (-5, -5) rectangle (5, 5);
 			\draw[scale = 1, smooth, domain = -10 : 10, variable = \x, blue, opacity = 0.4, name path = plane1] plot ({\x},{ -1 / (- 7 / 3) * \x});
@@ -24,7 +24,7 @@
 			\draw[red, name intersections = {of = support_cut_off and plane2}] (intersection-1) -- (intersection-2);
 			
 		\end{scope}
-		
+		}
 	\end{tikzpicture}
 	
 \end{document}
