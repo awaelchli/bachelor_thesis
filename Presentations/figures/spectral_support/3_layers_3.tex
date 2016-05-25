@@ -5,13 +5,13 @@
 \tikzset{align at bottom/.style={baseline=(current bounding box.south)}}
 
 \begin{document}
-	\begin{tikzpicture}[scale = 0.35]
+	\begin{tikzpicture}[scale = 0.27]
 	
 		\draw[->] (-5, 0) -- (5, 0) node[right] {$\xi_s$};
 		\draw[->] (0, -5) -- (0, 5) node[above] {$\xi_u$};
 		
 		% Invisible dummy node for symmetric alignment with caption
-		\node[left, opacity = 0] at (-5, 0) {$\xi_s$};
+%		\node[left, opacity = 0] at (-5, 0) {$\xi_s$};
 		
 		%\draw[draw = black, fill = gray, fill opacity = 0.2, draw opacity = 0.5, name path = support_cut_off] (-4, 0) -- (-1.5, 3) -- (1.5, 3) -- (4, 0) -- (1.5, -3) -- (-1.5, -3) -- cycle;
 		
@@ -19,8 +19,8 @@
 		
 			\clip (-2, -2) rectangle (2, 2);
 			
-			\draw[red, thick, cap = round] (-2, 1) -- (2, -1);
-			\draw[red, thick, cap = round] (-2, 0) -- (2, 0);
+%			\draw[red, thick, cap = round] (-2, 1) -- (2, -1);
+%			\draw[red, thick, cap = round] (-2, 0) -- (2, 0);
 			\draw[red, thick, cap = round] (-2, -1) -- (2, 1);
 			
 		\end{scope}
@@ -28,8 +28,8 @@
 		\draw[black, cap = round, dotted] (-2, 2.5) -- (-2, -2.5);
 		\draw[black, cap = round, dotted] (2, 2.5) -- (2, -2.5);
 		
-		\node[below] at (-2, -2.5) {$-\xi_0$};
-		\node[below] at (2, -2.5) {$\xi_0$};
+%		\node[below] at (-2, -2.5) {$-\xi_0$};
+%		\node[below] at (2, -2.5) {$\xi_0$};
 		
 	\end{tikzpicture}
 	

@@ -662,22 +662,74 @@
 \begin{frame}[fragile]
 	\frametitle{Spectral Properties of Light Fields}
 	
-	\begin{center}
+	\begin{figure}
 		\input{figures/spectral_support/epi_two_objects.tex}
 		\hspace{1cm}
-		\only<1>{\input{figures/spectral_support/epi_fourier_transform.tex}}
-		\only<2>{\input{figures/spectral_support/fourier_transform_red_and_blue.tex}}
-	\end{center}
+		\only<1>{
+			\subcaptionbox*{\centering Frequency Response (Amplitude)}{\input{figures/spectral_support/epi_fourier_transform.tex}}	
+		}
+		\only<2>{
+			\subcaptionbox*{\centering Frequency Response (Amplitude)}{\input{figures/spectral_support/fourier_transform_red_and_blue.tex}}	
+		}
+	\end{figure}
 \end{frame}
 
 \begin{frame}[fragile]
-	\frametitle{Spectral Properties of Light Fields}
+	\frametitle{Spectral Properties of Display}
+	
+	\begin{itemize}
+		\item Every layer creates a light field $L_n$
+		\item Stack of layers creates $L^\prime = L_0 \cdot L_1 \cdots L_N$
+		\item What does $L^\prime$ look like in frequency domain?
+	\end{itemize}
+	
+	\begin{figure}
+		\subcaptionbox*{Layer 1}{\input{figures/spectral_support/3_layers_1.tex}}
+		\subcaptionbox*{Layer 2}{\input{figures/spectral_support/3_layers_2.tex}}
+		\subcaptionbox*{Layer 3}{\input{figures/spectral_support/3_layers_3.tex}}
+	\end{figure}
 \end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Spectral Properties of Display}
+	
+	\begin{figure}
+		\subcaptionbox*{\centering Spectral Support}{\input{figures/spectral_support/3_layers_convolution.tex}}
+		\hspace{1cm}
+		\subcaptionbox*{\centering Frequency Response (Amplitude)}{\includegraphics[height=4cm]{figures/spectral_support/convolution_3_layers}}
+	\end{figure}
+	
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Spectral Properties of Display}
+	
+	\begin{itemize}
+		\item Spectral support increases with more layers
+		\item Highest response in center
+	\end{itemize}
+	
+	\begin{figure}
+		\subcaptionbox*{2 Layers}{\includegraphics[height=3cm]{figures/spectral_support/convolution_2_layers}}
+		\hspace{0.5cm}
+		\subcaptionbox*{3 Layers}{\includegraphics[height=3cm]{figures/spectral_support/convolution_3_layers}}
+		\hspace{0.5cm}
+		\subcaptionbox*{5 Layers}{\includegraphics[height=3cm]{figures/spectral_support/convolution_5_layers}}
+	\end{figure}
+	
+\end{frame}
+
 \section{Conclusion}
 
 \begin{frame}[fragile]
 	\frametitle{Summary}
 	
+\end{frame}
+
+\begin{frame}
+	\begin{center}
+		\LARGE Your Questions
+	\end{center}
 \end{frame}
 
 \begin{frame}
