@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: presentation.aux
 The style file: abbrvnat.bst
 Database file #1: presentation.bib
-You've used 2 entries,
+You've used 3 entries,
             2773 wiz_defined-function locations,
-            610 strings with 4998 characters,
-and the built_in function-call counts, 1096 in all, are:
-= -- 99
-> -- 60
+            616 strings with 5188 characters,
+and the built_in function-call counts, 1656 in all, are:
+= -- 146
+> -- 108
 < -- 2
-+ -- 20
-- -- 18
-* -- 90
-:= -- 168
-add.period$ -- 6
-call.type$ -- 2
-change.case$ -- 12
-chr.to.int$ -- 2
-cite$ -- 4
-duplicate$ -- 46
-empty$ -- 85
-format.name$ -- 22
-if$ -- 227
++ -- 36
+- -- 33
+* -- 140
+:= -- 258
+add.period$ -- 10
+call.type$ -- 3
+change.case$ -- 20
+chr.to.int$ -- 3
+cite$ -- 6
+duplicate$ -- 70
+empty$ -- 124
+format.name$ -- 38
+if$ -- 344
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 2
-newline$ -- 18
-num.names$ -- 8
-pop$ -- 22
+missing$ -- 3
+newline$ -- 23
+num.names$ -- 12
+pop$ -- 39
 preamble$ -- 1
-purify$ -- 10
+purify$ -- 17
 quote$ -- 0
-skip$ -- 39
+skip$ -- 55
 stack$ -- 0
-substring$ -- 57
-swap$ -- 7
+substring$ -- 59
+swap$ -- 8
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 22
+type$ -- 33
 warning$ -- 0
-while$ -- 11
+while$ -- 14
 width$ -- 0
-write$ -- 33
+write$ -- 48

@@ -67,7 +67,7 @@
 	
 	\begin{figure}
 		\captionsetup[sub]{font=scriptsize}
-		\subcaptionbox*{Jones et al.}
+		\subcaptionbox*{\cite{360_display}}
 		{\includegraphics[height=6.5cm]{figures/overview_displays/360_deg_display}}
 		\hspace{0.4cm}
 		\subcaptionbox*{\href{https://en.wikipedia.org/wiki/Autostereoscopy}{en.wikipedia.org/wiki/Autostereoscopy}}
@@ -556,6 +556,11 @@
 		\item Slices need to overlap too
 		\item Blend slices with mask
 	\end{itemize}
+	
+	\begin{figure}
+		\includegraphics[width=4cm]{figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/Reconstruction_of_view_(3,3).png}
+		\caption*{Simulation}
+	\end{figure}
 \end{frame}
 
 \begin{frame}[fragile]
@@ -564,6 +569,16 @@
 	\begin{figure}
 		\input{figures/tiling/tiling_layout.tex}
 		\input{figures/tiling/tiling_mask.tex}
+	\end{figure}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Tile Blending}
+	
+	\begin{figure}
+		\subcaptionbox*{No overlap}{\includegraphics[width=4cm]{figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/Reconstruction_of_view_(3,3).png}}
+		\hspace{1cm}
+		\subcaptionbox*{30\% overlap}{\includegraphics[width=4cm]{figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/Reconstruction_of_view_(3,3).png}}
 	\end{figure}
 \end{frame}
 
@@ -600,7 +615,7 @@
 	\end{itemize}
 \end{frame}
 
-\section{Assessment}
+\section{Spectral Analysis}
 
 \begin{frame}[fragile]
 	\frametitle{Epipolar Plane Geometry}
@@ -722,6 +737,14 @@
 \section{Conclusion}
 
 \begin{frame}[fragile]
+	\frametitle{The Good}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{The Bad}
+\end{frame}
+
+\begin{frame}[fragile]
 	\frametitle{Summary}
 	
 \end{frame}
@@ -742,7 +765,7 @@
 \end{frame}
 
 \begin{frame}[fragile]
-	\frametitle{Resources}
+	\frametitle{More Information}
 	
 	\begin{block}{Contact}
   		adrian.waelchli@students.unibe.ch
