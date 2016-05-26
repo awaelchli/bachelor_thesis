@@ -322,20 +322,20 @@
 		\begin{blockarray}{lcccccccccc}
 		    				& \alpha_1 	& \alpha_2 	& \alpha_3 	& \alpha_4 	& \alpha_5 	& \alpha_6 	& \alpha_7 	& \alpha_8 	& \alpha_9 	& \alpha_{10}	\\
 		    \begin{block}{l(ccccc|ccccc@{\hspace*{5pt}})}
-			  \bar{L}_1 	& 	 		& 			& 	1		& 			& 			& 	1		&			&			&			&				\\
-			  \bar{L}_2 	& 			& 			& 			& 	1		& 			& 	1		&			&			&			&				\\
-			  \bar{L}_3 	& 	1		& 			& 			& 			& 			& 			&	1		&			&			&				\\
-			  \bar{L}_4 	& 			& 	1		& 			& 			& 			& 			&			&			&	1		&				\\
+			  L_1 	& 	 		& 			& 	1		& 			& 			& 	1		&			&			&			&				\\
+			  L_2 	& 			& 			& 			& 	1		& 			& 	1		&			&			&			&				\\
+			  L_3 	& 	1		& 			& 			& 			& 			& 			&	1		&			&			&				\\
+			  L_4 	& 			& 	1		& 			& 			& 			& 			&			&			&	1		&				\\
 			  \cline{2-11}
-			  \bar{L}_5 	& 			& 			& 			& 			& 	1		& 			&			&			&	1		&				\\
-			  \bar{L}_6 	& 			& 			& 	1		& 			& 			& 1			&			&			&			&				\\
-			  \bar{L}_7 	& 		1	& 			& 			& 			& 			& 			&			&			&	1		&				\\
-			  \bar{L}_8 	& 			& 			& 			& 	 		& 	1		& 			&	1		&			&			&				\\
+			  L_5 	& 			& 			& 			& 			& 	1		& 			&			&			&	1		&				\\
+			  L_6 	& 			& 			& 	1		& 			& 			& 1			&			&			&			&				\\
+			  L_7 	& 		1	& 			& 			& 			& 			& 			&			&			&	1		&				\\
+			  L_8 	& 			& 			& 			& 	 		& 	1		& 			&	1		&			&			&				\\
 			  \cline{2-11}
-			  \bar{L}_9 	& 			& 	1		& 			& 			& 			& 			&	1		&			& 			&				\\
-			  \bar{L}_{10} 	& 			& 			& 			& 		1	& 			& 			&			&	1		&			&				\\
-			  \bar{L}_{11} 	& 			& 			& 	1		& 			& 			& 			&			&			&	1		&				\\
-			  \bar{L}_{12} 	& 			& 	1		& 			& 	 		& 			& 			&			&			&	1		&				\\			  
+			  L_9 	& 			& 	1		& 			& 			& 			& 			&	1		&			& 			&				\\
+			  L_{10} 	& 			& 			& 			& 		1	& 			& 			&			&	1		&			&				\\
+			  L_{11} 	& 			& 			& 	1		& 			& 			& 			&			&			&	1		&				\\
+			  L_{12} 	& 			& 	1		& 			& 	 		& 			& 			&			&			&	1		&				\\			  
 		    \end{block}
 		\end{blockarray}
 	$
@@ -344,12 +344,13 @@
 \begin{frame}[fragile]
 	\frametitle{The Equation}
 	
-	\begin{equation*}
-		\text{log}(L) = - P \alpha
-	\end{equation*}
-	
+	{\LARGE
+		\begin{equation*}
+			\text{log}(L) = - P \alpha
+		\end{equation*}
+	}
 	\begin{itemize}[<alert@+>]
-		\item $\text{log}(L)$ Vectorized log light field
+		\item $L$ Vectorized light field
 		\item $\alpha$ Vector holding unkowns
 	\end{itemize}
 \end{frame}
