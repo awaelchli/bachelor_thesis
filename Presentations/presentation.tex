@@ -76,7 +76,8 @@
 \end{frame}
 
 \begin{frame}[fragile]
-	\frametitle{Existing 3D Displays}
+	\frametitle<1>{Glasses}
+	\frametitle<2>{Glasses-free}
 	
 	\begin{figure}
 		\includegraphics<1>[width=5cm]{figures/overview_displays/3d_glasses}
@@ -121,12 +122,16 @@
 	
 	\begin{columns}[onlytextwidth]
 		\column{0.6\textwidth}
-			\begin{itemize}[<alert@+>]
-				\item Measures light in the world
-				\item Position, viewing direction
-				\item Time, Wavelength
-				\item $P(x, y, z, \theta, \phi, t, \lambda)$
-				\item 7D
+			\begin{itemize}
+				\item \alert<1>{Measures light in the world}
+				\item \alert<2>{$P(x, y, z, \theta, \phi, t, \lambda)$}
+				\begin{itemize}
+					\item \alert<3>{Position} %$(x, y, z)$
+					\item \alert<4>{Viewing direction} %$(\theta, \phi)$
+					\item \alert<5>{Time} %$t$
+					\item \alert<6>{Wavelength} %$\lambda$
+				\end{itemize}
+				\item \alert<7>{Reduce dimensions of $P$}
 			\end{itemize}
 		\column{0.4\textwidth}
 			\begin{figure}
@@ -141,14 +146,24 @@
 \begin{frame}[fragile]
 	\frametitle{The 4D Light Field}
 	
-	\begin{itemize}[<alert@+>]
-		\item Reduce dimensions of $P$
+	\begin{itemize}
 		\item $L(u, v, s, t)$
 		\item Defined by two planes
 	\end{itemize}
 	\begin{center}
-		\visible<3>{\input{figures/two-plane-parameterization.tex}}
+		\input{figures/two-plane-parameterization.tex}
 	\end{center}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Light Field Acquisition}
+	
+	\begin{figure}
+		\captionsetup{font=scriptsize}
+		\includegraphics[height = 6cm]{images/Lytro_Light_Field_Camera-front_background_removed.png}
+		\caption*{Lytro plenoptic camera. Source: \href{https://de.wikipedia.org/wiki/Lytro}{de.wikipedia.org/wiki/Lytro}}
+	\end{figure}
+	
 \end{frame}
 
 \begin{frame}[fragile]
@@ -169,17 +184,6 @@
 		\captionsetup{font=scriptsize}
 		\includegraphics[height = 6cm]{images/lego_camera_gantry}
 		\caption*{Lego gantry. Source: \href{http://lightfield.stanford.edu}{lightfield.stanford.edu}}
-	\end{figure}
-	
-\end{frame}
-
-\begin{frame}[fragile]
-	\frametitle{Light Field Acquisition}
-	
-	\begin{figure}
-		\captionsetup{font=scriptsize}
-		\includegraphics[height = 6cm]{images/Lytro_Light_Field_Camera-front_background_removed.png}
-		\caption*{Lytro plenoptic camera. Source: \href{https://de.wikipedia.org/wiki/Lytro}{de.wikipedia.org/wiki/Lytro}}
 	\end{figure}
 	
 \end{frame}
@@ -226,12 +230,13 @@
 
 \begin{frame}[fragile]
 	\frametitle{The Beer-Lambert Law}
-	\begin{center}
+	\begin{figure}
+		\centering
 		\includegraphics<1>[height = 7cm]{figures/beer-lambert/lambert-beer-law_illustration.pdf}
 		\includegraphics<2>[height = 7cm]{figures/beer-lambert/lambert-beer-law_layers1.pdf}
 		\includegraphics<3>[height = 7cm]{figures/beer-lambert/lambert-beer-law_layers2.pdf}
 		\includegraphics<4>[height = 7cm]{figures/beer-lambert/lambert-beer-law_layers3.pdf}
-	\end{center}
+	\end{figure}
 \end{frame}
 
 \begin{frame}[fragile]
@@ -316,6 +321,20 @@
 \end{frame}
 
 \begin{frame}[fragile]
+	\frametitle{The Equation}
+	
+	{\LARGE
+		\begin{equation*}
+			\text{log}(L) = - P \alpha
+		\end{equation*}
+	}
+	\begin{itemize} %[<alert@+>]
+		\item $L$ Vectorized light field
+		\item $\alpha$ Vector holding unkowns
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
 	\frametitle{Ray Casting}
 	$
 		P = 
@@ -342,20 +361,6 @@
 \end{frame}
 
 \begin{frame}[fragile]
-	\frametitle{The Equation}
-	
-	{\LARGE
-		\begin{equation*}
-			\text{log}(L) = - P \alpha
-		\end{equation*}
-	}
-	\begin{itemize}[<alert@+>]
-		\item $L$ Vectorized light field
-		\item $\alpha$ Vector holding unkowns
-	\end{itemize}
-\end{frame}
-
-\begin{frame}[fragile]
 	\frametitle{Optimization Problem}
 	
 	\begin{equation*}
@@ -372,16 +377,8 @@
 %				\item More equations than unknowns
 %			\end{itemize}
 		\item Need iterative solver
-	\end{itemize}
-\end{frame}
-
-\begin{frame}[fragile]
-	\frametitle{The Constraint $\alpha \geq 0$}
-	
-	\begin{itemize}
 		\item Negative absorption ($\alpha < 0$) is physically not possible
-		\item The theoretical model supports negative absorption
-		\item Constraint reduces the space of possible solutions
+%		\item The theoretical model supports negative absorption
 	\end{itemize}
 \end{frame}
 
@@ -434,11 +431,12 @@
 \end{frame}
 
 \begin{frame}[fragile]
-	\frametitle{3 Layers}
-	
+	\frametitle{Example: Lego Truck}
+	\vspace{-0.5cm}
 	\begin{center}
 		\begin{tabular}{c p{0cm} c}
-			Original & & Simulation \\
+			\begin{tabular}{@{}c@{}}Original \\ $17 \times 17 \times 960 \times 1280$\end{tabular}
+			& & \begin{tabular}{@{}c@{}}Simulation (3 Layers) \\ $6 \times 6 \times 480 \times 640$\end{tabular} \\
 			\includegraphics[width = 5cm, trim={4cm, 20cm, 30cm, 0}, clip]{images/layers_and_projections/legotruck/original/08_08}
 			& & \includegraphics[width = 5cm, trim={2cm, 10cm, 15cm, 0}, clip]{figures/simulated_views/legotruck/3Layers_legotruck/Reconstruction_of_view_(3,3)}
 		\end{tabular}
@@ -446,11 +444,12 @@
 \end{frame}
 
 \begin{frame}[fragile]
-	\frametitle{5 Layers}
-	
+	\frametitle{Example: Lego Truck}
+	\vspace{-0.5cm}
 	\begin{center}
 		\begin{tabular}{c p{0cm} c}
-			Original & & Simulation \\
+			\begin{tabular}{@{}c@{}}Original \\ $17 \times 17 \times 960 \times 1280$\end{tabular}
+			& & \begin{tabular}{@{}c@{}}Simulation (5 Layers) \\ $6 \times 6 \times 480 \times 640$\end{tabular} \\
 			\includegraphics[width = 5cm, trim={4cm, 20cm, 30cm, 0}, clip]{images/layers_and_projections/legotruck/original/08_08}
 			& & \includegraphics[width = 5cm, trim={2cm, 10cm, 15cm, 0}, clip]{figures/simulated_views/legotruck/5Layers_legotruck/Reconstruction_of_view_(3,3)}
 		\end{tabular}
@@ -458,11 +457,12 @@
 \end{frame}
 
 \begin{frame}[fragile]
-	\frametitle{10 Layers}
-	
+	\frametitle{Example: Lego Truck}
+	\vspace{-0.5cm}
 	\begin{center}
 		\begin{tabular}{c p{0cm} c}
-			Original & & Simulation \\
+			\begin{tabular}{@{}c@{}}Original \\ $17 \times 17 \times 960 \times 1280$\end{tabular}
+			& & \begin{tabular}{@{}c@{}}Simulation (10 Layers) \\ $6 \times 6 \times 480 \times 640$\end{tabular} \\
 			\includegraphics[width = 5cm, trim={4cm, 20cm, 30cm, 0}, clip]{images/layers_and_projections/legotruck/original/08_08}
 			& & \includegraphics[width = 5cm, trim={2cm, 10cm, 15cm, 0}, clip]{figures/simulated_views/legotruck/10Layers_legotruck/Reconstruction_of_view_(3,3)}
 		\end{tabular}
@@ -470,11 +470,12 @@
 \end{frame}
 
 \begin{frame}[fragile]
-	\frametitle{3 Layers}
+	\frametitle{Example: Lego Truck}
 	
 	\begin{center}
 		\begin{tabular}{c p{0cm} c}
-			Original & & Simulation \\
+			\begin{tabular}{@{}c@{}}Original \\ $17 \times 17 \times 960 \times 1280$\end{tabular}
+			& & \begin{tabular}{@{}c@{}}Simulation (3 Layers) \\ $6 \times 6 \times 480 \times 640$\end{tabular} \\
 			\includegraphics[width = 5cm, trim={15cm, 10cm, 15cm, 10cm}, clip]{images/layers_and_projections/legotruck/original/08_08}
 			& & \includegraphics[width = 5cm, trim={7.5cm, 5cm, 7.5cm, 5cm}, clip]{figures/simulated_views/legotruck/3Layers_legotruck/Reconstruction_of_view_(3,3)}
 		\end{tabular}
@@ -482,11 +483,12 @@
 \end{frame}
 
 \begin{frame}[fragile]
-	\frametitle{5 Layers}
+	\frametitle{Example: Lego Truck}
 	
 	\begin{center}
 		\begin{tabular}{c p{0cm} c}
-			Original & & Simulation \\
+			\begin{tabular}{@{}c@{}}Original \\ $17 \times 17 \times 960 \times 1280$\end{tabular}
+			& & \begin{tabular}{@{}c@{}}Simulation (5 Layers) \\ $6 \times 6 \times 480 \times 640$\end{tabular} \\
 			\includegraphics[width = 5cm, trim={15cm, 10cm, 15cm, 10cm}, clip]{images/layers_and_projections/legotruck/original/08_08}
 			& & \includegraphics[width = 5cm, trim={7.5cm, 5cm, 7.5cm, 5cm}, clip]{figures/simulated_views/legotruck/5Layers_legotruck/Reconstruction_of_view_(3,3)}
 		\end{tabular}
@@ -494,11 +496,12 @@
 \end{frame}
 
 \begin{frame}[fragile]
-	\frametitle{10 Layers}
+	\frametitle{Example: Lego Truck}
 	
 	\begin{center}
 		\begin{tabular}{c p{0cm} c}
-			Original & & Simulation \\
+			\begin{tabular}{@{}c@{}}Original \\ $17 \times 17 \times 960 \times 1280$\end{tabular}
+			& & \begin{tabular}{@{}c@{}}Simulation (10 Layers) \\ $6 \times 6 \times 480 \times 640$\end{tabular} \\
 			\includegraphics[width = 5cm, trim={15cm, 10cm, 15cm, 10cm}, clip]{images/layers_and_projections/legotruck/original/08_08}
 			& & \includegraphics[width = 5cm, trim={7.5cm, 5cm, 7.5cm, 5cm}, clip]{figures/simulated_views/legotruck/10Layers_legotruck/Reconstruction_of_view_(3,3)}
 		\end{tabular}
@@ -506,11 +509,13 @@
 \end{frame}
 
 \begin{frame}[fragile]
-	\frametitle{10 Layers, Higher Angular Resolution}
+	\frametitle{Example: Lego Truck}
+%	\frametitle{10 Layers, Higher Angular Resolution}
 	
 	\begin{center}
 		\begin{tabular}{c p{0cm} c}
-			Original & & Simulation \\
+			\begin{tabular}{@{}c@{}}Original \\ $17 \times 17 \times 960 \times 1280$\end{tabular}
+			& & \begin{tabular}{@{}c@{}}Simulation (10 Layers) \\ $\textcolor{red}{9 \times 9} \times 480 \times 640$\end{tabular} \\
 			\includegraphics[width = 5cm, trim={15cm, 10cm, 15cm, 10cm}, clip]{images/layers_and_projections/legotruck/original/08_08}
 			& & \includegraphics[width = 5cm, trim={7.5cm, 5cm, 7.5cm, 5cm}, clip]{figures/simulated_views/legotruck/10_Layers_9x9_angular/Reconstruction_of_view_(5,5)}
 		\end{tabular}
@@ -530,14 +535,14 @@
 			\\
 		\column{0.7\textwidth}
 			\begin{itemize}
-				\item A lot of memory is needed:
+				\item \alert<1>{A lot of memory is needed:}
 					\begin{itemize}
 						\item Light field (uncompressed)
 						\item Propagation matrix (? nnz entries)
 						\item Additional matrices for solver
 					\end{itemize}
-				\item Memory usage grows with resolution
-				\item Solution: Slice the attenuator
+				\item \alert<2>{Memory usage grows with resolution}
+				\item \alert<3>{Solution: Slice the attenuator}
 			\end{itemize}
 	\end{columns}
 	
@@ -546,7 +551,7 @@
 \begin{frame}[fragile]
 	\frametitle{Attenuator Tiling}
 	
-	\begin{enumerate}
+	\begin{enumerate}[<alert@+>]
 		\item Slice attenuator into smaller pieces
 		\item Solve optimization problem for every slice
 		\item Reconnect the slices
@@ -569,9 +574,9 @@
 	\end{itemize}
 	
 	\begin{figure}
-		\subcaptionbox*{Original}{\includegraphics[width=4cm]{figures/tiling/original_08_08}}
+		\subcaptionbox*{Original}{\includegraphics[width=4.3cm]{figures/tiling/original_08_08}}
 		\hspace{1cm}
-		\subcaptionbox*{Simulation}{\includegraphics[width=4cm]{figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/Reconstruction_of_view_(3,3).png}}
+		\subcaptionbox*{Simulation}{\includegraphics[width=4.3cm]{figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/Reconstruction_of_view_(3,3).png}}
 	\end{figure}
 	
 	{\scriptsize Light field courtesy: \href{http://lightfield.stanford.edu/lfs.html}{Stanford Light Field Archive}}
@@ -590,14 +595,14 @@
 	\frametitle{Tile Blending}
 	
 	\begin{figure}
-		\subcaptionbox*{No overlap}{\includegraphics[width=4cm]{figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/Reconstruction_of_view_(3,3).png}}
-		\hspace{1cm}
-		\subcaptionbox*{30\% overlap}{\includegraphics[width=4cm]{figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/Reconstruction_of_view_(3,3).png}}
+		\subcaptionbox*{No overlap}{\includegraphics[width=5cm]{figures/tiling/tarot_tiles3x3x200x200_no_overlap_3_layers/Reconstruction_of_view_(3,3).png}}
+		\hspace{0.5cm}
+		\subcaptionbox*{30\% overlap}{\includegraphics[width=5cm]{figures/tiling/tarot_tiles5x5x200x200_overlap0.5_3_layers/Reconstruction_of_view_(3,3).png}}
 	\end{figure}
 \end{frame}
 
 \begin{frame}[fragile]
-	\frametitle{The Finished Product}
+	\frametitle{The Finished Display}
 	
 	\begin{itemize}
 		\item Finally, print images on transparent sheets
@@ -615,14 +620,14 @@
 \begin{frame}[fragile]
 	\frametitle{The Finished Product}
 	\begin{center}
-		\includegraphics[width=9cm]{images/all_displays_on}
+		\includegraphics[width=11cm]{images/all_displays_on}
 	\end{center}
 \end{frame}
 
 \begin{frame}[fragile]
 	\frametitle{Questions}
 	
-	\begin{itemize}
+	\begin{itemize}[<+- | alert@+>]
 		\item Impact of more layers?
 		\item Does thickness of display matter?
 		\item Is it possible to show objects outside the display?
@@ -632,14 +637,14 @@
 
 \section{Spectral Analysis}
 
-\begin{frame}[fragile]
-	\frametitle{Epipolar Plane Geometry}
-	\begin{figure}
-		\captionsetup{font=scriptsize}
-		\includegraphics[height = 6cm]{images/lf_geometry_modified.jpg}
-		\caption*{Source: \href{http://klimt.iwr.uni-heidelberg.de/HCI/Research/LightField/images/lf_geometry.jpg}{klimt.iwr.uni-heidelberg.de}}
-	\end{figure}
-\end{frame}
+%\begin{frame}[fragile]
+%	\frametitle{Epipolar Plane Geometry}
+%	\begin{figure}
+%		\captionsetup{font=scriptsize}
+%		\includegraphics[height = 6cm]{images/lf_geometry_modified.jpg}
+%		\caption*{Source: \href{http://klimt.iwr.uni-heidelberg.de/HCI/Research/LightField/images/lf_geometry.jpg}{klimt.iwr.uni-heidelberg.de}}
+%	\end{figure}
+%\end{frame}
 
 \begin{frame}[fragile]
 	\frametitle{Epipolar Plane Image}
@@ -707,7 +712,7 @@
 \begin{frame}[fragile]
 	\frametitle{Spectral Properties of Display}
 	
-	\begin{itemize}
+	\begin{itemize}[<alert@+>]
 		\item Every layer creates a light field $L_n$
 		\item Stack of layers creates $L^\prime = L_0 \cdot L_1 \cdots L_N$
 		\item What does $L^\prime$ look like in frequency domain?
@@ -757,21 +762,21 @@
 	\end{figure}
 \end{frame}
 
-\begin{frame}[fragile]
-	\frametitle{Depth of Field}
-	
-	\begin{figure}
-		\input{figures/spectral_support/cut-off-frequency_N_layers_no_colors.tex}
-	\end{figure}
-\end{frame}
+%\begin{frame}[fragile]
+%	\frametitle{Depth of Field}
+%	
+%	\begin{figure}
+%		\input{figures/spectral_support/cut-off-frequency_N_layers_no_colors.tex}
+%	\end{figure}
+%\end{frame}
 
 \begin{frame}[fragile]
 	\frametitle{Display Thickness}
 	
 	\begin{figure}
-		\subcaptionbox*{Original}{\includegraphics[height=4cm]{figures/depth_of_field/original_08_08}}
-		\hspace{1cm}
-		\subcaptionbox*{16 mm thick}{\includegraphics[height=4cm]{figures/depth_of_field/knights_thickness_16mm/Reconstruction_of_view_(5,5)}}
+		\subcaptionbox*{Original}{\includegraphics[height=5cm]{figures/depth_of_field/original_08_08}}
+		\hspace{0.5cm}
+		\subcaptionbox*{16 mm thick}{\includegraphics[height=5cm]{figures/depth_of_field/knights_thickness_16mm/Reconstruction_of_view_(5,5)}}
 	\end{figure}
 	
 	{\scriptsize Light field courtesy: \href{http://lightfield.stanford.edu/lfs.html}{Stanford Light Field Archive}}
@@ -781,9 +786,9 @@
 	\frametitle{Display Thickness}
 	
 	\begin{figure}
-		\subcaptionbox*{Original}{\includegraphics[height=4cm]{figures/depth_of_field/original_08_08}}
-		\hspace{1cm}
-		\subcaptionbox*{30 mm thick}{\includegraphics[height=4cm]{figures/depth_of_field/knights_thickness_30mm/Reconstruction_of_view_(5,5)}}
+		\subcaptionbox*{Original}{\includegraphics[height=5cm]{figures/depth_of_field/original_08_08}}
+		\hspace{0.5cm}
+		\subcaptionbox*{30 mm thick}{\includegraphics[height=5cm]{figures/depth_of_field/knights_thickness_30mm/Reconstruction_of_view_(5,5)}}
 	\end{figure}
 	
 	{\scriptsize Light field courtesy: \href{http://lightfield.stanford.edu/lfs.html}{Stanford Light Field Archive}}
@@ -795,9 +800,9 @@
 	\frametitle{The Good}
 	
 	\begin{itemize}
-		\item No trade-off between angular- and spatial resolution
-		\item Extended spectral support
-		\item Works with different types of light fields
+		\item \alert<1>{No trade-off between angular- and spatial resolution}
+		\item \alert<2>{Extended spectral support}
+		\item \alert<3>{Works with different types of light fields}
 		\begin{itemize}
 			\item Oblique Projections (synthetic scenes)
 			\item Perspective Projections (cameras)
@@ -810,14 +815,14 @@
 	\frametitle{The Bad}
 	
 	\begin{itemize}
-		\item Very small viewing angles
-		\item Depth of field highly dependent on thickness
+		\item \alert<1>{Very small viewing angles}
+		\item \alert<2>{Depth of field highly dependent on thickness}
 		\begin{itemize}
 			\item Light field's depth of field needs to match
 			\item For fixed thickness, need to adjust baseline
 		\end{itemize}
-		\item Need many layers to eliminate halo artifacts
-		\item Manual layer alignment is hard
+		\item \alert<3>{Need many layers to eliminate halo artifacts}
+		\item \alert<4>{Manual layer alignment is hard}
 	\end{itemize}
 \end{frame}
 
@@ -848,7 +853,7 @@
 	\end{block}
 \end{frame}
 
-\begin{frame}
+\begin{frame}<beamer:0>
 	\frametitle{References}
 	
 	\bibliographystyle{abbrvnat}
