@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.3.2)  30 MAY 2016 09:44
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.3.2)  30 MAY 2016 10:00
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2440,17 +2440,18 @@ _of_view_(3,3).png" >) [61
 File: images/glass_plates_front_view_cropped.jpg Graphic file (type QTm)
 
 <use  "images/glass_plates_front_view_cropped.jpg" >
-File: images/raw_backlight_from_top.JPG Graphic file (type QTm)
+File: images/raw_backlight_from_top_reduced_resolution.JPG Graphic file (type Q
+Tm)
 
-<use  "images/raw_backlight_from_top.JPG" >) [62
+<use  "images/raw_backlight_from_top_reduced_resolution.JPG" >) [62
 
 ]
 \openout4 = `presentation.vrb'.
 
- (./presentation.vrb
-File: images/all_displays_on.JPG Graphic file (type QTm)
 
-<use  "images/all_displays_on.JPG" >
+(./presentation.vrb
+File: images/all_displays_on.JPG Graphic file (type QTm)
+ <use  "images/all_displays_on.JPG" >
 Overfull \hbox (5.69043pt too wide) in paragraph at lines 3--4
  [] 
  []
@@ -2799,8 +2800,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 877.
  ) 
 Here is how much of TeX's memory you used:
  51877 strings out of 493638
- 1151532 string characters out of 6144793
- 1394609 words of memory out of 5000000
+ 1151570 string characters out of 6144793
+ 1394606 words of memory out of 5000000
  54014 multiletter control sequences out of 15000+600000
  15087 words of font info for 110 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
