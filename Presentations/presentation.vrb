@@ -1,9 +1,30 @@
-\frametitle{More Information}
+\frametitle{Epipolar Plane Image}
+^^I\begin{center}
+^^I^^I\begin{tikzpicture}
+^^I^^I^^I\draw[->] (0, 0) -- (3, 0) node[midway, above] {$u$};
+^^I^^I\end{tikzpicture}
 
-^^I\begin{block}{Contact}
-  ^^I^^Iadrian.waelchli@students.unibe.ch
-^^I\end{block}
+^^I^^I\vspace{0.1cm}
 
-^^I\begin{block}{Thesis and Resources}
-^^I^^I\href{https://github.com/awaelchli/bachelor_thesis}{github.com/awaelchli/bachelor\_thesis}
-^^I\end{block}
+^^I^^I\frame{\includegraphics[width = 1cm]{images/epi_dice/dice000.png}}
+^^I^^I\hspace{0.1cm}
+^^I^^I\frame{\includegraphics[width = 1cm]{images/epi_dice/dice099.png}}
+^^I^^I\hspace{0.1cm}
+^^I^^I\frame{\includegraphics[width = 1cm]{images/epi_dice/dice199.png}}
+^^I^^I\hspace{0.1cm}
+^^I^^I\frame{\includegraphics[width = 1cm]{images/epi_dice/dice299.png}}
+^^I^^I\hspace{0.1cm}
+^^I^^I\frame{\includegraphics[width = 1cm]{images/epi_dice/dice399.png}}
+^^I^^I\hspace{0.1cm}
+^^I^^I\frame{\includegraphics[width = 1cm]{images/epi_dice/dice499.png}}
+^^I\end{center}
+
+^^I\vspace{0.5cm}
+
+^^I\begin{columns}[onlytextwidth]
+^^I^^I\column{0.5\textwidth}
+^^I^^I^^I\input{figures/epi_dice_overview_rectified.tex}
+^^I^^I\column{0.5\textwidth}
+^^I^^I^^I\only<1>{\input{figures/epi_dice_1_rectified.tex}}
+^^I^^I^^I\only<2>{\input{figures/epi_dice_2_rectified.tex}}
+^^I\end{columns}
